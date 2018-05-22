@@ -29,11 +29,11 @@ public class DataController {
      * 获取当前状态
      * */
     @RequestMapping("/getNowState")
-    public double getNowState( String name) {
+    public int getNowState( String name) {
         // 需把点名转为id 可通过
         int id = cfgData.getAcID(name);// 通过电度点名获取电度的id
         Object[] datas = commService.getRealData(new int[]{id});
-        return (double) datas[0];
+        return (int) datas[0];
     }
 }
 //        int id = cfgData.getAnID(点名);// 通过遥测点名获取遥测的id

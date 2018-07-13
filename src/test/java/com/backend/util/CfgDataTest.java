@@ -18,4 +18,12 @@ public class CfgDataTest {
         int id = cfgData.getAcID("N05_AC");
         System.out.println(id);
     }
+
+    @Test
+    public void testGetAnId() {
+        Integer[] ids = cfgData.getAnIDByPic("1#开闭所201柜1#进线");
+        for (int i = 0; i < ids.length; i++) {
+            System.out.print(ids[i] + " ");
+        }
+    }
 }

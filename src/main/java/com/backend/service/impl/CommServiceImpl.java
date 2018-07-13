@@ -185,6 +185,8 @@ public class CommServiceImpl implements CommService {
     private SocketAddress getSocketAddress() {
         String ip = "127.0.0.1";
         int port = 8888;
+//        String ip = "192.168.1.119";
+//        int port = 10001;
 
         return new InetSocketAddress(ip, port);
     }

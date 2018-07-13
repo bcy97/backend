@@ -19,4 +19,13 @@ public class AnValue {
     public void setValid(byte valid) {
         this.valid = valid;
     }
+
+    public AnValue() {
+
+    }
+
+    public AnValue(byte valid, float value) {
+        this.valid = valid;
+        this.value = value;
+    }
 }

@@ -15,15 +15,15 @@ public class CfgDataTest {
 
     @Test
     public void testGetId() {
-        int id = cfgData.getAcID("N05_AC");
+        int id = cfgData.getAnID("NPTUa1");
         System.out.println(id);
     }
 
     @Test
     public void testGetAnId() {
-        Integer[] ids = cfgData.getAnIDByPic("1#开闭所201柜1#进线");
-        for (int i = 0; i < ids.length; i++) {
-            System.out.print(ids[i] + " ");
-        }
+//        Integer[] ids = cfgData.getAnIDByPic("1#开闭所201柜1#进线");
+//        for (int i = 0; i < ids.length; i++) {
+//            System.out.print(ids[i] + " ");
+//        }
     }
 }

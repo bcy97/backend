@@ -96,12 +96,12 @@ public class CfgData implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        anMap = new HashMap<String, AnO>();
-        stMap = new HashMap<String, StO>();
-        acMap = new HashMap<String, AcO>();
-        anIdNameMap = new HashMap<Integer, String>();
-        acIdNameMap = new HashMap<Integer, String>();
-        stIdNameMap = new HashMap<Integer, String>();
+        anMap = new HashMap<>();
+        stMap = new HashMap<>();
+        acMap = new HashMap<>();
+        anIdNameMap = new HashMap<>();
+        acIdNameMap = new HashMap<>();
+        stIdNameMap = new HashMap<>();
 
 //			File file = new File(Utils._RESOURCES_PATH_ + Constants._DIR_UNITCFG_);
         File file = null;
@@ -135,9 +135,12 @@ public class CfgData implements ApplicationRunner {
     }
 
     @SuppressWarnings("unchecked")
+    /**
+     * 初始化遥测
+     */
     private void initAnO(Document doc, short unitNo) {
         Element root;
-        String query = "//dynamic/configs[@name='é¥æµ‹']/config";
+        String query = "//dynamic/configs[@name='遥测']/config";
         List<Element> list = doc.selectNodes(query);
 
         for (Element e : list) {
@@ -305,6 +308,9 @@ public class CfgData implements ApplicationRunner {
 
 
     @SuppressWarnings("unchecked")
+    /**
+     * 初始化遥信
+     */
     private void initStO(Document doc, short unitNo) {
         Element root;
         String query = "//dynamic/configs[@name='é¥ä¿¡']/config";
@@ -397,6 +403,9 @@ public class CfgData implements ApplicationRunner {
 
 
     @SuppressWarnings("unchecked")
+    /**
+     * 初始化电度
+     */
     private void initAcO(Document doc, short unitNo) {
         Element root;
         String query = "//dynamic/configs[@name='µç¶È']/config";

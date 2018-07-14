@@ -9,7 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -102,23 +101,24 @@ public class DataController {
     @RequestMapping("/getAnDataByPic")
     public Map<String, Double> getDataByPicture(String name) {
 
-        int[] anId = Arrays.stream(cfgData.getAnIDByPic(name))
-                .mapToInt(Integer::valueOf).toArray();
-        Object[] anData = commService.getRealData(anId);
-        Map<String, Double> map = new HashMap<String, Double>();
-        int num = 0;
-        for (Object o : anData) {
-            if (o instanceof Integer)
-                map.put("button" + num, ((Integer) o).doubleValue());
-            else if (o instanceof AnValue)
-                map.put("button" + num, (double) ((AnValue) o).getValue());
-            else if (o instanceof StValue)
-                map.put("button" + num, (double) ((StValue) o).getValue());
-            else if (o instanceof AcValue)
-                map.put("button" + num, (double) ((AcValue) o).gethValue());
-            num++;
-        }
-        return map;
+//        int[] anId = Arrays.stream(cfgData.getAnIDByPic(name))
+//                .mapToInt(Integer::valueOf).toArray();
+//        Object[] anData = commService.getRealData(anId);
+//        Map<String, Double> map = new HashMap<String, Double>();
+//        int num = 0;
+//        for (Object o : anData) {
+//            if (o instanceof Integer)
+//                map.put("button" + num, ((Integer) o).doubleValue());
+//            else if (o instanceof AnValue)
+//                map.put("button" + num, (double) ((AnValue) o).getValue());
+//            else if (o instanceof StValue)
+//                map.put("button" + num, (double) ((StValue) o).getValue());
+//            else if (o instanceof AcValue)
+//                map.put("button" + num, (double) ((AcValue) o).gethValue());
+//            num++;
+//        }
+//        return map;
+        return null;
     }
 }
 //        int[] acId = Arrays.stream(cfgData.getAcIDByPic(name))

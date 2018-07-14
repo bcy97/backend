@@ -18,6 +18,7 @@ import java.net.Socket;
 import java.net.SocketAddress;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,6 +31,8 @@ import java.util.List;
 public class CommServiceImpl implements CommService {
 
     static Logger logger = Logger.getLogger("CommService");
+
+    SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
     public CommServiceImpl() {
 

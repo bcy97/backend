@@ -4,6 +4,7 @@ import com.backend.service.RealDataService;
 import com.backend.util.CfgData;
 import com.backend.vo.AnValue;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -21,7 +22,7 @@ public class RealDataController {
     CfgData cfgData;
 
     @RequestMapping(value = "/getAnData", consumes = "application/json")
-    public Map<String, AnValue> getAnData(@RequestParam(value = "ids", required = false) String[] ids) {
+    public Map<String, AnValue> getAnData(@RequestBody String[] ids) {
 
         Map<String, AnValue> result = new HashMap<>();
 

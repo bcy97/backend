@@ -42,7 +42,6 @@ public class SocketConnect {
     }
 
     public static void getData(ByteBuffer bb, DataPacket dp, byte[] datas, Logger logger) {
-        System.arraycopy(bb.array(), 0, datas, 0, datas.length);
 
         Socket socket = new Socket();
         try {

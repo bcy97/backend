@@ -6,7 +6,6 @@ import com.backend.vo.AnValue;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
@@ -20,6 +19,7 @@ public class RealDataController {
     RealDataService realDataService;
     @Autowired
     CfgData cfgData;
+    int times = 0;
 
     @RequestMapping(value = "/getAnData", consumes = "application/json")
     public Map<String, AnValue> getAnData(@RequestBody String[] ids) {
@@ -33,11 +33,19 @@ public class RealDataController {
 //            map.put(ids[i], id[i]);
         }
 
-        Object[] data = realDataService.getRealData(id);
-        for (int i = 0; i < data.length; i++) {
-            result.put(ids[i], (AnValue) data[i]);
+//        Object[] data = realDataService.getRealData(id);
+//        for (int i = 0; i < data.length; i++) {
+//            result.put(ids[i], (AnValue) data[i]);
+//        }
+
+        for (int i = 0; i < ids.length; i++) {
+            byte valid = 1;
+            result.put(ids[i], new AnValue(valid, (float) Math.random() * 2));
         }
 
+        System.out.println("get" + times);
+
+        times++;
         return result;
     }
 }

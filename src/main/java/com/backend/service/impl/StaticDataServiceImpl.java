@@ -16,7 +16,7 @@ import java.util.List;
 
 public class StaticDataServiceImpl implements StaticDataService {
 
-    static Logger logger = Logger.getLogger("CommService");
+    static Logger logger = Logger.getLogger("StaticDataService");
     SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
     @Override

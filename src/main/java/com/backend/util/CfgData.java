@@ -313,7 +313,7 @@ public class CfgData implements ApplicationRunner {
      */
     private void initStO(Document doc, short unitNo) {
         Element root;
-        String query = "//dynamic/configs[@name='é¥ä¿¡']/config";
+        String query = "//dynamic/configs[@name='遥信']/config";
         List<Element> list = doc.selectNodes(query);
         int max = -1;
         for (Element e : list) {
@@ -408,7 +408,7 @@ public class CfgData implements ApplicationRunner {
      */
     private void initAcO(Document doc, short unitNo) {
         Element root;
-        String query = "//dynamic/configs[@name='µç¶È']/config";
+        String query = "//dynamic/configs[@name='电度']/config";
         List<Element> list = doc.selectNodes(query);
         int max = -1;
         for (Element e : list) {

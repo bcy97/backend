@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dynamic name="3#开闭所灯光状态" unitNo="117" type="0">
+  <configs name="遥测" />
+  <configs name="遥信">
+    <config ptNo="0">
+      <ename>CA_DK_ST</ename>
+      <cname>灯光状态</cname>
+      <mask>0</mask>
+      <swidef>1</swidef>
+      <type>15</type>
+      <pcepd>0</pcepd>
+      <SOE>0</SOE>
+      <alarm>1</alarm>
+      <remark>0</remark>
+    </config>
+    <config ptNo="1">
+      <ename>CA_DK_TX</ename>
+      <cname>保护通讯状态</cname>
+      <mask>0</mask>
+      <swidef>0</swidef>
+      <type>5</type>
+      <pcepd>0</pcepd>
+      <SOE>0</SOE>
+      <alarm>1</alarm>
+      <remark>0</remark>
+    </config>
+  </configs>
+</dynamic>

@@ -3,7 +3,6 @@ package com.backend.service.impl;
 import com.backend.service.RealDataService;
 import com.backend.util.CfgData;
 import com.backend.util.Constants;
-import com.backend.util.SocketConnect;
 import com.backend.util.Utils;
 import com.backend.vo.AcValue;
 import com.backend.vo.AnValue;
@@ -132,8 +131,8 @@ public class RealDataServiceImpl implements RealDataService {
     }
 
     private SocketAddress getSocketAddress() {
-        String ip = "127.0.0.1";
-        int port = 8888;
+        String ip = "192.168.1.119";
+        int port = 10001;
 
         return new InetSocketAddress(ip, port);
     }

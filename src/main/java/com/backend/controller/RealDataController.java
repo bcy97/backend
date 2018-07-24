@@ -35,17 +35,21 @@ public class RealDataController {
 //            map.put(ids[i], id[i]);
         }
 
-//        Object[] data = realDataService.getRealData(id);
-//        for (int i = 0; i < data.length; i++) {
-//            result.put(ids[i], (AnValue) data[i]);
-//        }
+        Object[] data = realDataService.getRealData(id);
+        for (int i = 0; i < data.length; i++) {
+            try {
 
-        for (int i = 0; i < ids.length; i++) {
-            byte valid = 1;
-            result.put(ids[i], new AnValue(valid, (float) Math.random() * 2));
+                result.put(ids[i], (AnValue) data[i]);
+            } catch (Exception e) {
+                result.put(ids[i], new AnValue((byte) 0, 0));
+            }
         }
 
-        times++;
+//        for (int i = 0; i < ids.length; i++) {
+//            byte valid = 1;
+//            result.put(ids[i], new AnValue(valid, (float) Math.random() * 2));
+//        }
+//
         return result;
     }
 
@@ -62,22 +66,29 @@ public class RealDataController {
 
         int[] id = new int[ids.length];
         for (int i = 0; i < ids.length; i++) {
-            id[i] = cfgData.getAnID(ids[i]);
+            id[i] = cfgData.getStID(ids[i]);
         }
 
-//        Object[] data = realDataService.getRealData(id);
-//        for (int i = 0; i < data.length; i++) {
-//            result.put(ids[i], (StValue) data[i]);
+        Object[] data = realDataService.getRealData(id);
+        for (int i = 0; i < data.length; i++) {
+            try {
+                result.put(ids[i], (StValue) data[i]);
+            } catch (Exception e) {
+                result.put(ids[i], new StValue((byte) 1, (byte) 0));
+                System.out.println(ids[i] + id[i]);
+            }
+        }
+
+        System.out.println("--------------------------------------");
+
+//        for (int i = 0; i < ids.length; i++) {
+//            byte valid = 1;
+//            result.put(ids[i], new StValue(valid, (byte) (Math.random() * 1.5)));
 //        }
 
-        for (int i = 0; i < ids.length; i++) {
-            byte valid = 1;
-            result.put(ids[i], new StValue(valid, (byte) (Math.random() * 1.5)));
-        }
-
-        System.out.println("get" + times);
-
-        times++;
+//        System.out.println("get" + times);
+//
+//        times++;
         return result;
     }
 
@@ -97,19 +108,19 @@ public class RealDataController {
             id[i] = cfgData.getAnID(ids[i]);
         }
 
-//        Object[] data = realDataService.getRealData(id);
-//        for (int i = 0; i < data.length; i++) {
-//            result.put(ids[i], (Acvalue) data[i]);
-//        }
-
-        for (int i = 0; i < ids.length; i++) {
-            byte valid = 1;
-            result.put(ids[i], new AcValue(Math.random(), valid, (byte) (Math.random() * 1.5)));
+        Object[] data = realDataService.getRealData(id);
+        for (int i = 0; i < data.length; i++) {
+            result.put(ids[i], (AcValue) data[i]);
         }
 
-        System.out.println("get" + times);
-
-        times++;
+//        for (int i = 0; i < ids.length; i++) {
+//            byte valid = 1;
+//            result.put(ids[i], new AcValue(Math.random(), valid, (byte) (Math.random() * 1.5)));
+//        }
+//
+//        System.out.println("get" + times);
+//
+//        times++;
         return result;
     }
 }

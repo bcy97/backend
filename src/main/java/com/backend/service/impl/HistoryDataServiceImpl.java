@@ -22,8 +22,8 @@ import java.util.List;
 @Service
 public class HistoryDataServiceImpl implements HistoryDataService {
 
-    static Logger logger = Logger.getLogger("CommService");
-    SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+    static Logger logger = Logger.getLogger("HistoryDataService");
+    private SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
     /***
      * begTime/endTime format yyyy-MM-dd HH:mm:ss
@@ -76,11 +76,11 @@ public class HistoryDataServiceImpl implements HistoryDataService {
 
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(sdf.parse(begTime));
-        bb.putLong((long) calendar.getTimeInMillis() / 1000);
+        bb.putLong(calendar.getTimeInMillis() / 1000);
 
         calendar = Calendar.getInstance();
         calendar.setTime(sdf.parse(endTime));
-        bb.putLong((long) calendar.getTimeInMillis() / 1000);
+        bb.putLong(calendar.getTimeInMillis() / 1000);
 
         for (int id : ids)
             bb.putInt(id);
@@ -92,7 +92,7 @@ public class HistoryDataServiceImpl implements HistoryDataService {
     }
 
     private AnValue[] parseHistoryAnData(ByteBuffer bb) {
-        List<AnValue> list = new ArrayList<AnValue>();
+        List<AnValue> list = new ArrayList<>();
         int id = Constants.CC_NOTHINGNESS;
         byte valid = Constants.CC_IS_NULL;
         int size = bb.position();
@@ -121,7 +121,7 @@ public class HistoryDataServiceImpl implements HistoryDataService {
     }
 
     private StValue[] parseHistoryStData(ByteBuffer bb) {
-        List<StValue> list = new ArrayList<StValue>();
+        List<StValue> list = new ArrayList<>();
         int id = Constants.CC_NOTHINGNESS;
         byte valid = Constants.CC_IS_NULL;
         int size = bb.position();
@@ -150,7 +150,7 @@ public class HistoryDataServiceImpl implements HistoryDataService {
     }
 
     private AcValue[] parseHistoryAcData(ByteBuffer bb) {
-        List<AcValue> list = new ArrayList<AcValue>();
+        List<AcValue> list = new ArrayList<>();
         int id = Constants.CC_NOTHINGNESS;
         byte valid = Constants.CC_IS_NULL;
         int size = bb.position();

@@ -4,7 +4,6 @@ import com.backend.util.CfgData;
 import com.backend.util.Constants;
 import com.backend.util.Utils;
 import com.backend.vo.*;
-
 import org.apache.log4j.Logger;
 
 import java.io.IOException;
@@ -24,7 +23,7 @@ import java.util.List;
 
 
 public class TempServiceImpl {
-    static Logger logger = Logger.getLogger("CommService");
+    static Logger logger = Logger.getLogger("tempServcie");
     SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
     //// real statistic data & real calculate data begin
@@ -832,6 +831,7 @@ public class TempServiceImpl {
     public Object[] getRealData(int[] ids) {
         byte[] datas = Utils.idArrToBytes(ids);
         DataPacket dp = new DataPacket(Constants.CC_REALDATA, datas);
+        ByteBuffer bb = null;
 
         Socket socket = new Socket();
         try {
@@ -842,7 +842,7 @@ public class TempServiceImpl {
             byte[] bDatas = dp.serialize();
             os.write(bDatas, 0, bDatas.length);
 
-            ByteBuffer bb = ByteBuffer.allocate(8 * 1024);
+            bb = ByteBuffer.allocate(8 * 1024);
             bb.order(ByteOrder.LITTLE_ENDIAN);
 
             receiveData(bb, is);

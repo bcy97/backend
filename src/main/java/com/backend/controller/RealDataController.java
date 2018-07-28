@@ -17,11 +17,14 @@ import java.util.Map;
 @RequestMapping("/realData")
 public class RealDataController {
 
+    private RealDataService realDataService;
+    private CfgData cfgData;
+
     @Autowired
-    RealDataService realDataService;
-    @Autowired
-    CfgData cfgData;
-    int times = 0;
+    public RealDataController(RealDataService realDataService, CfgData cfgData) {
+        this.realDataService = realDataService;
+        this.cfgData = cfgData;
+    }
 
     @RequestMapping(value = "/getAnData", consumes = "application/json")
     public Map<String, AnValue> getAnData(@RequestBody String[] ids) {

@@ -3,6 +3,7 @@ package com.backend.service.impl;
 import com.backend.service.RealDataService;
 import com.backend.util.CfgData;
 import com.backend.util.Constants;
+import com.backend.util.SocketConnect;
 import com.backend.util.Utils;
 import com.backend.vo.AcValue;
 import com.backend.vo.AnValue;
@@ -13,12 +14,9 @@ import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.OutputStream;
 import java.net.InetSocketAddress;
-import java.net.Socket;
 import java.net.SocketAddress;
 import java.nio.ByteBuffer;
-import java.nio.ByteOrder;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -31,30 +29,16 @@ public class RealDataServiceImpl implements RealDataService {
     public Object[] getRealData(int[] ids) {
         byte[] datas = Utils.idArrToBytes(ids);
         DataPacket dp = new DataPacket(Constants.CC_REALDATA, datas);
+        ByteBuffer bb = null;
 
-        Socket socket = new Socket();
-        try {
-            socket.connect(getSocketAddress());
-            OutputStream os = socket.getOutputStream();
-            InputStream is = socket.getInputStream();
+        SocketConnect.getData(bb, dp, datas, logger);
 
-            byte[] bDatas = dp.serialize();
-            os.write(bDatas, 0, bDatas.length);
-
-            ByteBuffer bb = ByteBuffer.allocate(8 * 1024);
-            bb.order(ByteOrder.LITTLE_ENDIAN);
-
-            receiveData(bb, is);
-            is.close();
-            os.close();
-
-            return parseRealData(bb);
-        } catch (Exception e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-            logger.error(e.getMessage());
+        if (bb == null) {
             return null;
         }
+
+        return parseRealData(bb);
+
     }
 
     private Object[] parseRealData(ByteBuffer bb) {

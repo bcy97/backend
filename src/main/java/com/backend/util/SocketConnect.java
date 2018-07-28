@@ -41,7 +41,7 @@ public class SocketConnect {
         }
     }
 
-    public static void getData(ByteBuffer bb, DataPacket dp, byte[] datas, Logger logger) {
+    public static ByteBuffer getData(DataPacket dp, Logger logger) {
 
         Socket socket = new Socket();
         try {
@@ -52,17 +52,20 @@ public class SocketConnect {
             byte[] bDatas = dp.serialize();
             os.write(bDatas, 0, bDatas.length);
 
-            bb = ByteBuffer.allocate(8 * 1024);
+            ByteBuffer bb = ByteBuffer.allocate(8 * 1024);
             bb.order(ByteOrder.LITTLE_ENDIAN);
 
             receiveData(bb, is);
             is.close();
             os.close();
 
+            return bb;
         } catch (Exception e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
             logger.error(e.getMessage());
+
+            return null;
         }
     }
 }

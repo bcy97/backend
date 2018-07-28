@@ -313,11 +313,11 @@ public class TempServiceImpl {
 
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(sdf.parse(begTime));
-        bb.putLong((long) calendar.getTimeInMillis() / 1000);
+        bb.putLong(calendar.getTimeInMillis() / 1000);
 
         calendar = Calendar.getInstance();
         calendar.setTime(sdf.parse(endTime));
-        bb.putLong((long) calendar.getTimeInMillis() / 1000);
+        bb.putLong(calendar.getTimeInMillis() / 1000);
 
         for (int id : ids)
             bb.putInt(id);

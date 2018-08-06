@@ -5,6 +5,7 @@ import com.backend.vo.AnValue;
 import com.backend.vo.StValue;
 
 import java.text.ParseException;
+import java.util.List;
 
 public interface HistoryDataService {
     AnValue[] getHistoryAnHourData(int[] ids, String begTime,
@@ -18,4 +19,10 @@ public interface HistoryDataService {
 
     AcValue[] getHistoryAcHourData(int[] ids, String begTime,
                                    String endTime) throws ParseException;
+
+    /**
+     * added
+     */
+    List<String> getDataList();
+
 }

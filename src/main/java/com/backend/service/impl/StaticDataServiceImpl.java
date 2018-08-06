@@ -88,7 +88,7 @@ public class StaticDataServiceImpl implements StaticDataService {
         byte[] datas = new byte[bb.position()];
         DataPacket dp = new DataPacket(Constants.CC_EVENTDATA, datas);
 
-        SocketConnect.getData(bb, dp, datas, logger);
+        SocketConnect.getData(dp, logger);
 
         return bb;
     }

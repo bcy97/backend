@@ -90,7 +90,7 @@ public class EventInfoServiceImpl implements EventInfoService {
         byte[] datas = new byte[bb.position()];
         DataPacket dp = new DataPacket(Constants.CC_EVENTDATA, datas);
 
-        SocketConnect.getData(bb, dp, datas, logger);
+        bb = SocketConnect.getData(dp, logger);
 
         return bb;
 

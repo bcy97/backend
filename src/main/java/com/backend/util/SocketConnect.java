@@ -14,14 +14,14 @@ import java.nio.ByteOrder;
 
 public class SocketConnect {
 
-    private static SocketAddress getSocketAddress() {
-        String ip = "127.0.0.1";
-        int port = 8888;
+    public static SocketAddress getSocketAddress() {
+        String ip = "192.168.1.119";
+        int port = 10001;
 
         return new InetSocketAddress(ip, port);
     }
 
-    private static void receiveData(ByteBuffer bb, InputStream is) throws IOException {
+    public static void receiveData(ByteBuffer bb, InputStream is) throws IOException {
         DataPacket dp;
         byte[] bDatas;
         while (true) {

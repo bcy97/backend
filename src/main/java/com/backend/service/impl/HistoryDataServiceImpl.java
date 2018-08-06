@@ -86,7 +86,7 @@ public class HistoryDataServiceImpl implements HistoryDataService {
             bb.putInt(id);
 
         DataPacket dp = new DataPacket(Constants.CC_HISDATA, datas);
-        SocketConnect.getData(bb, dp, datas, logger);
+        SocketConnect.getData(dp, logger);
 
         return bb;
     }

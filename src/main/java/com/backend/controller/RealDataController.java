@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @RestController
@@ -26,16 +27,19 @@ public class RealDataController {
         this.cfgData = cfgData;
     }
 
+    @RequestMapping("/getPicList")
+    public List<String> getPicList() {
+        return realDataService.getPicList();
+    }
+
     @RequestMapping(value = "/getAnData", consumes = "application/json")
     public Map<String, AnValue> getAnData(@RequestBody String[] ids) {
 
         Map<String, AnValue> result = new HashMap<>();
 
         int[] id = new int[ids.length];
-//        HashMap<String, Integer> map = new HashMap<>();
         for (int i = 0; i < ids.length; i++) {
             id[i] = cfgData.getAnID(ids[i]);
-//            map.put(ids[i], id[i]);
         }
 
         Object[] data = realDataService.getRealData(id);
@@ -48,11 +52,6 @@ public class RealDataController {
             }
         }
 
-//        for (int i = 0; i < ids.length; i++) {
-//            byte valid = 1;
-//            result.put(ids[i], new AnValue(valid, (float) Math.random() * 2));
-//        }
-//
         return result;
     }
 
@@ -78,7 +77,7 @@ public class RealDataController {
                 result.put(ids[i], (StValue) data[i]);
             } catch (Exception e) {
                 result.put(ids[i], new StValue((byte) 1, (byte) 0));
-                System.out.println(ids[i] + id[i]);
+                System.out.println(ids[i] + " " + id[i]);
             }
         }
 

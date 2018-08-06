@@ -136,11 +136,11 @@ public class CfgData implements ApplicationRunner {
 
     @SuppressWarnings("unchecked")
     /**
-     * 初始化遥测
+     * ��ʼ��ң��
      */
     private void initAnO(Document doc, short unitNo) {
         Element root;
-        String query = "//dynamic/configs[@name='遥测']/config";
+        String query = "//dynamic/configs[@name='ң��']/config";
         List<Element> list = doc.selectNodes(query);
 
         for (Element e : list) {
@@ -166,7 +166,7 @@ public class CfgData implements ApplicationRunner {
                     } else if ("refv".equals(rootName)) {
                         if (root.getText() != null) {
                             String text = pattern.matcher(root.getText())
-                                    .replaceAll("");// åŽ»æŽ‰ \t \n ç©ºæ ¼
+                                    .replaceAll("");// ?????�� \t \n ??????
                             if (!text.isEmpty())
                                 ano.setRefV(new Float(text.trim()));
                         }
@@ -178,7 +178,7 @@ public class CfgData implements ApplicationRunner {
                             && !root.getText().isEmpty()) {
                         if (root.getText() != null) {
                             String text = pattern.matcher(root.getText())
-                                    .replaceAll("");// åŽ»æŽ‰ \t \n ç©ºæ ¼
+                                    .replaceAll("");// ?????�� \t \n ??????
                             if (!text.isEmpty()) {
                                 float temp = new Float(text.trim());
                                 ano.setMask((byte) temp);
@@ -188,7 +188,7 @@ public class CfgData implements ApplicationRunner {
                             && !root.getText().isEmpty()) {
                         if (root.getText() != null) {
                             String text = pattern.matcher(root.getText())
-                                    .replaceAll("");// åŽ»æŽ‰ \t \n ç©ºæ ¼
+                                    .replaceAll("");// ?????�� \t \n ??????
                             if (!text.isEmpty()) {
                                 float temp = new Float(text.trim());
                                 ano.setAlarm((byte) temp);
@@ -198,7 +198,7 @@ public class CfgData implements ApplicationRunner {
                             && !root.getText().isEmpty()) {
                         if (root.getText() != null) {
                             String text = pattern.matcher(root.getText())
-                                    .replaceAll("");// åŽ»æŽ‰ \t \n ç©ºæ ¼
+                                    .replaceAll("");// ?????�� \t \n ??????
                             if (!text.isEmpty()) {
                                 float temp = new Float(text.trim());
                                 ano.setPoinum((byte) temp);
@@ -208,7 +208,7 @@ public class CfgData implements ApplicationRunner {
                             && !root.getText().isEmpty()) {
                         if (root.getText() != null) {
                             String text = pattern.matcher(root.getText())
-                                    .replaceAll("");// åŽ»æŽ‰ \t \n ç©ºæ ¼
+                                    .replaceAll("");// ?????�� \t \n ??????
                             if (!text.isEmpty())
                                 ano.setFi(new Float(text.trim()));
 
@@ -217,7 +217,7 @@ public class CfgData implements ApplicationRunner {
                             && !root.getText().isEmpty()) {
                         if (root.getText() != null) {
                             String text = pattern.matcher(root.getText())
-                                    .replaceAll("");// åŽ»æŽ‰ \t \n ç©ºæ ¼
+                                    .replaceAll("");// ?????�� \t \n ??????
                             if (!text.isEmpty()) {
                                 float temp = new Float(text.trim());
                                 ano.setLibrank((byte) temp);
@@ -227,7 +227,7 @@ public class CfgData implements ApplicationRunner {
                             && !root.getText().isEmpty()) {
                         if (root.getText() != null) {
                             String text = pattern.matcher(root.getText())
-                                    .replaceAll("");// åŽ»æŽ‰ \t \n ç©ºæ ¼
+                                    .replaceAll("");// ?????�� \t \n ??????
                             if (!text.isEmpty())
                                 ano.setZeroV(new Float(text.trim()));
                         }
@@ -235,7 +235,7 @@ public class CfgData implements ApplicationRunner {
                             && !root.getText().isEmpty()) {
                         if (root.getText() != null) {
                             String text = pattern.matcher(root.getText())
-                                    .replaceAll("");// åŽ»æŽ‰ \t \n ç©ºæ ¼
+                                    .replaceAll("");// ?????�� \t \n ??????
                             if (!text.isEmpty())
                                 ano.setOffsetV(new Float(text.trim()));
                         }
@@ -243,7 +243,7 @@ public class CfgData implements ApplicationRunner {
                             && !root.getText().isEmpty()) {
                         if (root.getText() != null) {
                             String text = pattern.matcher(root.getText())
-                                    .replaceAll("");// åŽ»æŽ‰ \t \n ç©ºæ ¼
+                                    .replaceAll("");// ?????�� \t \n ??????
                             if (!text.isEmpty())
                                 ano.setUpV(new Float(text.trim()));
                         }
@@ -251,7 +251,7 @@ public class CfgData implements ApplicationRunner {
                             && !root.getText().isEmpty()) {
                         if (root.getText() != null) {
                             String text = pattern.matcher(root.getText())
-                                    .replaceAll("");// åŽ»æŽ‰ \t \n ç©ºæ ¼
+                                    .replaceAll("");// ?????�� \t \n ??????
                             if (!text.isEmpty())
                                 ano.setDwV(new Float(text.trim()));
                         }
@@ -259,7 +259,7 @@ public class CfgData implements ApplicationRunner {
                             && !root.getText().isEmpty()) {
                         if (root.getText() != null) {
                             String text = pattern.matcher(root.getText())
-                                    .replaceAll("");// åŽ»æŽ‰ \t \n ç©ºæ ¼
+                                    .replaceAll("");// ?????�� \t \n ??????
                             if (!text.isEmpty())
                                 ano.setUupV(new Float(text.trim()));
                         }
@@ -267,7 +267,7 @@ public class CfgData implements ApplicationRunner {
                             && !root.getText().isEmpty()) {
                         if (root.getText() != null) {
                             String text = pattern.matcher(root.getText())
-                                    .replaceAll("");// åŽ»æŽ‰ \t \n ç©ºæ ¼
+                                    .replaceAll("");// ?????�� \t \n ??????
                             if (!text.isEmpty())
                                 ano.setDdwV(new Float(text.trim()));
                         }
@@ -275,7 +275,7 @@ public class CfgData implements ApplicationRunner {
                             && !root.getText().isEmpty()) {
                         if (root.getText() != null) {
                             String text = pattern.matcher(root.getText())
-                                    .replaceAll("");// åŽ»æŽ‰ \t \n ç©ºæ ¼
+                                    .replaceAll("");// ?????�� \t \n ??????
                             if (!text.isEmpty()) {
                                 float temp = new Float(text.trim());
                                 ano.setType((byte) temp);
@@ -285,7 +285,7 @@ public class CfgData implements ApplicationRunner {
                             && !root.getText().isEmpty()) {
                         if (root.getText() != null) {
                             String text = pattern.matcher(root.getText())
-                                    .replaceAll("");// åŽ»æŽ‰ \t \n ç©ºæ ¼
+                                    .replaceAll("");// ?????�� \t \n ??????
                             if (!text.isEmpty()) {
                                 float temp = new Float(text.trim());
                                 ano.setNominus((byte) temp);
@@ -294,7 +294,7 @@ public class CfgData implements ApplicationRunner {
                     }
 
                 } catch (Exception e1) {
-                    System.out.println(ano.getSname() + " è§£æžå‡ºé”™,"
+                    System.out.println(ano.getSname() + " ����???????����?,"
                             + e1.getMessage());
                 }
             }
@@ -309,11 +309,11 @@ public class CfgData implements ApplicationRunner {
 
     @SuppressWarnings("unchecked")
     /**
-     * 初始化遥信
+     * ��ʼ��ң��
      */
     private void initStO(Document doc, short unitNo) {
         Element root;
-        String query = "//dynamic/configs[@name='遥信']/config";
+        String query = "//dynamic/configs[@name='ң��']/config";
         List<Element> list = doc.selectNodes(query);
         int max = -1;
         for (Element e : list) {
@@ -338,7 +338,7 @@ public class CfgData implements ApplicationRunner {
                 } else if ("mask".equals(rootName) && !root.getText().isEmpty()) {
                     if (root.getText() != null) {
                         String text = pattern.matcher(root.getText())
-                                .replaceAll("");// åŽ»æŽ‰ \t \n ç©ºæ ¼
+                                .replaceAll("");// ?????�� \t \n ??????
                         if (!text.isEmpty()) {
                             float temp = new Float(text);
                             sto.setMask((byte) temp);
@@ -348,7 +348,7 @@ public class CfgData implements ApplicationRunner {
                         && !root.getText().isEmpty()) {
                     if (root.getText() != null) {
                         String text = pattern.matcher(root.getText())
-                                .replaceAll("");// åŽ»æŽ‰ \t \n ç©ºæ ¼
+                                .replaceAll("");// ?????�� \t \n ??????
                         if (!text.isEmpty()) {
                             float temp = new Float(text);
                             sto.setSwidef((byte) temp);
@@ -357,7 +357,7 @@ public class CfgData implements ApplicationRunner {
                 } else if ("type".equals(rootName) && !root.getText().isEmpty()) {
                     if (root.getText() != null) {
                         String text = pattern.matcher(root.getText())
-                                .replaceAll("");// åŽ»æŽ‰ \t \n ç©ºæ ¼
+                                .replaceAll("");// ?????�� \t \n ??????
                         if (!text.isEmpty()) {
                             float temp = new Float(text);
                             sto.setType((byte) temp);
@@ -367,7 +367,7 @@ public class CfgData implements ApplicationRunner {
                         && !root.getText().isEmpty()) {
                     if (root.getText() != null) {
                         String text = pattern.matcher(root.getText())
-                                .replaceAll("");// åŽ»æŽ‰ \t \n ç©ºæ ¼
+                                .replaceAll("");// ?????�� \t \n ??????
                         if (!text.isEmpty()) {
                             float temp = new Float(text);
                             sto.setEpd((byte) temp);
@@ -376,7 +376,7 @@ public class CfgData implements ApplicationRunner {
                 } else if ("soe".equals(rootName) && !root.getText().isEmpty()) {
                     if (root.getText() != null) {
                         String text = pattern.matcher(root.getText())
-                                .replaceAll("");// åŽ»æŽ‰ \t \n ç©ºæ ¼
+                                .replaceAll("");// ?????�� \t \n ??????
                         if (!text.isEmpty()) {
                             float temp = new Float(text);
                             sto.setSoe((byte) temp);
@@ -386,7 +386,7 @@ public class CfgData implements ApplicationRunner {
                         && !root.getText().isEmpty()) {
                     if (root.getText() != null) {
                         String text = pattern.matcher(root.getText())
-                                .replaceAll("");// åŽ»æŽ‰ \t \n ç©ºæ ¼
+                                .replaceAll("");// ?????�� \t \n ??????
                         if (!text.isEmpty()) {
                             float temp = new Float(text);
                             sto.setAlarm((byte) temp);
@@ -404,11 +404,11 @@ public class CfgData implements ApplicationRunner {
 
     @SuppressWarnings("unchecked")
     /**
-     * 初始化电度
+     * ��ʼ�����
      */
     private void initAcO(Document doc, short unitNo) {
         Element root;
-        String query = "//dynamic/configs[@name='电度']/config";
+        String query = "//dynamic/configs[@name='���']/config";
         List<Element> list = doc.selectNodes(query);
         int max = -1;
         for (Element e : list) {

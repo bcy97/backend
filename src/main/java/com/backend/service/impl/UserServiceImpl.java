@@ -3,11 +3,14 @@ package com.backend.service.impl;
 import com.backend.dao.UserDao;
 import com.backend.service.UserService;
 import com.backend.vo.UserInfo;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class UserServiceImpl implements UserService {
+
+    static Logger logger = Logger.getLogger("UserServiceImpl");
 
     UserDao userDao;
 

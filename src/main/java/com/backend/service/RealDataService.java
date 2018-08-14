@@ -1,9 +1,16 @@
 package com.backend.service;
 
-import java.util.List;
+import com.backend.vo.AnValue;
+
+import java.util.Map;
 
 public interface RealDataService {
-    Object[] getRealData(int[] ids);
 
-    List<String> getPicList();
+    /**
+     * 根据单元名获取数据
+     *
+     * @param unitName 单元名
+     * @return Map<String, AnValue> key为点名，value为AnValue
+     */
+    Map<String, AnValue> getRealData(String unitName);
 }

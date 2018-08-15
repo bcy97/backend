@@ -20,9 +20,14 @@ public class LineController {
         this.lineService = lineService;
     }
 
-    @RequestMapping(value = "/getLineData", consumes = "application/json")
-    public Map<Date, Float> getLineData(@RequestBody Date stime, @RequestBody Date etime, @RequestBody String picName) {
-        return lineService.getRealLineData(stime, etime, picName);
+    @RequestMapping(value = "/getRealLineData", consumes = "application/json")
+    public Map<Date, Float> getLineData(@RequestBody String picName) {
+        return lineService.getRealLineData(picName);
     }
 
+
+    @RequestMapping(value = "/getHistoryLineData", consumes = "application/json")
+    public Map<Date, Float> getHistoryData(@RequestBody Date stime, @RequestBody Date etime, @RequestBody String picName) {
+        return lineService.getHistoryLineData(stime, etime, picName);
+    }
 }

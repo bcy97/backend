@@ -13,7 +13,7 @@ public class LineServiceImpl implements LineService {
     static Logger logger = Logger.getLogger("LineServiceImpl");
 
     @Override
-    public Map<Date, Float> getRealLineData(Date stime, Date etime, String picName) {
+    public Map<Date, Float> getRealLineData(String picName) {
         return null;
     }
 

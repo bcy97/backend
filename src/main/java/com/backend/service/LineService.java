@@ -11,7 +11,7 @@ public interface LineService {
     /**
      * 新增方法：根据曲线图名和时间获取实时数据
      *
-     * @param picName
+     * @param ptNames
      * @return 时间和数据的Map
      */
     Map<String, Float> getRealLineData(String[] ptNames);
@@ -24,7 +24,7 @@ public interface LineService {
      * @param picName
      * @return 时间和数据的Map
      */
-    Map<Date, Float> getHistoryLineData(Date stime, Date etime, String picName);
+    Map<String, Float[]> getHistoryLineData(Date stime, Date etime, String[] picName);
 
 
 }

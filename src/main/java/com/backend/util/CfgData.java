@@ -3,6 +3,7 @@ package com.backend.util;
 import com.backend.vo.AcO;
 import com.backend.vo.AnO;
 import com.backend.vo.StO;
+import com.backend.vo.UnitInfo;
 import org.apache.log4j.Logger;
 import org.dom4j.Document;
 import org.dom4j.Element;
@@ -14,15 +15,12 @@ import org.springframework.util.ResourceUtils;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.regex.Pattern;
 
 @Component
 public class CfgData implements ApplicationRunner {
-    Logger logger = Logger.getLogger("CfgData");
+    private Logger logger = Logger.getLogger("CfgData");
     private Pattern pattern = Pattern.compile("\\s*|\t|\r|\n");
     private Map<String, AnO> anMap = null;
     private Map<String, StO> stMap = null;
@@ -30,6 +28,10 @@ public class CfgData implements ApplicationRunner {
     private Map<Integer, String> anIdNameMap = null;
     private Map<Integer, String> acIdNameMap = null;
     private Map<Integer, String> stIdNameMap = null;
+    private List<UnitInfo> unitList = null;
+    private Map<Short, List<AnO>> unitAnMap = null;
+    private Map<Short, List<StO>> unitStMap = null;
+    private Map<Short, List<AcO>> unitAcMap = null;
 
 
     public int getAnID(String sname) {
@@ -89,6 +91,40 @@ public class CfgData implements ApplicationRunner {
         return null;
     }
 
+    public List<AnO> getAnOByUnitNo(short unitNo) {
+        if (unitAnMap.containsKey(unitNo))
+            return unitAnMap.get(unitNo);
+        return null;
+    }
+
+    public List<StO> getStOByUnitNo(short unitNo) {
+        if (unitStMap.containsKey(unitNo))
+            return unitStMap.get(unitNo);
+        return null;
+    }
+
+    public List<AcO> getAcOByUnitNo(short unitNo) {
+        if (unitAcMap.containsKey(unitNo))
+            return unitAcMap.get(unitNo);
+        return null;
+    }
+
+    public List<UnitInfo> getAllUnitInfo() {
+        return unitList;
+    }
+
+    public Integer[] getAllAnId() {
+        return anIdNameMap.keySet().toArray(new Integer[anIdNameMap.size()]);
+    }
+
+    public Integer[] getAllAcId() {
+        return acIdNameMap.keySet().toArray(new Integer[acIdNameMap.size()]);
+    }
+
+    public Integer[] getAllStId() {
+        return stIdNameMap.keySet().toArray(new Integer[stIdNameMap.size()]);
+    }
+
 
     public CfgData() {
     }
@@ -102,6 +138,10 @@ public class CfgData implements ApplicationRunner {
         anIdNameMap = new HashMap<>();
         acIdNameMap = new HashMap<>();
         stIdNameMap = new HashMap<>();
+        unitList = new ArrayList<>();
+        unitAnMap = new HashMap<>();
+        unitAcMap = new HashMap<>();
+        unitStMap = new HashMap<>();
 
 //			File file = new File(Utils._RESOURCES_PATH_ + Constants._DIR_UNITCFG_);
         File file = null;
@@ -110,7 +150,7 @@ public class CfgData implements ApplicationRunner {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-        if (!file.exists()) {
+        if (file != null && !file.exists()) {
             logger.error(file + " file not found!");
             return;
         }
@@ -123,24 +163,34 @@ public class CfgData implements ApplicationRunner {
         for (File item : fileArr) {
             Document doc = reader.read(item);
             Element root = doc.getRootElement();
+
             String temp = root.attributeValue("unitNo");
             Short unitNo = new Short(temp);
 
-            initAnO(doc, unitNo);
-            initAcO(doc, unitNo);
-            initStO(doc, unitNo);
+            temp = root.attributeValue("type");
+            float type = new Float(temp);
 
+            String name = root.attributeValue("name");
+
+            UnitInfo ui = new UnitInfo(name, unitNo, (byte) type);
+
+            unitAnMap.put(unitNo, initAnO(doc, unitNo));
+            unitAcMap.put(unitNo, initAcO(doc, unitNo));
+            unitStMap.put(unitNo, initStO(doc, unitNo));
+
+            unitList.add(ui);
         }
 
     }
 
     @SuppressWarnings("unchecked")
     /**
-     * ≥ı ºªØ“£≤‚
+     * ÂàùÂßãÂåñÈÅ•Êµã
      */
-    private void initAnO(Document doc, short unitNo) {
+    private List<AnO> initAnO(Document doc, short unitNo) {
+        List<AnO> anoList = new ArrayList<>();
         Element root;
-        String query = "//dynamic/configs[@name='“£≤‚']/config";
+        String query = "//dynamic/configs[@name='ÈÅ•Êµã']/config";
         List<Element> list = doc.selectNodes(query);
 
         for (Element e : list) {
@@ -156,21 +206,21 @@ public class CfgData implements ApplicationRunner {
 
                 try {
                     if ("ename".equals(rootName)) {
-                        if (root.getText() != null) {
+                        if (root.getText() != null) {// ÁÇπÂêç,Á≥ªÁªüËã±ÊñáÂêç
                             ano.setSname(root.getText().trim());
                         }
                     } else if ("cname".equals(rootName)) {
-                        if (root.getText() != null) {
+                        if (root.getText() != null) {// ‰∏≠ÊñáÊèèËø∞
                             ano.setCname(root.getText().trim());
                         }
                     } else if ("refv".equals(rootName)) {
                         if (root.getText() != null) {
                             String text = pattern.matcher(root.getText())
-                                    .replaceAll("");// ?????°Î \t \n ??????
+                                    .replaceAll("");// ÂèÇËÄÉÂÄº
                             if (!text.isEmpty())
                                 ano.setRefV(new Float(text.trim()));
                         }
-                    } else if ("lgname".equals(rootName)) {
+                    } else if ("lgname".equals(rootName)) {// Âçï‰Ωç
                         if (root.getText() != null) {
                             ano.setLgName(root.getText().trim());
                         }
@@ -178,7 +228,7 @@ public class CfgData implements ApplicationRunner {
                             && !root.getText().isEmpty()) {
                         if (root.getText() != null) {
                             String text = pattern.matcher(root.getText())
-                                    .replaceAll("");// ?????°Î \t \n ??????
+                                    .replaceAll("");// ÂêéÂè∞‰ΩøËÉΩ
                             if (!text.isEmpty()) {
                                 float temp = new Float(text.trim());
                                 ano.setMask((byte) temp);
@@ -188,7 +238,7 @@ public class CfgData implements ApplicationRunner {
                             && !root.getText().isEmpty()) {
                         if (root.getText() != null) {
                             String text = pattern.matcher(root.getText())
-                                    .replaceAll("");// ?????°Î \t \n ??????
+                                    .replaceAll("");// Êä•Ë≠¶
                             if (!text.isEmpty()) {
                                 float temp = new Float(text.trim());
                                 ano.setAlarm((byte) temp);
@@ -198,7 +248,7 @@ public class CfgData implements ApplicationRunner {
                             && !root.getText().isEmpty()) {
                         if (root.getText() != null) {
                             String text = pattern.matcher(root.getText())
-                                    .replaceAll("");// ?????°Î \t \n ??????
+                                    .replaceAll("");// ‰øùÁïôÂ∞èÊï∞‰ΩçÊï∞
                             if (!text.isEmpty()) {
                                 float temp = new Float(text.trim());
                                 ano.setPoinum((byte) temp);
@@ -208,7 +258,7 @@ public class CfgData implements ApplicationRunner {
                             && !root.getText().isEmpty()) {
                         if (root.getText() != null) {
                             String text = pattern.matcher(root.getText())
-                                    .replaceAll("");// ?????°Î \t \n ??????
+                                    .replaceAll("");// ÊØî‰æã
                             if (!text.isEmpty())
                                 ano.setFi(new Float(text.trim()));
 
@@ -217,7 +267,7 @@ public class CfgData implements ApplicationRunner {
                             && !root.getText().isEmpty()) {
                         if (root.getText() != null) {
                             String text = pattern.matcher(root.getText())
-                                    .replaceAll("");// ?????°Î \t \n ??????
+                                    .replaceAll("");// Â∫ìÁ∫ßÂà´
                             if (!text.isEmpty()) {
                                 float temp = new Float(text.trim());
                                 ano.setLibrank((byte) temp);
@@ -227,7 +277,7 @@ public class CfgData implements ApplicationRunner {
                             && !root.getText().isEmpty()) {
                         if (root.getText() != null) {
                             String text = pattern.matcher(root.getText())
-                                    .replaceAll("");// ?????°Î \t \n ??????
+                                    .replaceAll("");// Èõ∂Âå∫
                             if (!text.isEmpty())
                                 ano.setZeroV(new Float(text.trim()));
                         }
@@ -235,7 +285,7 @@ public class CfgData implements ApplicationRunner {
                             && !root.getText().isEmpty()) {
                         if (root.getText() != null) {
                             String text = pattern.matcher(root.getText())
-                                    .replaceAll("");// ?????°Î \t \n ??????
+                                    .replaceAll("");// Èõ∂ÂÅè
                             if (!text.isEmpty())
                                 ano.setOffsetV(new Float(text.trim()));
                         }
@@ -243,7 +293,7 @@ public class CfgData implements ApplicationRunner {
                             && !root.getText().isEmpty()) {
                         if (root.getText() != null) {
                             String text = pattern.matcher(root.getText())
-                                    .replaceAll("");// ?????°Î \t \n ??????
+                                    .replaceAll("");// ‰∏äÈôê
                             if (!text.isEmpty())
                                 ano.setUpV(new Float(text.trim()));
                         }
@@ -251,7 +301,7 @@ public class CfgData implements ApplicationRunner {
                             && !root.getText().isEmpty()) {
                         if (root.getText() != null) {
                             String text = pattern.matcher(root.getText())
-                                    .replaceAll("");// ?????°Î \t \n ??????
+                                    .replaceAll("");// ‰∏ãÈôê
                             if (!text.isEmpty())
                                 ano.setDwV(new Float(text.trim()));
                         }
@@ -259,7 +309,7 @@ public class CfgData implements ApplicationRunner {
                             && !root.getText().isEmpty()) {
                         if (root.getText() != null) {
                             String text = pattern.matcher(root.getText())
-                                    .replaceAll("");// ?????°Î \t \n ??????
+                                    .replaceAll("");// ‰∏ä‰∏äÈôê
                             if (!text.isEmpty())
                                 ano.setUupV(new Float(text.trim()));
                         }
@@ -267,7 +317,7 @@ public class CfgData implements ApplicationRunner {
                             && !root.getText().isEmpty()) {
                         if (root.getText() != null) {
                             String text = pattern.matcher(root.getText())
-                                    .replaceAll("");// ?????°Î \t \n ??????
+                                    .replaceAll("");// ‰∏ã‰∏ãÈôê
                             if (!text.isEmpty())
                                 ano.setDdwV(new Float(text.trim()));
                         }
@@ -275,7 +325,7 @@ public class CfgData implements ApplicationRunner {
                             && !root.getText().isEmpty()) {
                         if (root.getText() != null) {
                             String text = pattern.matcher(root.getText())
-                                    .replaceAll("");// ?????°Î \t \n ??????
+                                    .replaceAll("");// Á±ªÂûã
                             if (!text.isEmpty()) {
                                 float temp = new Float(text.trim());
                                 ano.setType((byte) temp);
@@ -285,7 +335,7 @@ public class CfgData implements ApplicationRunner {
                             && !root.getText().isEmpty()) {
                         if (root.getText() != null) {
                             String text = pattern.matcher(root.getText())
-                                    .replaceAll("");// ?????°Î \t \n ??????
+                                    .replaceAll("");// Êó†Ë¥üÊï∞
                             if (!text.isEmpty()) {
                                 float temp = new Float(text.trim());
                                 ano.setNominus((byte) temp);
@@ -294,7 +344,7 @@ public class CfgData implements ApplicationRunner {
                     }
 
                 } catch (Exception e1) {
-                    System.out.println(ano.getSname() + " ®®°Ï???????®¶°±?,"
+                    System.out.println(ano.getSname() + "ÂàùÂßãÂåñÂ§±Ë¥•,"
                             + e1.getMessage());
                 }
             }
@@ -302,18 +352,20 @@ public class CfgData implements ApplicationRunner {
                     ano.getPtNo()));
             anMap.put(ano.getSname(), ano);
             anIdNameMap.put(ano.getId(), ano.getSname());
+            anoList.add(ano);
         }
-
+        return anoList;
     }
 
 
     @SuppressWarnings("unchecked")
     /**
-     * ≥ı ºªØ“£–≈
+     * ÂàùÂßãÂåñÈÅ•‰ø°
      */
-    private void initStO(Document doc, short unitNo) {
+    private List<StO> initStO(Document doc, short unitNo) {
+        List<StO> stoList = new ArrayList<>();
         Element root;
-        String query = "//dynamic/configs[@name='“£–≈']/config";
+        String query = "//dynamic/configs[@name='ÈÅ•‰ø°']/config";
         List<Element> list = doc.selectNodes(query);
         int max = -1;
         for (Element e : list) {
@@ -338,7 +390,7 @@ public class CfgData implements ApplicationRunner {
                 } else if ("mask".equals(rootName) && !root.getText().isEmpty()) {
                     if (root.getText() != null) {
                         String text = pattern.matcher(root.getText())
-                                .replaceAll("");// ?????°Î \t \n ??????
+                                .replaceAll("");// ‰ΩøËÉΩ
                         if (!text.isEmpty()) {
                             float temp = new Float(text);
                             sto.setMask((byte) temp);
@@ -348,7 +400,7 @@ public class CfgData implements ApplicationRunner {
                         && !root.getText().isEmpty()) {
                     if (root.getText() != null) {
                         String text = pattern.matcher(root.getText())
-                                .replaceAll("");// ?????°Î \t \n ??????
+                                .replaceAll("");// ÂºÄÂêàÂÆö‰πâ
                         if (!text.isEmpty()) {
                             float temp = new Float(text);
                             sto.setSwidef((byte) temp);
@@ -357,7 +409,7 @@ public class CfgData implements ApplicationRunner {
                 } else if ("type".equals(rootName) && !root.getText().isEmpty()) {
                     if (root.getText() != null) {
                         String text = pattern.matcher(root.getText())
-                                .replaceAll("");// ?????°Î \t \n ??????
+                                .replaceAll("");// Á±ªÂûã
                         if (!text.isEmpty()) {
                             float temp = new Float(text);
                             sto.setType((byte) temp);
@@ -367,7 +419,7 @@ public class CfgData implements ApplicationRunner {
                         && !root.getText().isEmpty()) {
                     if (root.getText() != null) {
                         String text = pattern.matcher(root.getText())
-                                .replaceAll("");// ?????°Î \t \n ??????
+                                .replaceAll("");// EPD
                         if (!text.isEmpty()) {
                             float temp = new Float(text);
                             sto.setEpd((byte) temp);
@@ -376,7 +428,7 @@ public class CfgData implements ApplicationRunner {
                 } else if ("soe".equals(rootName) && !root.getText().isEmpty()) {
                     if (root.getText() != null) {
                         String text = pattern.matcher(root.getText())
-                                .replaceAll("");// ?????°Î \t \n ??????
+                                .replaceAll("");// SOE
                         if (!text.isEmpty()) {
                             float temp = new Float(text);
                             sto.setSoe((byte) temp);
@@ -386,7 +438,7 @@ public class CfgData implements ApplicationRunner {
                         && !root.getText().isEmpty()) {
                     if (root.getText() != null) {
                         String text = pattern.matcher(root.getText())
-                                .replaceAll("");// ?????°Î \t \n ??????
+                                .replaceAll("");// Êä•Ë≠¶
                         if (!text.isEmpty()) {
                             float temp = new Float(text);
                             sto.setAlarm((byte) temp);
@@ -398,17 +450,20 @@ public class CfgData implements ApplicationRunner {
                     sto.getPtNo()));
             stMap.put(sto.getSname(), sto);
             stIdNameMap.put(sto.getId(), sto.getSname());
+            stoList.add(sto);
         }
+        return stoList;
     }
 
 
     @SuppressWarnings("unchecked")
     /**
-     * ≥ı ºªØµÁ∂»
+     * ÂàùÂßãÂåñÁîµÂ∫¶
      */
-    private void initAcO(Document doc, short unitNo) {
+    private List<AcO> initAcO(Document doc, short unitNo) {
+        List<AcO> acoList = new ArrayList<>();
         Element root;
-        String query = "//dynamic/configs[@name='µÁ∂»']/config";
+        String query = "//dynamic/configs[@name='ÁîµÂ∫¶']/config";
         List<Element> list = doc.selectNodes(query);
         int max = -1;
         for (Element e : list) {
@@ -488,7 +543,8 @@ public class CfgData implements ApplicationRunner {
                     aco.getPtNo()));
             acMap.put(aco.getSname(), aco);
             acIdNameMap.put(aco.getId(), aco.getSname());
+            acoList.add(aco);
         }
-
+        return acoList;
     }
 }

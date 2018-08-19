@@ -16,11 +16,11 @@ import java.util.List;
 @Repository
 public class UserDaoImpl implements UserDao {
 
-    static Logger logger = Logger.getLogger("UserDao");
+    static Logger logger = Logger.getLogger("UserDaoImpl");
 
     @Override
     public UserInfo[] getAllUserInfo() {
-        ByteBuffer bb = getUserInfo(Constants.CC_USERINFO, new byte[0]);
+        ByteBuffer bb = getUserInfo( new byte[0]);
         if (null == bb)
             return null;
         try {
@@ -35,20 +35,20 @@ public class UserDaoImpl implements UserDao {
 
     private UserInfo[] parseUserInfo(ByteBuffer bb)
             throws UnsupportedEncodingException {
-        String name = "";
-        String pwd = "";
-        String id = "";
-        String depaType = "";
-        String depaName = "";
-        byte roleCount = 0;
-        String[] roleIds = null;
+        String name;
+        String pwd;
+        String id;
+        String depaType;
+        String depaName;
+        byte roleCount;
+        String[] roleIds;
         byte permissionType = 0;
         String permissionName = "";
         long controlType = 0;
         int size = bb.position();
-        byte strLength = 0;
+        byte strLength;
         byte[] datas;
-        List<UserInfo> list = new ArrayList<UserInfo>();
+        List<UserInfo> list = new ArrayList<>();
         bb.flip();
 
         while (size > 0) {
@@ -118,11 +118,10 @@ public class UserDaoImpl implements UserDao {
         return list.toArray(new UserInfo[list.size()]);
     }
 
-    private ByteBuffer getUserInfo(byte type, byte[] datas) {
+    private ByteBuffer getUserInfo(byte[] datas) {
         ByteBuffer bb;
-        DataPacket dp = new DataPacket(Constants.CC_USERINFO, datas);
 
-        bb = SocketConnect.getData(dp, logger);
+        bb = SocketConnect.getData(datas,Constants.CC_USERINFO,logger);
 
         return bb;
 

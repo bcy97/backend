@@ -21,8 +21,8 @@ public class LineController {
     }
 
     @RequestMapping(value = "/getLineData", consumes = "application/json")
-    public Map<Date, Float> getLineData(@RequestBody Date stime, @RequestBody Date etime, @RequestBody String picName) {
-        return lineService.getRealLineData(stime, etime, picName);
+    public Map<String, Float> getLineData(@RequestBody Date stime, @RequestBody Date etime, @RequestBody String[] picName) {
+        return lineService.getRealLineData(picName);
     }
 
 }

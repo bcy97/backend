@@ -15,5 +15,5 @@ public interface EventInfoService {
      * @param pointName
      * @return
      */
-    List<EventInfo> getEventByTimeAndPointName(Date stime, Date etime, String pointName);
+    EventInfo[] getEventByTimeAndPointName(Date stime, Date etime, String pointName);
 }

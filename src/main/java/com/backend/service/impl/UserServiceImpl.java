@@ -12,7 +12,7 @@ public class UserServiceImpl implements UserService {
 
     static Logger logger = Logger.getLogger("UserServiceImpl");
 
-    UserDao userDao;
+    private UserDao userDao;
 
     @Autowired
     public UserServiceImpl(UserDao userDao) {

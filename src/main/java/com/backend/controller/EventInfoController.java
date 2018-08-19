@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Date;
-import java.util.List;
 
 @RestController
 @RequestMapping("/eventInfo")
@@ -21,7 +20,7 @@ public class EventInfoController {
     }
 
     @RequestMapping("/getInfo")
-    public List<EventInfo> getEventByTimeAndPointName(@RequestBody Date stime, @RequestBody Date etime, @RequestBody String pointName) {
+    public EventInfo[] getEventByTimeAndPointName(@RequestBody Date stime, @RequestBody Date etime, @RequestBody String pointName) {
         return eventInfoService.getEventByTimeAndPointName(stime, etime, pointName);
     }
 }

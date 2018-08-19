@@ -1,5 +1,6 @@
 package com.backend.service;
 
+import com.backend.vo.AcStatisData;
 import com.backend.vo.Cumulant;
 
 import java.util.Date;
@@ -10,5 +11,5 @@ public interface CumulantStatisService {
 
     List<Cumulant> getDataByUnitName(String unitName);
 
-    List<Cumulant> getDataByUnitNameAndTime(Date stime, Date etime, String unitName);
+    AcStatisData[] getDataByUnitNameAndTime(Date stime, Date etime, String unitName);
 }

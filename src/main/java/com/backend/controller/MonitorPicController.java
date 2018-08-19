@@ -37,7 +37,7 @@ public class MonitorPicController {
 
         Map<String, AnValue> result = new HashMap<>();
 
-        int[] id = new int[ids.length];
+        Integer[] id = new Integer[ids.length];
         for (int i = 0; i < ids.length; i++) {
             id[i] = cfgData.getAnID(ids[i]);
         }
@@ -66,7 +66,7 @@ public class MonitorPicController {
 
         Map<String, StValue> result = new HashMap<>();
 
-        int[] id = new int[ids.length];
+        Integer[] id = new Integer[ids.length];
         for (int i = 0; i < ids.length; i++) {
             id[i] = cfgData.getStID(ids[i]);
         }
@@ -97,7 +97,7 @@ public class MonitorPicController {
 
         Map<String, AcValue> result = new HashMap<>();
 
-        int[] id = new int[ids.length];
+        Integer[] id = new Integer[ids.length];
         for (int i = 0; i < ids.length; i++) {
             id[i] = cfgData.getAnID(ids[i]);
         }

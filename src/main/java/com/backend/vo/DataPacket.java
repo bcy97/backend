@@ -58,6 +58,16 @@ public class DataPacket {
     public DataPacket() {
     }
 
+    public DataPacket(short cmdCode, byte[] datas,byte tailFlag) {
+        sessionID = 0;
+        this.cmdCode = cmdCode;
+        this.length = datas.length;
+        this.tailFlag = tailFlag;
+        this.datas = new byte[this.length];
+        System.arraycopy(datas, 0, this.datas, 0, this.length);
+    }
+
+
     public DataPacket(short cmdCode, byte[] datas) {
         sessionID = 0;
         this.cmdCode = cmdCode;

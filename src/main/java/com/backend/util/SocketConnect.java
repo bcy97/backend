@@ -1,8 +1,10 @@
 package com.backend.util;
 
 import com.backend.vo.DataPacket;
+import org.apache.commons.lang.ArrayUtils;
 import org.apache.log4j.Logger;
 
+import javax.xml.crypto.Data;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -11,17 +13,26 @@ import java.net.Socket;
 import java.net.SocketAddress;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
+import java.util.ArrayList;
+import java.util.List;
 
 public class SocketConnect {
 
-    public static SocketAddress getSocketAddress() {
+    /// 每个包数据区最大8 * 1024
+    private static final int  MAX_PACKET_SIZE = 8 * 1024;
+
+    private static SocketAddress getSocketAddress() {
         String ip = "192.168.1.119";
         int port = 10001;
 
         return new InetSocketAddress(ip, port);
     }
 
-    public static void receiveData(ByteBuffer bb, InputStream is) throws IOException {
+    /***
+     * 接收数据
+     * */
+    private static void receiveData(ByteBuffer bb, InputStream is) throws IOException {
+        List<Byte> list = new ArrayList<>();
         DataPacket dp;
         byte[] bDatas;
         while (true) {
@@ -32,16 +43,28 @@ public class SocketConnect {
 
             bDatas = new byte[dp.getLength()];
             is.read(bDatas, 0, bDatas.length);
-            bb.put(bDatas);
+            for(byte item : bDatas)
+                list.add(item);
 
             is.read(bDatas, 0, 1);
 
             if (0 == dp.getTailFlag())
                 break;
         }
+        bb = ByteBuffer.allocate(list.size());
+        bb.order(ByteOrder.LITTLE_ENDIAN);
+
+        bb.put(ArrayUtils.toPrimitive(list.toArray(new Byte[list.size()])));
     }
 
-    public static ByteBuffer getData(DataPacket dp, Logger logger) {
+    /***
+     * 要发送的数据包
+     * @param sendDatas
+     *      发送请求的数据
+     * @param cmd
+     *      发送请求的命令
+     * */
+    public static ByteBuffer getData(byte[] sendDatas,short cmd, Logger logger) {
 
         Socket socket = new Socket();
         try {
@@ -49,11 +72,13 @@ public class SocketConnect {
             OutputStream os = socket.getOutputStream();
             InputStream is = socket.getInputStream();
 
-            byte[] bDatas = dp.serialize();
-            os.write(bDatas, 0, bDatas.length);
+            List<DataPacket> dps = toDataPackets(sendDatas,cmd);
+            for(DataPacket dp : dps) {
+                byte[] bDatas = dp.serialize();
+                os.write(bDatas, 0, bDatas.length);
+            }
 
-            ByteBuffer bb = ByteBuffer.allocate(8 * 1024);
-            bb.order(ByteOrder.LITTLE_ENDIAN);
+            ByteBuffer bb = null;
 
             receiveData(bb, is);
             is.close();
@@ -67,5 +92,26 @@ public class SocketConnect {
 
             return null;
         }
+    }
+
+    /****
+     * 转换成数据包
+     * */
+    private static List<DataPacket> toDataPackets(byte[] sendDatas,short cmd){
+        byte[] temp = null;
+        byte tailFlag = 0;
+        List<DataPacket> dps = new ArrayList<DataPacket>();
+        for (int i = 0; i < sendDatas.length / MAX_PACKET_SIZE; i++){
+            if((sendDatas.length / MAX_PACKET_SIZE) == i) {// 最后一个包
+                temp = new byte[sendDatas.length % MAX_PACKET_SIZE];
+                tailFlag = 0;
+            }else {
+                temp = new byte[MAX_PACKET_SIZE];
+                tailFlag = 1;
+            }
+            System.arraycopy(sendDatas,i * MAX_PACKET_SIZE,temp,0,temp.length);
+            dps.add(new DataPacket(cmd, temp));
+        }
+        return dps;
     }
 }

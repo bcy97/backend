@@ -6,8 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
-
 @RestController
 @RequestMapping("/alert")
 public class AlertController {
@@ -20,7 +18,7 @@ public class AlertController {
     }
 
     @RequestMapping("/getAlert")
-    public List<EventInfo> getImportantAlert() {
+    public EventInfo[] getImportantAlert() {
         return alertService.getImportantAlert();
     }
 }

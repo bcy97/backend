@@ -21,13 +21,13 @@ public class LineController {
     }
 
     @RequestMapping(value = "/getRealLineData", consumes = "application/json")
-    public Map<Date, Float> getLineData(@RequestBody String picName) {
-        return lineService.getRealLineData(picName);
+    public Map<String, Float> getLineData(@RequestBody String[] pointName) {
+        return lineService.getRealLineData(pointName);
     }
 
 
     @RequestMapping(value = "/getHistoryLineData", consumes = "application/json")
-    public Map<Date, Float> getHistoryData(@RequestBody Date stime, @RequestBody Date etime, @RequestBody String picName) {
-        return lineService.getHistoryLineData(stime, etime, picName);
+    public Map<String, Float[]> getHistoryData(@RequestBody Date stime, @RequestBody Date etime, @RequestBody String[] pointName) {
+        return lineService.getHistoryLineData(stime, etime, pointName);
     }
 }

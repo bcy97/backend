@@ -9,11 +9,13 @@ import com.backend.vo.AcValue;
 import com.backend.vo.AnValue;
 import com.backend.vo.StValue;
 import org.apache.log4j.Logger;
+import org.springframework.stereotype.Repository;
 
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.List;
 
+@Repository
 public class RealDataDaoImpl implements RealDataDao {
 
     static Logger logger = Logger.getLogger("RealDataDaoImpl");
@@ -23,7 +25,7 @@ public class RealDataDaoImpl implements RealDataDao {
      * */
     @Override
     public Object[] getRealData(Integer[] ids) {
-        return parseRealData(SocketConnect.getData(Utils.idArrToBytes(ids),Constants.CC_REALDATA,logger));
+        return parseRealData(SocketConnect.getData(Utils.idArrToBytes(ids), Constants.CC_REALDATA, logger));
     }
 
     /***
@@ -33,8 +35,8 @@ public class RealDataDaoImpl implements RealDataDao {
     public AnValue[] getAnRealData(Integer[] ids) {
         Object[] datas = getRealData(ids);
         AnValue[] rtnData = new AnValue[ids.length];
-        for(int i = 0; i < rtnData.length; i++){
-            if(i < datas.length && datas[i] instanceof  AnValue)
+        for (int i = 0; i < rtnData.length; i++) {
+            if (i < datas.length && datas[i] instanceof AnValue)
                 rtnData[i] = (AnValue) datas[i];
             else
                 rtnData[i] = new AnValue();
@@ -50,8 +52,8 @@ public class RealDataDaoImpl implements RealDataDao {
     public StValue[] getStRealData(Integer[] ids) {
         Object[] datas = getRealData(ids);
         StValue[] rtnData = new StValue[ids.length];
-        for(int i = 0; i < rtnData.length; i++){
-            if(i < datas.length && datas[i] instanceof  StValue)
+        for (int i = 0; i < rtnData.length; i++) {
+            if (i < datas.length && datas[i] instanceof StValue)
                 rtnData[i] = (StValue) datas[i];
             else
                 rtnData[i] = new StValue();
@@ -67,8 +69,8 @@ public class RealDataDaoImpl implements RealDataDao {
     public AcValue[] getAcRealData(Integer[] ids) {
         Object[] datas = getRealData(ids);
         AcValue[] rtnData = new AcValue[ids.length];
-        for(int i = 0; i < rtnData.length; i++){
-            if(i < datas.length && datas[i] instanceof  AcValue)
+        for (int i = 0; i < rtnData.length; i++) {
+            if (i < datas.length && datas[i] instanceof AcValue)
                 rtnData[i] = (AcValue) datas[i];
             else
                 rtnData[i] = new AcValue();
@@ -108,7 +110,7 @@ public class RealDataDaoImpl implements RealDataDao {
     /***
      * 解析某个id的值
      * */
-    private Object parseValue(ByteBuffer bb,int id,byte valid){
+    private Object parseValue(ByteBuffer bb, int id, byte valid) {
         try {
             switch (Utils.getTypeInId(id)) {
                 case Constants.IDACC:

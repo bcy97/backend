@@ -27,7 +27,7 @@ public class CumulantStatisController {
         return cumulantStatisService.getUnitList();
     }
 
-    @RequestMapping(value = "/unitName", consumes = "application/json")
+    @RequestMapping(value = "/getDataByUnitName", consumes = "application/json")
     public List<Cumulant> getDataByUnitName(@RequestBody String unitName) {
         return cumulantStatisService.getDataByUnitName(unitName);
     }

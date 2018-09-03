@@ -3,7 +3,7 @@ package com.backend.vo;
 public class Cumulant {
 
     private int id; //序号
-    private String name; //名称
+    private String name; //名称an
     private double today; //今日累加量
     private double lastday; //昨天累加量
     private double thisMonth; //本月累加量

@@ -22,6 +22,10 @@ public class RealDataController {
 
     @RequestMapping(value = "/getRealData", consumes = "application/json")
     public Map<String, AnValue> getRealData(@RequestBody String unitName) {
-        return null;
+
+        System.out.println(unitName);
+
+        return realDataService.getRealData(unitName);
+
     }
 }

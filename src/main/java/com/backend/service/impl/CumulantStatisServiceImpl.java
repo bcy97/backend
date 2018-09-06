@@ -5,10 +5,10 @@ import com.backend.service.CumulantStatisService;
 import com.backend.util.CfgData;
 import com.backend.util.Utils;
 import com.backend.vo.AcStatisData;
-import com.backend.vo.AnO;
 import com.backend.vo.Cumulant;
 import com.backend.vo.UnitInfo;
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -22,11 +22,12 @@ public class CumulantStatisServiceImpl implements CumulantStatisService {
     static Logger logger = Logger.getLogger("CumulantStatisServiceImpl");
 
     private StatisDataDao statisDataDao;
+    private Utils utils;
 
-    public CumulantStatisServiceImpl(){}
-
-    public CumulantStatisServiceImpl(StatisDataDao statisDataDao){
-        this.statisDataDao= statisDataDao;
+    @Autowired
+    public CumulantStatisServiceImpl(StatisDataDao statisDataDao, Utils utils) {
+        this.statisDataDao = statisDataDao;
+        this.utils = utils;
     }
 
     @Override
@@ -34,7 +35,7 @@ public class CumulantStatisServiceImpl implements CumulantStatisService {
         CfgData cfgData = new CfgData();
 
         List<String> unitNameList = new ArrayList<>();
-        for(UnitInfo ui : cfgData.getAllUnitInfo())
+        for (UnitInfo ui : cfgData.getAllUnitInfo())
             unitNameList.add(ui.getName());
 
         return unitNameList;
@@ -44,36 +45,36 @@ public class CumulantStatisServiceImpl implements CumulantStatisService {
     public List<Cumulant> getDataByUnitName(String unitName) {
         CfgData cfgData = new CfgData();
 
-        Integer[] ids = Utils.getAcIdsByUnitName(unitName);
+        Integer[] ids = utils.getAcIdsByUnitName(unitName);
 
         Calendar currTime = Calendar.getInstance();
         Calendar begTime = Calendar.getInstance();
-        begTime.set(Calendar.HOUR_OF_DAY,0);
-        begTime.set(Calendar.MINUTE,0);
-        begTime.set(Calendar.SECOND,0);
-        begTime.set(Calendar.MILLISECOND,0);
+        begTime.set(Calendar.HOUR_OF_DAY, 0);
+        begTime.set(Calendar.MINUTE, 0);
+        begTime.set(Calendar.SECOND, 0);
+        begTime.set(Calendar.MILLISECOND, 0);
 
-        AcStatisData[] todayStatisDatas = getDataByUnitNameAndTime(begTime.getTime(),currTime.getTime(),unitName);
+        AcStatisData[] todayStatisDatas = getDataByUnitNameAndTime(begTime.getTime(), currTime.getTime(), unitName);
 
         Calendar endTime = Calendar.getInstance();
         endTime.setTimeInMillis(begTime.getTimeInMillis());
 
-        begTime.add(Calendar.DAY_OF_MONTH , -1);
+        begTime.add(Calendar.DAY_OF_MONTH, -1);
 
-        AcStatisData[] lastdayStatisDatas = getDataByUnitNameAndTime(begTime.getTime(),endTime.getTime(),unitName);
+        AcStatisData[] lastdayStatisDatas = getDataByUnitNameAndTime(begTime.getTime(), endTime.getTime(), unitName);
 
-        begTime.set(Calendar.DAY_OF_MONTH,0);
+        begTime.set(Calendar.DAY_OF_MONTH, 0);
 
-        AcStatisData[] thisMonthStatisDatas = getDataByUnitNameAndTime(begTime.getTime(),currTime.getTime(),unitName);
+        AcStatisData[] thisMonthStatisDatas = getDataByUnitNameAndTime(begTime.getTime(), currTime.getTime(), unitName);
 
         endTime.setTimeInMillis(begTime.getTimeInMillis());
 
-        begTime.add(Calendar.MONTH,-1);
+        begTime.add(Calendar.MONTH, -1);
 
-        AcStatisData[] lastMonthStatisDatas = getDataByUnitNameAndTime(begTime.getTime(),endTime.getTime(),unitName);
+        AcStatisData[] lastMonthStatisDatas = getDataByUnitNameAndTime(begTime.getTime(), endTime.getTime(), unitName);
 
         List<Cumulant> list = new ArrayList<>();
-        for(int i = 0; i < ids.length; i++){
+        for (int i = 0; i < ids.length; i++) {
             Cumulant cumulant = new Cumulant();
             cumulant.setId(ids[i]);
             cumulant.setName(cfgData.getAcO(ids[i]).getCname());
@@ -89,7 +90,7 @@ public class CumulantStatisServiceImpl implements CumulantStatisService {
 
     @Override
     public AcStatisData[] getDataByUnitNameAndTime(Date stime, Date etime, String unitName) {
-        Integer[] ids = Utils.getAcIdsByUnitName(unitName);
-        return statisDataDao.getAcStatisData(ids,Utils._DATE_FORMAT_.format(stime),Utils._DATE_FORMAT_.format(etime));
+        Integer[] ids = utils.getAcIdsByUnitName(unitName);
+        return statisDataDao.getAcStatisData(ids, utils._DATE_FORMAT_.format(stime), utils._DATE_FORMAT_.format(etime));
     }
 }

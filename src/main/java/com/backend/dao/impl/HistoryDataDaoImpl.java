@@ -9,6 +9,8 @@ import com.backend.vo.AcValue;
 import com.backend.vo.AnValue;
 import com.backend.vo.StValue;
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
@@ -16,34 +18,42 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
+@Repository
 public class HistoryDataDaoImpl implements HistoryDataDao {
 
     static Logger logger = Logger.getLogger("HistoryDataDaoImpl");
 
-    @Override
-    public AnValue[] getAnHistoryData(String begTime, String endTime, Integer[] ids,int count) {
-        return parseHistoryAnData(getHistoryData(begTime,endTime,ids,Constants.CC_HDT_HOUS_DATA),count);
+    private Utils utils;
+
+    @Autowired
+    public HistoryDataDaoImpl(Utils utils) {
+        this.utils = utils;
     }
 
     @Override
-    public AnValue[] getAn5MinHistoryData(String begTime, String endTime, Integer[] ids,int count) {
-        return parseHistoryAnData(getHistoryData(begTime,endTime,ids,Constants.CC_HDT_5MIN_DATA),count);
+    public AnValue[] getAnHistoryData(String begTime, String endTime, Integer[] ids, int count) {
+        return parseHistoryAnData(getHistoryData(begTime, endTime, ids, Constants.CC_HDT_HOUS_DATA), count);
     }
 
     @Override
-    public StValue[] getStHistoryData(String begTime, String endTime, Integer[] ids,int count) {
-        return parseHistoryStData(getHistoryData(begTime,endTime,ids,Constants.CC_HDT_HOUS_DATA),count);
+    public AnValue[] getAn5MinHistoryData(String begTime, String endTime, Integer[] ids, int count) {
+        return parseHistoryAnData(getHistoryData(begTime, endTime, ids, Constants.CC_HDT_5MIN_DATA), count);
     }
 
     @Override
-    public AcValue[] getAcHistoryData(String begTime, String endTime, Integer[] ids,int count) {
-        return parseHistoryAcData(getHistoryData(begTime,endTime,ids,Constants.CC_HDT_HOUS_DATA),count);
+    public StValue[] getStHistoryData(String begTime, String endTime, Integer[] ids, int count) {
+        return parseHistoryStData(getHistoryData(begTime, endTime, ids, Constants.CC_HDT_HOUS_DATA), count);
+    }
+
+    @Override
+    public AcValue[] getAcHistoryData(String begTime, String endTime, Integer[] ids, int count) {
+        return parseHistoryAcData(getHistoryData(begTime, endTime, ids, Constants.CC_HDT_HOUS_DATA), count);
     }
 
     /***
      * 获取历史数据
      * */
-    private ByteBuffer getHistoryData(String begTime,String endTime,Integer[] ids,byte type){
+    private ByteBuffer getHistoryData(String begTime, String endTime, Integer[] ids, byte type) {
         byte[] datas = new byte[ids.length * 4 + 2 * 8 + 1];
         ByteBuffer bb = ByteBuffer.allocate(datas.length);
         bb.order(ByteOrder.LITTLE_ENDIAN);
@@ -52,28 +62,28 @@ public class HistoryDataDaoImpl implements HistoryDataDao {
 
         Calendar calendar = Calendar.getInstance();
         try {
-            calendar.setTime(Utils._DATE_FORMAT_.parse(begTime));
-        }catch(Exception e){
-            logger.error( "开始时间有误;" + begTime);
+            calendar.setTime(utils._DATE_FORMAT_.parse(begTime));
+        } catch (Exception e) {
+            logger.error("开始时间有误;" + begTime);
             return ByteBuffer.allocate(0);
         }
         bb.putLong((long) calendar.getTimeInMillis() / 1000);
 
         calendar = Calendar.getInstance();
         try {
-            calendar.setTime(Utils._DATE_FORMAT_.parse(endTime));
-        }catch(Exception e){
+            calendar.setTime(utils._DATE_FORMAT_.parse(endTime));
+        } catch (Exception e) {
             logger.error("结束时间有误;" + endTime);
             return ByteBuffer.allocate(0);
         }
         bb.putLong((long) calendar.getTimeInMillis() / 1000);
 
-        bb.put(Utils.idArrToBytes(ids));
+        bb.put(utils.idArrToBytes(ids));
 
-        return SocketConnect.getData(datas,Constants.CC_HISDATA,logger);
+        return SocketConnect.getData(datas, Constants.CC_HISDATA, logger);
     }
 
-    private AnValue[] parseHistoryAnData(ByteBuffer bb,int count) {
+    private AnValue[] parseHistoryAnData(ByteBuffer bb, int count) {
         List<AnValue> list = new ArrayList<AnValue>();
         int id = Constants.CC_NOTHINGNESS;
         byte valid = Constants.CC_IS_NULL;
@@ -88,7 +98,7 @@ public class HistoryDataDaoImpl implements HistoryDataDao {
                 continue;
             }
 
-            for(int i = 0; i < count; i++) {
+            for (int i = 0; i < count; i++) {
                 valid = bb.get();
                 size--;
                 if (Constants.CC_IS_NULL == valid) {
@@ -104,7 +114,7 @@ public class HistoryDataDaoImpl implements HistoryDataDao {
         return list.toArray(new AnValue[list.size()]);
     }
 
-    private StValue[] parseHistoryStData(ByteBuffer bb,int count) {
+    private StValue[] parseHistoryStData(ByteBuffer bb, int count) {
         List<StValue> list = new ArrayList<StValue>();
         int id = Constants.CC_NOTHINGNESS;
         byte valid = Constants.CC_IS_NULL;
@@ -119,7 +129,7 @@ public class HistoryDataDaoImpl implements HistoryDataDao {
                 continue;
             }
 
-            for(int i = 0; i < count; i++) {
+            for (int i = 0; i < count; i++) {
                 valid = bb.get();
                 size--;
                 if (Constants.CC_IS_NULL == valid) {
@@ -135,7 +145,7 @@ public class HistoryDataDaoImpl implements HistoryDataDao {
         return list.toArray(new StValue[list.size()]);
     }
 
-    private AcValue[] parseHistoryAcData(ByteBuffer bb,int count) {
+    private AcValue[] parseHistoryAcData(ByteBuffer bb, int count) {
         List<AcValue> list = new ArrayList<AcValue>();
         int id = Constants.CC_NOTHINGNESS;
         byte valid = Constants.CC_IS_NULL;
@@ -150,7 +160,7 @@ public class HistoryDataDaoImpl implements HistoryDataDao {
                 continue;
             }
 
-            for(int i = 0; i < count; i++) {
+            for (int i = 0; i < count; i++) {
                 valid = bb.get();
                 size--;
                 if (Constants.CC_IS_NULL == valid) {

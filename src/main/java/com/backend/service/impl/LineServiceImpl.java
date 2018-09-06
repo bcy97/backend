@@ -7,6 +7,7 @@ import com.backend.util.CfgData;
 import com.backend.util.Utils;
 import com.backend.vo.AnValue;
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
@@ -18,17 +19,13 @@ public class LineServiceImpl implements LineService {
 
     private RealDataDao realDataDao;
     private HistoryDataDao historyDataDao;
+    private Utils utils;
 
-    public LineServiceImpl() {
-
-    }
-
-    public LineServiceImpl(RealDataDao realDataDao) {
+    @Autowired
+    public LineServiceImpl(RealDataDao realDataDao, HistoryDataDao historyDataDao, Utils utils) {
         this.realDataDao = realDataDao;
-    }
-
-    public LineServiceImpl(HistoryDataDao historyDataDao) {
         this.historyDataDao = historyDataDao;
+        this.utils = utils;
     }
 
     /**
@@ -64,7 +61,7 @@ public class LineServiceImpl implements LineService {
      */
     @Override
     public Map<String, Float[]> getHistoryLineData(Date stime, Date etime, String[] ptNames) {
-        Integer[] ids = Utils.anPtNamesToIds(ptNames);
+        Integer[] ids = utils.anPtNamesToIds(ptNames);
 
         Calendar begCal = Calendar.getInstance();
         begCal.setTime(stime);
@@ -72,9 +69,9 @@ public class LineServiceImpl implements LineService {
         Calendar endCal = Calendar.getInstance();
         endCal.setTime(etime);
         // 获取某段时间的5分钟点
-        List<String> list = Utils.get5MinPoint(begCal, endCal);
+        List<String> list = utils.get5MinPoint(begCal, endCal);
         // 数组结构 AnValue[id][时间] 即 第1个id某段时间的数据、第2个id某段时间的数据、第3个id某段时间的数据......第n个id某段时间的数据
-        AnValue[] anValues = historyDataDao.getAn5MinHistoryData(Utils._DATE_FORMAT_.format(stime), Utils._DATE_FORMAT_.format(etime), ids, list.size());
+        AnValue[] anValues = historyDataDao.getAn5MinHistoryData(utils._DATE_FORMAT_.format(stime), utils._DATE_FORMAT_.format(etime), ids, list.size());
 
         Map<String, Float[]> map = new HashMap<>();
         for (int i = 0; i < ptNames.length; i++) {

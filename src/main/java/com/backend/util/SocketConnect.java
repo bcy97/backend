@@ -40,6 +40,9 @@ public class SocketConnect {
             dp = new DataPacket();
             dp.toDataPacketHead(bHead);
 
+            if(0 == dp.getLength())
+                break;
+
             bDatas = new byte[dp.getLength()];
             is.read(bDatas, 0, bDatas.length);
             for (byte item : bDatas)

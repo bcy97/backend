@@ -9,22 +9,23 @@ import com.backend.vo.AnO;
 import com.backend.vo.EventInfo;
 import com.backend.vo.StO;
 import org.apache.log4j.Logger;
-import org.apache.tomcat.util.bcel.Const;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
-import java.util.List;
 
 @Service
 public class EventInfoServiceImpl implements EventInfoService {
 
     static Logger logger = Logger.getLogger("EventInfoServiceImpl");
-    private EventInfoDao eventInfoDao = null;
 
-    public EventInfoServiceImpl(){}
+    private EventInfoDao eventInfoDao;
+    private Utils utils;
 
-    public EventInfoServiceImpl(EventInfoDao eventInfoDao){
+    @Autowired
+    public EventInfoServiceImpl(EventInfoDao eventInfoDao, Utils utils) {
         this.eventInfoDao = eventInfoDao;
+        this.utils = utils;
     }
 
     /***
@@ -37,19 +38,19 @@ public class EventInfoServiceImpl implements EventInfoService {
 
         CfgData cfgData = new CfgData();
         AnO ano = cfgData.getAnO(pointName);
-        if(null != ano){
-            id  = ano.getId();
+        if (null != ano) {
+            id = ano.getId();
             type = Constants.CC_EDT_ANEPD;
-        }else{
+        } else {
             StO sto = cfgData.getStO(pointName);
-            if(null != sto){
+            if (null != sto) {
                 id = sto.getId();
                 type = Constants.CC_EDT_STEPD;
             }
         }
-        if(-1 == id)
+        if (-1 == id)
             return null;
 
-        return eventInfoDao.getEventInfoByTimeAndId(new Integer[]{id}, Utils._DATE_FORMAT_.format(stime),Utils._DATE_FORMAT_.format(etime),type);
+        return eventInfoDao.getEventInfoByTimeAndId(new Integer[]{id}, utils._DATE_FORMAT_.format(stime), utils._DATE_FORMAT_.format(etime), type);
     }
 }

@@ -9,6 +9,8 @@ import com.backend.vo.AcValue;
 import com.backend.vo.AnStatisData;
 import com.backend.vo.AnValue;
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
@@ -16,31 +18,39 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
+@Repository
 public class StatisDataDaoImpl implements StatisDataDao {
 
     static Logger logger = Logger.getLogger("StatisDataDaoImpl");
+
+    private Utils utils;
+
+    @Autowired
+    public StatisDataDaoImpl(Utils utils) {
+        this.utils = utils;
+    }
 
     /***
      * 获取电度统计数据
      * */
     @Override
-    public AcStatisData[] getAcStatisData(Integer[] ids,String begTime,String endTime) {
+    public AcStatisData[] getAcStatisData(Integer[] ids, String begTime, String endTime) {
 
-        return parseAcStatisData(getStatisData(ids,begTime,endTime,Constants.CC_SDT_AC));
+        return parseAcStatisData(getStatisData(ids, begTime, endTime, Constants.CC_SDT_AC));
     }
 
     /***
      * 获取遥测统计数据
      * */
     @Override
-    public AnStatisData[] getAnStaticData(Integer[] ids,String begTime,String endTime) {
-        return parseAnStatisData(getStatisData(ids,begTime,endTime,Constants.CC_SDT_AN));
+    public AnStatisData[] getAnStaticData(Integer[] ids, String begTime, String endTime) {
+        return parseAnStatisData(getStatisData(ids, begTime, endTime, Constants.CC_SDT_AN));
     }
 
     /***
      * 获取统计数据
      * */
-    private ByteBuffer getStatisData(Integer[] ids, String begTime, String endTime, byte type){
+    private ByteBuffer getStatisData(Integer[] ids, String begTime, String endTime, byte type) {
         ByteBuffer bb = ByteBuffer.allocate(ids.length * 4 + 17);
         bb.order(ByteOrder.LITTLE_ENDIAN);
 
@@ -48,8 +58,8 @@ public class StatisDataDaoImpl implements StatisDataDao {
 
         Calendar calendar = Calendar.getInstance();
         try {
-            calendar.setTime(Utils._DATE_FORMAT_.parse(begTime));
-        }catch (Exception e){
+            calendar.setTime(utils._DATE_FORMAT_.parse(begTime));
+        } catch (Exception e) {
             logger.error("开始时间有误!" + begTime);
             return ByteBuffer.allocate(0);
         }
@@ -57,8 +67,8 @@ public class StatisDataDaoImpl implements StatisDataDao {
 
         calendar = Calendar.getInstance();
         try {
-            calendar.setTime(Utils._DATE_FORMAT_.parse(endTime));
-        }catch (Exception e){
+            calendar.setTime(utils._DATE_FORMAT_.parse(endTime));
+        } catch (Exception e) {
             logger.error("结束时间有误!" + endTime);
             return ByteBuffer.allocate(0);
         }
@@ -70,14 +80,16 @@ public class StatisDataDaoImpl implements StatisDataDao {
         byte[] datas = new byte[bb.position()];
         System.arraycopy(bb.array(), 0, datas, 0, datas.length);
 
-        return SocketConnect.getData(datas, Constants.CC_STATISDATA,logger);
+        return SocketConnect.getData(datas, Constants.CC_STATISDATA, logger);
     }
 
     /***
      * 解析电度统计数据
      * */
-    private AcStatisData[] parseAcStatisData(ByteBuffer bb){
-        List<AcStatisData> list = new ArrayList<AcStatisData>();
+    private AcStatisData[] parseAcStatisData(ByteBuffer bb) {
+        if(null == bb || bb.position() == 0)
+            return new AcStatisData[0];
+        List<AcStatisData> list = new ArrayList<>();
         int id = Constants.CC_NOTHINGNESS;
         int size = bb.position();
         byte valid = Constants.CC_IS_NULL;

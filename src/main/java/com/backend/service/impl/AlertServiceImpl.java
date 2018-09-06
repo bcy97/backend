@@ -7,10 +7,10 @@ import com.backend.util.Constants;
 import com.backend.util.Utils;
 import com.backend.vo.EventInfo;
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Calendar;
-import java.util.List;
 
 @Service
 public class AlertServiceImpl implements AlertService {
@@ -18,12 +18,12 @@ public class AlertServiceImpl implements AlertService {
     static Logger logger = Logger.getLogger("AlertServiceImpl");
 
     private EventInfoDao eventInfoDao;
+    private Utils utils;
 
-    public AlertServiceImpl(){
-    }
-
-    public AlertServiceImpl(EventInfoDao eventInfoDao){
+    @Autowired
+    public AlertServiceImpl(EventInfoDao eventInfoDao, Utils utils) {
         this.eventInfoDao = eventInfoDao;
+        this.utils = utils;
     }
 
     /***
@@ -32,19 +32,19 @@ public class AlertServiceImpl implements AlertService {
     @Override
     public EventInfo[] getImportantAlert() {
         Calendar begTime = Calendar.getInstance();
-        begTime.add(Calendar.MONTH,-3);
+        begTime.add(Calendar.MONTH, -3);
 
         Calendar endTime = Calendar.getInstance();
 
         CfgData cfgData = new CfgData();
 
-        EventInfo[] infos = eventInfoDao.getEventInfoByTimeAndId(cfgData.getAllStId(),Utils._DATE_FORMAT_.format(begTime.getTime()),Utils._DATE_FORMAT_.format(endTime.getTime()),Constants.CC_EDT_STEPD);
+        EventInfo[] infos = eventInfoDao.getEventInfoByTimeAndId(cfgData.getAllStId(), utils._DATE_FORMAT_.format(begTime.getTime()), utils._DATE_FORMAT_.format(endTime.getTime()), Constants.CC_EDT_STEPD);
 
-        if(infos.length <= 20)
+        if (infos.length <= 20)
             return infos;
 
         EventInfo[] rtnData = new EventInfo[20];
-        for(int i = 0; i < 20; i++)
+        for (int i = 0; i < 20; i++)
             infos[i] = infos[infos.length - 1 - i];
 
         return rtnData;

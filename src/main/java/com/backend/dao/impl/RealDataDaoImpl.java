@@ -9,6 +9,7 @@ import com.backend.vo.AcValue;
 import com.backend.vo.AnValue;
 import com.backend.vo.StValue;
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.nio.ByteBuffer;
@@ -20,12 +21,19 @@ public class RealDataDaoImpl implements RealDataDao {
 
     static Logger logger = Logger.getLogger("RealDataDaoImpl");
 
+    private Utils utils;
+
+    @Autowired
+    public RealDataDaoImpl(Utils utils) {
+        this.utils = utils;
+    }
+
     /***
      * 同时获取遥测、遥信、电度实时数据，遥信id返回StValue，电度id返回AcValue，遥测id返回AnValue
      * */
     @Override
     public Object[] getRealData(Integer[] ids) {
-        return parseRealData(SocketConnect.getData(Utils.idArrToBytes(ids), Constants.CC_REALDATA, logger));
+        return parseRealData(SocketConnect.getData(utils.idArrToBytes(ids), Constants.CC_REALDATA, logger));
     }
 
     /***
@@ -112,7 +120,7 @@ public class RealDataDaoImpl implements RealDataDao {
      * */
     private Object parseValue(ByteBuffer bb, int id, byte valid) {
         try {
-            switch (Utils.getTypeInId(id)) {
+            switch (utils.getTypeInId(id)) {
                 case Constants.IDACC:
                     AcValue acV = new AcValue();
                     if (null != new CfgData().getAcO(id)) {
@@ -147,7 +155,7 @@ public class RealDataDaoImpl implements RealDataDao {
     }
 
     private Object getNullData(int id) {
-        switch (Utils.getTypeInId(id)) {
+        switch (utils.getTypeInId(id)) {
             case Constants.IDACC:
                 return new AcValue();
             case Constants.IDAN:

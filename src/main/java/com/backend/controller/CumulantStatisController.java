@@ -29,9 +29,11 @@ public class CumulantStatisController {
 
     @RequestMapping(value = "/getDataByUnitName", consumes = "application/json")
     public List<Cumulant> getDataByUnitName(@RequestBody String unitName) {
+        System.out.println(unitName);
         return cumulantStatisService.getDataByUnitName(unitName);
     }
 
+    @RequestMapping(value = "/getDataByUnitNameAndTime", consumes = "application/json")
     public AcStatisData[] getDataByUnitNameAndTime(@RequestBody Date stime, @RequestBody Date etime, @RequestBody String unitName) {
         return cumulantStatisService.getDataByUnitNameAndTime(stime, etime, unitName);
     }

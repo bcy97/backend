@@ -100,64 +100,70 @@ public class EventInfoDaoImpl implements EventInfoDao {
         System.arraycopy(bb.array(), 0, datas, 0, datas.length);
         byte cmd = Constants.CC_EVENTDATA;
 
-        SocketConnect.getData(datas, cmd, logger);
-
-        return bb;
+        return SocketConnect.getData(datas, cmd, logger);
     }
 
+    /****
+     * 解析事件信息
+     * */
     private EventInfo[] parseEventInfo(ByteBuffer bb) {
+        if(null == bb || 0 == bb.position() )
+            return new EventInfo[0];
         SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.sss");
         List<EventInfo> list = new ArrayList<EventInfo>();
         int id = Constants.CC_NOTHINGNESS;
         int size = bb.position();
         int miSec = 0;
         long time = 0l;
-        byte length = 0;
+        int length = 0;
         byte[] bData = new byte[0];
         String info = "";
         Calendar cal = Calendar.getInstance();
         bb.flip();
 
-        while (size > 0) {
-            id = bb.getInt();
-            size -= 4;
+        try {
+            while (size > 0) {
+                id = bb.getInt();
+                size -= 4;
 
-            miSec = bb.getInt();
-            size -= 4;
+                miSec = bb.getInt();
+                size -= 4;
 
-            time = bb.getLong();
-            size -= 8;
-            cal.setTimeInMillis((long) time * 1000);
-            cal.set(Calendar.SECOND, miSec / 1000);
-            cal.set(Calendar.MILLISECOND, miSec % 1000);
+                time = bb.getLong();
+                size -= 8;
+                cal.setTimeInMillis((long) time * 1000);
+                cal.set(Calendar.SECOND, miSec / 1000);
+                cal.set(Calendar.MILLISECOND, miSec % 1000);
 
-            length = bb.get();
-            size--;
-
-            if (length > 0) {
-                bData = new byte[length];
-                bb.get(bData);
-                size -= length;
-                try {
-                    info = new String(bData, "UTF-8");
-                } catch (Exception e) {
-                    info = "";
+                length = bb.get() & 0xff;// byte是有符号的，将length转为无符号整数
+                size--;
+                if (length > 0) {
+                    bData = new byte[length];
+                    bb.get(bData);
+                    size -= length;
+                    try {
+                        info = new String(bData, "UTF-8");
+                    } catch (Exception e) {
+                        info = "";
+                    }
                 }
-            }
 
-            length = bb.get();
-            size--;
-            if (length > 0) {
-                bData = new byte[length];
-                bb.get(bData);
-                size -= length;
+                length = bb.get() & 0xff;// byte是有符号的，将length转为无符号整数
+                size--;
+                if (length > 0) {
+                    bData = new byte[length];
+                    bb.get(bData);
+                    size -= length;
+                }
+                EventInfo ei = new EventInfo(id, format.format(cal.getTime()), info);
+                ei.setEventLogLength(length);
+                if (length > 0)
+                    ei.setEventLog(bData);
+                list.add(ei);
             }
-            EventInfo ei = new EventInfo(id, format.format(cal.getTime()), info);
-            ei.setEventLogLength(length);
-            if (length > 0)
-                ei.setEventLog(bData);
-            list.add(ei);
-
+        }catch(Exception e){
+            System.out.println("解析事件信息出错!" + e.getMessage());
+            logger.error("解析事件信息出错!" + e.getMessage());
         }
 
         return list.toArray(new EventInfo[list.size()]);

@@ -19,11 +19,13 @@ public class AlertServiceImpl implements AlertService {
 
     private EventInfoDao eventInfoDao;
     private Utils utils;
+    private CfgData cfgData;
 
     @Autowired
-    public AlertServiceImpl(EventInfoDao eventInfoDao, Utils utils) {
+    public AlertServiceImpl(EventInfoDao eventInfoDao, Utils utils,CfgData cfgData) {
         this.eventInfoDao = eventInfoDao;
         this.utils = utils;
+        this.cfgData = cfgData;
     }
 
     /***
@@ -36,16 +38,14 @@ public class AlertServiceImpl implements AlertService {
 
         Calendar endTime = Calendar.getInstance();
 
-        CfgData cfgData = new CfgData();
-
-        EventInfo[] infos = eventInfoDao.getEventInfoByTimeAndId(cfgData.getAllStId(), utils._DATE_FORMAT_.format(begTime.getTime()), utils._DATE_FORMAT_.format(endTime.getTime()), Constants.CC_EDT_STEPD);
+        EventInfo[] infos = eventInfoDao.getEventInfoByTimeAndId(cfgData.getAllStId(), utils._DATE_FORMAT_.format(begTime.getTime()), utils._DATE_FORMAT_.format(endTime.getTime()), Constants.CC_EDT_EPD);
 
         if (infos.length <= 20)
             return infos;
 
         EventInfo[] rtnData = new EventInfo[20];
         for (int i = 0; i < 20; i++)
-            infos[i] = infos[infos.length - 1 - i];
+            rtnData[i] = infos[infos.length - 1 - i];
 
         return rtnData;
     }

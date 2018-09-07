@@ -23,16 +23,17 @@ public class CumulantStatisServiceImpl implements CumulantStatisService {
 
     private StatisDataDao statisDataDao;
     private Utils utils;
+    private CfgData cfgData;
 
     @Autowired
-    public CumulantStatisServiceImpl(StatisDataDao statisDataDao, Utils utils) {
+    public CumulantStatisServiceImpl(StatisDataDao statisDataDao, Utils utils,CfgData cfgData) {
         this.statisDataDao = statisDataDao;
         this.utils = utils;
+        this.cfgData = cfgData;
     }
 
     @Override
     public List<String> getUnitList() {
-        CfgData cfgData = new CfgData();
 
         List<String> unitNameList = new ArrayList<>();
         for (UnitInfo ui : cfgData.getAllUnitInfo())
@@ -43,7 +44,6 @@ public class CumulantStatisServiceImpl implements CumulantStatisService {
 
     @Override
     public List<Cumulant> getDataByUnitName(String unitName) {
-        CfgData cfgData = new CfgData();
 
         Integer[] ids = utils.getAcIdsByUnitName(unitName);
 
@@ -85,7 +85,7 @@ public class CumulantStatisServiceImpl implements CumulantStatisService {
             list.add(cumulant);
         }
 
-        return null;
+        return list;
     }
 
     @Override

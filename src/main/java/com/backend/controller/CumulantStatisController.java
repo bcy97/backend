@@ -22,7 +22,7 @@ public class CumulantStatisController {
         this.cumulantStatisService = cumulantStatisService;
     }
 
-    @RequestMapping("/unitlist")
+    @RequestMapping(value ="/unitlist", consumes = "application/json")
     public List<String> getUnitList() {
         return cumulantStatisService.getUnitList();
     }

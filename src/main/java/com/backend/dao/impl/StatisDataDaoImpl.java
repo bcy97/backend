@@ -108,24 +108,30 @@ public class StatisDataDaoImpl implements StatisDataDao {
             }
             valid = bb.get();
             size--;
-            if (Constants.CC_IS_NULL == valid)
+            if (Constants.CC_IS_NULL == valid) {
                 begValue = new AcValue(0, 0, (byte) 0);
-            begValue = new AcValue(bb.getDouble(), 0, valid);
-            size -= 4;
+            }else {
+                begValue = new AcValue(bb.getDouble(), 0, valid);
+                size -= 8;
+            }
 
             valid = bb.get();
             size--;
-            if (Constants.CC_IS_NULL == valid)
+            if (Constants.CC_IS_NULL == valid) {
                 endValue = new AcValue(0, 0, (byte) 0);
-            endValue = new AcValue(bb.getDouble(), 0, valid);
-            size -= 4;
+            }else {
+                endValue = new AcValue(bb.getDouble(), 0, valid);
+                size -= 8;
+            }
 
             valid = bb.get();
             size--;
-            if (Constants.CC_IS_NULL == valid)
+            if (Constants.CC_IS_NULL == valid) {
                 accValue = new AcValue(0, 0, (byte) 0);
-            accValue = new AcValue(bb.getDouble(), 0, valid);
-            size -= 4;
+            }else {
+                accValue = new AcValue(bb.getDouble(), 0, valid);
+                size -= 8;
+            }
 
             list.add(new AcStatisData(id, begValue, endValue, accValue));
 

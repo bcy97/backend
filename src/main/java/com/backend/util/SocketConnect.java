@@ -21,7 +21,7 @@ public class SocketConnect {
     private static final int MAX_PACKET_SIZE = 8 * 1024;
 
     private static SocketAddress getSocketAddress() {
-        String ip = "127.0.0.1";
+        String ip = "192.168.1.106";
         int port = 10001;
 
         return new InetSocketAddress(ip, port);
@@ -30,29 +30,35 @@ public class SocketConnect {
     /***
      * 接收数据
      * */
-    private static ByteBuffer receiveData(InputStream is) throws IOException {
+    private static ByteBuffer receiveData(InputStream is, Logger logger) throws IOException {
         List<Byte> list = new ArrayList<>();
         DataPacket dp;
         byte[] bDatas;
-        while (true) {
-            byte[] bHead = new byte[12];
-            is.read(bHead, 0, 12);
-            dp = new DataPacket();
-            dp.toDataPacketHead(bHead);
+        try {
+            while (true) {
+                byte[] bHead = new byte[12];
+                is.read(bHead, 0, 12);
+                dp = new DataPacket();
+                dp.toDataPacketHead(bHead);
 
-            if(0 == dp.getLength())
-                break;
+                if (0 == dp.getLength())
+                    break;
 
-            bDatas = new byte[dp.getLength()];
-            is.read(bDatas, 0, bDatas.length);
-            for (byte item : bDatas)
-                list.add(item);
+                bDatas = new byte[dp.getLength()];
+                is.read(bDatas, 0, bDatas.length);
+                for (byte item : bDatas)
+                    list.add(item);
 
-            is.read(bDatas, 0, 1);
+                is.read(bDatas, 0, 1);
 
-            if (0 == dp.getTailFlag())
-                break;
+                if (0 == dp.getTailFlag())
+                    break;
+            }
+        }catch(Exception e){
+            System.out.println("接收数据超时!" + e.getMessage());
+            logger.error("接收数据超时!" + e.getMessage());
         }
+
         ByteBuffer bb = ByteBuffer.allocate(list.size());
         bb.order(ByteOrder.LITTLE_ENDIAN);
 
@@ -73,6 +79,7 @@ public class SocketConnect {
         Socket socket = new Socket();
         try {
             socket.connect(getSocketAddress());
+            socket.setSoTimeout(500);
             OutputStream os = socket.getOutputStream();
             InputStream is = socket.getInputStream();
 
@@ -82,7 +89,7 @@ public class SocketConnect {
                 os.write(bDatas, 0, bDatas.length);
             }
 
-            ByteBuffer bb = receiveData(is);
+            ByteBuffer bb = receiveData(is,logger);
             is.close();
             os.close();
 

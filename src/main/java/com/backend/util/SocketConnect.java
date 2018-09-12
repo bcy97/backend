@@ -79,7 +79,7 @@ public class SocketConnect {
         Socket socket = new Socket();
         try {
             socket.connect(getSocketAddress());
-            socket.setSoTimeout(500);
+            socket.setSoTimeout(3000);
             OutputStream os = socket.getOutputStream();
             InputStream is = socket.getInputStream();
 

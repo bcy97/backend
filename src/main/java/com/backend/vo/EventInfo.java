@@ -1,9 +1,28 @@
 package com.backend.vo;
 
+import com.backend.util.CfgData;
+import com.backend.util.Evfault;
+
+import java.nio.ByteBuffer;
+import java.nio.ByteOrder;
+import java.util.ArrayList;
+import java.util.List;
+
 public class EventInfo {
 
     public EventInfo() {
 
+    }
+
+    public String toEventLogString() {
+        if(null == eventLogs || eventLogs.size() == 0)
+            return "";
+        StringBuffer sb = new StringBuffer();
+        for (EventLog log : eventLogs)
+            sb.append(log.getName() + ":" + log.getData() + ",");
+        if (sb.length() > 0)
+            sb.substring(0, sb.length() - 1);
+        return sb.toString();
     }
 
     public EventInfo(int id, String strTime, String info) {
@@ -15,8 +34,7 @@ public class EventInfo {
     private int id;
     private String strTime;
     private String info;
-    private int eventLogLength;
-    private byte[] eventLog;
+    private List<EventLog> eventLogs;
 
     public int getId() {
         return id;
@@ -42,21 +60,9 @@ public class EventInfo {
         this.info = info;
     }
 
-    public int getEventLogLength() {
-        return eventLogLength;
-    }
+    public void setEventLogs(List<EventLog> eventLogs){this.eventLogs = eventLogs;}
 
-    public void setEventLogLength(int eventLogLength) {
-        this.eventLogLength = eventLogLength;
-    }
-
-    public byte[] getEventLog() {
-        return eventLog;
-    }
-
-    public void setEventLog(byte[] eventLog) {
-        this.eventLog = eventLog;
-    }
+    public List<EventLog> getEventLogs(){return eventLogs;}
 
 
 }

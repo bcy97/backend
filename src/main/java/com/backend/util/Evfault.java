@@ -12,8 +12,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.regex.Pattern;
+import org.springframework.stereotype.Component;
 
-//@Component
+@Component
 public class Evfault {
     private static Map<String, List<AnO>> anTempMap = new HashMap<>();
     private static Map<String, List<StO>> stTempMap = new HashMap<>();
@@ -25,11 +26,11 @@ public class Evfault {
     private void initEvfault() {
         File file = null;
         try {
-            file = ResourceUtils.getFile("classpath:evfault");
+            file = ResourceUtils.getFile("classpath:evfault.txt");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-        if (!file.exists())
+        if(file == null || !file.exists())
             return;
 
         Pattern intPattern = Pattern.compile("^[0-9]+$");
@@ -87,21 +88,21 @@ public class Evfault {
                         ano.setPoinum((byte) 0);
                         if (arr.length > 1 && intPattern.matcher(arr[1]).matches())
                             ano.setPoinum(new Byte(arr[1]));
-                        if (arr[0].contains("�������"))
+                        if (arr[0].contains("零序电流"))
                             ano.setFi(inFi);
-                        else if (arr[0].contains("�����ѹ"))
+                        else if (arr[0].contains("零序电压"))
                             ano.setFi(unFi);
-                        else if (arr[0].contains("����"))
+                        else if (arr[0].contains("电流"))
                             ano.setFi(iFi);
-                        else if (arr[0].contains("��ѹ"))
+                        else if (arr[0].contains("电压"))
                             ano.setFi(uFi);
                         else
                             ano.setFi(1);
-                        /// ���ң��ģ����û�а�����ģ�����������
+                        /// 如果遥测模板中没有包含该模板名，就添加
                         if (!anTempMap.containsKey(item))
                             anTempMap.put(item, new ArrayList<AnO>());
                         anTempMap.get(item).add(ano);
-                    } else if (key.contains("st"))// �ü�����st
+                    } else if (key.contains("st"))// 该键包含st
                     {
                         StO sto = new StO();
                         sto.setCname(arr[0]);

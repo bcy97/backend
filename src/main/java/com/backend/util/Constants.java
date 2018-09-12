@@ -1,7 +1,5 @@
 package com.backend.util;
 
-import java.text.SimpleDateFormat;
-
 public class Constants {
 	public static final String _CONF_ = "/conf.ini";
 	public static final String _DIR_UNITCFG_ = "/unitCfg/";

@@ -21,11 +21,13 @@ public class EventInfoServiceImpl implements EventInfoService {
 
     private EventInfoDao eventInfoDao;
     private Utils utils;
+    private CfgData cfgData;
 
     @Autowired
-    public EventInfoServiceImpl(EventInfoDao eventInfoDao, Utils utils) {
+    public EventInfoServiceImpl(EventInfoDao eventInfoDao, Utils utils,CfgData cfgData) {
         this.eventInfoDao = eventInfoDao;
         this.utils = utils;
+        this.cfgData = cfgData;
     }
 
     /***
@@ -36,7 +38,6 @@ public class EventInfoServiceImpl implements EventInfoService {
         int id = -1;
         byte type = -1;
 
-        CfgData cfgData = new CfgData();
         AnO ano = cfgData.getAnO(pointName);
         if (null != ano) {
             id = ano.getId();

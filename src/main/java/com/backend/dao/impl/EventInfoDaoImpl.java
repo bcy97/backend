@@ -1,11 +1,11 @@
 package com.backend.dao.impl;
 
 import com.backend.dao.EventInfoDao;
-import com.backend.util.CfgData;
-import com.backend.util.Constants;
-import com.backend.util.SocketConnect;
-import com.backend.util.Utils;
+import com.backend.util.*;
+import com.backend.vo.AnO;
 import com.backend.vo.EventInfo;
+import com.backend.vo.EventLog;
+import com.backend.vo.StO;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -23,10 +23,14 @@ public class EventInfoDaoImpl implements EventInfoDao {
     static Logger logger = Logger.getLogger("EventInfoDaoImpl");
 
     private Utils utils;
+    private CfgData cfgData;
+    private Evfault evfault;
 
     @Autowired
-    public EventInfoDaoImpl(Utils utils) {
+    public EventInfoDaoImpl(Utils utils,CfgData cfgData,Evfault evfault) {
         this.utils = utils;
+        this.cfgData = cfgData;
+        this.evfault = evfault;
     }
 
     /***
@@ -156,16 +160,105 @@ public class EventInfoDaoImpl implements EventInfoDao {
                     size -= length;
                 }
                 EventInfo ei = new EventInfo(id, format.format(cal.getTime()), info);
-                ei.setEventLogLength(length);
+
                 if (length > 0)
-                    ei.setEventLog(bData);
+                    toEventLogList(length,bData,id);
                 list.add(ei);
             }
         }catch(Exception e){
+            e.printStackTrace();
             System.out.println("解析事件信息出错!" + e.getMessage());
             logger.error("解析事件信息出错!" + e.getMessage());
         }
 
         return list.toArray(new EventInfo[list.size()]);
     }
+
+    /***
+     * 把事件报文转为事件信息
+     * */
+    public List<EventLog> toEventLogList(int eventLogLength,byte[] eventLog,int id) {
+        int position = 8;
+        if (eventLogLength < position + 1)
+            return new ArrayList<EventLog>();
+        byte anNum = eventLog[position];
+        Float[] anData = new Float[32];
+        ByteBuffer bb = null;
+        byte[] bData = new byte[4];
+        byte stNum = 0;
+        int stData = 0;
+
+        position++;
+        for (int i = 0; i < 32; i++) {
+            System.arraycopy(eventLog, position, bData, 0, bData.length);
+            position += 4;
+
+            bb = ByteBuffer.wrap(bData,0,bData.length);
+            bb.order(ByteOrder.LITTLE_ENDIAN);
+
+            anData[i] = bb.getFloat(0);
+        }
+
+        stNum = eventLog[position];
+        position++;
+
+        System.arraycopy(eventLog, position, bData, 0, bData.length);
+        position += 4;
+
+        bb = ByteBuffer.wrap(bData);
+        bb.order(ByteOrder.LITTLE_ENDIAN);
+        stData = bb.getInt();
+
+        List<EventLog> elList = new ArrayList<EventLog>();
+
+        StO sto = cfgData.getStO(id);
+
+        List<AnO> anList = null;
+        if(null != sto)
+            anList = evfault.getAnTemp(sto.getSname());
+        for(int i = 0; i < anNum; i++){
+            int point = -1;
+            String name = "an" + i;
+            float value = 0;
+            if(anList != null && anList.size() > i){
+                AnO ano = anList.get(i);
+                name = ano.getCname();
+                point = ano.getPoinum();
+                value = anData[i] * ano.getFi();
+            }
+            EventLog el = new EventLog();
+            el.setName(name);
+            el.setType("遥测");
+            if(-1 == point)
+                el.setData(Float.toString(value));
+            else
+                el.setData(String.format("%." + point + "f", value));
+            elList.add(el);
+        }
+
+        List<StO> stList = null;
+        if(null != sto)
+            stList = evfault.getStTemp(sto.getSname());
+        for(int i = 0; i < stNum; i++){
+            String name = "st" + i;
+            if(null != stList && stList.size() > i){
+                StO st = stList.get(i);
+                name = st.getCname();
+            }
+            int temp = 1 << i;
+            temp &= stData;
+            temp = temp >>i;
+            temp = temp & 1;
+
+            EventLog el = new EventLog();
+            el.setName(name);
+            el.setType("遥信");
+            el.setData(Integer.toString(temp));
+
+            elList.add(el);
+        }
+
+        return elList;
+    }
+
 }

@@ -8,8 +8,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Date;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/cumulant")
@@ -22,7 +24,7 @@ public class CumulantStatisController {
         this.cumulantStatisService = cumulantStatisService;
     }
 
-    @RequestMapping(value ="/unitlist", consumes = "application/json")
+    @RequestMapping(value = "/unitlist", consumes = "application/json")
     public List<String> getUnitList() {
         return cumulantStatisService.getUnitList();
     }
@@ -34,7 +36,15 @@ public class CumulantStatisController {
     }
 
     @RequestMapping(value = "/getDataByUnitNameAndTime", consumes = "application/json")
-    public AcStatisData[] getDataByUnitNameAndTime(@RequestBody Date stime, @RequestBody Date etime, @RequestBody String unitName) {
-        return cumulantStatisService.getDataByUnitNameAndTime(stime, etime, unitName);
+    public AcStatisData[] getDataByUnitNameAndTime(@RequestBody Map<String, String> data) {
+
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+
+        try {
+            return cumulantStatisService.getDataByUnitNameAndTime(sdf.parse(data.get("stime")), sdf.parse(data.get("etime")), data.get("unitname"));
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 }

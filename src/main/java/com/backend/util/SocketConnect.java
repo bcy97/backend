@@ -21,7 +21,8 @@ public class SocketConnect {
     private static final int MAX_PACKET_SIZE = 8 * 1024;
 
     private static SocketAddress getSocketAddress() {
-        String ip = "192.168.1.106";
+//        String ip = "192.168.1.106";
+        String ip = "127.0.0.1";
         int port = 10001;
 
         return new InetSocketAddress(ip, port);
@@ -54,7 +55,7 @@ public class SocketConnect {
                 if (0 == dp.getTailFlag())
                     break;
             }
-        }catch(Exception e){
+        } catch (Exception e) {
             System.out.println("接收数据超时!" + e.getMessage());
             logger.error("接收数据超时!" + e.getMessage());
         }
@@ -89,7 +90,7 @@ public class SocketConnect {
                 os.write(bDatas, 0, bDatas.length);
             }
 
-            ByteBuffer bb = receiveData(is,logger);
+            ByteBuffer bb = receiveData(is, logger);
             is.close();
             os.close();
 

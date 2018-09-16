@@ -11,5 +11,7 @@ public interface CumulantStatisService {
 
     List<Cumulant> getDataByUnitName(String unitName);
 
-    AcStatisData[] getDataByUnitNameAndTime(Date stime, Date etime, String unitName);
+    List<Cumulant> getCumulantDataByUnitNameAndTime(Date stime, Date etime,String unitName);
+
+ //   AcStatisData[] getDataByUnitNameAndTime(Date stime, Date etime, String unitName);
 }

@@ -21,9 +21,8 @@ public class SocketConnect {
     private static final int MAX_PACKET_SIZE = 8 * 1024;
 
     private static SocketAddress getSocketAddress() {
-//        String ip = "192.168.1.106";
         String ip = "127.0.0.1";
-        int port = 10001;
+        int port = 10002;
 
         return new InetSocketAddress(ip, port);
     }

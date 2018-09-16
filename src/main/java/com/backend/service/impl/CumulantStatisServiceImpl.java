@@ -89,8 +89,21 @@ public class CumulantStatisServiceImpl implements CumulantStatisService {
     }
 
     @Override
-    public AcStatisData[] getDataByUnitNameAndTime(Date stime, Date etime, String unitName) {
+    public List<Cumulant> getCumulantDataByUnitNameAndTime(Date stime, Date etime, String unitName){
+        List<Cumulant> list = getDataByUnitName(unitName);
+
+        AcStatisData[] queryStatisDatas = getDataByUnitNameAndTime(stime, etime, unitName);
+
+        for (int i = 0; i < queryStatisDatas.length; i++)
+            list.get(i).setStatis(queryStatisDatas[i].getAccValue().getValue());
+
+        return list;
+    }
+
+
+    private AcStatisData[] getDataByUnitNameAndTime(Date stime, Date etime, String unitName) {
         Integer[] ids = utils.getAcIdsByUnitName(unitName);
         return statisDataDao.getAcStatisData(ids, utils._DATE_FORMAT_.format(stime), utils._DATE_FORMAT_.format(etime));
     }
+
 }

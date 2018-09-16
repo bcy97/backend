@@ -36,12 +36,12 @@ public class CumulantStatisController {
     }
 
     @RequestMapping(value = "/getDataByUnitNameAndTime", consumes = "application/json")
-    public AcStatisData[] getDataByUnitNameAndTime(@RequestBody Map<String, String> data) {
+    public List<Cumulant> getDataByUnitNameAndTime(@RequestBody Map<String, String> data) {
 
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm");
 
         try {
-            return cumulantStatisService.getDataByUnitNameAndTime(sdf.parse(data.get("stime")), sdf.parse(data.get("etime")), data.get("unitname"));
+            return cumulantStatisService.getCumulantDataByUnitNameAndTime(sdf.parse(data.get("stime")), sdf.parse(data.get("etime")), data.get("unitname"));
         } catch (ParseException e) {
             e.printStackTrace();
         }

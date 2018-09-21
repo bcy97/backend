@@ -17,6 +17,7 @@ public class Constants {
 	public final static short CC_STATISDATA = 100;
 	public final static short CC_USERINFO = 84;
 	public final static short CC_REALCALDATA = 110;
+	public final static short CC_CHANNELTYPE = 0;
 
 	// history data type
 	public final static byte CC_HDT_HOUS_DATA = 0x03;

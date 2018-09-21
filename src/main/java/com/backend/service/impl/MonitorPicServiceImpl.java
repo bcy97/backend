@@ -11,6 +11,7 @@ import com.backend.vo.AnValue;
 import com.backend.vo.DataPacket;
 import com.backend.vo.StValue;
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.io.InputStream;
@@ -28,8 +29,7 @@ public class MonitorPicServiceImpl implements MonitorPicService {
 
     private RealDataDao realDataDao;
 
-    public MonitorPicServiceImpl(){}
-
+    @Autowired
     public MonitorPicServiceImpl(RealDataDao realDataDao){
         this.realDataDao = realDataDao;
     }

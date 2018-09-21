@@ -7,6 +7,7 @@ import org.apache.log4j.Logger;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.io.UnsupportedEncodingException;
 import java.net.InetSocketAddress;
 import java.net.Socket;
 import java.net.SocketAddress;
@@ -19,10 +20,11 @@ public class SocketConnect {
 
     /// 每个包数据区最大8 * 1024
     private static final int MAX_PACKET_SIZE = 8 * 1024;
+    public static String userName = "demo";
 
     private static SocketAddress getSocketAddress() {
-        String ip = "127.0.0.1";
-        int port = 10002;
+        String ip = "192.168.1.104";
+        int port = 10001;
 
         return new InetSocketAddress(ip, port);
     }
@@ -79,13 +81,18 @@ public class SocketConnect {
         Socket socket = new Socket();
         try {
             socket.connect(getSocketAddress());
-            socket.setSoTimeout(3000);
             OutputStream os = socket.getOutputStream();
             InputStream is = socket.getInputStream();
 
+            byte[] bDatas = null;
+
+            // 要先发一个包，告诉上位机通道类型
+            bDatas = generateChannelDeclarationPackage().serialize();
+            os.write(bDatas, 0, bDatas.length);
+
             List<DataPacket> dps = toDataPackets(sendDatas, cmd);
             for (DataPacket dp : dps) {
-                byte[] bDatas = dp.serialize();
+                bDatas = dp.serialize();
                 os.write(bDatas, 0, bDatas.length);
             }
 
@@ -101,6 +108,32 @@ public class SocketConnect {
 
             return null;
         }
+    }
+
+    /***
+     * 生成通道类型声明包
+     * */
+    private static DataPacket generateChannelDeclarationPackage(){
+        if(null == userName)
+            userName = "";
+
+        byte[] strBytes = null;
+        try {
+            strBytes = userName.getBytes("UTF8");
+        }catch (UnsupportedEncodingException ex){
+            strBytes = new byte[0];
+        }
+
+        byte[] datas = new byte[strBytes.length + 2];
+        datas[0] = 0x01;
+        datas[1] = (byte) strBytes.length;
+
+        if(0 != strBytes.length)
+            System.arraycopy(strBytes,0,datas,2,strBytes.length);
+
+        DataPacket dp = new DataPacket(Constants.CC_CHANNELTYPE,datas);
+
+        return dp;
     }
 
     /****

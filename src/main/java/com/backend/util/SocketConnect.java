@@ -23,7 +23,7 @@ public class SocketConnect {
     public static String userName = "demo";
 
     private static SocketAddress getSocketAddress() {
-        String ip = "192.168.1.104";
+        String ip = "192.168.1.106";
         int port = 10001;
 
         return new InetSocketAddress(ip, port);
@@ -37,10 +37,15 @@ public class SocketConnect {
         DataPacket dp;
         byte[] bDatas;
         int packagCount = 0;
+        int len = 0;
         try {
             while (true) {
                 byte[] bHead = new byte[12];
-                is.read(bHead, 0, 12);
+
+                len = 0;
+                while(len < bHead.length)
+                    len += is.read(bHead,len,bHead.length - len);
+
                 dp = new DataPacket();
                 dp.toDataPacketHead(bHead);
 
@@ -48,19 +53,25 @@ public class SocketConnect {
                     break;
 
                 bDatas = new byte[dp.getLength()];
-                is.read(bDatas, 0, bDatas.length);
+                len = 0;
+                while(len < bDatas.length)
+                    len += is.read(bDatas,len,bDatas.length - len);
+
                 for (byte item : bDatas)
                     list.add(item);
 
-                is.read(bDatas, 0, 1);
+                bDatas = new byte[1];
+                len = 0;
+                while(len < bDatas.length)
+                    len += is.read(bDatas,len,bDatas.length - len);
 
                 if (0 == dp.getTailFlag())
                     break;
                 packagCount++;
             }
         } catch (Exception e) {
-            System.out.println("接收数据超时!" + e.getMessage() + "\t接包数:" + packagCount);
-            logger.error("接收数据超时!" + e.getMessage() + "\t接包数:" + packagCount);
+            System.out.println("接收数据超时!" + e.getMessage() );
+            logger.error("接收数据超时!" + e.getMessage() );
         }
 
         ByteBuffer bb = ByteBuffer.allocate(list.size());

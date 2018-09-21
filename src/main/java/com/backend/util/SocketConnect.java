@@ -36,6 +36,7 @@ public class SocketConnect {
         List<Byte> list = new ArrayList<>();
         DataPacket dp;
         byte[] bDatas;
+        int packagCount = 0;
         try {
             while (true) {
                 byte[] bHead = new byte[12];
@@ -55,10 +56,11 @@ public class SocketConnect {
 
                 if (0 == dp.getTailFlag())
                     break;
+                packagCount++;
             }
         } catch (Exception e) {
-            System.out.println("接收数据超时!" + e.getMessage());
-            logger.error("接收数据超时!" + e.getMessage());
+            System.out.println("接收数据超时!" + e.getMessage() + "\t接包数:" + packagCount);
+            logger.error("接收数据超时!" + e.getMessage() + "\t接包数:" + packagCount);
         }
 
         ByteBuffer bb = ByteBuffer.allocate(list.size());
@@ -88,7 +90,7 @@ public class SocketConnect {
 
             // 要先发一个包，告诉上位机通道类型
             bDatas = generateChannelDeclarationPackage().serialize();
-            os.write(bDatas, 0, bDatas.length);
+         //   os.write(bDatas, 0, bDatas.length);
 
             List<DataPacket> dps = toDataPackets(sendDatas, cmd);
             for (DataPacket dp : dps) {

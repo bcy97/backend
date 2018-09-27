@@ -1,37 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <curveCfg>
-	<unit name="1#开闭所">
-		<group name="1#开闭所1#进线">
-			<line name="N05IaC" color="008000" />
-			<line name="N05IbC" />
-			<line name="N05IcC" color="FF0000" />
+	<unit name="A号站1">
+		<group name="1-01柜1#进线">
+			<line name="A_H1_01_Ia" color="008000" />
+			<line name="A_H1_01_Ib" />
+			<line name="A_H1_01_Ic" color="FF0000" />
 		</group>
-		<group name="1#开闭所2#进线">
-			<line name="N06IaC" color="FF0000" />
-			<line name="N06IbC" />
-			<line name="N06IcC" color="008000" />
-		</group>
-	</unit>
-	<unit name="2#开闭所">
-		<group name="2#开闭所1#进线">>
-			<line name="TAN09Ia" color="FF0000" />
-			<line name="TAN09Ib" />
-			<line name="TAN09Ic" color="008000" />
+		<group name="1-03柜1#出线">
+			<line name="A_H1_03_Ia" color="FF0000" />
+			<line name="A_H1_03_Ib" />
+			<line name="A_H1_03_Ic" color="008000" />
 		</group>
 	</unit>
-	<unit name="3#开闭所">
-		<group name="3#开闭所1#进线">>
-			<line name="CAN09Ia" color="FF0000" />
-			<line name="CAN09Ib" />
-			<line name="CAN09Ic" color="008000" />
-		</group>
-	</unit>
-	<unit name="4#开闭所">
-		<group name="4#开闭所1#进线">>
-			<line name="DAN09Ia" color="FF0000" />
-			<line name="DAN09Ib" />
-			<line name="DAN09Ic" color="008000" />
+	<unit name="2#A号站2">
+		<group name="1-04柜2#出线">>
+			<line name="A_H1_04_Ia" color="FF0000" />
+			<line name="A_H1_04_Ib" />
+			<line name="A_H1_04_Ic" color="008000" />
 		</group>
 	</unit>
 </curveCfg>

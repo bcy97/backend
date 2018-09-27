@@ -45,7 +45,7 @@ public class AlertServiceImpl implements AlertService {
 
         EventInfo[] rtnData = new EventInfo[20];
         for (int i = 0; i < 20; i++)
-            rtnData[i] = infos[infos.length - 1 - i];
+            rtnData[i] = infos[i];
 
         return rtnData;
     }

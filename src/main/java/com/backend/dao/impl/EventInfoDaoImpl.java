@@ -162,7 +162,7 @@ public class EventInfoDaoImpl implements EventInfoDao {
                 EventInfo ei = new EventInfo(id, format.format(cal.getTime()), info);
 
                 if (length > 0)
-                    toEventLogList(length,bData,id);
+                    ei.setEventLogs(toEventLogList(length,bData,id));
                 list.add(ei);
             }
         }catch(Exception e){
@@ -219,7 +219,7 @@ public class EventInfoDaoImpl implements EventInfoDao {
         for(int i = 0; i < anNum; i++){
             int point = -1;
             String name = "an" + i;
-            float value = 0;
+            float value =  anData[i];
             if(anList != null && anList.size() > i){
                 AnO ano = anList.get(i);
                 name = ano.getCname();

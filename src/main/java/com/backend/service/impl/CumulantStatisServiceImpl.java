@@ -44,7 +44,7 @@ public class CumulantStatisServiceImpl implements CumulantStatisService {
 
     @Override
     public List<Cumulant> getDataByUnitName(String unitName) {
-
+        int index = -1;
         Integer[] ids = utils.getAcIdsByUnitName(unitName);
 
         Calendar currTime = Calendar.getInstance();
@@ -78,10 +78,27 @@ public class CumulantStatisServiceImpl implements CumulantStatisService {
             Cumulant cumulant = new Cumulant();
             cumulant.setId(ids[i]);
             cumulant.setName(cfgData.getAcO(ids[i]).getCname());
-            cumulant.setToday(todayStatisDatas[i].getAccValue().getValue());
-            cumulant.setLastday(lastdayStatisDatas[i].getAccValue().getValue());
-            cumulant.setThisMonth(thisMonthStatisDatas[i].getAccValue().getValue());
-            cumulant.setLastMonth(lastMonthStatisDatas[i].getAccValue().getValid());
+
+            if(-1 == (index = findAcStatisDataById(ids[i],todayStatisDatas)))
+                cumulant.setToday(-1);
+            else
+                cumulant.setToday(todayStatisDatas[index].getAccValue().getValue());
+
+            if(-1 == (index = findAcStatisDataById(ids[i],lastdayStatisDatas)))
+                cumulant.setLastday(-1);
+            else
+                cumulant.setLastday(lastdayStatisDatas[index].getAccValue().getValue());
+
+            if(-1 == (index = findAcStatisDataById(ids[i],thisMonthStatisDatas)))
+                cumulant.setLastday(-1);
+            else
+                cumulant.setLastday(thisMonthStatisDatas[index].getAccValue().getValue());
+
+            if(-1 == (index = findAcStatisDataById(ids[i],lastMonthStatisDatas)))
+                cumulant.setLastday(-1);
+            else
+                cumulant.setLastday(lastMonthStatisDatas[index].getAccValue().getValue());
+
             list.add(cumulant);
         }
 
@@ -94,12 +111,28 @@ public class CumulantStatisServiceImpl implements CumulantStatisService {
 
         AcStatisData[] queryStatisDatas = getDataByUnitNameAndTime(stime, etime, unitName);
 
-        for (int i = 0; i < queryStatisDatas.length; i++)
-            list.get(i).setStatis(queryStatisDatas[i].getAccValue().getValue());
+        int index = -1;
+        for (int i = 0; i < list.size(); i++)
+            if(-1 == (index = findAcStatisDataById(list.get(i).getId(),queryStatisDatas)))
+                list.get(i).setStatis(-1);
+            else
+                list.get(i).setStatis(queryStatisDatas[index].getAccValue().getValue());
 
         return list;
     }
 
+    /***
+     * 查询某个id在电度统计数组中的索引，如找到返回索引，否则返回-1
+     * */
+    private int findAcStatisDataById(int id,AcStatisData[] datas){
+        if(datas == null || datas.length == 0)
+            return -1;
+
+        for(int i = 0; i < datas.length; i++)
+            if(datas[i].getId() == id)
+                return i;
+        return -1;
+    }
 
     private AcStatisData[] getDataByUnitNameAndTime(Date stime, Date etime, String unitName) {
         Integer[] ids = utils.getAcIdsByUnitName(unitName);

@@ -20,12 +20,14 @@ public class LineServiceImpl implements LineService {
     private RealDataDao realDataDao;
     private HistoryDataDao historyDataDao;
     private Utils utils;
+    private CfgData cfgData;
 
     @Autowired
-    public LineServiceImpl(RealDataDao realDataDao, HistoryDataDao historyDataDao, Utils utils) {
+    public LineServiceImpl(RealDataDao realDataDao, HistoryDataDao historyDataDao, Utils utils, CfgData cfgData) {
         this.realDataDao = realDataDao;
         this.historyDataDao = historyDataDao;
         this.utils = utils;
+        this.cfgData = cfgData;
     }
 
     /**
@@ -37,7 +39,6 @@ public class LineServiceImpl implements LineService {
     @Override
     public Map<String, Float> getRealLineData(String[] ptNames) {
         Integer[] ids = new Integer[ptNames.length];
-        CfgData cfgData = new CfgData();
 
         for (int i = 0; i < ids.length; i++)
             ids[i] = cfgData.getAnID(ptNames[i]);

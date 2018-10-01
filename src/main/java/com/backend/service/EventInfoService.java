@@ -16,4 +16,14 @@ public interface EventInfoService {
      * @return
      */
     EventInfo[] getEventByTimeAndPointName(Date stime, Date etime, String pointName);
+
+    /**
+     * 根据时间段和单元名列表获取 时间精确到5min
+     *
+     * @param stime
+     * @param etime
+     * @param unitnames
+     * @return
+     */
+    EventInfo[] getEventByTimeAndUnitNames(Date stime, Date etime, List<String> unitnames);
 }

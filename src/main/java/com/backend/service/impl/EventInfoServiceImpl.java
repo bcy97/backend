@@ -13,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
+import java.util.List;
 
 @Service
 public class EventInfoServiceImpl implements EventInfoService {
@@ -24,7 +25,7 @@ public class EventInfoServiceImpl implements EventInfoService {
     private CfgData cfgData;
 
     @Autowired
-    public EventInfoServiceImpl(EventInfoDao eventInfoDao, Utils utils,CfgData cfgData) {
+    public EventInfoServiceImpl(EventInfoDao eventInfoDao, Utils utils, CfgData cfgData) {
         this.eventInfoDao = eventInfoDao;
         this.utils = utils;
         this.cfgData = cfgData;
@@ -53,5 +54,10 @@ public class EventInfoServiceImpl implements EventInfoService {
             return null;
 
         return eventInfoDao.getEventInfoByTimeAndId(new Integer[]{id}, utils._DATE_FORMAT_.format(stime), utils._DATE_FORMAT_.format(etime), type);
+    }
+
+    @Override
+    public EventInfo[] getEventByTimeAndUnitNames(Date stime, Date etime, List<String> unitnames) {
+        return null;
     }
 }

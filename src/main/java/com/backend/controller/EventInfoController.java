@@ -26,7 +26,7 @@ public class EventInfoController {
     }
 
     @RequestMapping(value = "/getInfo", consumes = "application/json")
-    public EventInfo[] getEventByTimeAndPointName(@RequestBody Map<String, String> data) {
+    public EventInfo[] getEventByTimeAndUnitNames(@RequestBody Map<String, String> data) {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm");
 
         Gson gson = new Gson();
@@ -39,4 +39,6 @@ public class EventInfoController {
         }
         return null;
     }
+
+
 }

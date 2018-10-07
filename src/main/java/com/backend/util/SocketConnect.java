@@ -23,7 +23,7 @@ public class SocketConnect {
     public static String userName = "demo";
 
     private static SocketAddress getSocketAddress() {
-        String ip = "192.168.1.106";
+        String ip = "192.168.1.104";
         int port = 10001;
 
         return new InetSocketAddress(ip, port);

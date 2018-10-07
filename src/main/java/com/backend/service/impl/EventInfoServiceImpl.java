@@ -12,6 +12,8 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 
@@ -58,6 +60,10 @@ public class EventInfoServiceImpl implements EventInfoService {
 
     @Override
     public EventInfo[] getEventByTimeAndUnitNames(Date stime, Date etime, List<String> unitnames) {
-        return null;
+        List<Integer> ids = new ArrayList<Integer>();
+        for(String unitName : unitnames)
+            ids.addAll(Arrays.asList(utils.getStIdsByUnitName(unitName)));
+
+        return eventInfoDao.getEventInfoByTimeAndId(ids.toArray(new Integer[ids.size()]), utils._DATE_FORMAT_.format(stime), utils._DATE_FORMAT_.format(etime), Constants.CC_EDT_STEPD);
     }
 }

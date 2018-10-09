@@ -9,6 +9,7 @@ import com.backend.vo.AnO;
 import com.backend.vo.EventInfo;
 import com.backend.vo.StO;
 import org.apache.log4j.Logger;
+import org.apache.tomcat.util.bcel.Const;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -59,10 +60,20 @@ public class EventInfoServiceImpl implements EventInfoService {
     }
 
     @Override
-    public EventInfo[] getEventByTimeAndUnitNames(Date stime, Date etime, List<String> unitnames) {
+    public EventInfo[] getEventByTimeAndUnitNames(Date stime, Date etime, List<String> unitnames,int type) {
         List<Integer> ids = new ArrayList<Integer>();
-        for(String unitName : unitnames)
-            ids.addAll(Arrays.asList(utils.getStIdsByUnitName(unitName)));
+
+        byte dataType = Constants.CC_EDT_STEPD;
+
+        for (String unitName : unitnames) {
+            if (1 == type) {
+                ids.addAll(Arrays.asList(utils.getAnIdsByUnitName(unitName)));
+                dataType = Constants.CC_EDT_ANEPD;
+            } else {
+                ids.addAll(Arrays.asList(utils.getStIdsByUnitName(unitName)));
+                dataType = Constants.CC_EDT_STEPD;
+            }
+        }
 
         return eventInfoDao.getEventInfoByTimeAndId(ids.toArray(new Integer[ids.size()]), utils._DATE_FORMAT_.format(stime), utils._DATE_FORMAT_.format(etime), Constants.CC_EDT_STEPD);
     }

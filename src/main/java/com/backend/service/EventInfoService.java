@@ -25,5 +25,5 @@ public interface EventInfoService {
      * @param unitnames
      * @return
      */
-    EventInfo[] getEventByTimeAndUnitNames(Date stime, Date etime, List<String> unitnames);
+    EventInfo[] getEventByTimeAndUnitNames(Date stime, Date etime, List<String> unitnames,int type);
 }

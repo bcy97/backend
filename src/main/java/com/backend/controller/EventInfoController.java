@@ -32,8 +32,11 @@ public class EventInfoController {
         Gson gson = new Gson();
         List<String> unitnames = gson.fromJson(data.get("unitname"), new TypeToken<List<String>>() {
         }.getType());
+
+
         try {
-            return eventInfoService.getEventByTimeAndUnitNames(sdf.parse(data.get("stime")), sdf.parse(data.get("etime")), unitnames);
+            // type 0:遥信    1:遥测
+            return eventInfoService.getEventByTimeAndUnitNames(sdf.parse(data.get("stime")), sdf.parse(data.get("etime")), unitnames,new Integer(data.get("type")));
         } catch (ParseException e) {
             e.printStackTrace();
         }

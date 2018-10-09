@@ -46,8 +46,16 @@ public class RealDataServiceImpl implements RealDataService {
 
         Map<String, AnValue> map = new HashMap<>();
 
-        for (int i = 0; i < ids.length; i++)
+        for (int i = 0; i < ids.length; i++) {
+            //valid 不为0，要对该值进行上下限判断,为越上限设valid为2,越下限设valid为3
+            if(0 != anValues[i].getValid()){
+                if(anValues[i].getValue() > cfgData.getAnO(ids[i]).getUpV())
+                    anValues[i].setValid((byte)2);
+                else if(anValues[i].getValue() < cfgData.getAnO(ids[i]).getDwV())
+                    anValues[i].setValid((byte)3);
+            }
             map.put(cfgData.getAnO(ids[i]).getSname(), anValues[i]);
+        }
 
         return map;
     }

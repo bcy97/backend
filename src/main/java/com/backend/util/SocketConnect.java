@@ -38,7 +38,7 @@ public class SocketConnect {
     }
 
     /***
-     * 读ip配置
+     * 读配置
      * */
     private static void loadCfg(){
         File file = null;

@@ -80,6 +80,8 @@ public class HistoryDataDaoImpl implements HistoryDataDao {
 
         bb.put(utils.idArrToBytes(ids));
 
+        System.arraycopy(bb.array(), 0, datas, 0, datas.length);
+
         return SocketConnect.getData(datas, Constants.CC_HISDATA, logger);
     }
 

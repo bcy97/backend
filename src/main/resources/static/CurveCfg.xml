@@ -14,7 +14,7 @@
 		</group>
 	</unit>
 	<unit name="2#A号站2">
-		<group name="1-04柜2#出线">>
+		<group name="1-04柜2#出线">
 			<line name="A_H1_04_Ia" color="FF0000" />
 			<line name="A_H1_04_Ib" />
 			<line name="A_H1_04_Ic" color="008000" />

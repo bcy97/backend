@@ -8,6 +8,7 @@ import org.apache.log4j.Logger;
 import org.dom4j.Document;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
@@ -20,7 +21,12 @@ import java.util.regex.Pattern;
 
 @Component
 public class CfgData implements ApplicationRunner {
+
     private Logger logger = Logger.getLogger("CfgData");
+
+    @Autowired
+    private Utils utils;
+
     private Pattern pattern = Pattern.compile("\\s*|\t|\r|\n");
     private Map<String, AnO> anMap = null;
     private Map<String, StO> stMap = null;
@@ -348,7 +354,7 @@ public class CfgData implements ApplicationRunner {
                             + e1.getMessage());
                 }
             }
-            ano.setId(Utils.getId(Constants.IDAN, ano.getUnitNo(),
+            ano.setId(utils.getId(Constants.IDAN, ano.getUnitNo(),
                     ano.getPtNo()));
             anMap.put(ano.getSname(), ano);
             anIdNameMap.put(ano.getId(), ano.getSname());
@@ -446,7 +452,7 @@ public class CfgData implements ApplicationRunner {
                     }
                 }
             }
-            sto.setId(Utils.getId(Constants.IDST, sto.getUnitNo(),
+            sto.setId(utils.getId(Constants.IDST, sto.getUnitNo(),
                     sto.getPtNo()));
             stMap.put(sto.getSname(), sto);
             stIdNameMap.put(sto.getId(), sto.getSname());
@@ -539,7 +545,7 @@ public class CfgData implements ApplicationRunner {
                 }
 
             }
-            aco.setId(Utils.getId(Constants.IDACC, aco.getUnitNo(),
+            aco.setId(utils.getId(Constants.IDACC, aco.getUnitNo(),
                     aco.getPtNo()));
             acMap.put(aco.getSname(), aco);
             acIdNameMap.put(aco.getId(), aco.getSname());

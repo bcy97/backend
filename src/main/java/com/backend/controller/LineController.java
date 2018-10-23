@@ -1,6 +1,8 @@
 package com.backend.controller;
 
 import com.backend.service.LineService;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -9,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 import java.util.Map;
 
 @RestController
@@ -29,12 +32,17 @@ public class LineController {
 
 
     @RequestMapping(value = "/getHistoryLineData", consumes = "application/json")
-    public Map<String, Float[]> getHistoryData(@RequestBody String time, @RequestBody String[] pointName) {
+    public Map<String, Float[]> getHistoryData(@RequestBody Map<String, String> data) {
+
+        Gson gson = new Gson();
+        String[] pointName = gson.fromJson(data.get("pointName"), new TypeToken<String[]>() {
+        }.getType());
+
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm");
 
         try {
-            Date stime = sdf.parse(time + " 00:00");
-            Date etime = sdf.parse(time + " 23:59");
+            Date stime = sdf.parse(data.get("time") + " 00:00");
+            Date etime = sdf.parse(data.get("time") + " 23:59");
             return lineService.getHistoryLineData(stime, etime, pointName);
         } catch (ParseException ex) {
             ex.printStackTrace();

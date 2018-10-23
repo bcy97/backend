@@ -22,21 +22,21 @@ public class Utils {
     @Autowired
     private CfgData cfgData;
 
-    public static int getId(byte type, short unitNo, short ptNo) {
+    public int getId(byte type, short unitNo, short ptNo) {
 
         int id = type << 24 | (unitNo & 0xFF) << 16 | (ptNo & 0xFFFF);
 
         return id;
     }
 
-    public static byte getTypeInId(int id) {
+    public byte getTypeInId(int id) {
 
         byte type = (byte) (id >> 24);
 
         return type;
     }
 
-    public static short getUnitNoInId(int id) {
+    public short getUnitNoInId(int id) {
 
         short unitNo = (byte) (id >> 16);
 
@@ -50,7 +50,7 @@ public class Utils {
         return ptNo;
     }
 
-    public static byte[] idArrToBytes(int[] idArr) {
+    public byte[] idArrToBytes(int[] idArr) {
         byte[] idByteArr = new byte[idArr.length * 4];
 
         ByteBuffer bb = ByteBuffer.allocate(idByteArr.length);
@@ -63,7 +63,7 @@ public class Utils {
         return idByteArr;
     }
 
-    public static byte[] idArrToBytes(Integer[] idArr) {
+    public byte[] idArrToBytes(Integer[] idArr) {
         byte[] idByteArr = new byte[idArr.length * 4];
 
         ByteBuffer bb = ByteBuffer.allocate(idByteArr.length);
@@ -76,24 +76,24 @@ public class Utils {
         return idByteArr;
     }
 
-    public static Integer[] anPtNamesToIds(String[] ptNames) {
+    public Integer[] anPtNamesToIds(String[] ptNames) {
         Integer[] ids = new Integer[ptNames.length];
         for (int i = 0; i < ptNames.length; i++)
-            ids[i] = new CfgData().getAnID(ptNames[i]);
+            ids[i] = cfgData.getAnID(ptNames[i]);
         return ids;
     }
 
-    public static Integer[] acPtNamesToIds(String[] ptNames) {
+    public Integer[] acPtNamesToIds(String[] ptNames) {
         Integer[] ids = new Integer[ptNames.length];
         for (int i = 0; i < ptNames.length; i++)
-            ids[i] = new CfgData().getAcID(ptNames[i]);
+            ids[i] = cfgData.getAcID(ptNames[i]);
         return ids;
     }
 
-    public static Integer[] stPtNamesToIds(String[] ptNames) {
+    public Integer[] stPtNamesToIds(String[] ptNames) {
         Integer[] ids = new Integer[ptNames.length];
         for (int i = 0; i < ptNames.length; i++)
-            ids[i] = new CfgData().getStID(ptNames[i]);
+            ids[i] = cfgData.getStID(ptNames[i]);
         return ids;
     }
 
@@ -171,7 +171,7 @@ public class Utils {
         while (tmpCal.getTimeInMillis() <= endTime.getTimeInMillis()) {
             int minute = tmpCal.get(Calendar.MINUTE);
             if (0 == minute % 5) {
-                list.add(Utils._DATE_FORMAT_.format(tmpCal.getTime()));
+                list.add(_DATE_FORMAT_.format(tmpCal.getTime()));
                 tmpCal.add(Calendar.MINUTE, 5);
             } else {
                 tmpCal.add(Calendar.MINUTE, 1);
@@ -195,7 +195,7 @@ public class Utils {
         while (tmpCal.getTimeInMillis() <= endTime.getTimeInMillis()) {
             int minute = tmpCal.get(Calendar.MINUTE);
             if (0 == minute) {
-                list.add(Utils._DATE_FORMAT_.format(tmpCal.getTime()));
+                list.add(_DATE_FORMAT_.format(tmpCal.getTime()));
                 tmpCal.add(Calendar.HOUR, 1);
             } else {
                 tmpCal.add(Calendar.MINUTE, 1);

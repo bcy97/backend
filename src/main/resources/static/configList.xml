@@ -5,12 +5,12 @@
             <configFile name="中心电站.xml" md5="f639b46e98d87d6feb40b42fe1fea180" />
         </configType>
         <configType type="2" name="PIC配置文件" path="pictures">
-            <configFile name="A号站低压系统图.xml" md5="e253a61e061b1ce860f66ba465d4edf9" />
-            <configFile name="A号站高压系统数据表.xml" md5="e253a61e061b1ce860f66ba465d4edf9" />
-            <configFile name="A号站高压系统图.xml" md5="e253a61e061b1ce860f66ba465d4edf9" />
+            <configFile name="A号站低压系统图.xml" md5="1e9519fa3d8a8d8ff7c4a8ab777ffbe9" />
+            <configFile name="A号站高压系统数据表.xml" md5="aed76d5e65a97643dc728fec5a205be7" />
+            <configFile name="A号站高压系统图.xml" md5="fcacc2ba722986eee7d0febd9c9ed8e7" />
         </configType>
         <configType type="4" name="NEMS基本配置文件" path="baseConfigs">
-            <configFile name="CurveCfg.xml" md5="2195483037627b30c956bcea8be590fb" />
+            <configFile name="CurveCfg.xml" md5="80cf96ed12a17ef470aec73e197785bf" />
         </configType>
     </dynamic>
 </config>

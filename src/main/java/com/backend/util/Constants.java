@@ -51,4 +51,5 @@ public class Constants {
 	public static final String _GET_NOW_STATE_ = "2";
 	public static final String _LOGIN_ = "3";
 
+	public static final int _DEFAULT_PORT_ = 10001;
 }

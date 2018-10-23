@@ -3,11 +3,14 @@ package com.backend.util;
 import com.backend.vo.DataPacket;
 import org.apache.commons.lang.ArrayUtils;
 import org.apache.log4j.Logger;
+import org.apache.tomcat.util.bcel.Const;
+import org.dom4j.Document;
+import org.dom4j.DocumentException;
+import org.dom4j.Element;
+import org.dom4j.io.SAXReader;
+import org.springframework.util.ResourceUtils;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.UnsupportedEncodingException;
+import java.io.*;
 import java.net.InetSocketAddress;
 import java.net.Socket;
 import java.net.SocketAddress;
@@ -20,13 +23,58 @@ public class SocketConnect {
 
     /// 每个包数据区最大8 * 1024
     private static final int MAX_PACKET_SIZE = 8 * 1024;
-    public static String userName = "demo";
+    private static String userName = null;
+    private static String ip = null;
+    private static int port = Constants._DEFAULT_PORT_;
+    private static Logger logger_ = Logger.getLogger("SocketConnect");
 
     private static SocketAddress getSocketAddress() {
-        String ip = "127.0.0.1";
-        int port = 10001;
+     //   String ip = "192.168.1.104";
+     //   int port = 10001;
+        if(null == ip)
+            loadCfg();
 
         return new InetSocketAddress(ip, port);
+    }
+
+    /***
+     * 读配置
+     * */
+    private static void loadCfg(){
+        File file = null;
+
+        try {
+            file = ResourceUtils.getFile("classpath:local.xml");
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        if (file != null && !file.exists()) {
+            logger_.error(file + " file not found!");
+            return;
+        }
+
+        SAXReader reader = new SAXReader();
+        Document doc = null;
+        try {
+            doc = reader.read(file);
+        }catch (DocumentException de){
+            logger_.error("加载local.xml文件出错.");
+            de.printStackTrace();
+        }
+        Element root = doc.getRootElement();
+
+        for(Object item : root.elements()){
+            if("ServerIP".equals(((Element) item).getName()))
+                ip = ((Element)item).getText();
+            else if("ServerPort".equals(((Element) item).getName()))
+                try {
+                    port = new Integer(((Element) item).getText());
+                }catch (Exception e){
+                    port = Constants._DEFAULT_PORT_;
+                }
+            else if("userName".equals(((Element) item).getName()))
+                userName = ((Element)item).getText();
+        }
     }
 
     /***
@@ -43,8 +91,8 @@ public class SocketConnect {
                 byte[] bHead = new byte[12];
 
                 len = 0;
-                while (len < bHead.length)
-                    len += is.read(bHead, len, bHead.length - len);
+                while(len < bHead.length)
+                    len += is.read(bHead,len,bHead.length - len);
 
                 dp = new DataPacket();
                 dp.toDataPacketHead(bHead);
@@ -54,24 +102,24 @@ public class SocketConnect {
 
                 bDatas = new byte[dp.getLength()];
                 len = 0;
-                while (len < bDatas.length)
-                    len += is.read(bDatas, len, bDatas.length - len);
+                while(len < bDatas.length)
+                    len += is.read(bDatas,len,bDatas.length - len);
 
                 for (byte item : bDatas)
                     list.add(item);
 
                 bDatas = new byte[1];
                 len = 0;
-                while (len < bDatas.length)
-                    len += is.read(bDatas, len, bDatas.length - len);
+                while(len < bDatas.length)
+                    len += is.read(bDatas,len,bDatas.length - len);
 
                 if (0 == dp.getTailFlag())
                     break;
                 packagCount++;
             }
         } catch (Exception e) {
-            System.out.println("接收数据超时!" + e.getMessage());
-            logger.error("接收数据超时!" + e.getMessage());
+            System.out.println("接收数据超时!" + e.getMessage() );
+            logger.error("接收数据超时!" + e.getMessage() );
         }
 
         ByteBuffer bb = ByteBuffer.allocate(list.size());
@@ -101,7 +149,7 @@ public class SocketConnect {
 
             // 要先发一个包，告诉上位机通道类型
             bDatas = generateChannelDeclarationPackage().serialize();
-            //   os.write(bDatas, 0, bDatas.length);
+            //os.write(bDatas, 0, bDatas.length);
 
             List<DataPacket> dps = toDataPackets(sendDatas, cmd);
             for (DataPacket dp : dps) {
@@ -126,14 +174,14 @@ public class SocketConnect {
     /***
      * 生成通道类型声明包
      * */
-    private static DataPacket generateChannelDeclarationPackage() {
-        if (null == userName)
+    private static DataPacket generateChannelDeclarationPackage(){
+        if(null == userName)
             userName = "";
 
         byte[] strBytes = null;
         try {
             strBytes = userName.getBytes("UTF8");
-        } catch (UnsupportedEncodingException ex) {
+        }catch (UnsupportedEncodingException ex){
             strBytes = new byte[0];
         }
 
@@ -141,10 +189,10 @@ public class SocketConnect {
         datas[0] = 0x01;
         datas[1] = (byte) strBytes.length;
 
-        if (0 != strBytes.length)
-            System.arraycopy(strBytes, 0, datas, 2, strBytes.length);
+        if(0 != strBytes.length)
+            System.arraycopy(strBytes,0,datas,2,strBytes.length);
 
-        DataPacket dp = new DataPacket(Constants.CC_CHANNELTYPE, datas);
+        DataPacket dp = new DataPacket(Constants.CC_CHANNELTYPE,datas);
 
         return dp;
     }

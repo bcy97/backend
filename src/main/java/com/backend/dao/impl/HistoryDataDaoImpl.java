@@ -96,7 +96,8 @@ public class HistoryDataDaoImpl implements HistoryDataDao {
             id = bb.getInt();
             size -= 4;
             if (Constants.CC_NOTHINGNESS == id) {
-                list.add(new AnValue((byte) 0, 0));
+                for(int i = 0; i < count; i++)
+                    list.add(new AnValue((byte) 0, 0));
                 continue;
             }
 

@@ -3,7 +3,6 @@ package com.backend.dao.impl;
 import com.backend.dao.UserDao;
 import com.backend.util.Constants;
 import com.backend.util.SocketConnect;
-import com.backend.vo.DataPacket;
 import com.backend.vo.UserInfo;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Repository;

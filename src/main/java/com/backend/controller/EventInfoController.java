@@ -5,7 +5,6 @@ import com.backend.vo.EventInfo;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.json.GsonJsonParser;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -36,7 +35,7 @@ public class EventInfoController {
 
         try {
             // type 0:遥信    1:遥测
-            return eventInfoService.getEventByTimeAndUnitNames(sdf.parse(data.get("stime")), sdf.parse(data.get("etime")), unitnames,new Integer(data.get("type")));
+            return eventInfoService.getEventByTimeAndUnitNames(sdf.parse(data.get("stime")), sdf.parse(data.get("etime")), unitnames, new Integer(data.get("type")));
         } catch (ParseException e) {
             e.printStackTrace();
         }

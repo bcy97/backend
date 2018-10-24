@@ -1,7 +1,6 @@
 package com.backend.controller;
 
 import com.backend.service.CumulantStatisService;
-import com.backend.vo.AcStatisData;
 import com.backend.vo.Cumulant;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;

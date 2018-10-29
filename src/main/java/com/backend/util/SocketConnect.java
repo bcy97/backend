@@ -3,7 +3,6 @@ package com.backend.util;
 import com.backend.vo.DataPacket;
 import org.apache.commons.lang.ArrayUtils;
 import org.apache.log4j.Logger;
-import org.apache.tomcat.util.bcel.Const;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.Element;

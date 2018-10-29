@@ -151,8 +151,10 @@ public class CfgData implements ApplicationRunner {
 
 //			File file = new File(Utils._RESOURCES_PATH_ + Constants._DIR_UNITCFG_);
         File file = null;
+        // 取得根目录路径
+        String rootPath = System.getProperty("user.dir");
         try {
-            file = ResourceUtils.getFile("classpath:unitCfg");
+            file = ResourceUtils.getFile(rootPath + "//unitCfg");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }

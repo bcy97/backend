@@ -22,6 +22,7 @@ public class Utils {
     @Autowired
     private CfgData cfgData;
 
+
     public int getId(byte type, short unitNo, short ptNo) {
 
         int id = type << 24 | (unitNo & 0xFF) << 16 | (ptNo & 0xFFFF);

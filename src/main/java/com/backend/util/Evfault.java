@@ -25,8 +25,9 @@ public class Evfault {
 
     private void initEvfault() {
         File file = null;
+        String rootPath = System.getProperty("user.dir");
         try {
-            file = ResourceUtils.getFile("classpath:evfault.txt");
+            file = ResourceUtils.getFile(rootPath + "//evfault.txt");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }

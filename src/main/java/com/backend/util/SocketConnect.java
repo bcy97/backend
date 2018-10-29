@@ -42,8 +42,11 @@ public class SocketConnect {
     private static void loadCfg(){
         File file = null;
 
+        // 取得根目录路径
+        String rootPath = System.getProperty("user.dir");
+        System.out.println(rootPath);
         try {
-            file = ResourceUtils.getFile("classpath:local.xml");
+            file = ResourceUtils.getFile(rootPath + "//local.xml");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }

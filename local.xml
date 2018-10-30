@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+    <ServerIP>192.168.1.104</ServerIP>
+    <!-- <ServerIP>127.0.0.1</ServerIP>-->
+     <ServerPort>10001</ServerPort>
+     <userName>demo</userName>
+ </configuration>

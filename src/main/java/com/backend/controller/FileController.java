@@ -26,7 +26,10 @@ public class FileController {
     public boolean compare(@RequestBody String md5) {
 
         try {
-            File configList = ResourceUtils.getFile("classpath:static/configList.xml");
+            // 取得根目录路径
+            String rootPath = System.getProperty("user.dir");
+    //        File configList = ResourceUtils.getFile("classpath:static/configList.xml");
+            File configList = ResourceUtils.getFile(rootPath + "//static//configList.xml");
             if (md5 != null && md5.equals(mdUtil.getMD5(configList))) {
                 return true;
             }

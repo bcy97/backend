@@ -2,6 +2,7 @@ package com.backend.util;
 
 import com.backend.vo.AnO;
 import com.backend.vo.StO;
+import org.springframework.stereotype.Component;
 import org.springframework.util.ResourceUtils;
 
 import java.io.File;
@@ -12,7 +13,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.regex.Pattern;
-import org.springframework.stereotype.Component;
 
 @Component
 public class Evfault {
@@ -27,11 +27,11 @@ public class Evfault {
         File file = null;
         String rootPath = System.getProperty("user.dir");
         try {
-            file = ResourceUtils.getFile(rootPath + "//evfault.txt");
+            file = ResourceUtils.getFile(rootPath + "/evfault.txt");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-        if(file == null || !file.exists())
+        if (file == null || !file.exists())
             return;
 
         Pattern intPattern = Pattern.compile("^[0-9]+$");

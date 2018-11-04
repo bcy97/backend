@@ -154,7 +154,7 @@ public class CfgData implements ApplicationRunner {
         // 取得根目录路径
         String rootPath = System.getProperty("user.dir");
         try {
-            file = ResourceUtils.getFile(rootPath + "//unitCfg");
+            file = ResourceUtils.getFile(rootPath + "/unitConfigs");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }

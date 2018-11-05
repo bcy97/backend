@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -44,7 +45,7 @@ public class RealDataServiceImpl implements RealDataService {
         }
         AnValue[] anValues = realDataDao.getAnRealData(ids);
 
-        Map<String, AnValue> map = new HashMap<>();
+        Map<String, AnValue> map = new LinkedHashMap<>();
 
         for (int i = 0; i < ids.length; i++) {
             //valid 不为0，要对该值进行上下限判断,为越上限设valid为2,越下限设valid为3

@@ -79,9 +79,6 @@ public class CumulantStatisServiceImpl implements CumulantStatisService {
             cumulant.setId(ids[i]);
             cumulant.setName(cfgData.getAcO(ids[i]).getCname());
 
-            if(ids[i] == 33619968)
-                System.out.println();
-
             if(-1 == (index = findAcStatisDataById(ids[i],todayStatisDatas)))
                 cumulant.setToday(-1);
             else

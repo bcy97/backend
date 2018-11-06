@@ -166,7 +166,7 @@ public class EventInfoDaoImpl implements EventInfoDao {
                 list.add(ei);
             }
         }catch(Exception e){
-            e.printStackTrace();
+         //   e.printStackTrace();
             System.out.println("解析事件信息出错!" + e.getMessage());
             logger.error("解析事件信息出错!" + e.getMessage());
         }
@@ -178,86 +178,88 @@ public class EventInfoDaoImpl implements EventInfoDao {
      * 把事件报文转为事件信息
      * */
     public List<EventLog> toEventLogList(int eventLogLength,byte[] eventLog,int id) {
-        int position = 8;
-        if (eventLogLength < position + 1)
-            return new ArrayList<EventLog>();
-        byte anNum = eventLog[position];
-        Float[] anData = new Float[32];
-        ByteBuffer bb = null;
-        byte[] bData = new byte[4];
-        byte stNum = 0;
-        int stData = 0;
+        List<EventLog> elList = new ArrayList<EventLog>();
+        try {
+            int position = 8;
+            if (eventLogLength < position + 1)
+                return null;
+            byte anNum = eventLog[position];
+            Float[] anData = new Float[32];
+            ByteBuffer bb = null;
+            byte[] bData = new byte[4];
+            byte stNum = 0;
+            int stData = 0;
 
-        position++;
-        for (int i = 0; i < 32; i++) {
+            position++;
+            for (int i = 0; i < 32; i++) {
+                System.arraycopy(eventLog, position, bData, 0, bData.length);
+                position += 4;
+
+                bb = ByteBuffer.wrap(bData, 0, bData.length);
+                bb.order(ByteOrder.LITTLE_ENDIAN);
+
+                anData[i] = bb.getFloat(0);
+            }
+
+            stNum = eventLog[position];
+            position++;
+
             System.arraycopy(eventLog, position, bData, 0, bData.length);
             position += 4;
 
-            bb = ByteBuffer.wrap(bData,0,bData.length);
+            bb = ByteBuffer.wrap(bData);
             bb.order(ByteOrder.LITTLE_ENDIAN);
+            stData = bb.getInt();
 
-            anData[i] = bb.getFloat(0);
-        }
+            StO sto = cfgData.getStO(id);
 
-        stNum = eventLog[position];
-        position++;
-
-        System.arraycopy(eventLog, position, bData, 0, bData.length);
-        position += 4;
-
-        bb = ByteBuffer.wrap(bData);
-        bb.order(ByteOrder.LITTLE_ENDIAN);
-        stData = bb.getInt();
-
-        List<EventLog> elList = new ArrayList<EventLog>();
-
-        StO sto = cfgData.getStO(id);
-
-        List<AnO> anList = null;
-        if(null != sto)
-            anList = evfault.getAnTemp(sto.getSname());
-        for(int i = 0; i < anNum; i++){
-            int point = -1;
-            String name = "an" + i;
-            float value =  anData[i];
-            if(anList != null && anList.size() > i){
-                AnO ano = anList.get(i);
-                name = ano.getCname();
-                point = ano.getPoinum();
-                value = anData[i] * ano.getFi();
+            List<AnO> anList = null;
+            if (null != sto)
+                anList = evfault.getAnTemp(sto.getSname());
+            for (int i = 0; i < anNum; i++) {
+                int point = -1;
+                String name = "an" + i;
+                float value = anData[i];
+                if (anList != null && anList.size() > i) {
+                    AnO ano = anList.get(i);
+                    name = ano.getCname();
+                    point = ano.getPoinum();
+                    value = anData[i] * ano.getFi();
+                }
+                EventLog el = new EventLog();
+                el.setName(name);
+                el.setType("遥测");
+                if (-1 == point)
+                    el.setData(Float.toString(value));
+                else
+                    el.setData(String.format("%." + point + "f", value));
+                elList.add(el);
             }
-            EventLog el = new EventLog();
-            el.setName(name);
-            el.setType("遥测");
-            if(-1 == point)
-                el.setData(Float.toString(value));
-            else
-                el.setData(String.format("%." + point + "f", value));
-            elList.add(el);
-        }
 
-        List<StO> stList = null;
-        if(null != sto)
-            stList = evfault.getStTemp(sto.getSname());
-        for(int i = 0; i < stNum; i++){
-            String name = "st" + i;
-            if(null != stList && stList.size() > i){
-                StO st = stList.get(i);
-                name = st.getCname();
+            List<StO> stList = null;
+            if (null != sto)
+                stList = evfault.getStTemp(sto.getSname());
+            for (int i = 0; i < stNum; i++) {
+                String name = "st" + i;
+                if (null != stList && stList.size() > i) {
+                    StO st = stList.get(i);
+                    name = st.getCname();
+                }
+                int temp = 1 << i;
+                temp &= stData;
+                temp = temp >> i;
+                temp = temp & 1;
+
+                EventLog el = new EventLog();
+                el.setName(name);
+                el.setType("遥信");
+                el.setData(Integer.toString(temp));
+
+                elList.add(el);
             }
-            int temp = 1 << i;
-            temp &= stData;
-            temp = temp >>i;
-            temp = temp & 1;
-
-            EventLog el = new EventLog();
-            el.setName(name);
-            el.setType("遥信");
-            el.setData(Integer.toString(temp));
-
-            elList.add(el);
+        }catch (Exception e){
+            return null;
         }
-
         return elList;
     }
 

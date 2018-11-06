@@ -79,6 +79,9 @@ public class CumulantStatisServiceImpl implements CumulantStatisService {
             cumulant.setId(ids[i]);
             cumulant.setName(cfgData.getAcO(ids[i]).getCname());
 
+            if(ids[i] == 33619968)
+                System.out.println();
+
             if(-1 == (index = findAcStatisDataById(ids[i],todayStatisDatas)))
                 cumulant.setToday(-1);
             else
@@ -90,14 +93,14 @@ public class CumulantStatisServiceImpl implements CumulantStatisService {
                 cumulant.setLastday(lastdayStatisDatas[index].getAccValue().getValue());
 
             if(-1 == (index = findAcStatisDataById(ids[i],thisMonthStatisDatas)))
-                cumulant.setLastday(-1);
+                cumulant.setThisMonth(-1);
             else
-                cumulant.setLastday(thisMonthStatisDatas[index].getAccValue().getValue());
+                cumulant.setThisMonth(thisMonthStatisDatas[index].getAccValue().getValue());
 
             if(-1 == (index = findAcStatisDataById(ids[i],lastMonthStatisDatas)))
-                cumulant.setLastday(-1);
+                cumulant.setLastMonth(-1);
             else
-                cumulant.setLastday(lastMonthStatisDatas[index].getAccValue().getValue());
+                cumulant.setLastMonth(lastMonthStatisDatas[index].getAccValue().getValue());
 
             list.add(cumulant);
         }

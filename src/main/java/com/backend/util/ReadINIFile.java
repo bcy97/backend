@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 
 public class ReadINIFile {
@@ -25,7 +26,7 @@ public class ReadINIFile {
 	/***
 	 * ��,��,ֵ��Map
 	 * */
-	private HashMap<String, HashMap<String, String>> sectionKeyValueMap = null;
+	private HashMap<String, LinkedHashMap<String, String>> sectionKeyValueMap = null;
 	private String nowSection;
 
 	/***
@@ -77,7 +78,7 @@ public class ReadINIFile {
 		} else if (line.matches("^\\[.*\\]$")) {// [section]
 			line = line.substring(1);
 			line = line.substring(0, line.length() - 1);
-			addSection(line.toLowerCase());
+			addSection(line);
 		} else {// key=value || key
 			addKeyValues(line);
 		}
@@ -93,7 +94,7 @@ public class ReadINIFile {
 			sectionMap.put(nowSection, keyValues);
 		}
 
-		HashMap<String, String> keyValueMap = new HashMap<>();
+		LinkedHashMap<String, String> keyValueMap = new LinkedHashMap<>();
 		synchronized (sectionKeyValueMap) {
 			sectionKeyValueMap.put(nowSection, keyValueMap);
 		}
@@ -109,7 +110,7 @@ public class ReadINIFile {
 			List<String> keyValues = new ArrayList<>();
 			sectionMap.put(nowSection, keyValues);
 
-			HashMap<String, String> keyValueMap = new HashMap<>();
+			LinkedHashMap<String, String> keyValueMap = new LinkedHashMap<>();
 			sectionKeyValueMap.put(nowSection, keyValueMap);
 		}
 		String arr[] = keyValue.split("=");
@@ -155,8 +156,8 @@ public class ReadINIFile {
 			section = sDefault;
 		}
 		synchronized (sectionKeyValueMap) {
-			if(sectionKeyValueMap.containsKey(section.toLowerCase())){
-				return sectionKeyValueMap.get(section.toLowerCase()).get(key);
+			if(sectionKeyValueMap.containsKey(section)){
+				return sectionKeyValueMap.get(section).get(key);
 			}else{
 				return null;
 			}
@@ -172,7 +173,7 @@ public class ReadINIFile {
 			section = sDefault;
 		}
 		synchronized (sectionMap) {
-			return sectionMap.get(section.toLowerCase());
+			return sectionMap.get(section);
 		}
 	}
 	
@@ -180,7 +181,7 @@ public class ReadINIFile {
 	 * ͨ���ڵ��������ȡĳһ��
 	 * */
 	public String getLine(String section,int index){
-		List<String> list = getKeyValue(section.toLowerCase());
+		List<String> list = getKeyValue(section);
 		if(list != null && list.size() > index){
 			return list.get(index);
 		}

@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="gbk"?>
+<picture version="7" color="#303030" width="1800" height="2500">
+	<layer name="底图">
+		<line from="1570,429" to="1719,429" lineColor="#505050" lineWidth="1"/>
+		<line from="1569,430" to="1720,430" lineColor="#000000" lineWidth="1"/>
+		<line from="1420,429" to="1569,429" lineColor="#505050" lineWidth="1"/>
+		<line from="1419,430" to="1570,430" lineColor="#000000" lineWidth="1"/>
+		<line from="1420,549" to="1569,549" lineColor="#505050" lineWidth="1"/>
+		<line from="1419,550" to="1570,550" lineColor="#000000" lineWidth="1"/>
+		<line from="1570,549" to="1719,549" lineColor="#505050" lineWidth="1"/>
+		<line from="1569,550" to="1720,550" lineColor="#000000" lineWidth="1"/>
+		<line from="1569,670" to="1720,670" lineColor="#000000" lineWidth="1"/>
+		<line from="1570,669" to="1719,669" lineColor="#505050" lineWidth="1"/>
+		<line from="1419,670" to="1570,670" lineColor="#000000" lineWidth="1"/>
+		<line from="1420,669" to="1569,669" lineColor="#505050" lineWidth="1"/>
+		<line from="1419,790" to="1570,790" lineColor="#000000" lineWidth="1"/>
+		<line from="1420,789" to="1569,789" lineColor="#505050" lineWidth="1"/>
+		<line from="1419,790" to="1570,790" lineColor="#000000" lineWidth="1"/>
+		<line from="1420,789" to="1569,789" lineColor="#505050" lineWidth="1"/>
+		<line from="1569,790" to="1720,790" lineColor="#000000" lineWidth="1"/>
+		<line from="1570,789" to="1719,789" lineColor="#505050" lineWidth="1"/>
+		<line from="1569,790" to="1720,790" lineColor="#000000" lineWidth="1"/>
+		<line from="1570,789" to="1719,789" lineColor="#505050" lineWidth="1"/>
+		<line from="191,262" to="1720,262" lineColor="#000000" lineWidth="1"/>
+		<line from="189,261" to="1720,261" lineColor="#505050" lineWidth="1"/>
+		<line from="191,310" to="1720,310" lineColor="#000000" lineWidth="1"/>
+		<line from="189,309" to="1720,309" lineColor="#505050" lineWidth="1"/>
+		<line from="191,214" to="1720,214" lineColor="#000000" lineWidth="1"/>
+		<line from="189,213" to="1720,213" lineColor="#505050" lineWidth="1"/>
+		<line from="1270,624" to="1419,624" lineColor="#505050" lineWidth="1"/>
+		<line from="1269,625" to="1420,625" lineColor="#000000" lineWidth="1"/>
+		<line from="1119,565" to="1270,565" lineColor="#000000" lineWidth="1"/>
+		<line from="1120,564" to="1269,564" lineColor="#505050" lineWidth="1"/>
+		<string from="1122,224" to="1266,249" border="0" fill="0" text="馈线柜" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#ffff80"/>
+		<image from="70,12" to="1792,97" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/user/a号站低压系统一次图.png" angle="0.000000"/>
+		<line from="820,394" to="969,394" lineColor="#505050" lineWidth="1"/>
+		<line from="819,395" to="970,395" lineColor="#000000" lineWidth="1"/>
+		<dyanData from="1289,36" to="1493,84" border="0" fill="0" angle="0.000000" align="0" font="LcdD" size="35" name="TIME" type="0"/>
+		<dyanData from="267,36" to="450,84" border="0" fill="0" angle="0.000000" align="2" font="LcdD" size="35" name="DATE" type="0"/>
+		<image from="22,5" to="220,101" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/主画面按钮.png" angle="0.000000"/>
+		<image from="1492,5" to="1690,101" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/数据表按钮.png" angle="0.000000"/>
+		<image from="1702,5" to="1900,101" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/环境监控图按钮.png" angle="0.000000"/>
+		<line from="190,911" to="190,164" lineColor="#000000" lineWidth="1"/>
+		<string from="231,175" to="317,200" border="0" fill="0" text="柜号" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#ffff80"/>
+		<line from="189,164" to="1720,164" lineColor="#505050" lineWidth="1"/>
+		<line from="191,165" to="1720,165" lineColor="#000000" lineWidth="1"/>
+		<line from="189,912" to="189,164" lineColor="#505050" lineWidth="1"/>
+		<string from="231,224" to="317,249" border="0" fill="0" text="柜名" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#ffff80"/>
+		<string from="231,271" to="317,296" border="0" fill="0" text="母线" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#ffff80"/>
+		<string from="231,571" to="317,596" border="0" fill="0" text="出线" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#ffff80"/>
+		<imageStatue from="430,574" to="454,598" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="" iconType="0" size="24" index_close="45" index_open="45" angle="0.000000"/>
+		<line from="442,419" to="442,294" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="426,420" to="458,452" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="" iconType="0" size="32" index_close="36" index_open="36" angle="0.000000"/>
+		<imageStatue from="426,446" to="458,478" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="" iconType="0" size="32" index_close="37" index_open="37" angle="0.000000"/>
+		<line from="426,436" to="411,436" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="390,424" to="414,448" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="" iconType="0" size="24" index_close="3" index_open="3" angle="0.000000"/>
+		<line from="442,574" to="442,477" lineColor="#c02020" lineWidth="2"/>
+		<line from="562,381" to="562,294" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="546,381" to="578,413" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="A_L102D_WP" iconType="0" size="32" index_close="62" index_open="61" angle="0.000000"/>
+		<imageStatue from="546,413" to="578,445" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="A_L102D_SS" iconType="0" size="32" index_close="55" index_open="56" angle="0.000000"/>
+		<imageStatue from="546,445" to="578,477" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="A_L102D_WP" iconType="0" size="32" index_close="60" index_open="59" angle="0.000000"/>
+		<line from="562,574" to="562,477" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="550,486" to="574,510" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="" iconType="0" size="24" index_close="58" index_open="58" angle="0.000000"/>
+		<imageStatue from="568,486" to="592,510" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="" iconType="0" size="24" index_close="58" index_open="58" angle="0.000000"/>
+		<imageStatue from="531,486" to="555,510" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="" iconType="0" size="24" index_close="58" index_open="58" angle="0.000000"/>
+		<line from="635,574" to="561,574" lineColor="#c02020" lineWidth="2"/>
+		<line from="635,574" to="635,294" lineColor="#c02020" lineWidth="2"/>
+		<line from="742,381" to="742,294" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="726,381" to="758,413" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="A_L103D_WP" iconType="0" size="32" index_close="62" index_open="61" angle="0.000000"/>
+		<imageStatue from="726,413" to="758,445" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="A_L103D_SS" iconType="0" size="32" index_close="55" index_open="56" angle="0.000000"/>
+		<imageStatue from="726,445" to="758,477" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="A_L103D_WP" iconType="0" size="32" index_close="60" index_open="59" angle="0.000000"/>
+		<line from="742,579" to="742,477" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="730,486" to="754,510" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="" iconType="0" size="24" index_close="58" index_open="58" angle="0.000000"/>
+		<imageStatue from="748,486" to="772,510" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="" iconType="0" size="24" index_close="58" index_open="58" angle="0.000000"/>
+		<imageStatue from="711,486" to="735,510" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="" iconType="0" size="24" index_close="58" index_open="58" angle="0.000000"/>
+		<imageStatue from="726,579" to="758,611" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="" iconType="0" size="32" index_close="70" index_open="70" angle="0.000000"/>
+		<imageStatue from="868,342" to="892,366" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="" iconType="0" size="24" index_close="6" index_open="6" angle="0.000000"/>
+		<string from="399,177" to="485,202" border="0" fill="0" text="101D" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#ffff80"/>
+		<string from="549,177" to="635,202" border="0" fill="0" text="102D" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#ffff80"/>
+		<string from="699,177" to="785,202" border="0" fill="0" text="103D" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#ffff80"/>
+		<string from="849,177" to="935,202" border="0" fill="0" text="104D" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#ffff80"/>
+		<string from="999,177" to="1085,202" border="0" fill="0" text="105D" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#ffff80"/>
+		<string from="372,224" to="516,249" border="0" fill="0" text="变压器" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#ffff80"/>
+		<string from="522,224" to="666,249" border="0" fill="0" text="低压进线" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#ffff80"/>
+		<string from="672,224" to="816,249" border="0" fill="0" text="电容柜" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#ffff80"/>
+		<string from="822,224" to="966,249" border="0" fill="0" text="馈线柜" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#ffff80"/>
+		<string from="972,224" to="1116,249" border="0" fill="0" text="馈线柜" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#ffff80"/>
+		<string from="856,366" to="970,391" border="0" fill="0" text="一层照明" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffff80"/>
+		<string from="369,625" to="517,650" border="0" fill="0" text="变压器温控仪" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffff80"/>
+		<string from="379,667" to="407,692" border="0" fill="0" text="A" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffff80"/>
+		<string from="469,667" to="497,692" border="0" fill="0" text="℃" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffff80"/>
+		<dyanData from="403,666" to="474,692" border="0" fill="0" angle="0.000000" align="1" font="宋体" size="16" name="A_L101D_RKC_TempA" type="0"/>
+		<string from="379,697" to="407,722" border="0" fill="0" text="B" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#20a040"/>
+		<string from="469,697" to="497,722" border="0" fill="0" text="℃" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#20a040"/>
+		<dyanData from="403,696" to="474,722" border="0" fill="0" angle="0.000000" align="1" font="宋体" size="16" name="A_L101D_RKC_TempB" type="0"/>
+		<string from="379,727" to="407,752" border="0" fill="0" text="C" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#c02020"/>
+		<string from="469,727" to="497,752" border="0" fill="0" text="℃" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#c02020"/>
+		<dyanData from="403,726" to="474,752" border="0" fill="0" angle="0.000000" align="1" font="宋体" size="16" name="A_L101D_RKC_TempC" type="0"/>
+		<imageStatue from="381,751" to="405,775" border="1" borderColor="#20a040" borderWidth="1" fill="0" stname="A_L101D_RKC_FS" iconType="1" filename_close="iconlibrary/public/透明红球24.png" filename_open="iconlibrary/public/透明绿球24.png" angle="0.000000"/>
+		<imageStatue from="381,807" to="405,831" border="1" borderColor="#20a040" borderWidth="1" fill="0" stname="A_L101D_RKC_OT" iconType="1" filename_close="iconlibrary/public/透明红球24.png" filename_open="iconlibrary/public/透明绿球24.png" angle="0.000000"/>
+		<imageStatue from="381,865" to="405,889" border="1" borderColor="#20a040" borderWidth="1" fill="0" stname="A_L101D_RKC_comSt" iconType="1" filename_close="iconlibrary/public/透明绿球24.png" filename_open="iconlibrary/public/透明红球24.png" angle="0.000000"/>
+		<string from="409,751" to="518,776" border="0" fill="0" text="风机状态" angle="0.000000" align="0" font="微软雅黑" size="16" fontColor="#e0e080"/>
+		<string from="409,776" to="518,801" border="0" fill="0" text="温控仪故障" angle="0.000000" align="0" font="微软雅黑" size="16" fontColor="#e0e080"/>
+		<string from="409,804" to="518,829" border="0" fill="0" text="超温报警" angle="0.000000" align="0" font="微软雅黑" size="16" fontColor="#e0e080"/>
+		<string from="409,834" to="518,859" border="0" fill="0" text="超高温跳闸" angle="0.000000" align="0" font="微软雅黑" size="16" fontColor="#e0e080"/>
+		<string from="409,864" to="518,889" border="0" fill="0" text="通讯状态" angle="0.000000" align="0" font="微软雅黑" size="16" fontColor="#e0e080"/>
+		<string from="529,671" to="557,696" border="0" fill="0" text="Ia" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffff80"/>
+		<dyanData from="559,670" to="630,696" border="0" fill="0" angle="0.000000" align="1" font="宋体" size="16" name="A_L102D_Ia" type="0"/>
+		<string from="630,671" to="658,696" border="0" fill="0" text="A" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffff80"/>
+		<string from="529,701" to="557,726" border="0" fill="0" text="Ib" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#20a040"/>
+		<dyanData from="559,700" to="630,726" border="0" fill="0" angle="0.000000" align="1" font="宋体" size="16" name="A_L102D_Ib" type="0"/>
+		<string from="630,701" to="658,726" border="0" fill="0" text="A" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#20a040"/>
+		<string from="529,731" to="557,756" border="0" fill="0" text="Ic" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#c02020"/>
+		<dyanData from="559,730" to="630,756" border="0" fill="0" angle="0.000000" align="1" font="宋体" size="16" name="A_L102D_Ic" type="0"/>
+		<string from="630,731" to="658,756" border="0" fill="0" text="A" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#c02020"/>
+		<string from="529,761" to="557,786" border="0" fill="0" text="P" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffff80"/>
+		<dyanData from="559,760" to="630,786" border="0" fill="0" angle="0.000000" align="1" font="宋体" size="16" name="A_L102D_P" type="0"/>
+		<string from="630,761" to="658,786" border="0" fill="0" text="KW" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffff80"/>
+		<string from="529,791" to="557,816" border="0" fill="0" text="Q" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffff80"/>
+		<dyanData from="559,789" to="630,815" border="0" fill="0" angle="0.000000" align="1" font="宋体" size="16" name="A_L102D_Q" type="0"/>
+		<string from="630,791" to="658,816" border="0" fill="0" text="Kva" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffff80"/>
+		<string from="529,820" to="557,845" border="0" fill="0" text="λ" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffff80"/>
+		<dyanData from="559,820" to="630,846" border="0" fill="0" angle="0.000000" align="1" font="宋体" size="16" name="A_L102D_PF" type="0"/>
+		<string from="679,671" to="707,696" border="0" fill="0" text="Ia" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffff80"/>
+		<dyanData from="709,670" to="780,696" border="0" fill="0" angle="0.000000" align="1" font="宋体" size="16" name="A_L103D_Ia" type="0"/>
+		<string from="780,671" to="808,696" border="0" fill="0" text="A" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffff80"/>
+		<string from="679,701" to="707,726" border="0" fill="0" text="Ib" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#20a040"/>
+		<dyanData from="709,700" to="780,726" border="0" fill="0" angle="0.000000" align="1" font="宋体" size="16" name="A_L103D_Ib" type="0"/>
+		<string from="780,701" to="808,726" border="0" fill="0" text="A" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#20a040"/>
+		<string from="679,731" to="707,756" border="0" fill="0" text="Ic" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#c02020"/>
+		<dyanData from="709,730" to="780,756" border="0" fill="0" angle="0.000000" align="1" font="宋体" size="16" name="A_L103D_Ic" type="0"/>
+		<string from="780,731" to="808,756" border="0" fill="0" text="A" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#c02020"/>
+		<string from="679,761" to="707,786" border="0" fill="0" text="P" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffff80"/>
+		<dyanData from="709,760" to="780,786" border="0" fill="0" angle="0.000000" align="1" font="宋体" size="16" name="A_L103D_P" type="0"/>
+		<string from="780,761" to="808,786" border="0" fill="0" text="KW" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffff80"/>
+		<string from="679,791" to="707,816" border="0" fill="0" text="Q" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffff80"/>
+		<dyanData from="709,790" to="780,816" border="0" fill="0" angle="0.000000" align="1" font="宋体" size="16" name="A_L103D_Q" type="0"/>
+		<string from="780,791" to="808,816" border="0" fill="0" text="Kva" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffff80"/>
+		<string from="679,821" to="707,846" border="0" fill="0" text="λ" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffff80"/>
+		<dyanData from="709,820" to="780,846" border="0" fill="0" angle="0.000000" align="1" font="宋体" size="16" name="A_L103D_PF" type="0"/>
+		<dyanData from="896,340" to="967,366" border="0" fill="0" angle="0.000000" align="2" font="宋体" size="16" name="A_L104D_403_Ia" type="0"/>
+		<imageStatue from="381,780" to="405,804" border="1" borderColor="#20a040" borderWidth="1" fill="0" stname="A_L101D_RKC_TCF" iconType="1" filename_close="iconlibrary/public/透明红球24.png" filename_open="iconlibrary/public/透明绿球24.png" angle="0.000000"/>
+		<imageStatue from="381,835" to="405,859" border="1" borderColor="#20a040" borderWidth="1" fill="0" stname="A_L101D_RKC_TRIP" iconType="1" filename_close="iconlibrary/public/透明红球24.png" filename_open="iconlibrary/public/透明绿球24.png" angle="0.000000"/>
+		<imageStatue from="836,364" to="850,378" border="1" borderColor="#20a040" borderWidth="1" fill="0" stname="A_L104D_403_comSt" iconType="1" filename_close="iconlibrary/public/透明绿球24.png" filename_open="iconlibrary/public/透明红球24.png" angle="0.000000"/>
+		<imageStatue from="712,403" to="726,417" border="1" borderColor="#20a040" borderWidth="1" fill="0" stname="A_L103D_comSt" iconType="1" filename_close="iconlibrary/public/透明绿球24.png" filename_open="iconlibrary/public/透明红球24.png" angle="0.000000"/>
+		<imageStatue from="535,401" to="549,415" border="1" borderColor="#20a040" borderWidth="1" fill="0" stname="A_L102D_comSt" iconType="1" filename_close="iconlibrary/public/透明绿球12.png" filename_open="iconlibrary/public/透明红球12.png" angle="0.000000"/>
+		<string from="902,313" to="969,338" border="0" fill="0" text="403" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffffff"/>
+		<line from="913,335" to="913,314" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="913,335" to="958,335" lineColor="#000000" lineWidth="1"/>
+		<line from="914,314" to="957,314" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="957,335" to="957,314" lineColor="#000000" lineWidth="1"/>
+		<string from="557,627" to="624,652" border="0" fill="0" text="401" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffffff"/>
+		<line from="568,650" to="568,629" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="568,650" to="613,650" lineColor="#000000" lineWidth="1"/>
+		<line from="569,629" to="612,629" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="612,650" to="612,629" lineColor="#000000" lineWidth="1"/>
+		<string from="707,627" to="774,652" border="0" fill="0" text="4011" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffffff"/>
+		<line from="718,650" to="718,629" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="718,650" to="763,650" lineColor="#000000" lineWidth="1"/>
+		<line from="719,629" to="762,629" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="762,650" to="762,629" lineColor="#000000" lineWidth="1"/>
+		<string from="1149,177" to="1235,202" border="0" fill="0" text="106D" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#ffff80"/>
+		<string from="1299,177" to="1385,202" border="0" fill="0" text="107D" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#ffff80"/>
+		<string from="1272,224" to="1414,249" border="0" fill="0" text="馈线柜" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#ffff80"/>
+		<line from="842,354" to="831,354" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="839,342" to="863,366" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="A_L104D_403_SS" iconType="0" size="24" index_close="18" index_open="24" angle="0.000000"/>
+		<line from="872,354" to="861,354" lineColor="#c02020" lineWidth="2"/>
+		<line from="820,479" to="969,479" lineColor="#505050" lineWidth="1"/>
+		<line from="819,480" to="970,480" lineColor="#000000" lineWidth="1"/>
+		<imageStatue from="868,427" to="892,451" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="" iconType="0" size="24" index_close="6" index_open="6" angle="0.000000"/>
+		<string from="856,451" to="970,476" border="0" fill="0" text="二层照明" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffff80"/>
+		<dyanData from="896,425" to="967,451" border="0" fill="0" angle="0.000000" align="2" font="宋体" size="16" name="A_L104D_404_Ia" type="0"/>
+		<imageStatue from="836,449" to="850,463" border="1" borderColor="#20a040" borderWidth="1" fill="0" stname="A_L104D_404_comSt" iconType="1" filename_close="iconlibrary/public/透明绿球24.png" filename_open="iconlibrary/public/透明红球24.png" angle="0.000000"/>
+		<string from="902,398" to="969,423" border="0" fill="0" text="404" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffffff"/>
+		<line from="913,420" to="913,399" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="913,420" to="958,420" lineColor="#000000" lineWidth="1"/>
+		<line from="914,399" to="957,399" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="957,420" to="957,399" lineColor="#000000" lineWidth="1"/>
+		<line from="842,439" to="831,439" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="839,427" to="863,451" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="A_L104D_404_SS" iconType="0" size="24" index_close="18" index_open="24" angle="0.000000"/>
+		<line from="872,439" to="861,439" lineColor="#c02020" lineWidth="2"/>
+		<line from="820,564" to="969,564" lineColor="#505050" lineWidth="1"/>
+		<line from="819,565" to="970,565" lineColor="#000000" lineWidth="1"/>
+		<imageStatue from="868,512" to="892,536" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="" iconType="0" size="24" index_close="6" index_open="6" angle="0.000000"/>
+		<string from="856,536" to="970,561" border="0" fill="0" text="三层照明" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffff80"/>
+		<dyanData from="896,510" to="967,536" border="0" fill="0" angle="0.000000" align="2" font="宋体" size="16" name="A_L104D_405_Ia" type="0"/>
+		<imageStatue from="837,535" to="851,549" border="1" borderColor="#20a040" borderWidth="1" fill="0" stname="A_L104D_405_comSt" iconType="1" filename_close="iconlibrary/public/透明绿球24.png" filename_open="iconlibrary/public/透明红球24.png" angle="0.000000"/>
+		<string from="902,483" to="969,508" border="0" fill="0" text="405" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffffff"/>
+		<line from="913,505" to="913,484" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="913,505" to="958,505" lineColor="#000000" lineWidth="1"/>
+		<line from="914,484" to="957,484" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="957,505" to="957,484" lineColor="#000000" lineWidth="1"/>
+		<line from="842,524" to="831,524" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="839,512" to="863,536" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="A_L104D_405_SS" iconType="0" size="24" index_close="18" index_open="24" angle="0.000000"/>
+		<line from="872,524" to="861,524" lineColor="#c02020" lineWidth="2"/>
+		<line from="820,650" to="969,650" lineColor="#505050" lineWidth="1"/>
+		<line from="819,651" to="970,651" lineColor="#000000" lineWidth="1"/>
+		<imageStatue from="868,598" to="892,622" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="" iconType="0" size="24" index_close="6" index_open="6" angle="0.000000"/>
+		<string from="856,622" to="970,647" border="0" fill="0" text="四层照明" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffff80"/>
+		<dyanData from="896,596" to="967,622" border="0" fill="0" angle="0.000000" align="2" font="宋体" size="16" name="A_L104D_406_Ia" type="0"/>
+		<imageStatue from="838,621" to="852,635" border="1" borderColor="#20a040" borderWidth="1" fill="0" stname="A_L104D_406_comSt" iconType="1" filename_close="iconlibrary/public/透明绿球24.png" filename_open="iconlibrary/public/透明红球24.png" angle="0.000000"/>
+		<string from="902,569" to="969,594" border="0" fill="0" text="406" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffffff"/>
+		<line from="913,591" to="913,570" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="913,591" to="958,591" lineColor="#000000" lineWidth="1"/>
+		<line from="914,570" to="957,570" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="957,591" to="957,570" lineColor="#000000" lineWidth="1"/>
+		<line from="842,610" to="831,610" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="839,598" to="863,622" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="A_L104D_406_SS" iconType="0" size="24" index_close="18" index_open="24" angle="0.000000"/>
+		<line from="872,610" to="861,610" lineColor="#c02020" lineWidth="2"/>
+		<line from="820,737" to="969,737" lineColor="#505050" lineWidth="1"/>
+		<line from="819,738" to="970,738" lineColor="#000000" lineWidth="1"/>
+		<imageStatue from="868,685" to="892,709" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="" iconType="0" size="24" index_close="6" index_open="6" angle="0.000000"/>
+		<string from="856,709" to="970,734" border="0" fill="0" text="五层照明" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffff80"/>
+		<dyanData from="896,683" to="967,709" border="0" fill="0" angle="0.000000" align="2" font="宋体" size="16" name="A_L104D_407_Ia" type="0"/>
+		<imageStatue from="838,708" to="852,722" border="1" borderColor="#20a040" borderWidth="1" fill="0" stname="A_L104D_407_comSt" iconType="1" filename_close="iconlibrary/public/透明绿球24.png" filename_open="iconlibrary/public/透明红球24.png" angle="0.000000"/>
+		<string from="902,656" to="969,681" border="0" fill="0" text="407" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffffff"/>
+		<line from="913,678" to="913,657" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="913,678" to="958,678" lineColor="#000000" lineWidth="1"/>
+		<line from="914,657" to="957,657" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="957,678" to="957,657" lineColor="#000000" lineWidth="1"/>
+		<line from="842,697" to="831,697" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="839,685" to="863,709" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="A_L104D_407_SS" iconType="0" size="24" index_close="18" index_open="24" angle="0.000000"/>
+		<line from="872,697" to="861,697" lineColor="#c02020" lineWidth="2"/>
+		<line from="820,824" to="969,824" lineColor="#505050" lineWidth="1"/>
+		<line from="819,825" to="970,825" lineColor="#000000" lineWidth="1"/>
+		<imageStatue from="868,772" to="892,796" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="" iconType="0" size="24" index_close="6" index_open="6" angle="0.000000"/>
+		<string from="856,796" to="970,821" border="0" fill="0" text="六层照明" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffff80"/>
+		<dyanData from="896,770" to="967,796" border="0" fill="0" angle="0.000000" align="2" font="宋体" size="16" name="A_L104D_408_Ia" type="0"/>
+		<imageStatue from="838,795" to="852,809" border="1" borderColor="#20a040" borderWidth="1" fill="0" stname="A_L104D_408_comSt" iconType="1" filename_close="iconlibrary/public/透明绿球24.png" filename_open="iconlibrary/public/透明红球24.png" angle="0.000000"/>
+		<string from="902,743" to="969,768" border="0" fill="0" text="408" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffffff"/>
+		<line from="913,765" to="913,744" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="913,765" to="958,765" lineColor="#000000" lineWidth="1"/>
+		<line from="914,744" to="957,744" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="957,765" to="957,744" lineColor="#000000" lineWidth="1"/>
+		<line from="842,784" to="831,784" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="839,772" to="863,796" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="A_L104D_408_SS" iconType="0" size="24" index_close="18" index_open="24" angle="0.000000"/>
+		<line from="872,784" to="861,784" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="868,858" to="892,882" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="" iconType="0" size="24" index_close="6" index_open="6" angle="0.000000"/>
+		<string from="856,882" to="970,907" border="0" fill="0" text="七层照明" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffff80"/>
+		<dyanData from="896,856" to="967,882" border="0" fill="0" angle="0.000000" align="2" font="宋体" size="16" name="A_L104D_409_Ia" type="0"/>
+		<imageStatue from="838,882" to="852,896" border="1" borderColor="#20a040" borderWidth="1" fill="0" stname="A_L104D_409_comSt" iconType="1" filename_close="iconlibrary/public/透明绿球24.png" filename_open="iconlibrary/public/透明红球24.png" angle="0.000000"/>
+		<string from="902,829" to="969,854" border="0" fill="0" text="409" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffffff"/>
+		<line from="913,851" to="913,830" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="913,851" to="958,851" lineColor="#000000" lineWidth="1"/>
+		<line from="914,830" to="957,830" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="957,851" to="957,830" lineColor="#000000" lineWidth="1"/>
+		<line from="842,870" to="831,870" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="839,858" to="863,882" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="A_L104D_409_SS" iconType="0" size="24" index_close="18" index_open="24" angle="0.000000"/>
+		<line from="872,870" to="861,870" lineColor="#c02020" lineWidth="2"/>
+		<line from="832,870" to="832,294" lineColor="#c02020" lineWidth="2"/>
+		<line from="970,394" to="1119,394" lineColor="#505050" lineWidth="1"/>
+		<line from="969,395" to="1120,395" lineColor="#000000" lineWidth="1"/>
+		<imageStatue from="1018,342" to="1042,366" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="" iconType="0" size="24" index_close="6" index_open="6" angle="0.000000"/>
+		<string from="1006,366" to="1120,391" border="0" fill="0" text="一层应急照明" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffff80"/>
+		<dyanData from="1046,340" to="1117,366" border="0" fill="0" angle="0.000000" align="2" font="宋体" size="16" name="A_L105D_410_Ia" type="0"/>
+		<imageStatue from="986,364" to="1000,378" border="1" borderColor="#20a040" borderWidth="1" fill="0" stname="A_L105D_410_comSt" iconType="1" filename_close="iconlibrary/public/透明绿球24.png" filename_open="iconlibrary/public/透明红球24.png" angle="0.000000"/>
+		<string from="1052,313" to="1119,338" border="0" fill="0" text="410" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffffff"/>
+		<line from="1063,335" to="1063,314" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="1063,335" to="1108,335" lineColor="#000000" lineWidth="1"/>
+		<line from="1064,314" to="1107,314" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="1107,335" to="1107,314" lineColor="#000000" lineWidth="1"/>
+		<line from="992,354" to="981,354" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="989,342" to="1013,366" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="A_L105D_410_SS" iconType="0" size="24" index_close="18" index_open="24" angle="0.000000"/>
+		<line from="1022,354" to="1011,354" lineColor="#c02020" lineWidth="2"/>
+		<line from="970,479" to="1119,479" lineColor="#505050" lineWidth="1"/>
+		<line from="969,480" to="1120,480" lineColor="#000000" lineWidth="1"/>
+		<imageStatue from="1018,427" to="1042,451" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="" iconType="0" size="24" index_close="6" index_open="6" angle="0.000000"/>
+		<string from="1006,451" to="1120,476" border="0" fill="0" text="二层应急照明" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffff80"/>
+		<dyanData from="1046,425" to="1117,451" border="0" fill="0" angle="0.000000" align="2" font="宋体" size="16" name="A_L105D_411_Ia" type="0"/>
+		<imageStatue from="986,449" to="1000,463" border="1" borderColor="#20a040" borderWidth="1" fill="0" stname="A_L105D_411_comSt" iconType="1" filename_close="iconlibrary/public/透明绿球24.png" filename_open="iconlibrary/public/透明红球24.png" angle="0.000000"/>
+		<string from="1052,398" to="1119,423" border="0" fill="0" text="411" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffffff"/>
+		<line from="1063,420" to="1063,399" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="1063,420" to="1108,420" lineColor="#000000" lineWidth="1"/>
+		<line from="1064,399" to="1107,399" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="1107,420" to="1107,399" lineColor="#000000" lineWidth="1"/>
+		<line from="992,439" to="981,439" lineColor="#c02020" lineWidth="2"/>
+		<line from="1022,439" to="1011,439" lineColor="#c02020" lineWidth="2"/>
+		<line from="970,564" to="1119,564" lineColor="#505050" lineWidth="1"/>
+		<line from="969,565" to="1120,565" lineColor="#000000" lineWidth="1"/>
+		<imageStatue from="1018,512" to="1042,536" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="" iconType="0" size="24" index_close="6" index_open="6" angle="0.000000"/>
+		<string from="1006,536" to="1120,561" border="0" fill="0" text="三层应急照明" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffff80"/>
+		<dyanData from="1046,510" to="1117,536" border="0" fill="0" angle="0.000000" align="2" font="宋体" size="16" name="A_L105D_412_Ia" type="0"/>
+		<imageStatue from="986,534" to="1000,548" border="1" borderColor="#20a040" borderWidth="1" fill="0" stname="A_L105D_412_comSt" iconType="1" filename_close="iconlibrary/public/透明绿球24.png" filename_open="iconlibrary/public/透明红球24.png" angle="0.000000"/>
+		<string from="1052,483" to="1119,508" border="0" fill="0" text="412" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffffff"/>
+		<line from="1063,505" to="1063,484" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="1063,505" to="1108,505" lineColor="#000000" lineWidth="1"/>
+		<line from="1064,484" to="1107,484" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="1107,505" to="1107,484" lineColor="#000000" lineWidth="1"/>
+		<line from="992,524" to="981,524" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="989,512" to="1013,536" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="A_L105D_412_SS" iconType="0" size="24" index_close="18" index_open="24" angle="0.000000"/>
+		<line from="1022,524" to="1011,524" lineColor="#c02020" lineWidth="2"/>
+		<line from="970,650" to="1119,650" lineColor="#505050" lineWidth="1"/>
+		<line from="969,651" to="1120,651" lineColor="#000000" lineWidth="1"/>
+		<imageStatue from="1018,598" to="1042,622" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="" iconType="0" size="24" index_close="6" index_open="6" angle="0.000000"/>
+		<string from="1006,622" to="1120,647" border="0" fill="0" text="四层应急照明" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffff80"/>
+		<dyanData from="1046,596" to="1117,622" border="0" fill="0" angle="0.000000" align="2" font="宋体" size="16" name="A_L105D_413_Ia" type="0"/>
+		<imageStatue from="986,620" to="1000,634" border="1" borderColor="#20a040" borderWidth="1" fill="0" stname="A_L105D_413_comSt" iconType="1" filename_close="iconlibrary/public/透明绿球24.png" filename_open="iconlibrary/public/透明红球24.png" angle="0.000000"/>
+		<string from="1052,569" to="1119,594" border="0" fill="0" text="413" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffffff"/>
+		<line from="1063,591" to="1063,570" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="1063,591" to="1108,591" lineColor="#000000" lineWidth="1"/>
+		<line from="1064,570" to="1107,570" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="1107,591" to="1107,570" lineColor="#000000" lineWidth="1"/>
+		<line from="992,610" to="981,610" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="989,598" to="1013,622" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="A_L105D_413_SS" iconType="0" size="24" index_close="18" index_open="24" angle="0.000000"/>
+		<line from="1022,610" to="1011,610" lineColor="#c02020" lineWidth="2"/>
+		<line from="970,737" to="1119,737" lineColor="#505050" lineWidth="1"/>
+		<line from="969,738" to="1120,738" lineColor="#000000" lineWidth="1"/>
+		<imageStatue from="1018,685" to="1042,709" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="" iconType="0" size="24" index_close="6" index_open="6" angle="0.000000"/>
+		<string from="1006,709" to="1120,734" border="0" fill="0" text="五层应急照明" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffff80"/>
+		<dyanData from="1046,683" to="1117,709" border="0" fill="0" angle="0.000000" align="2" font="宋体" size="16" name="A_L105D_414_Ia" type="0"/>
+		<imageStatue from="986,707" to="1000,721" border="1" borderColor="#20a040" borderWidth="1" fill="0" stname="A_L105D_414_comSt" iconType="1" filename_close="iconlibrary/public/透明绿球24.png" filename_open="iconlibrary/public/透明红球24.png" angle="0.000000"/>
+		<string from="1052,656" to="1119,681" border="0" fill="0" text="414" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffffff"/>
+		<line from="1063,678" to="1063,657" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="1063,678" to="1108,678" lineColor="#000000" lineWidth="1"/>
+		<line from="1064,657" to="1107,657" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="1107,678" to="1107,657" lineColor="#000000" lineWidth="1"/>
+		<line from="992,697" to="981,697" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="989,685" to="1013,709" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="A_L105D_414_SS" iconType="0" size="24" index_close="18" index_open="24" angle="0.000000"/>
+		<line from="1022,697" to="1011,697" lineColor="#c02020" lineWidth="2"/>
+		<line from="970,824" to="1119,824" lineColor="#505050" lineWidth="1"/>
+		<line from="969,825" to="1120,825" lineColor="#000000" lineWidth="1"/>
+		<imageStatue from="1018,772" to="1042,796" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="" iconType="0" size="24" index_close="6" index_open="6" angle="0.000000"/>
+		<string from="1006,796" to="1120,821" border="0" fill="0" text="六层应急照明" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffff80"/>
+		<dyanData from="1046,770" to="1117,796" border="0" fill="0" angle="0.000000" align="2" font="宋体" size="16" name="A_L105D_415_Ia" type="0"/>
+		<imageStatue from="986,794" to="1000,808" border="1" borderColor="#20a040" borderWidth="1" fill="0" stname="A_L105D_415_comSt" iconType="1" filename_close="iconlibrary/public/透明绿球24.png" filename_open="iconlibrary/public/透明红球24.png" angle="0.000000"/>
+		<string from="1052,743" to="1119,768" border="0" fill="0" text="415" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffffff"/>
+		<line from="1063,765" to="1063,744" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="1063,765" to="1108,765" lineColor="#000000" lineWidth="1"/>
+		<line from="1064,744" to="1107,744" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="1107,765" to="1107,744" lineColor="#000000" lineWidth="1"/>
+		<line from="992,784" to="981,784" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="989,772" to="1013,796" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="A_L105D_415_SS" iconType="0" size="24" index_close="18" index_open="24" angle="0.000000"/>
+		<line from="1022,784" to="1011,784" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="1018,858" to="1042,882" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="" iconType="0" size="24" index_close="6" index_open="6" angle="0.000000"/>
+		<string from="1006,882" to="1120,907" border="0" fill="0" text="七层应急照明" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffff80"/>
+		<dyanData from="1046,856" to="1117,882" border="0" fill="0" angle="0.000000" align="2" font="宋体" size="16" name="A_L105D_416_Ia" type="0"/>
+		<imageStatue from="986,880" to="1000,894" border="1" borderColor="#20a040" borderWidth="1" fill="0" stname="A_L105D_416_comSt" iconType="1" filename_close="iconlibrary/public/透明绿球24.png" filename_open="iconlibrary/public/透明红球24.png" angle="0.000000"/>
+		<string from="1052,829" to="1119,854" border="0" fill="0" text="416" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffffff"/>
+		<line from="1063,851" to="1063,830" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="1063,851" to="1108,851" lineColor="#000000" lineWidth="1"/>
+		<line from="1064,830" to="1107,830" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="1107,851" to="1107,830" lineColor="#000000" lineWidth="1"/>
+		<line from="992,870" to="981,870" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="989,858" to="1013,882" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="A_L105D_416_SS" iconType="0" size="24" index_close="18" index_open="24" angle="0.000000"/>
+		<line from="1022,870" to="1011,870" lineColor="#c02020" lineWidth="2"/>
+		<line from="982,870" to="982,294" lineColor="#c02020" lineWidth="2"/>
+		<line from="370,911" to="370,164" lineColor="#000000" lineWidth="1"/>
+		<line from="369,912" to="369,164" lineColor="#505050" lineWidth="1"/>
+		<line from="520,911" to="520,164" lineColor="#000000" lineWidth="1"/>
+		<line from="519,912" to="519,164" lineColor="#505050" lineWidth="1"/>
+		<line from="670,911" to="670,164" lineColor="#000000" lineWidth="1"/>
+		<line from="669,912" to="669,164" lineColor="#505050" lineWidth="1"/>
+		<line from="820,911" to="820,164" lineColor="#000000" lineWidth="1"/>
+		<line from="819,912" to="819,164" lineColor="#505050" lineWidth="1"/>
+		<line from="970,911" to="970,164" lineColor="#000000" lineWidth="1"/>
+		<line from="969,912" to="969,164" lineColor="#505050" lineWidth="1"/>
+		<line from="1120,911" to="1120,164" lineColor="#000000" lineWidth="1"/>
+		<line from="1119,912" to="1119,164" lineColor="#505050" lineWidth="1"/>
+		<line from="1270,911" to="1270,164" lineColor="#000000" lineWidth="1"/>
+		<line from="1269,912" to="1269,164" lineColor="#505050" lineWidth="1"/>
+		<line from="1420,911" to="1420,164" lineColor="#000000" lineWidth="1"/>
+		<line from="1419,912" to="1419,164" lineColor="#505050" lineWidth="1"/>
+		<string from="1202,313" to="1269,338" border="0" fill="0" text="417" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffffff"/>
+		<line from="1213,335" to="1213,314" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="1213,335" to="1258,335" lineColor="#000000" lineWidth="1"/>
+		<line from="1214,314" to="1257,314" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="1257,335" to="1257,314" lineColor="#000000" lineWidth="1"/>
+		<imageStatue from="1168,432" to="1192,456" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="" iconType="0" size="24" index_close="6" index_open="6" angle="0.000000"/>
+		<string from="1156,456" to="1270,481" border="0" fill="0" text="空调用电1" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffff80"/>
+		<dyanData from="1196,430" to="1267,456" border="0" fill="0" angle="0.000000" align="2" font="宋体" size="16" name="A_L106D_417_Ia" type="0"/>
+		<imageStatue from="1137,455" to="1151,469" border="1" borderColor="#20a040" borderWidth="1" fill="0" stname="A_L106D_417_comSt" iconType="1" filename_close="iconlibrary/public/透明绿球24.png" filename_open="iconlibrary/public/透明红球24.png" angle="0.000000"/>
+		<line from="1142,444" to="1131,444" lineColor="#c02020" lineWidth="2"/>
+		<line from="1172,444" to="1161,444" lineColor="#c02020" lineWidth="2"/>
+		<line from="1131,705" to="1132,294" lineColor="#c02020" lineWidth="2"/>
+		<string from="1202,573" to="1269,598" border="0" fill="0" text="418" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffffff"/>
+		<line from="1213,595" to="1213,574" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="1213,595" to="1258,595" lineColor="#000000" lineWidth="1"/>
+		<line from="1214,574" to="1257,574" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="1257,595" to="1257,574" lineColor="#000000" lineWidth="1"/>
+		<imageStatue from="1168,692" to="1192,716" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="" iconType="0" size="24" index_close="6" index_open="6" angle="0.000000"/>
+		<string from="1156,716" to="1270,741" border="0" fill="0" text="空调用电2" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffff80"/>
+		<dyanData from="1196,690" to="1267,716" border="0" fill="0" angle="0.000000" align="2" font="宋体" size="16" name="A_L106D_418_Ia" type="0"/>
+		<imageStatue from="1137,716" to="1151,730" border="1" borderColor="#20a040" borderWidth="1" fill="0" stname="A_L106D_418_comSt" iconType="1" filename_close="iconlibrary/public/透明绿球24.png" filename_open="iconlibrary/public/透明红球24.png" angle="0.000000"/>
+		<line from="1142,704" to="1131,704" lineColor="#c02020" lineWidth="2"/>
+		<line from="1172,704" to="1161,704" lineColor="#c02020" lineWidth="2"/>
+		<string from="1352,313" to="1419,338" border="0" fill="0" text="419" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffffff"/>
+		<line from="1363,335" to="1363,314" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="1363,335" to="1408,335" lineColor="#000000" lineWidth="1"/>
+		<line from="1364,314" to="1407,314" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="1407,335" to="1407,314" lineColor="#000000" lineWidth="1"/>
+		<imageStatue from="1318,492" to="1342,516" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="" iconType="0" size="24" index_close="6" index_open="6" angle="0.000000"/>
+		<string from="1306,516" to="1420,541" border="0" fill="0" text="空调用电3" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffff80"/>
+		<dyanData from="1346,490" to="1417,516" border="0" fill="0" angle="0.000000" align="2" font="宋体" size="16" name="A_L107D_419_Ia" type="0"/>
+		<imageStatue from="1287,515" to="1301,529" border="1" borderColor="#20a040" borderWidth="1" fill="0" stname="A_L107D_419_comSt" iconType="1" filename_close="iconlibrary/public/透明绿球24.png" filename_open="iconlibrary/public/透明红球24.png" angle="0.000000"/>
+		<line from="1292,504" to="1281,504" lineColor="#c02020" lineWidth="2"/>
+		<line from="1322,504" to="1311,504" lineColor="#c02020" lineWidth="2"/>
+		<line from="1281,764" to="1282,294" lineColor="#c02020" lineWidth="2"/>
+		<string from="1352,633" to="1419,658" border="0" fill="0" text="420" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffffff"/>
+		<line from="1363,655" to="1363,634" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="1363,655" to="1408,655" lineColor="#000000" lineWidth="1"/>
+		<line from="1364,634" to="1407,634" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="1407,655" to="1407,634" lineColor="#000000" lineWidth="1"/>
+		<imageStatue from="1318,752" to="1342,776" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="" iconType="0" size="24" index_close="6" index_open="6" angle="0.000000"/>
+		<string from="1306,776" to="1420,801" border="0" fill="0" text="空调用电4" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffff80"/>
+		<dyanData from="1346,750" to="1417,776" border="0" fill="0" angle="0.000000" align="2" font="宋体" size="16" name="A_L107D_420_Ia" type="0"/>
+		<imageStatue from="1287,775" to="1301,789" border="1" borderColor="#20a040" borderWidth="1" fill="0" stname="A_L107D_420_comSt" iconType="1" filename_close="iconlibrary/public/透明绿球24.png" filename_open="iconlibrary/public/透明红球24.png" angle="0.000000"/>
+		<line from="1292,764" to="1281,764" lineColor="#c02020" lineWidth="2"/>
+		<line from="1322,764" to="1311,764" lineColor="#c02020" lineWidth="2"/>
+		<line from="434,294" to="426,294" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="423,291" to="579,298" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="" iconType="1" filename_close="iconlibrary/public/red.bmp" filename_open="iconlibrary/public/black.bmp" angle="0.000000"/>
+		<string from="824,263" to="857,288" border="0" fill="0" text="Uab" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffff80"/>
+		<dyanData from="859,262" to="930,288" border="0" fill="0" angle="0.000000" align="2" font="宋体" size="16" name="A_L102D_Uab" type="0"/>
+		<string from="930,263" to="958,288" border="0" fill="0" text="V" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffff80"/>
+		<string from="1080,263" to="1108,288" border="0" fill="0" text="V" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffff80"/>
+		<dyanData from="1009,262" to="1080,288" border="0" fill="0" angle="0.000000" align="2" font="宋体" size="16" name="A_L102D_Ubc" type="0"/>
+		<string from="974,263" to="1007,288" border="0" fill="0" text="Ubc" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffff80"/>
+		<string from="1230,263" to="1258,288" border="0" fill="0" text="V" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffff80"/>
+		<dyanData from="1159,262" to="1230,288" border="0" fill="0" angle="0.000000" align="2" font="宋体" size="16" name="A_L102D_Uac" type="0"/>
+		<string from="1127,263" to="1157,288" border="0" fill="0" text="Uac" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffff80"/>
+		<line from="1570,911" to="1570,164" lineColor="#000000" lineWidth="1"/>
+		<line from="1569,912" to="1569,164" lineColor="#505050" lineWidth="1"/>
+		<line from="1720,911" to="1720,164" lineColor="#000000" lineWidth="1"/>
+		<line from="1719,912" to="1719,164" lineColor="#505050" lineWidth="1"/>
+		<string from="1449,177" to="1535,202" border="0" fill="0" text="108D" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#ffff80"/>
+		<string from="1599,177" to="1685,202" border="0" fill="0" text="109D" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#ffff80"/>
+		<string from="1422,224" to="1566,249" border="0" fill="0" text="馈线柜" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#ffff80"/>
+		<string from="1572,224" to="1716,249" border="0" fill="0" text="馈线柜" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#ffff80"/>
+		<line from="191,912" to="1720,912" lineColor="#000000" lineWidth="1"/>
+		<line from="189,911" to="1720,911" lineColor="#505050" lineWidth="1"/>
+		<imageStatue from="1468,354" to="1492,378" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="" iconType="0" size="24" index_close="6" index_open="6" angle="0.000000"/>
+		<string from="1456,378" to="1570,403" border="0" fill="0" text="T1照明" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffff80"/>
+		<dyanData from="1496,352" to="1567,378" border="0" fill="0" angle="0.000000" align="2" font="宋体" size="16" name="A_L108D_421_Ia" type="0"/>
+		<imageStatue from="1436,376" to="1450,390" border="1" borderColor="#20a040" borderWidth="1" fill="0" stname="A_L108D_421_comSt" iconType="1" filename_close="iconlibrary/public/透明绿球24.png" filename_open="iconlibrary/public/透明红球24.png" angle="0.000000"/>
+		<string from="1502,313" to="1569,338" border="0" fill="0" text="421" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffffff"/>
+		<line from="1513,335" to="1513,314" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="1513,335" to="1558,335" lineColor="#000000" lineWidth="1"/>
+		<line from="1514,314" to="1557,314" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="1557,335" to="1557,314" lineColor="#000000" lineWidth="1"/>
+		<line from="1472,366" to="1461,366" lineColor="#c02020" lineWidth="2"/>
+		<line from="1442,366" to="1431,366" lineColor="#c02020" lineWidth="2"/>
+		<line from="1431,845" to="1432,294" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="1468,474" to="1492,498" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="" iconType="0" size="24" index_close="6" index_open="6" angle="0.000000"/>
+		<string from="1456,498" to="1570,523" border="0" fill="0" text="T2照明" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffff80"/>
+		<dyanData from="1496,472" to="1567,498" border="0" fill="0" angle="0.000000" align="2" font="宋体" size="16" name="A_L108D_422_Ia" type="0"/>
+		<imageStatue from="1436,496" to="1450,510" border="1" borderColor="#20a040" borderWidth="1" fill="0" stname="A_L108D_422_comSt" iconType="1" filename_close="iconlibrary/public/透明绿球24.png" filename_open="iconlibrary/public/透明红球24.png" angle="0.000000"/>
+		<line from="1472,486" to="1461,486" lineColor="#c02020" lineWidth="2"/>
+		<line from="1442,486" to="1431,486" lineColor="#c02020" lineWidth="2"/>
+		<string from="1502,433" to="1569,458" border="0" fill="0" text="422" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffffff"/>
+		<line from="1513,455" to="1513,434" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="1513,455" to="1558,455" lineColor="#000000" lineWidth="1"/>
+		<line from="1514,434" to="1557,434" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="1557,455" to="1557,434" lineColor="#000000" lineWidth="1"/>
+		<imageStatue from="1468,594" to="1492,618" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="" iconType="0" size="24" index_close="6" index_open="6" angle="0.000000"/>
+		<string from="1456,618" to="1570,643" border="0" fill="0" text="T3照明" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffff80"/>
+		<dyanData from="1496,592" to="1567,618" border="0" fill="0" angle="0.000000" align="2" font="宋体" size="16" name="A_L108D_423_Ia" type="0"/>
+		<imageStatue from="1436,616" to="1450,630" border="1" borderColor="#20a040" borderWidth="1" fill="0" stname="A_L108D_423_comSt" iconType="1" filename_close="iconlibrary/public/透明绿球24.png" filename_open="iconlibrary/public/透明红球24.png" angle="0.000000"/>
+		<line from="1472,606" to="1461,606" lineColor="#c02020" lineWidth="2"/>
+		<line from="1442,606" to="1431,606" lineColor="#c02020" lineWidth="2"/>
+		<string from="1502,553" to="1569,578" border="0" fill="0" text="423" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffffff"/>
+		<line from="1513,575" to="1513,554" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="1513,575" to="1558,575" lineColor="#000000" lineWidth="1"/>
+		<line from="1514,554" to="1557,554" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="1557,575" to="1557,554" lineColor="#000000" lineWidth="1"/>
+		<imageStatue from="1468,714" to="1492,738" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="" iconType="0" size="24" index_close="6" index_open="6" angle="0.000000"/>
+		<string from="1456,738" to="1570,763" border="0" fill="0" text="T4照明" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffff80"/>
+		<dyanData from="1496,712" to="1567,738" border="0" fill="0" angle="0.000000" align="2" font="宋体" size="16" name="A_L108D_424_Ia" type="0"/>
+		<imageStatue from="1436,736" to="1450,750" border="1" borderColor="#20a040" borderWidth="1" fill="0" stname="A_L108D_424_comSt" iconType="1" filename_close="iconlibrary/public/透明绿球24.png" filename_open="iconlibrary/public/透明红球24.png" angle="0.000000"/>
+		<line from="1472,726" to="1461,726" lineColor="#c02020" lineWidth="2"/>
+		<line from="1442,726" to="1431,726" lineColor="#c02020" lineWidth="2"/>
+		<string from="1501,673" to="1568,698" border="0" fill="0" text="424" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffffff"/>
+		<line from="1513,695" to="1513,674" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="1513,695" to="1558,695" lineColor="#000000" lineWidth="1"/>
+		<line from="1514,674" to="1557,674" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="1557,695" to="1557,674" lineColor="#000000" lineWidth="1"/>
+		<imageStatue from="1468,834" to="1492,858" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="" iconType="0" size="24" index_close="6" index_open="6" angle="0.000000"/>
+		<string from="1456,857" to="1570,882" border="0" fill="0" text="T5照明" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffff80"/>
+		<dyanData from="1496,832" to="1567,858" border="0" fill="0" angle="0.000000" align="2" font="宋体" size="16" name="A_L108D_425_Ia" type="0"/>
+		<imageStatue from="1436,856" to="1450,870" border="1" borderColor="#20a040" borderWidth="1" fill="0" stname="A_L108D_425_comSt" iconType="1" filename_close="iconlibrary/public/透明绿球24.png" filename_open="iconlibrary/public/透明红球24.png" angle="0.000000"/>
+		<line from="1472,846" to="1461,846" lineColor="#c02020" lineWidth="2"/>
+		<line from="1442,846" to="1431,846" lineColor="#c02020" lineWidth="2"/>
+		<string from="1502,793" to="1569,818" border="0" fill="0" text="425" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffffff"/>
+		<line from="1513,815" to="1513,794" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="1513,815" to="1558,815" lineColor="#000000" lineWidth="1"/>
+		<line from="1514,794" to="1557,794" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="1557,815" to="1557,794" lineColor="#000000" lineWidth="1"/>
+		<imageStatue from="1618,354" to="1642,378" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="" iconType="0" size="24" index_close="6" index_open="6" angle="0.000000"/>
+		<string from="1606,378" to="1720,403" border="0" fill="0" text="T1应急照明" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffff80"/>
+		<dyanData from="1646,352" to="1717,378" border="0" fill="0" angle="0.000000" align="2" font="宋体" size="16" name="A_L109D_426_Ia" type="0"/>
+		<imageStatue from="1586,376" to="1600,390" border="1" borderColor="#20a040" borderWidth="1" fill="0" stname="A_L109D_426_comSt" iconType="1" filename_close="iconlibrary/public/透明绿球24.png" filename_open="iconlibrary/public/透明红球24.png" angle="0.000000"/>
+		<string from="1652,313" to="1719,338" border="0" fill="0" text="426" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffffff"/>
+		<line from="1663,335" to="1663,314" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="1663,335" to="1708,335" lineColor="#000000" lineWidth="1"/>
+		<line from="1664,314" to="1707,314" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="1707,335" to="1707,314" lineColor="#000000" lineWidth="1"/>
+		<line from="1622,366" to="1611,366" lineColor="#c02020" lineWidth="2"/>
+		<line from="1592,366" to="1581,366" lineColor="#c02020" lineWidth="2"/>
+		<line from="1581,845" to="1582,294" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="1618,474" to="1642,498" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="" iconType="0" size="24" index_close="6" index_open="6" angle="0.000000"/>
+		<string from="1606,498" to="1720,523" border="0" fill="0" text="T2应急照明" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffff80"/>
+		<dyanData from="1646,472" to="1717,498" border="0" fill="0" angle="0.000000" align="2" font="宋体" size="16" name="A_L109D_427_Ia" type="0"/>
+		<imageStatue from="1586,496" to="1600,510" border="1" borderColor="#20a040" borderWidth="1" fill="0" stname="A_L109D_427_comSt" iconType="1" filename_close="iconlibrary/public/透明绿球24.png" filename_open="iconlibrary/public/透明红球24.png" angle="0.000000"/>
+		<line from="1622,486" to="1611,486" lineColor="#c02020" lineWidth="2"/>
+		<line from="1592,486" to="1581,486" lineColor="#c02020" lineWidth="2"/>
+		<string from="1652,433" to="1719,458" border="0" fill="0" text="427" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffffff"/>
+		<line from="1663,455" to="1663,434" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="1663,455" to="1708,455" lineColor="#000000" lineWidth="1"/>
+		<line from="1664,434" to="1707,434" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="1707,455" to="1707,434" lineColor="#000000" lineWidth="1"/>
+		<imageStatue from="1618,594" to="1642,618" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="" iconType="0" size="24" index_close="6" index_open="6" angle="0.000000"/>
+		<string from="1606,618" to="1720,643" border="0" fill="0" text="T3应急照明" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffff80"/>
+		<dyanData from="1646,592" to="1717,618" border="0" fill="0" angle="0.000000" align="2" font="宋体" size="16" name="A_L109D_428_Ia" type="0"/>
+		<imageStatue from="1586,616" to="1600,630" border="1" borderColor="#20a040" borderWidth="1" fill="0" stname="A_L109D_428_comSt" iconType="1" filename_close="iconlibrary/public/透明绿球24.png" filename_open="iconlibrary/public/透明红球24.png" angle="0.000000"/>
+		<line from="1622,606" to="1611,606" lineColor="#c02020" lineWidth="2"/>
+		<line from="1592,606" to="1581,606" lineColor="#c02020" lineWidth="2"/>
+		<string from="1652,553" to="1719,578" border="0" fill="0" text="428" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffffff"/>
+		<line from="1663,575" to="1663,554" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="1663,575" to="1708,575" lineColor="#000000" lineWidth="1"/>
+		<line from="1664,554" to="1707,554" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="1707,575" to="1707,554" lineColor="#000000" lineWidth="1"/>
+		<imageStatue from="1618,714" to="1642,738" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="" iconType="0" size="24" index_close="6" index_open="6" angle="0.000000"/>
+		<string from="1605,738" to="1719,763" border="0" fill="0" text="T4应急照明" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffff80"/>
+		<dyanData from="1646,712" to="1717,738" border="0" fill="0" angle="0.000000" align="2" font="宋体" size="16" name="A_L109D_429_Ia" type="0"/>
+		<imageStatue from="1586,736" to="1600,750" border="1" borderColor="#20a040" borderWidth="1" fill="0" stname="A_L109D_429_comSt" iconType="1" filename_close="iconlibrary/public/透明绿球24.png" filename_open="iconlibrary/public/透明红球24.png" angle="0.000000"/>
+		<line from="1622,726" to="1611,726" lineColor="#c02020" lineWidth="2"/>
+		<line from="1592,726" to="1581,726" lineColor="#c02020" lineWidth="2"/>
+		<string from="1652,673" to="1719,698" border="0" fill="0" text="429" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffffff"/>
+		<line from="1663,695" to="1663,674" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="1663,695" to="1708,695" lineColor="#000000" lineWidth="1"/>
+		<line from="1664,674" to="1707,674" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="1707,695" to="1707,674" lineColor="#000000" lineWidth="1"/>
+		<imageStatue from="1618,834" to="1642,858" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="" iconType="0" size="24" index_close="6" index_open="6" angle="0.000000"/>
+		<string from="1606,858" to="1720,883" border="0" fill="0" text="T5应急照明" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffff80"/>
+		<dyanData from="1646,832" to="1717,858" border="0" fill="0" angle="0.000000" align="2" font="宋体" size="16" name="A_L109D_430_Ia" type="0"/>
+		<imageStatue from="1586,856" to="1600,870" border="1" borderColor="#20a040" borderWidth="1" fill="0" stname="A_L109D_430_comSt" iconType="1" filename_close="iconlibrary/public/透明绿球24.png" filename_open="iconlibrary/public/透明红球24.png" angle="0.000000"/>
+		<line from="1622,846" to="1611,846" lineColor="#c02020" lineWidth="2"/>
+		<line from="1592,846" to="1581,846" lineColor="#c02020" lineWidth="2"/>
+		<string from="1652,793" to="1719,818" border="0" fill="0" text="430" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffffff"/>
+		<line from="1663,815" to="1663,794" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="1663,815" to="1708,815" lineColor="#000000" lineWidth="1"/>
+		<line from="1664,794" to="1707,794" lineColor="#c0c0c0" lineWidth="1"/>
+		<line from="1707,815" to="1707,794" lineColor="#000000" lineWidth="1"/>
+		<imageStatue from="615,291" to="1675,298" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="" iconType="1" filename_close="iconlibrary/public/red.bmp" filename_open="iconlibrary/public/black.bmp" angle="0.000000"/>
+		<imageStatue from="1439,354" to="1463,378" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="A_L108D_421_SS" iconType="0" size="24" index_close="18" index_open="24" angle="0.000000"/>
+		<imageStatue from="1439,474" to="1463,498" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="A_L108D_422_SS" iconType="0" size="24" index_close="18" index_open="24" angle="0.000000"/>
+		<imageStatue from="1439,594" to="1463,618" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="A_L108D_423_SS" iconType="0" size="24" index_close="18" index_open="24" angle="0.000000"/>
+		<imageStatue from="1439,714" to="1463,738" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="A_L108D_424_SS" iconType="0" size="24" index_close="18" index_open="24" angle="0.000000"/>
+		<imageStatue from="1439,834" to="1463,858" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="A_L108D_425_SS" iconType="0" size="24" index_close="18" index_open="24" angle="0.000000"/>
+		<imageStatue from="1589,834" to="1613,858" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="A_L109D_430_SS" iconType="0" size="24" index_close="18" index_open="24" angle="0.000000"/>
+		<imageStatue from="1589,714" to="1613,738" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="A_L109D_429_SS" iconType="0" size="24" index_close="18" index_open="24" angle="0.000000"/>
+		<imageStatue from="1589,594" to="1613,618" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="A_L109D_428_SS" iconType="0" size="24" index_close="18" index_open="24" angle="0.000000"/>
+		<imageStatue from="1589,474" to="1613,498" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="A_L109D_427_SS" iconType="0" size="24" index_close="18" index_open="24" angle="0.000000"/>
+		<imageStatue from="1589,354" to="1613,378" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="A_L109D_426_SS" iconType="0" size="24" index_close="18" index_open="24" angle="0.000000"/>
+		<imageStatue from="1289,492" to="1313,516" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="A_L107D_419_SS" iconType="0" size="24" index_close="18" index_open="24" angle="0.000000"/>
+		<imageStatue from="1289,752" to="1313,776" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="A_L107D_420_SS" iconType="0" size="24" index_close="18" index_open="24" angle="0.000000"/>
+		<imageStatue from="1139,692" to="1163,716" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="A_L106D_418_SS" iconType="0" size="24" index_close="18" index_open="24" angle="0.000000"/>
+		<imageStatue from="1139,432" to="1163,456" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="A_L106D_417_SS" iconType="0" size="24" index_close="18" index_open="24" angle="0.000000"/>
+		<imageStatue from="989,427" to="1013,451" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="A_L105D_411_SS" iconType="0" size="24" index_close="18" index_open="24" angle="0.000000"/>
+	</layer>
+</picture>

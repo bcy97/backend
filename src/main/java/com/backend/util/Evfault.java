@@ -40,6 +40,7 @@ public class Evfault {
         ReadINIFile rif = null;
         try {
             rif = new ReadINIFile(file.getCanonicalPath());
+            rif.readIniFile();
         } catch (IOException e) {
             e.printStackTrace();
         }

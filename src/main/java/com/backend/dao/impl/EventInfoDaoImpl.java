@@ -113,7 +113,7 @@ public class EventInfoDaoImpl implements EventInfoDao {
     private EventInfo[] parseEventInfo(ByteBuffer bb) {
         if(null == bb || 0 == bb.position() )
             return new EventInfo[0];
-        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.sss");
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
         List<EventInfo> list = new ArrayList<EventInfo>();
         int id = Constants.CC_NOTHINGNESS;
         int size = bb.position();
@@ -136,8 +136,8 @@ public class EventInfoDaoImpl implements EventInfoDao {
                 time = bb.getLong();
                 size -= 8;
                 cal.setTimeInMillis((long) time * 1000);
-                cal.set(Calendar.SECOND, miSec / 1000);
-                cal.set(Calendar.MILLISECOND, miSec % 1000);
+                cal.set(Calendar.SECOND, miSec / 100);
+                cal.set(Calendar.MILLISECOND, miSec % 100);
 
                 length = bb.get() & 0xff;// byte是有符号的，将length转为无符号整数
                 size--;
@@ -159,6 +159,8 @@ public class EventInfoDaoImpl implements EventInfoDao {
                     bb.get(bData);
                     size -= length;
                 }
+
+                System.out.println(format.format(cal.getTime()));
                 EventInfo ei = new EventInfo(id, format.format(cal.getTime()), info);
 
                 if (length > 0)

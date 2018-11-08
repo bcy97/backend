@@ -136,8 +136,8 @@ public class EventInfoDaoImpl implements EventInfoDao {
                 time = bb.getLong();
                 size -= 8;
                 cal.setTimeInMillis((long) time * 1000);
-                cal.set(Calendar.SECOND, miSec / 100);
-                cal.set(Calendar.MILLISECOND, miSec % 100);
+             //   cal.set(Calendar.SECOND, miSec / 100);
+             //   cal.set(Calendar.MILLISECOND, miSec % 100);
 
                 length = bb.get() & 0xff;// byte是有符号的，将length转为无符号整数
                 size--;

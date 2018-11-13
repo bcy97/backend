@@ -11,13 +11,14 @@ public class Constants {
 	public final static byte CC_TAIL = 0x7E;
 	public final static int CC_NOTHINGNESS = 0xFFFFFF;
 	public final static byte CC_IS_NULL = (byte) 0xFF;
-	public final static short CC_REALDATA = 18;
-	public final static short CC_HISDATA = 26;
-	public final static short CC_EVENTDATA = 90;
-	public final static short CC_STATISDATA = 100;
-	public final static short CC_USERINFO = 84;
-	public final static short CC_REALCALDATA = 110;
-	public final static short CC_CHANNELTYPE = 0;
+	public final static short CC_REALDATA = 18;//0x12
+	public final static short CC_HISDATA = 26;//0x1A
+	public final static short CC_EVENTDATA = 90;//0x5A
+	public final static short CC_STATISDATA = 100;//0x64
+	public final static short CC_USERINFO = 84;//0x54
+	public final static short CC_REALCALDATA = 110;// 0x6E
+	public final static short CC_CHANNELTYPE = 0;// 0x00
+	public final static short CC_REMOTECONTROL = 60;//0x3C
 
 	// history data type
 	public final static byte CC_HDT_HOUS_DATA = 0x03;
@@ -52,4 +53,6 @@ public class Constants {
 	public static final String _LOGIN_ = "3";
 
 	public static final int _DEFAULT_PORT_ = 10001;
+	// 在配置中灯光的类型
+	public static final byte LIGHT_TYPE = 15;
 }

@@ -69,6 +69,7 @@ public class MonitorPicController {
         Integer[] id = new Integer[ids.length];
         for (int i = 0; i < ids.length; i++) {
             id[i] = cfgData.getStID(ids[i]);
+            System.out.println(ids[i]);
         }
 
         Object[] data = monitorPicService.getRealData(id);

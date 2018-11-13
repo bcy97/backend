@@ -139,7 +139,7 @@ public class SocketConnect {
      * @param cmd
      *      发送请求的命令
      * */
-    public static ByteBuffer getData(byte[] sendDatas, short cmd, Logger logger) {
+    public static ByteBuffer getData(byte[] sendDatas, short cmd, Logger logger,boolean bReceiveData) {
 
         Socket socket = new Socket();
         try {
@@ -151,7 +151,7 @@ public class SocketConnect {
 
             // 要先发一个包，告诉上位机通道类型
             bDatas = generateChannelDeclarationPackage().serialize();
-            os.write(bDatas, 0, bDatas.length);
+            //os.write(bDatas, 0, bDatas.length);
 
             List<DataPacket> dps = toDataPackets(sendDatas, cmd);
             for (DataPacket dp : dps) {
@@ -159,7 +159,9 @@ public class SocketConnect {
                 os.write(bDatas, 0, bDatas.length);
             }
 
-            ByteBuffer bb = receiveData(is, logger);
+            ByteBuffer bb = null;
+            if(bReceiveData)
+                bb = receiveData(is, logger);
             is.close();
             os.close();
 

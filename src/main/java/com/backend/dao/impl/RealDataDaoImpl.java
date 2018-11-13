@@ -33,7 +33,7 @@ public class RealDataDaoImpl implements RealDataDao {
      * */
     @Override
     public Object[] getRealData(Integer[] ids) {
-        return parseRealData(SocketConnect.getData(utils.idArrToBytes(ids), Constants.CC_REALDATA, logger));
+        return parseRealData(SocketConnect.getData(utils.idArrToBytes(ids), Constants.CC_REALDATA, logger,true));
     }
 
     /***

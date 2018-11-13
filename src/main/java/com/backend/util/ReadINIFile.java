@@ -9,28 +9,28 @@ import java.util.List;
 
 public class ReadINIFile {
 	private final String sDefault = "_DEFAULT_";
-	// �ļ�·��
+	// 文件路径
 	private String path = null;
 	/***
-	 * �Ƿ�����
+	 * 是否有错误
 	 * */
 	public Boolean wrong = false;
 	/***
-	 * ���wrongΪtrue,��Ϊ������Ϣ,����Ϊ��.
+	 * 错误信息
 	 * */
 	public String msg = null;
 	/***
-	 * �ں�����ÿһ�е�Map
+	 * 节点名和节点下的每一行的哈希表
 	 * */
 	private HashMap<String, List<String>> sectionMap = null;
 	/***
-	 * ��,��,ֵ��Map
+	 *
 	 * */
 	private HashMap<String, LinkedHashMap<String, String>> sectionKeyValueMap = null;
 	private String nowSection;
 
 	/***
-	 * ��ini�ļ�,������false
+	 * 读ini文件
 	 * */
 	public Boolean readIniFile() {
 		if (path != null && !path.replace(" ", "").isEmpty()) {
@@ -40,7 +40,7 @@ public class ReadINIFile {
 			} catch (Exception e) {
 				// TODO: handle exception
 				wrong = true;
-				msg = "�ļ�·������";
+				msg = "读取ini文件失败";
 				return !wrong;
 			}
 			try {
@@ -61,18 +61,18 @@ public class ReadINIFile {
 
 		} else {
 			wrong = true;
-			msg = "�ļ�·������Ϊ��!";
+			msg = "读取ini文件失败";
 		}
 		return !wrong;
 	}
 
 	/***
-	 * ת������Ϣ
+	 * 解析每一行
 	 * */
 	private void parseLine(String line) {
-		// ȥ��ͷ��β�Ŀո�
+
 		line = line.trim();
-		// ע��,����// ��ͷ ������ #�ſ�ͷ
+		// 如果是以双斜杠打头的说明是注释,跳过
 		if (line.matches("^[//|#].*$")) {
 			return;
 		} else if (line.matches("^\\[.*\\]$")) {// [section]
@@ -85,7 +85,7 @@ public class ReadINIFile {
 	}
 
 	/***
-	 * ��ӽڵ�
+	 * 添加节点
 	 * */
 	private void addSection(String section) {
 		nowSection = section;
@@ -101,10 +101,10 @@ public class ReadINIFile {
 	}
 
 	/***
-	 * ��Ӽ�ֵ
+	 * 添加节点下的键值
 	 * */
 	private void addKeyValues(String keyValue) {
-		// nowSection Ϊ��
+		// 当前节点为空就用缺省节点
 		if (nowSection == null || nowSection.isEmpty()) {
 			nowSection = sDefault;
 			List<String> keyValues = new ArrayList<>();
@@ -149,7 +149,7 @@ public class ReadINIFile {
 	}
 	
 	/***
-	 * ͨ���ڵ�ͼ�����ȡֵ
+	 * 通过节点名和键找到值
 	 * */
 	public String getValue(String section,String key){
 		if(section == null || section.isEmpty()){
@@ -166,7 +166,7 @@ public class ReadINIFile {
 	}
 
 	/***
-	 * ͨ���ڵ��ȡ�ڵ������еļ�=ֵ
+	 * 通过节点名获取该节点下的所有行
 	 * */
 	public List<String> getKeyValue(String section){
 		if(section == null || section.isEmpty()){
@@ -178,7 +178,7 @@ public class ReadINIFile {
 	}
 	
 	/***
-	 * ͨ���ڵ��������ȡĳһ��
+	 * 通过节点名和索引获取指定的行
 	 * */
 	public String getLine(String section,int index){
 		List<String> list = getKeyValue(section);

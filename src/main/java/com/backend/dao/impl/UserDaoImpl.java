@@ -120,7 +120,7 @@ public class UserDaoImpl implements UserDao {
     private ByteBuffer getUserInfo(byte[] datas) {
         ByteBuffer bb;
 
-        bb = SocketConnect.getData(datas,Constants.CC_USERINFO,logger);
+        bb = SocketConnect.getData(datas,Constants.CC_USERINFO,logger,true);
 
         return bb;
 

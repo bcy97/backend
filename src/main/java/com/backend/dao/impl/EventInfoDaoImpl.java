@@ -104,7 +104,7 @@ public class EventInfoDaoImpl implements EventInfoDao {
         System.arraycopy(bb.array(), 0, datas, 0, datas.length);
         byte cmd = Constants.CC_EVENTDATA;
 
-        return SocketConnect.getData(datas, cmd, logger);
+        return SocketConnect.getData(datas, cmd, logger,true);
     }
 
     /****
@@ -160,7 +160,7 @@ public class EventInfoDaoImpl implements EventInfoDao {
                     size -= length;
                 }
 
-                System.out.println(format.format(cal.getTime()));
+             //   System.out.println(format.format(cal.getTime()));
                 EventInfo ei = new EventInfo(id, format.format(cal.getTime()), info);
 
                 if (length > 0)

@@ -80,7 +80,7 @@ public class StatisDataDaoImpl implements StatisDataDao {
         byte[] datas = new byte[bb.position()];
         System.arraycopy(bb.array(), 0, datas, 0, datas.length);
 
-        return SocketConnect.getData(datas, Constants.CC_STATISDATA, logger);
+        return SocketConnect.getData(datas, Constants.CC_STATISDATA, logger,true);
     }
 
     /***

@@ -43,8 +43,9 @@ public class RealDataServiceImpl implements RealDataService {
                 break;
             }
         }
+        System.out.println("查询中...");
         AnValue[] anValues = realDataDao.getAnRealData(ids);
-
+        System.out.println("获得数据");
         Map<String, AnValue> map = new LinkedHashMap<>();
 
         for (int i = 0; i < ids.length; i++) {
@@ -57,7 +58,7 @@ public class RealDataServiceImpl implements RealDataService {
             }
             map.put(cfgData.getAnO(ids[i]).getSname(), anValues[i]);
         }
-
+        System.out.println("返回数据");
         return map;
     }
 

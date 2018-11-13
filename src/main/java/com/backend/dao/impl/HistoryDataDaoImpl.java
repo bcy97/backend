@@ -82,7 +82,7 @@ public class HistoryDataDaoImpl implements HistoryDataDao {
 
         System.arraycopy(bb.array(), 0, datas, 0, datas.length);
 
-        return SocketConnect.getData(datas, Constants.CC_HISDATA, logger);
+        return SocketConnect.getData(datas, Constants.CC_HISDATA, logger,true);
     }
 
     private AnValue[] parseHistoryAnData(ByteBuffer bb, int count) {

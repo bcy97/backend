@@ -2,9 +2,6 @@
 <picture version="7" color="#303030" width="1800" height="900">
 	<layer name="µ×Í¼">
 		<image from="243,79" to="1843,179" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/user/aºÅÕ¾¸ßÑ¹ÏµÍ³Êý¾Ý±í.png" angle="0.000000"/>
-		<dyanData from="1409,116" to="1613,164" border="0" fill="0" angle="0.000000" align="0" font="LcdD" size="35" name="TIME" type="0"/>
-		<dyanData from="399,117" to="570,165" border="0" fill="0" angle="0.000000" align="2" font="LcdD" size="35" name="DATE" type="0"/>
-		<image from="22,85" to="220,181" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/Ö÷»­Ãæ°´Å¥.png" angle="0.000000"/>
 		<string from="150,592" to="255,618" border="0" fill="0" text="4#³öÏß" angle="0.000000" align="1" font="Î¢ÈíÑÅºÚ" size="20" fontColor="#e0e080"/>
 		<string from="149,472" to="254,498" border="0" fill="0" text="1#±äÑ¹Æ÷" angle="0.000000" align="1" font="Î¢ÈíÑÅºÚ" size="20" fontColor="#e0e080"/>
 		<string from="151,532" to="256,558" border="0" fill="0" text="2#±äÑ¹Æ÷" angle="0.000000" align="1" font="Î¢ÈíÑÅºÚ" size="20" fontColor="#e0e080"/>

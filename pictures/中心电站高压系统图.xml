@@ -8,11 +8,7 @@
 		<imageStatue from="674,489" to="698,513" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="" iconType="0" size="24" index_close="58" index_open="58" angle="0.000000"/>
 		<imageStatue from="674,459" to="698,483" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="" iconType="0" size="24" index_close="58" index_open="58" angle="0.000000"/>
 		<image from="143,32" to="1754,117" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/user/a号站高压系统一次图.png" angle="0.000000"/>
-		<dyanData from="1289,56" to="1493,104" border="0" fill="0" angle="0.000000" align="0" font="LcdD" size="35" name="TIME" type="0"/>
-		<dyanData from="319,56" to="496,104" border="0" fill="0" angle="0.000000" align="2" font="LcdD" size="35" name="DATE" type="0"/>
-		<image from="22,25" to="220,121" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/主画面按钮.png" angle="0.000000"/>
-		<image from="1492,25" to="1690,121" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/数据表按钮.png" angle="0.000000"/>
-		<image from="1702,25" to="1900,121" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/环境监控图按钮.png" angle="0.000000"/>
+		<imageNavi from="1642,25" to="1852,132" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/数据表按钮.png" angle="0.000000" naviTo="2"/>
 		<string from="88,155" to="174,180" border="0" fill="0" text="柜       号" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#ffff80"/>
 		<string from="82,225" to="186,633" border="0" fill="0" text="一     次     图" angle="0.000000" align="1" font="微软雅黑" size="21" fontColor="#e0e080"/>
 		<string from="91,671" to="177,696" border="0" fill="0" text="详       细" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#ffff80"/>

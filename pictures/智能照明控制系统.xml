@@ -1,0 +1,812 @@
+<?xml version="1.0" encoding="gbk"?>
+<picture version="7" color="#303030" width="1800" height="900">
+	<layer name="底图">
+		<rect from="1130,880" to="1001,782" border="1" borderColor="#6c6c6c" borderWidth="1" fill="1" fillColor="#4b4b4b"/>
+		<rect from="734,622" to="560,500" border="1" borderColor="#4d4d4d" borderWidth="1" fill="0"/>
+		<image from="210,27" to="1810,127" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/user/港口智能照明控制系统.png" angle="0.000000"/>
+		<dyanData from="1469,56" to="1673,104" border="0" fill="0" angle="0.000000" align="0" font="LcdD" size="35" name="TIME" type="0"/>
+		<dyanData from="426,55" to="630,103" border="0" fill="0" angle="0.000000" align="2" font="LcdD" size="35" name="DATE" type="0"/>
+		<imageNavi from="112,25" to="310,121" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/主画面按钮.png" angle="0.000000" naviTo="0"/>
+		<line from="501,905" to="501,134" lineColor="#00ffff" lineWidth="1"/>
+		<line from="710,906" to="501,906" lineColor="#00ffff" lineWidth="1"/>
+		<rect from="502,135" to="1847,151" border="1" borderColor="#808080" borderWidth="1" fill="1" fillColor="#808080"/>
+		<rect from="502,735" to="519,143" border="0" fill="1" fillColor="#808080"/>
+		<line from="1847,899" to="1847,134" lineColor="#00ffff" lineWidth="1"/>
+		<line from="731,906" to="731,878" lineColor="#808080" lineWidth="1"/>
+		<line from="761,906" to="761,878" lineColor="#808080" lineWidth="1"/>
+		<line from="791,906" to="791,878" lineColor="#808080" lineWidth="1"/>
+		<line from="791,906" to="791,878" lineColor="#808080" lineWidth="1"/>
+		<line from="821,906" to="821,878" lineColor="#808080" lineWidth="1"/>
+		<line from="821,906" to="821,878" lineColor="#808080" lineWidth="1"/>
+		<line from="746,906" to="746,878" lineColor="#808080" lineWidth="1"/>
+		<line from="776,906" to="776,878" lineColor="#808080" lineWidth="1"/>
+		<line from="806,906" to="806,878" lineColor="#808080" lineWidth="1"/>
+		<line from="736,888" to="730,895" lineColor="#808080" lineWidth="1"/>
+		<line from="739,896" to="736,888" lineColor="#808080" lineWidth="1"/>
+		<line from="745,888" to="739,896" lineColor="#808080" lineWidth="1"/>
+		<line from="751,888" to="745,895" lineColor="#808080" lineWidth="1"/>
+		<line from="754,896" to="751,888" lineColor="#808080" lineWidth="1"/>
+		<line from="760,888" to="754,896" lineColor="#808080" lineWidth="1"/>
+		<line from="766,888" to="760,895" lineColor="#808080" lineWidth="1"/>
+		<line from="769,896" to="766,888" lineColor="#808080" lineWidth="1"/>
+		<line from="775,888" to="769,896" lineColor="#808080" lineWidth="1"/>
+		<line from="781,888" to="775,895" lineColor="#808080" lineWidth="1"/>
+		<line from="784,896" to="781,888" lineColor="#808080" lineWidth="1"/>
+		<line from="790,888" to="784,896" lineColor="#808080" lineWidth="1"/>
+		<line from="796,888" to="790,895" lineColor="#808080" lineWidth="1"/>
+		<line from="799,896" to="796,888" lineColor="#808080" lineWidth="1"/>
+		<line from="805,888" to="799,896" lineColor="#808080" lineWidth="1"/>
+		<line from="811,888" to="805,895" lineColor="#808080" lineWidth="1"/>
+		<line from="814,896" to="811,888" lineColor="#808080" lineWidth="1"/>
+		<line from="820,888" to="814,896" lineColor="#808080" lineWidth="1"/>
+		<image from="510,749" to="522,766" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="510,779" to="522,796" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="510,809" to="522,826" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="510,839" to="522,856" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="510,869" to="522,886" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<rect from="629,905" to="525,892" border="1" borderColor="#7c7c7c" borderWidth="1" fill="0"/>
+		<rect from="565,744" to="525,665" border="1" borderColor="#6c6c6c" borderWidth="1" fill="0"/>
+		<roundrect from="574,734" to="559,675" border="1" borderColor="#6c6c6c" borderWidth="1" fill="0" round="d,16"/>
+		<image from="566,689" to="572,693" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="566,696" to="572,700" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="566,703" to="572,707" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="566,682" to="572,686" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<rect from="558,654" to="558,654" border="1" borderColor="#6c6c6c" borderWidth="1" fill="1" fillColor="#0080ff"/>
+		<rect from="565,742" to="526,667" border="0" fill="1" fillColor="#4b4b4b"/>
+		<rect from="558,718" to="558,718" border="1" borderColor="#6c6c6c" borderWidth="1" fill="1" fillColor="#0080ff"/>
+		<image from="512,752" to="518,756" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="512,759" to="518,763" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="512,766" to="518,770" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="512,773" to="518,777" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="512,779" to="518,783" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="512,787" to="518,791" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="512,793" to="518,797" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="512,801" to="518,805" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="512,807" to="518,811" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="512,814" to="518,818" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="512,821" to="518,825" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="512,828" to="518,832" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="512,835" to="518,839" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="512,843" to="518,847" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="512,849" to="518,853" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="512,857" to="518,861" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="512,864" to="518,868" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="512,871" to="518,875" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="512,878" to="518,882" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="512,885" to="518,889" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<rect from="670,719" to="642,668" border="1" borderColor="#6c6c6c" borderWidth="1" fill="1" fillColor="#4b4b4b"/>
+		<rect from="706,812" to="644,783" border="0" fill="1" fillColor="#4b4b4b"/>
+		<rect from="705,883" to="527,842" border="1" borderColor="#6c6c6c" borderWidth="1" fill="1" fillColor="#4b4b4b"/>
+		<string from="639,670" to="672,716" border="0" fill="0" text="污水站" angle="0.000000" align="1" font="宋体" size="14" fontColor="#ff80ff"/>
+		<image from="512,745" to="518,749" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="520,745" to="526,749" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="528,655" to="534,659" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="536,655" to="542,659" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="544,655" to="550,659" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="552,655" to="558,659" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="560,655" to="566,659" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="568,655" to="574,659" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="576,655" to="582,659" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="584,655" to="590,659" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="591,655" to="597,659" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="599,655" to="605,659" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="607,655" to="613,659" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="616,655" to="622,659" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="624,655" to="630,659" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="632,655" to="638,659" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="640,655" to="646,659" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="649,655" to="655,659" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="657,655" to="663,659" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="665,655" to="671,659" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="672,655" to="678,659" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="681,655" to="687,659" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="640,901" to="646,905" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="649,901" to="655,905" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="657,901" to="663,905" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="665,901" to="671,905" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="672,901" to="678,905" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="681,901" to="687,905" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="688,901" to="694,905" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="839,780" to="845,784" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="839,787" to="845,791" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="839,794" to="845,798" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="839,801" to="845,805" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="839,808" to="845,812" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="839,815" to="845,819" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="839,822" to="845,826" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="839,829" to="845,833" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="839,836" to="845,840" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<string from="756,863" to="798,881" border="0" fill="0" text="大门" angle="0.000000" align="1" font="宋体" size="14" fontColor="#ff80ff"/>
+		<rect from="911,786" to="860,738" border="1" borderColor="#6c6c6c" borderWidth="1" fill="1" fillColor="#4b4b4b"/>
+		<rect from="981,803" to="907,722" border="0" fill="1" fillColor="#4b4b4b"/>
+		<string from="924,729" to="962,792" border="0" fill="0" text="洗箱场" angle="0.000000" align="1" font="宋体" size="16" fontColor="#ff80ff"/>
+		<rect from="902,881" to="862,794" border="1" borderColor="#6c6c6c" borderWidth="1" fill="1" fillColor="#4b4b4b"/>
+		<rect from="982,878" to="909,810" border="1" borderColor="#6c6c6c" borderWidth="1" fill="1" fillColor="#4b4b4b"/>
+		<string from="872,799" to="890,877" border="0" fill="0" text="消防站" angle="0.000000" align="1" font="宋体" size="16" fontColor="#ff80ff"/>
+		<string from="927,813" to="967,873" border="0" fill="0" text="训练场" angle="0.000000" align="1" font="宋体" size="16" fontColor="#ff80ff"/>
+		<string from="1018,818" to="1114,843" border="0" fill="0" text="维修车间" angle="0.000000" align="1" font="宋体" size="16" fontColor="#ff80ff"/>
+		<rect from="1130,771" to="1001,722" border="1" borderColor="#6c6c6c" borderWidth="1" fill="1" fillColor="#4b4b4b"/>
+		<string from="1005,727" to="1123,765" border="0" fill="0" text="加油加气站" angle="0.000000" align="1" font="宋体" size="16" fontColor="#ff80ff"/>
+		<image from="847,889" to="853,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="847,896" to="853,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="877,889" to="883,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="877,896" to="883,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="907,889" to="913,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="907,896" to="913,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="937,889" to="943,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="937,896" to="943,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="825,896" to="831,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="836,896" to="842,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="856,889" to="862,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="856,896" to="862,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="867,889" to="873,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="867,896" to="873,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="886,889" to="892,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="886,896" to="892,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="898,889" to="904,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="898,896" to="904,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="915,889" to="921,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="915,896" to="921,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="924,889" to="930,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="924,896" to="930,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="931,889" to="937,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="931,896" to="937,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="839,863" to="845,867" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="839,870" to="845,874" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="839,878" to="845,882" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="839,885" to="845,889" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="967,889" to="973,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="967,896" to="973,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="945,889" to="951,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="945,896" to="951,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="954,889" to="960,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="954,896" to="960,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="961,889" to="967,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="961,896" to="967,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="994,889" to="1000,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="994,896" to="1000,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="975,889" to="981,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="975,896" to="981,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="981,889" to="987,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="981,896" to="987,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="988,889" to="994,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="988,896" to="994,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1024,889" to="1030,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1024,896" to="1030,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1002,889" to="1008,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1002,896" to="1008,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1011,889" to="1017,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1011,896" to="1017,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1018,889" to="1024,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1018,896" to="1024,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1054,889" to="1060,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1054,896" to="1060,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1032,889" to="1038,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1032,896" to="1038,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1041,889" to="1047,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1041,896" to="1047,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1048,889" to="1054,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1048,896" to="1054,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1084,889" to="1090,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1084,896" to="1090,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1062,889" to="1068,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1062,896" to="1068,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1071,889" to="1077,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1071,896" to="1077,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1078,889" to="1084,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1078,896" to="1084,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1112,889" to="1118,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1112,896" to="1118,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1092,889" to="1098,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1092,896" to="1098,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1099,889" to="1105,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1099,896" to="1105,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1106,889" to="1112,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1106,896" to="1112,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1138,889" to="1144,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1138,896" to="1144,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1118,889" to="1124,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1118,896" to="1124,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1125,889" to="1131,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1125,896" to="1131,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1132,889" to="1138,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1132,896" to="1138,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1166,889" to="1172,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1166,896" to="1172,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1146,889" to="1152,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1146,896" to="1152,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1153,889" to="1159,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1153,896" to="1159,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1160,889" to="1166,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1160,896" to="1166,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1168,889" to="1174,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1168,896" to="1174,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1196,889" to="1202,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1196,896" to="1202,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1176,889" to="1182,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1176,896" to="1182,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1183,889" to="1189,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1183,896" to="1189,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1190,889" to="1196,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1190,896" to="1196,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1198,889" to="1204,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1198,896" to="1204,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1226,889" to="1232,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1226,896" to="1232,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1206,889" to="1212,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1206,896" to="1212,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1213,889" to="1219,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1213,896" to="1219,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1220,889" to="1226,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1220,896" to="1226,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1228,889" to="1234,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1228,896" to="1234,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1256,889" to="1262,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1256,896" to="1262,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1236,889" to="1242,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1236,896" to="1242,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1243,889" to="1249,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1243,896" to="1249,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1250,889" to="1256,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1250,896" to="1256,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1258,889" to="1264,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1258,896" to="1264,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1286,889" to="1292,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1286,896" to="1292,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1266,889" to="1272,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1266,896" to="1272,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1273,889" to="1279,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1273,896" to="1279,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1280,889" to="1286,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1280,896" to="1286,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1288,889" to="1294,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1288,896" to="1294,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1316,889" to="1322,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1316,896" to="1322,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1296,889" to="1302,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1296,896" to="1302,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1303,889" to="1309,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1303,896" to="1309,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1310,889" to="1316,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1310,896" to="1316,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1318,889" to="1324,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1318,896" to="1324,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1346,889" to="1352,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1346,896" to="1352,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1326,889" to="1332,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1326,896" to="1332,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1333,889" to="1339,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1333,896" to="1339,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1340,889" to="1346,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1340,896" to="1346,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1348,889" to="1354,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1348,896" to="1354,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1376,889" to="1382,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1376,896" to="1382,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1356,889" to="1362,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1356,896" to="1362,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1363,889" to="1369,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1363,896" to="1369,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1370,889" to="1376,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1370,896" to="1376,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1378,889" to="1384,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1378,896" to="1384,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1406,889" to="1412,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1406,896" to="1412,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1386,889" to="1392,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1386,896" to="1392,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1393,889" to="1399,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1393,896" to="1399,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1400,889" to="1406,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1400,896" to="1406,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1408,889" to="1414,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1408,896" to="1414,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1436,889" to="1442,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1436,896" to="1442,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1416,889" to="1422,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1416,896" to="1422,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1423,889" to="1429,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1423,896" to="1429,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1430,889" to="1436,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1430,896" to="1436,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1438,889" to="1444,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1438,896" to="1444,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1466,889" to="1472,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1466,896" to="1472,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1446,889" to="1452,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1446,896" to="1452,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1453,889" to="1459,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1453,896" to="1459,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1460,889" to="1466,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1460,896" to="1466,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1468,889" to="1474,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1468,896" to="1474,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1496,889" to="1502,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1496,896" to="1502,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1476,889" to="1482,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1476,896" to="1482,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1483,889" to="1489,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1483,896" to="1489,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1490,889" to="1496,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1490,896" to="1496,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1498,889" to="1504,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1498,896" to="1504,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1526,889" to="1532,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1526,896" to="1532,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1506,889" to="1512,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1506,896" to="1512,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1513,889" to="1519,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1513,896" to="1519,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1520,889" to="1526,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1520,896" to="1526,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1528,889" to="1534,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1528,896" to="1534,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1556,889" to="1562,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1556,896" to="1562,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1536,889" to="1542,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1536,896" to="1542,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1543,889" to="1549,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1543,896" to="1549,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1550,889" to="1556,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1550,896" to="1556,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1558,889" to="1564,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1558,896" to="1564,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1586,889" to="1592,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1586,896" to="1592,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1566,889" to="1572,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1566,896" to="1572,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1573,889" to="1579,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1573,896" to="1579,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1580,889" to="1586,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1580,896" to="1586,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1588,889" to="1594,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1588,896" to="1594,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1616,889" to="1622,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1616,896" to="1622,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1596,889" to="1602,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1596,896" to="1602,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1603,889" to="1609,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1603,896" to="1609,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1610,889" to="1616,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1610,896" to="1616,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1618,889" to="1624,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1618,896" to="1624,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<line from="1621,906" to="834,906" lineColor="#00ffff" lineWidth="1"/>
+		<line from="1840,906" to="1736,906" lineColor="#00ffff" lineWidth="1"/>
+		<image from="1738,889" to="1744,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1738,896" to="1744,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1766,889" to="1772,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1766,896" to="1772,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1746,889" to="1752,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1746,896" to="1752,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1753,889" to="1759,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1753,896" to="1759,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1760,889" to="1766,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1760,896" to="1766,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1768,889" to="1774,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1768,896" to="1774,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1796,889" to="1802,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1796,896" to="1802,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1776,889" to="1782,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1776,896" to="1782,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1783,889" to="1789,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1783,896" to="1789,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1790,889" to="1796,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1790,896" to="1796,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1798,889" to="1804,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1798,896" to="1804,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1826,889" to="1832,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1826,896" to="1832,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1806,889" to="1812,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1806,896" to="1812,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1813,889" to="1819,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1813,896" to="1819,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1820,889" to="1826,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1820,896" to="1826,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1828,889" to="1834,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1828,896" to="1834,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1836,889" to="1842,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1836,896" to="1842,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1843,889" to="1849,893" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1843,896" to="1849,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1850,896" to="1856,900" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1837,896" to="1855,915" border="1" borderColor="#ffff80" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/围墙柱.jpg" angle="0.000000"/>
+		<image from="1838,883" to="1844,887" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1836,890" to="1842,894" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1839,883" to="1845,887" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1840,890" to="1846,894" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1839,871" to="1845,875" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1839,878" to="1845,882" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1841,871" to="1847,875" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1841,878" to="1847,882" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1839,855" to="1845,859" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1839,862" to="1845,866" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1841,855" to="1847,859" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1841,862" to="1847,866" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1839,842" to="1845,846" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1839,849" to="1845,853" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1841,842" to="1847,846" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1841,849" to="1847,853" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1839,828" to="1845,832" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1839,835" to="1845,839" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1841,828" to="1847,832" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1841,835" to="1847,839" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1839,813" to="1845,817" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1839,820" to="1845,824" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1841,813" to="1847,817" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1841,820" to="1847,824" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1839,797" to="1845,801" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1839,804" to="1845,808" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1841,797" to="1847,801" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1841,804" to="1847,808" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1839,784" to="1845,788" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1839,791" to="1845,795" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1841,784" to="1847,788" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1841,791" to="1847,795" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1839,770" to="1845,774" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1839,777" to="1845,781" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1841,770" to="1847,774" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1841,777" to="1847,781" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1839,763" to="1845,767" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1841,763" to="1847,767" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1839,750" to="1845,754" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1839,757" to="1845,761" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1841,750" to="1847,754" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1841,757" to="1847,761" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1839,736" to="1845,740" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1839,743" to="1845,747" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1841,736" to="1847,740" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="1841,743" to="1847,747" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<rect from="1831,735" to="1848,143" border="0" fill="1" fillColor="#808080"/>
+		<imageCheck from="241,235" to="283,272" border="1" borderColor="#000000" borderWidth="1" fill="0" name="_sysSelectAll" iconType="1" filename_close="iconlibrary/public/未选中48.png" filename_open="iconlibrary/public/选中48.png" angle="0.000000" groupname="A"/>
+		<string from="290,226" to="342,279" border="0" fill="0" text="全选" angle="0.000000" align="1" font="宋体" size="20" fontColor="#ffff00"/>
+		<commandButton from="155,297" to="237,334" border="1" borderColor="#000000" borderWidth="1" fill="0" font="宋体" size="16" filename_down="iconlibrary/public/开灯.png" filename_up="iconlibrary/public/开灯.png" text="" btnType="63" cmdType="0" cmdParam="_sysAll"/>
+		<commandButton from="266,297" to="348,334" border="1" borderColor="#000000" borderWidth="1" fill="0" font="宋体" size="16" filename_down="iconlibrary/public/关灯.png" filename_up="iconlibrary/public/关灯.png" text="" btnType="125" cmdType="0" cmdParam="_sysAll"/>
+		<line from="102,521" to="102,222" lineColor="#808080" lineWidth="1"/>
+		<line from="395,222" to="102,222" lineColor="#808080" lineWidth="1"/>
+		<line from="397,521" to="397,222" lineColor="#000000" lineWidth="1"/>
+		<line from="397,522" to="102,522" lineColor="#000000" lineWidth="1"/>
+		<image from="1722,896" to="1740,915" border="1" borderColor="#ffff80" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/围墙柱.jpg" angle="0.000000"/>
+		<image from="1617,896" to="1635,915" border="1" borderColor="#ffff80" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/围墙柱.jpg" angle="0.000000"/>
+		<image from="823,896" to="841,915" border="1" borderColor="#ffff80" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/围墙柱.jpg" angle="0.000000"/>
+		<image from="710,896" to="728,915" border="1" borderColor="#ffff80" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/围墙柱.jpg" angle="0.000000"/>
+		<image from="492,896" to="510,915" border="1" borderColor="#ffff80" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/围墙柱.jpg" angle="0.000000"/>
+		<string from="524,170" to="566,182" border="0" fill="0" text="T101" angle="0.000000" align="1" font="宋体" size="14" fontColor="#ffff80"/>
+		<imageCheck from="536,184" to="550,198" border="1" borderColor="#000000" borderWidth="1" fill="0" name="A_ALIGHT_comSt" iconType="1" filename_close="iconlibrary/public/未选中.png" filename_open="iconlibrary/public/选中.png" angle="0.000000" groupname="A"/>
+		<string from="734,170" to="776,182" border="0" fill="0" text="T102" angle="0.000000" align="1" font="宋体" size="14" fontColor="#ffff80"/>
+		<imageCheck from="746,184" to="760,198" border="1" borderColor="#000000" borderWidth="1" fill="0" name="A_ALIGHT_comSt" iconType="1" filename_close="iconlibrary/public/未选中.png" filename_open="iconlibrary/public/选中.png" angle="0.000000" groupname="A"/>
+		<string from="944,170" to="986,182" border="0" fill="0" text="T103" angle="0.000000" align="1" font="宋体" size="14" fontColor="#ffff80"/>
+		<string from="1154,170" to="1196,182" border="0" fill="0" text="T104" angle="0.000000" align="1" font="宋体" size="14" fontColor="#ffff80"/>
+		<string from="1364,170" to="1406,182" border="0" fill="0" text="T105" angle="0.000000" align="1" font="宋体" size="14" fontColor="#ffff80"/>
+		<string from="1784,170" to="1826,182" border="0" fill="0" text="T107" angle="0.000000" align="1" font="宋体" size="14" fontColor="#ffff80"/>
+		<string from="1574,170" to="1616,182" border="0" fill="0" text="T106" angle="0.000000" align="1" font="宋体" size="14" fontColor="#ffff80"/>
+		<rect from="734,414" to="560,165" border="1" borderColor="#4d4d4d" borderWidth="1" fill="0"/>
+		<rect from="944,414" to="770,165" border="1" borderColor="#4d4d4d" borderWidth="1" fill="0"/>
+		<string from="592,271" to="708,295" border="0" fill="0" text="重箱堆场（远期）" angle="0.000000" align="1" font="宋体" size="14" fontColor="#8080c0"/>
+		<string from="804,271" to="920,295" border="0" fill="0" text="重箱堆场（远期）" angle="0.000000" align="1" font="宋体" size="14" fontColor="#8080c0"/>
+		<rect from="1154,414" to="980,165" border="1" borderColor="#4d4d4d" borderWidth="1" fill="0"/>
+		<string from="1014,271" to="1130,295" border="0" fill="0" text="重箱堆场（远期）" angle="0.000000" align="1" font="宋体" size="14" fontColor="#8080c0"/>
+		<rect from="1364,414" to="1190,165" border="1" borderColor="#4d4d4d" borderWidth="1" fill="0"/>
+		<string from="1224,271" to="1340,295" border="0" fill="0" text="重箱堆场（远期）" angle="0.000000" align="1" font="宋体" size="14" fontColor="#8080c0"/>
+		<rect from="1574,414" to="1400,165" border="1" borderColor="#4d4d4d" borderWidth="1" fill="0"/>
+		<string from="1434,271" to="1550,295" border="0" fill="0" text="重箱堆场（远期）" angle="0.000000" align="1" font="宋体" size="14" fontColor="#8080c0"/>
+		<rect from="1784,414" to="1610,165" border="1" borderColor="#4d4d4d" borderWidth="1" fill="0"/>
+		<string from="1644,271" to="1760,295" border="0" fill="0" text="重箱堆场（远期）" angle="0.000000" align="1" font="宋体" size="14" fontColor="#8080c0"/>
+		<string from="524,380" to="566,392" border="0" fill="0" text="T301" angle="0.000000" align="1" font="宋体" size="14" fontColor="#ffff80"/>
+		<string from="734,380" to="776,392" border="0" fill="0" text="T302" angle="0.000000" align="1" font="宋体" size="14" fontColor="#ffff80"/>
+		<string from="944,380" to="986,392" border="0" fill="0" text="T303" angle="0.000000" align="1" font="宋体" size="14" fontColor="#ffff80"/>
+		<string from="1154,380" to="1196,392" border="0" fill="0" text="T304" angle="0.000000" align="1" font="宋体" size="14" fontColor="#ffff80"/>
+		<string from="1364,380" to="1406,392" border="0" fill="0" text="T305" angle="0.000000" align="1" font="宋体" size="14" fontColor="#ffff80"/>
+		<string from="1574,380" to="1616,392" border="0" fill="0" text="T306" angle="0.000000" align="1" font="宋体" size="14" fontColor="#ffff80"/>
+		<string from="1784,380" to="1826,392" border="0" fill="0" text="T307" angle="0.000000" align="1" font="宋体" size="14" fontColor="#ffff80"/>
+		<image from="558,419" to="570,436" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="588,419" to="600,436" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="618,419" to="630,436" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="648,419" to="660,436" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="678,419" to="690,436" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="708,419" to="720,436" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="769,419" to="781,436" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="799,419" to="811,436" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="829,419" to="841,436" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="859,419" to="871,436" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="889,419" to="901,436" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="919,419" to="931,436" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="979,419" to="991,436" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1009,419" to="1021,436" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1039,419" to="1051,436" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1069,419" to="1081,436" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1099,419" to="1111,436" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1129,419" to="1141,436" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1189,419" to="1201,436" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1219,419" to="1231,436" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1249,419" to="1261,436" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1279,419" to="1291,436" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1309,419" to="1321,436" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1339,419" to="1351,436" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1399,419" to="1411,436" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1459,419" to="1471,436" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1429,419" to="1441,436" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1489,419" to="1501,436" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1519,419" to="1531,436" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1549,419" to="1561,436" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1609,419" to="1621,436" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1639,419" to="1651,436" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1669,419" to="1681,436" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1699,419" to="1711,436" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1729,419" to="1741,436" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1759,419" to="1771,436" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="558,479" to="570,496" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="588,479" to="600,496" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="618,479" to="630,496" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="648,479" to="660,496" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="678,479" to="690,496" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="708,479" to="720,496" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="769,479" to="781,496" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="799,479" to="811,496" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="829,479" to="841,496" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="859,479" to="871,496" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="889,479" to="901,496" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="919,479" to="931,496" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="979,479" to="991,496" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1009,479" to="1021,496" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1039,479" to="1051,496" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1069,479" to="1081,496" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1099,479" to="1111,496" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1129,479" to="1141,496" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1189,479" to="1201,496" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1219,479" to="1231,496" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1249,479" to="1261,496" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1279,479" to="1291,496" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1309,479" to="1321,496" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1339,479" to="1351,496" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1399,479" to="1411,496" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1459,479" to="1471,496" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1429,479" to="1441,496" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1489,479" to="1501,496" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1519,479" to="1531,496" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1549,479" to="1561,496" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1609,479" to="1621,496" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1639,479" to="1651,496" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1669,479" to="1681,496" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1699,479" to="1711,496" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1729,479" to="1741,496" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1759,479" to="1771,496" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<string from="592,549" to="708,573" border="0" fill="0" text="重箱堆场（远期）" angle="0.000000" align="1" font="宋体" size="14" fontColor="#8080c0"/>
+		<rect from="944,622" to="770,500" border="1" borderColor="#4d4d4d" borderWidth="1" fill="0"/>
+		<string from="802,549" to="918,573" border="0" fill="0" text="重箱堆场（远期）" angle="0.000000" align="1" font="宋体" size="14" fontColor="#8080c0"/>
+		<rect from="1154,622" to="980,500" border="1" borderColor="#4d4d4d" borderWidth="1" fill="0"/>
+		<string from="1012,549" to="1128,573" border="0" fill="0" text="重箱堆场（远期）" angle="0.000000" align="1" font="宋体" size="14" fontColor="#8080c0"/>
+		<rect from="1364,622" to="1190,500" border="1" borderColor="#4d4d4d" borderWidth="1" fill="0"/>
+		<string from="1222,549" to="1338,573" border="0" fill="0" text="重箱堆场（远期）" angle="0.000000" align="1" font="宋体" size="14" fontColor="#8080c0"/>
+		<rect from="1574,622" to="1400,500" border="1" borderColor="#4d4d4d" borderWidth="1" fill="0"/>
+		<string from="1432,549" to="1548,573" border="0" fill="0" text="重箱堆场（远期）" angle="0.000000" align="1" font="宋体" size="14" fontColor="#8080c0"/>
+		<rect from="1784,622" to="1610,500" border="1" borderColor="#4d4d4d" borderWidth="1" fill="0"/>
+		<string from="1642,549" to="1758,573" border="0" fill="0" text="重箱堆场（远期）" angle="0.000000" align="1" font="宋体" size="14" fontColor="#8080c0"/>
+		<image from="558,629" to="570,646" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="588,629" to="600,646" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="618,629" to="630,646" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="648,629" to="660,646" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="678,629" to="690,646" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="708,629" to="720,646" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="769,629" to="781,646" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="799,629" to="811,646" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="829,629" to="841,646" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="859,629" to="871,646" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="889,629" to="901,646" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="919,629" to="931,646" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="979,629" to="991,646" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1009,629" to="1021,646" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1039,629" to="1051,646" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1069,629" to="1081,646" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1099,629" to="1111,646" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1129,629" to="1141,646" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1189,629" to="1201,646" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1219,629" to="1231,646" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1249,629" to="1261,646" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1279,629" to="1291,646" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1309,629" to="1321,646" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1339,629" to="1351,646" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1399,629" to="1411,646" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1459,629" to="1471,646" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1429,629" to="1441,646" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1489,629" to="1501,646" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1519,629" to="1531,646" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1549,629" to="1561,646" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1609,629" to="1621,646" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1639,629" to="1651,646" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1669,629" to="1681,646" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1699,629" to="1711,646" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1729,629" to="1741,646" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="1759,629" to="1771,646" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<string from="524,493" to="566,505" border="0" fill="0" text="T401" angle="0.000000" align="1" font="宋体" size="14" fontColor="#ffff80"/>
+		<imageCheck from="536,507" to="550,521" border="1" borderColor="#000000" borderWidth="1" fill="0" name="A_BLIGHT_comSt" iconType="1" filename_close="iconlibrary/public/未选中.png" filename_open="iconlibrary/public/选中.png" angle="0.000000" groupname="B"/>
+		<string from="524,613" to="566,625" border="0" fill="0" text="T501" angle="0.000000" align="1" font="宋体" size="14" fontColor="#ffff80"/>
+		<imageCheck from="536,627" to="550,641" border="1" borderColor="#000000" borderWidth="1" fill="0" name="A_BLIGHT_comSt" iconType="1" filename_close="iconlibrary/public/未选中.png" filename_open="iconlibrary/public/选中.png" angle="0.000000" groupname="A"/>
+		<string from="734,613" to="776,625" border="0" fill="0" text="T502" angle="0.000000" align="1" font="宋体" size="14" fontColor="#ffff80"/>
+		<string from="734,493" to="776,505" border="0" fill="0" text="T402" angle="0.000000" align="1" font="宋体" size="14" fontColor="#ffff80"/>
+		<string from="944,493" to="986,505" border="0" fill="0" text="T403" angle="0.000000" align="1" font="宋体" size="14" fontColor="#ffff80"/>
+		<string from="1154,493" to="1196,505" border="0" fill="0" text="T404" angle="0.000000" align="1" font="宋体" size="14" fontColor="#ffff80"/>
+		<string from="1364,493" to="1406,505" border="0" fill="0" text="T405" angle="0.000000" align="1" font="宋体" size="14" fontColor="#ffff80"/>
+		<string from="1574,493" to="1616,505" border="0" fill="0" text="T406" angle="0.000000" align="1" font="宋体" size="14" fontColor="#ffff80"/>
+		<string from="1784,493" to="1826,505" border="0" fill="0" text="T407" angle="0.000000" align="1" font="宋体" size="14" fontColor="#ffff80"/>
+		<string from="1784,613" to="1826,625" border="0" fill="0" text="T507" angle="0.000000" align="1" font="宋体" size="14" fontColor="#ffff80"/>
+		<string from="1574,613" to="1616,625" border="0" fill="0" text="T506" angle="0.000000" align="1" font="宋体" size="14" fontColor="#ffff80"/>
+		<string from="1364,613" to="1406,625" border="0" fill="0" text="T505" angle="0.000000" align="1" font="宋体" size="14" fontColor="#ffff80"/>
+		<string from="1154,613" to="1196,625" border="0" fill="0" text="T504" angle="0.000000" align="1" font="宋体" size="14" fontColor="#ffff80"/>
+		<string from="944,613" to="986,625" border="0" fill="0" text="T503" angle="0.000000" align="1" font="宋体" size="14" fontColor="#ffff80"/>
+		<image from="619,409" to="659,449" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+		<image from="619,619" to="659,659" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+		<image from="829,619" to="869,659" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+		<image from="829,409" to="869,449" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+		<image from="829,469" to="869,509" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+		<image from="619,469" to="659,509" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+		<image from="1039,469" to="1079,509" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+		<image from="1039,409" to="1079,449" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+		<image from="1039,619" to="1079,659" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+		<image from="1249,619" to="1289,659" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+		<image from="1249,469" to="1289,509" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+		<image from="1249,409" to="1289,449" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+		<image from="1459,409" to="1499,449" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+		<image from="1459,469" to="1499,509" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+		<image from="1459,619" to="1499,659" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+		<image from="1669,619" to="1709,659" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+		<image from="1669,469" to="1709,509" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+		<image from="1669,409" to="1709,449" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+		<string from="524,260" to="566,272" border="0" fill="0" text="T201" angle="0.000000" align="1" font="宋体" size="14" fontColor="#ffff80"/>
+		<string from="734,260" to="776,272" border="0" fill="0" text="T202" angle="0.000000" align="1" font="宋体" size="14" fontColor="#ffff80"/>
+		<string from="944,260" to="986,272" border="0" fill="0" text="T203" angle="0.000000" align="1" font="宋体" size="14" fontColor="#ffff80"/>
+		<string from="1154,260" to="1196,272" border="0" fill="0" text="T204" angle="0.000000" align="1" font="宋体" size="14" fontColor="#ffff80"/>
+		<string from="1364,260" to="1406,272" border="0" fill="0" text="T205" angle="0.000000" align="1" font="宋体" size="14" fontColor="#ffff80"/>
+		<string from="1574,260" to="1616,272" border="0" fill="0" text="T206" angle="0.000000" align="1" font="宋体" size="14" fontColor="#ffff80"/>
+		<string from="1784,260" to="1826,272" border="0" fill="0" text="T207" angle="0.000000" align="1" font="宋体" size="14" fontColor="#ffff80"/>
+		<image from="566,718" to="572,722" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="566,711" to="572,715" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="566,725" to="572,729" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<rect from="624,744" to="584,665" border="1" borderColor="#6c6c6c" borderWidth="1" fill="0"/>
+		<roundrect from="633,734" to="618,675" border="1" borderColor="#6c6c6c" borderWidth="1" fill="0" round="d,16"/>
+		<image from="625,689" to="631,693" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="625,696" to="631,700" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="625,703" to="631,707" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="625,682" to="631,686" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<rect from="624,742" to="585,667" border="0" fill="1" fillColor="#4b4b4b"/>
+		<rect from="617,718" to="617,718" border="1" borderColor="#6c6c6c" borderWidth="1" fill="1" fillColor="#0080ff"/>
+		<image from="625,718" to="631,722" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="625,711" to="631,715" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="625,725" to="631,729" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="687,655" to="693,659" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="695,655" to="701,659" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="702,655" to="708,659" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="711,655" to="717,659" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<rect from="565,834" to="525,755" border="1" borderColor="#6c6c6c" borderWidth="1" fill="0"/>
+		<roundrect from="574,824" to="559,765" border="1" borderColor="#6c6c6c" borderWidth="1" fill="0" round="d,16"/>
+		<image from="566,779" to="572,783" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="566,786" to="572,790" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="566,793" to="572,797" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="566,772" to="572,776" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<rect from="565,832" to="526,757" border="0" fill="1" fillColor="#4b4b4b"/>
+		<rect from="558,808" to="558,808" border="1" borderColor="#6c6c6c" borderWidth="1" fill="1" fillColor="#0080ff"/>
+		<image from="566,808" to="572,812" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="566,801" to="572,805" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="566,815" to="572,819" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<rect from="624,834" to="584,755" border="1" borderColor="#6c6c6c" borderWidth="1" fill="0"/>
+		<roundrect from="633,824" to="618,765" border="1" borderColor="#6c6c6c" borderWidth="1" fill="0" round="d,16"/>
+		<image from="625,779" to="631,783" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="625,786" to="631,790" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="625,793" to="631,797" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="625,772" to="631,776" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<rect from="624,832" to="585,757" border="0" fill="1" fillColor="#4b4b4b"/>
+		<rect from="617,808" to="617,808" border="1" borderColor="#6c6c6c" borderWidth="1" fill="1" fillColor="#0080ff"/>
+		<image from="625,808" to="631,812" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="625,801" to="631,805" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="625,815" to="631,819" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<string from="554,713" to="596,789" border="0" fill="0" text="宿舍区" angle="0.000000" align="1" font="宋体" size="16" fontColor="#ff80ff"/>
+		<image from="712,657" to="724,674" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="712,687" to="724,704" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="712,717" to="724,734" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="712,747" to="724,764" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<rect from="705,719" to="677,668" border="1" borderColor="#6c6c6c" borderWidth="1" fill="1" fillColor="#4b4b4b"/>
+		<string from="674,670" to="707,716" border="0" fill="0" text="中心站" angle="0.000000" align="1" font="宋体" size="14" fontColor="#ff80ff"/>
+		<rect from="705,775" to="677,724" border="1" borderColor="#6c6c6c" borderWidth="1" fill="1" fillColor="#4b4b4b"/>
+		<string from="674,726" to="707,772" border="0" fill="0" text="加油站" angle="0.000000" align="1" font="宋体" size="14" fontColor="#ff80ff"/>
+		<rect from="671,812" to="643,724" border="0" fill="1" fillColor="#4b4b4b"/>
+		<line from="670,724" to="641,724" lineColor="#808080" lineWidth="1"/>
+		<line from="642,811" to="642,724" lineColor="#808080" lineWidth="1"/>
+		<line from="705,811" to="641,811" lineColor="#808080" lineWidth="1"/>
+		<line from="670,782" to="670,724" lineColor="#808080" lineWidth="1"/>
+		<line from="705,783" to="669,783" lineColor="#808080" lineWidth="1"/>
+		<line from="705,810" to="705,782" lineColor="#808080" lineWidth="1"/>
+		<string from="641,736" to="669,803" border="0" fill="0" text="办公楼" angle="0.000000" align="1" font="宋体" size="16" fontColor="#ff80ff"/>
+		<string from="611,848" to="671,878" border="0" fill="0" text="食堂" angle="0.000000" align="1" font="宋体" size="16" fontColor="#ff80ff"/>
+		<rect from="706,848" to="644,819" border="0" fill="1" fillColor="#4b4b4b"/>
+		<line from="704,846" to="704,818" lineColor="#808080" lineWidth="1"/>
+		<line from="644,842" to="644,818" lineColor="#808080" lineWidth="1"/>
+		<line from="704,818" to="643,818" lineColor="#808080" lineWidth="1"/>
+		<image from="690,886" to="702,903" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="660,886" to="672,903" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="630,886" to="642,903" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="712,777" to="724,794" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="712,807" to="724,824" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="712,837" to="724,854" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<image from="712,867" to="724,884" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/树.png" angle="0.000000"/>
+		<line from="906,738" to="906,721" lineColor="#808080" lineWidth="1"/>
+		<line from="906,801" to="906,785" lineColor="#808080" lineWidth="1"/>
+		<line from="980,802" to="905,802" lineColor="#808080" lineWidth="1"/>
+		<line from="980,722" to="905,722" lineColor="#808080" lineWidth="1"/>
+		<line from="980,802" to="980,722" lineColor="#808080" lineWidth="1"/>
+		<image from="839,844" to="845,848" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="839,851" to="845,855" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<image from="839,856" to="845,860" border="1" borderColor="#6c6c6c" borderWidth="0" fill="0" iconType="4"/>
+		<imageStatue from="525,140" to="565,180" border="1" borderColor="#4d4d4d" borderWidth="1" fill="0" stname="A_ALIGHT_comSt" iconType="1" filename_close="iconlibrary/public/开灯ok.png" filename_open="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+		<imageStatue from="735,140" to="775,180" border="1" borderColor="#4d4d4d" borderWidth="1" fill="0" stname="A_ALIGHT_comSt" iconType="1" filename_close="iconlibrary/public/开灯ok.png" filename_open="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+		<imageStatue from="525,464" to="565,504" border="1" borderColor="#4d4d4d" borderWidth="1" fill="0" stname="A_BLIGHT_comSt" iconType="1" filename_close="iconlibrary/public/开灯ok.png" filename_open="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+		<imageStatue from="525,584" to="565,624" border="1" borderColor="#4d4d4d" borderWidth="1" fill="0" stname="A_BLIGHT_comSt" iconType="1" filename_close="iconlibrary/public/开灯ok.png" filename_open="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+		<imageCheck from="241,385" to="283,422" border="1" borderColor="#000000" borderWidth="1" fill="0" name="_sysSelectAll" iconType="1" filename_close="iconlibrary/public/未选中48.png" filename_open="iconlibrary/public/选中48.png" angle="0.000000" groupname="B"/>
+		<string from="290,376" to="342,429" border="0" fill="0" text="全选" angle="0.000000" align="1" font="宋体" size="20" fontColor="#ffff00"/>
+		<commandButton from="155,447" to="237,484" border="1" borderColor="#000000" borderWidth="1" fill="0" font="宋体" size="16" filename_down="iconlibrary/public/开灯.png" filename_up="iconlibrary/public/开灯.png" text="" btnType="63" cmdType="0" cmdParam="_sysAll"/>
+		<commandButton from="266,447" to="348,484" border="1" borderColor="#000000" borderWidth="1" fill="0" font="宋体" size="16" filename_down="iconlibrary/public/关灯.png" filename_up="iconlibrary/public/关灯.png" text="" btnType="125" cmdType="0" cmdParam="_sysAll"/>
+		<string from="170,226" to="222,279" border="0" fill="0" text="A组" angle="0.000000" align="1" font="宋体" size="20" fontColor="#ffff00"/>
+		<string from="170,376" to="222,429" border="0" fill="0" text="B组" angle="0.000000" align="1" font="宋体" size="20" fontColor="#ffff00"/>
+		<imageStatue from="525,230" to="565,270" border="1" borderColor="#4d4d4d" borderWidth="1" fill="0" stname="A_ALIGHT_comSt" iconType="1" filename_close="iconlibrary/public/开灯ok.png" filename_open="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+		<imageCheck from="536,274" to="550,288" border="1" borderColor="#000000" borderWidth="1" fill="0" name="A_ALIGHT_comSt" iconType="1" filename_close="iconlibrary/public/未选中.png" filename_open="iconlibrary/public/选中.png" angle="0.000000" groupname="A"/>
+		<imageCheck from="956,184" to="970,198" border="1" borderColor="#000000" borderWidth="1" fill="0" name="A_ALIGHT_comSt" iconType="1" filename_close="iconlibrary/public/未选中.png" filename_open="iconlibrary/public/选中.png" angle="0.000000" groupname="A"/>
+		<imageStatue from="945,140" to="985,180" border="1" borderColor="#4d4d4d" borderWidth="1" fill="0" stname="A_ALIGHT_comSt" iconType="1" filename_close="iconlibrary/public/开灯ok.png" filename_open="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+		<imageCheck from="1166,184" to="1180,198" border="1" borderColor="#000000" borderWidth="1" fill="0" name="A_ALIGHT_comSt" iconType="1" filename_close="iconlibrary/public/未选中.png" filename_open="iconlibrary/public/选中.png" angle="0.000000" groupname="A"/>
+		<imageStatue from="1155,140" to="1195,180" border="1" borderColor="#4d4d4d" borderWidth="1" fill="0" stname="A_ALIGHT_comSt" iconType="1" filename_close="iconlibrary/public/开灯ok.png" filename_open="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+		<imageCheck from="1376,184" to="1390,198" border="1" borderColor="#000000" borderWidth="1" fill="0" name="A_ALIGHT_comSt" iconType="1" filename_close="iconlibrary/public/未选中.png" filename_open="iconlibrary/public/选中.png" angle="0.000000" groupname="A"/>
+		<imageStatue from="1365,140" to="1405,180" border="1" borderColor="#4d4d4d" borderWidth="1" fill="0" stname="A_ALIGHT_comSt" iconType="1" filename_close="iconlibrary/public/开灯ok.png" filename_open="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+		<imageCheck from="1586,184" to="1600,198" border="1" borderColor="#000000" borderWidth="1" fill="0" name="A_ALIGHT_comSt" iconType="1" filename_close="iconlibrary/public/未选中.png" filename_open="iconlibrary/public/选中.png" angle="0.000000" groupname="A"/>
+		<imageStatue from="1575,140" to="1615,180" border="1" borderColor="#4d4d4d" borderWidth="1" fill="0" stname="A_ALIGHT_comSt" iconType="1" filename_close="iconlibrary/public/开灯ok.png" filename_open="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+		<imageCheck from="1796,184" to="1810,198" border="1" borderColor="#000000" borderWidth="1" fill="0" name="A_ALIGHT_comSt" iconType="1" filename_close="iconlibrary/public/未选中.png" filename_open="iconlibrary/public/选中.png" angle="0.000000" groupname="A"/>
+		<imageStatue from="1785,140" to="1825,180" border="1" borderColor="#4d4d4d" borderWidth="1" fill="0" stname="A_ALIGHT_comSt" iconType="1" filename_close="iconlibrary/public/开灯ok.png" filename_open="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+		<imageCheck from="1796,274" to="1810,288" border="1" borderColor="#000000" borderWidth="1" fill="0" name="A_ALIGHT_comSt" iconType="1" filename_close="iconlibrary/public/未选中.png" filename_open="iconlibrary/public/选中.png" angle="0.000000" groupname="A"/>
+		<imageStatue from="1785,230" to="1825,270" border="1" borderColor="#4d4d4d" borderWidth="1" fill="0" stname="A_ALIGHT_comSt" iconType="1" filename_close="iconlibrary/public/开灯ok.png" filename_open="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+		<imageCheck from="1586,274" to="1600,288" border="1" borderColor="#000000" borderWidth="1" fill="0" name="A_ALIGHT_comSt" iconType="1" filename_close="iconlibrary/public/未选中.png" filename_open="iconlibrary/public/选中.png" angle="0.000000" groupname="A"/>
+		<imageStatue from="1575,230" to="1615,270" border="1" borderColor="#4d4d4d" borderWidth="1" fill="0" stname="A_ALIGHT_comSt" iconType="1" filename_close="iconlibrary/public/开灯ok.png" filename_open="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+		<imageCheck from="1376,274" to="1390,288" border="1" borderColor="#000000" borderWidth="1" fill="0" name="A_ALIGHT_comSt" iconType="1" filename_close="iconlibrary/public/未选中.png" filename_open="iconlibrary/public/选中.png" angle="0.000000" groupname="A"/>
+		<imageStatue from="1365,230" to="1405,270" border="1" borderColor="#4d4d4d" borderWidth="1" fill="0" stname="A_ALIGHT_comSt" iconType="1" filename_close="iconlibrary/public/开灯ok.png" filename_open="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+		<imageCheck from="1166,274" to="1180,288" border="1" borderColor="#000000" borderWidth="1" fill="0" name="A_ALIGHT_comSt" iconType="1" filename_close="iconlibrary/public/未选中.png" filename_open="iconlibrary/public/选中.png" angle="0.000000" groupname="A"/>
+		<imageStatue from="1155,230" to="1195,270" border="1" borderColor="#4d4d4d" borderWidth="1" fill="0" stname="A_ALIGHT_comSt" iconType="1" filename_close="iconlibrary/public/开灯ok.png" filename_open="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+		<imageCheck from="956,274" to="970,288" border="1" borderColor="#000000" borderWidth="1" fill="0" name="A_ALIGHT_comSt" iconType="1" filename_close="iconlibrary/public/未选中.png" filename_open="iconlibrary/public/选中.png" angle="0.000000" groupname="A"/>
+		<imageStatue from="945,230" to="985,270" border="1" borderColor="#4d4d4d" borderWidth="1" fill="0" stname="A_ALIGHT_comSt" iconType="1" filename_close="iconlibrary/public/开灯ok.png" filename_open="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+		<imageCheck from="746,274" to="760,288" border="1" borderColor="#000000" borderWidth="1" fill="0" name="A_ALIGHT_comSt" iconType="1" filename_close="iconlibrary/public/未选中.png" filename_open="iconlibrary/public/选中.png" angle="0.000000" groupname="A"/>
+		<imageStatue from="735,230" to="775,270" border="1" borderColor="#4d4d4d" borderWidth="1" fill="0" stname="A_ALIGHT_comSt" iconType="1" filename_close="iconlibrary/public/开灯ok.png" filename_open="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+		<imageStatue from="525,350" to="565,390" border="1" borderColor="#4d4d4d" borderWidth="1" fill="0" stname="A_ALIGHT_comSt" iconType="1" filename_close="iconlibrary/public/开灯ok.png" filename_open="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+		<imageCheck from="536,394" to="550,408" border="1" borderColor="#000000" borderWidth="1" fill="0" name="A_ALIGHT_comSt" iconType="1" filename_close="iconlibrary/public/未选中.png" filename_open="iconlibrary/public/选中.png" angle="0.000000" groupname="A"/>
+		<imageStatue from="735,350" to="775,390" border="1" borderColor="#4d4d4d" borderWidth="1" fill="0" stname="A_ALIGHT_comSt" iconType="1" filename_close="iconlibrary/public/开灯ok.png" filename_open="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+		<imageCheck from="746,394" to="760,408" border="1" borderColor="#000000" borderWidth="1" fill="0" name="A_ALIGHT_comSt" iconType="1" filename_close="iconlibrary/public/未选中.png" filename_open="iconlibrary/public/选中.png" angle="0.000000" groupname="A"/>
+		<imageStatue from="945,350" to="985,390" border="1" borderColor="#4d4d4d" borderWidth="1" fill="0" stname="A_ALIGHT_comSt" iconType="1" filename_close="iconlibrary/public/开灯ok.png" filename_open="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+		<imageCheck from="956,394" to="970,408" border="1" borderColor="#000000" borderWidth="1" fill="0" name="A_ALIGHT_comSt" iconType="1" filename_close="iconlibrary/public/未选中.png" filename_open="iconlibrary/public/选中.png" angle="0.000000" groupname="A"/>
+		<imageStatue from="1155,350" to="1195,390" border="1" borderColor="#4d4d4d" borderWidth="1" fill="0" stname="A_ALIGHT_comSt" iconType="1" filename_close="iconlibrary/public/开灯ok.png" filename_open="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+		<imageCheck from="1166,394" to="1180,408" border="1" borderColor="#000000" borderWidth="1" fill="0" name="A_ALIGHT_comSt" iconType="1" filename_close="iconlibrary/public/未选中.png" filename_open="iconlibrary/public/选中.png" angle="0.000000" groupname="A"/>
+		<imageStatue from="1365,350" to="1405,390" border="1" borderColor="#4d4d4d" borderWidth="1" fill="0" stname="A_ALIGHT_comSt" iconType="1" filename_close="iconlibrary/public/开灯ok.png" filename_open="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+		<imageCheck from="1376,394" to="1390,408" border="1" borderColor="#000000" borderWidth="1" fill="0" name="A_ALIGHT_comSt" iconType="1" filename_close="iconlibrary/public/未选中.png" filename_open="iconlibrary/public/选中.png" angle="0.000000" groupname="A"/>
+		<imageStatue from="1575,350" to="1615,390" border="1" borderColor="#4d4d4d" borderWidth="1" fill="0" stname="A_ALIGHT_comSt" iconType="1" filename_close="iconlibrary/public/开灯ok.png" filename_open="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+		<imageCheck from="1586,394" to="1600,408" border="1" borderColor="#000000" borderWidth="1" fill="0" name="A_ALIGHT_comSt" iconType="1" filename_close="iconlibrary/public/未选中.png" filename_open="iconlibrary/public/选中.png" angle="0.000000" groupname="A"/>
+		<imageStatue from="1785,350" to="1825,390" border="1" borderColor="#4d4d4d" borderWidth="1" fill="0" stname="A_ALIGHT_comSt" iconType="1" filename_close="iconlibrary/public/开灯ok.png" filename_open="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+		<imageCheck from="1796,394" to="1810,408" border="1" borderColor="#000000" borderWidth="1" fill="0" name="A_ALIGHT_comSt" iconType="1" filename_close="iconlibrary/public/未选中.png" filename_open="iconlibrary/public/选中.png" angle="0.000000" groupname="A"/>
+		<imageStatue from="735,584" to="775,624" border="1" borderColor="#4d4d4d" borderWidth="1" fill="0" stname="A_BLIGHT_comSt" iconType="1" filename_close="iconlibrary/public/开灯ok.png" filename_open="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+		<imageCheck from="746,627" to="760,641" border="1" borderColor="#000000" borderWidth="1" fill="0" name="A_BLIGHT_comSt" iconType="1" filename_close="iconlibrary/public/未选中.png" filename_open="iconlibrary/public/选中.png" angle="0.000000" groupname="A"/>
+		<imageCheck from="746,507" to="760,521" border="1" borderColor="#000000" borderWidth="1" fill="0" name="A_BLIGHT_comSt" iconType="1" filename_close="iconlibrary/public/未选中.png" filename_open="iconlibrary/public/选中.png" angle="0.000000" groupname="B"/>
+		<imageStatue from="735,464" to="775,504" border="1" borderColor="#4d4d4d" borderWidth="1" fill="0" stname="A_BLIGHT_comSt" iconType="1" filename_close="iconlibrary/public/开灯ok.png" filename_open="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+		<imageStatue from="945,584" to="985,624" border="1" borderColor="#4d4d4d" borderWidth="1" fill="0" stname="A_BLIGHT_comSt" iconType="1" filename_close="iconlibrary/public/开灯ok.png" filename_open="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+		<imageCheck from="956,627" to="970,641" border="1" borderColor="#000000" borderWidth="1" fill="0" name="A_BLIGHT_comSt" iconType="1" filename_close="iconlibrary/public/未选中.png" filename_open="iconlibrary/public/选中.png" angle="0.000000" groupname="A"/>
+		<imageCheck from="956,507" to="970,521" border="1" borderColor="#000000" borderWidth="1" fill="0" name="A_BLIGHT_comSt" iconType="1" filename_close="iconlibrary/public/未选中.png" filename_open="iconlibrary/public/选中.png" angle="0.000000" groupname="B"/>
+		<imageStatue from="945,464" to="985,504" border="1" borderColor="#4d4d4d" borderWidth="1" fill="0" stname="A_BLIGHT_comSt" iconType="1" filename_close="iconlibrary/public/开灯ok.png" filename_open="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+		<imageStatue from="1155,584" to="1195,624" border="1" borderColor="#4d4d4d" borderWidth="1" fill="0" stname="A_BLIGHT_comSt" iconType="1" filename_close="iconlibrary/public/开灯ok.png" filename_open="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+		<imageCheck from="1166,627" to="1180,641" border="1" borderColor="#000000" borderWidth="1" fill="0" name="A_BLIGHT_comSt" iconType="1" filename_close="iconlibrary/public/未选中.png" filename_open="iconlibrary/public/选中.png" angle="0.000000" groupname="A"/>
+		<imageCheck from="1166,507" to="1180,521" border="1" borderColor="#000000" borderWidth="1" fill="0" name="A_BLIGHT_comSt" iconType="1" filename_close="iconlibrary/public/未选中.png" filename_open="iconlibrary/public/选中.png" angle="0.000000" groupname="B"/>
+		<imageStatue from="1155,464" to="1195,504" border="1" borderColor="#4d4d4d" borderWidth="1" fill="0" stname="A_BLIGHT_comSt" iconType="1" filename_close="iconlibrary/public/开灯ok.png" filename_open="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+		<imageStatue from="1365,584" to="1405,624" border="1" borderColor="#4d4d4d" borderWidth="1" fill="0" stname="A_BLIGHT_comSt" iconType="1" filename_close="iconlibrary/public/开灯ok.png" filename_open="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+		<imageCheck from="1376,627" to="1390,641" border="1" borderColor="#000000" borderWidth="1" fill="0" name="A_BLIGHT_comSt" iconType="1" filename_close="iconlibrary/public/未选中.png" filename_open="iconlibrary/public/选中.png" angle="0.000000" groupname="A"/>
+		<imageCheck from="1376,507" to="1390,521" border="1" borderColor="#000000" borderWidth="1" fill="0" name="A_BLIGHT_comSt" iconType="1" filename_close="iconlibrary/public/未选中.png" filename_open="iconlibrary/public/选中.png" angle="0.000000" groupname="B"/>
+		<imageStatue from="1365,464" to="1405,504" border="1" borderColor="#4d4d4d" borderWidth="1" fill="0" stname="A_BLIGHT_comSt" iconType="1" filename_close="iconlibrary/public/开灯ok.png" filename_open="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+		<imageStatue from="1575,584" to="1615,624" border="1" borderColor="#4d4d4d" borderWidth="1" fill="0" stname="A_BLIGHT_comSt" iconType="1" filename_close="iconlibrary/public/开灯ok.png" filename_open="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+		<imageCheck from="1586,627" to="1600,641" border="1" borderColor="#000000" borderWidth="1" fill="0" name="A_BLIGHT_comSt" iconType="1" filename_close="iconlibrary/public/未选中.png" filename_open="iconlibrary/public/选中.png" angle="0.000000" groupname="A"/>
+		<imageCheck from="1586,507" to="1600,521" border="1" borderColor="#000000" borderWidth="1" fill="0" name="A_BLIGHT_comSt" iconType="1" filename_close="iconlibrary/public/未选中.png" filename_open="iconlibrary/public/选中.png" angle="0.000000" groupname="B"/>
+		<imageStatue from="1575,464" to="1615,504" border="1" borderColor="#4d4d4d" borderWidth="1" fill="0" stname="A_BLIGHT_comSt" iconType="1" filename_close="iconlibrary/public/开灯ok.png" filename_open="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+		<imageStatue from="1785,584" to="1825,624" border="1" borderColor="#4d4d4d" borderWidth="1" fill="0" stname="A_BLIGHT_comSt" iconType="1" filename_close="iconlibrary/public/开灯ok.png" filename_open="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+		<imageCheck from="1796,627" to="1810,641" border="1" borderColor="#000000" borderWidth="1" fill="0" name="A_BLIGHT_comSt" iconType="1" filename_close="iconlibrary/public/未选中.png" filename_open="iconlibrary/public/选中.png" angle="0.000000" groupname="A"/>
+		<imageCheck from="1796,507" to="1810,521" border="1" borderColor="#000000" borderWidth="1" fill="0" name="A_BLIGHT_comSt" iconType="1" filename_close="iconlibrary/public/未选中.png" filename_open="iconlibrary/public/选中.png" angle="0.000000" groupname="B"/>
+		<imageStatue from="1785,464" to="1825,504" border="1" borderColor="#4d4d4d" borderWidth="1" fill="0" stname="A_BLIGHT_comSt" iconType="1" filename_close="iconlibrary/public/开灯ok.png" filename_open="iconlibrary/public/关灯ok.png" angle="0.000000"/>
+	</layer>
+</picture>

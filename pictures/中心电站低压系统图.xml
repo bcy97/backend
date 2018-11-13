@@ -35,11 +35,7 @@
 		<image from="70,12" to="1792,97" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/user/a号站低压系统一次图.png" angle="0.000000"/>
 		<line from="820,394" to="969,394" lineColor="#505050" lineWidth="1"/>
 		<line from="819,395" to="970,395" lineColor="#000000" lineWidth="1"/>
-		<dyanData from="1289,36" to="1493,84" border="0" fill="0" angle="0.000000" align="0" font="LcdD" size="35" name="TIME" type="0"/>
-		<dyanData from="267,36" to="450,84" border="0" fill="0" angle="0.000000" align="2" font="LcdD" size="35" name="DATE" type="0"/>
-		<image from="22,5" to="220,101" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/主画面按钮.png" angle="0.000000"/>
-		<image from="1492,5" to="1690,101" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/数据表按钮.png" angle="0.000000"/>
-		<image from="1702,5" to="1900,101" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/环境监控图按钮.png" angle="0.000000"/>
+		<imageNavi from="1492,5" to="1728,121" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/public/数据表按钮.png" angle="0.000000" naviTo="2"/>
 		<line from="190,911" to="190,164" lineColor="#000000" lineWidth="1"/>
 		<string from="231,175" to="317,200" border="0" fill="0" text="柜号" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#ffff80"/>
 		<line from="189,164" to="1720,164" lineColor="#505050" lineWidth="1"/>

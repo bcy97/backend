@@ -8804,8 +8804,8 @@
       <ename>A_H1_01_SS</ename>
       <cname>1-01柜1#进线断路器状态</cname>
       <mask>0</mask>
-      <swidef>0</swidef>
-      <type>0</type>
+      <swidef>1</swidef>
+      <type>15</type>
       <pcepd>0</pcepd>
       <SOE>0</SOE>
       <alarm>3</alarm>
@@ -8815,8 +8815,8 @@
       <ename>A_H1_01_GK</ename>
       <cname>1-01柜1#进线刀闸状态</cname>
       <mask>1</mask>
-      <swidef>0</swidef>
-      <type>2</type>
+      <swidef>1</swidef>
+      <type>15</type>
       <pcepd>0</pcepd>
       <SOE>0</SOE>
       <alarm>3</alarm>
@@ -10780,6 +10780,28 @@
       <alarm>3</alarm>
       <remark>0</remark>
     </config>
+      <config ptNo="180">
+          <ename>A_ALIGHT_comSt</ename>
+          <cname>A组灯光照明</cname>
+          <mask>0</mask>
+          <swidef>0</swidef>
+          <type>5</type>
+          <pcepd>0</pcepd>
+          <SOE>0</SOE>
+          <alarm>3</alarm>
+          <remark>0</remark>
+      </config>
+      <config ptNo="181">
+          <ename>A_BLIGHT_comSt</ename>
+          <cname>B组灯光照明</cname>
+          <mask>0</mask>
+          <swidef>1</swidef>
+          <type>5</type>
+          <pcepd>0</pcepd>
+          <SOE>0</SOE>
+          <alarm>3</alarm>
+          <remark>0</remark>
+      </config>
   </configs>
   <configs name="电度">
     <config ptNo="0">

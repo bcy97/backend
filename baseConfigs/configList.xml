@@ -2,15 +2,17 @@
 <config>
     <dynamic name="配置文件列表">
         <configType type="1" name="站点配置文件" path="unitConfigs">
-            <configFile name="中心电站.xml" md5="f639b46e98d87d6feb40b42fe1fea180" />
+            <configFile name="中心电站.xml" md5="de320d37e0f1b5091abe1f1b0ac38585" />
         </configType>
         <configType type="2" name="PIC配置文件" path="pictures">
-            <configFile name="中心电站低压系统图.xml" md5="d91ef9965924e876bee96e8e37eebb79" />
-            <configFile name="中心电站高压系统数据表.xml" md5="8fbc2098e758aec04fcb8f05bb7168d5" />
-            <configFile name="中心电站高压系统图.xml" md5="2142442b3d8f9b4fdec1e7dc216fd659" />
+            <configFile name="中心电站低压系统图.xml" md5="9838e489f61afda49867f2dfa95a81ab" />
+            <configFile name="中心电站高压系统数据表.xml" md5="6cb97734c42fed7efa4d7d86421b75fb" />
+            <configFile name="中心电站高压系统图.xml" md5="a7c1d03aa1fff7fce119938cbda9d0a1" />
+            <configFile name="智能照明控制系统.xml" md5="200ffecf7570fad340a9397eea1f964a" />
         </configType>
         <configType type="4" name="NEMS基本配置文件" path="baseConfigs">
             <configFile name="CurveCfg.xml" md5="80cf96ed12a17ef470aec73e197785bf" />
+            <configFile name="Picture.xml" md5="4c957023786bbfb69413e54c2352576e" />
         </configType>
     </dynamic>
 </config>

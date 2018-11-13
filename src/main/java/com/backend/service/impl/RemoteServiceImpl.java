@@ -8,6 +8,8 @@ import com.backend.vo.StO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 @Service
@@ -24,8 +26,14 @@ public class RemoteServiceImpl implements RemoteService {
 
     @Override
     public void remoteControl(String[] ptNames,Byte state) {
+        // 存放遥控过的点名
+        List<String> controlPtNames = new ArrayList<>();
         // 下发遥控
         for(String ptName : ptNames){
+            if(controlPtNames.indexOf(ptName) != -1)
+                continue;
+            else
+                controlPtNames.add(ptName);
             StO sto = cfgData.getStO(ptName);
             // 通过点名找不到该点或该点的类型不是灯光，则不对该点进行遥控处理
             if(null == sto || Constants.LIGHT_TYPE != sto.getType())

@@ -11,7 +11,7 @@
             <configFile name="智能照明控制系统.xml" md5="200ffecf7570fad340a9397eea1f964a" />
         </configType>
         <configType type="4" name="NEMS基本配置文件" path="baseConfigs">
-            <configFile name="CurveCfg.xml" md5="80cf96ed12a17ef470aec73e197785bf" />
+            <configFile name="CurveCfg.xml" md5="121465973128ab0368098639bbca6ba8" />
             <configFile name="Picture.xml" md5="4c957023786bbfb69413e54c2352576e" />
         </configType>
     </dynamic>

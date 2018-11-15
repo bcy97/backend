@@ -50,7 +50,7 @@ public class Utils {
 
         return ptNo;
     }
-
+/*
     public byte[] idArrToBytes(int[] idArr) {
         byte[] idByteArr = new byte[idArr.length * 4];
 
@@ -63,7 +63,7 @@ public class Utils {
 
         return idByteArr;
     }
-
+*/
     public byte[] idArrToBytes(Integer[] idArr) {
         byte[] idByteArr = new byte[idArr.length * 4];
 

@@ -35,6 +35,7 @@ public class MonitorPicController {
     @RequestMapping(value = "/getAnData", consumes = "application/json")
     public Map<String, AnValue> getAnData(@RequestBody String[] ids) {
 
+        System.out.println("An--------------------------------------");
         Map<String, AnValue> result = new HashMap<>();
 
         Integer[] id = new Integer[ids.length];
@@ -45,7 +46,6 @@ public class MonitorPicController {
         Object[] data = monitorPicService.getRealData(id);
         for (int i = 0; i < data.length; i++) {
             try {
-
                 result.put(ids[i], (AnValue) data[i]);
             } catch (Exception e) {
                 result.put(ids[i], new AnValue((byte) 0, 0));
@@ -59,30 +59,30 @@ public class MonitorPicController {
      * 获取遥信量
      *
      * @param ids 遥信量Id
-     * @return Map<String, StValue>为遥信量id，value为遥信值VO
+     * @return Map<String, StValue>为遥信量id，value为遥信值
      */
     @RequestMapping(value = "/getStData", consumes = "application/json")
     public Map<String, StValue> getStData(@RequestBody String[] ids) {
 
+        System.out.println("St--------------------------------------");
         Map<String, StValue> result = new HashMap<>();
 
         Integer[] id = new Integer[ids.length];
         for (int i = 0; i < ids.length; i++) {
             id[i] = cfgData.getStID(ids[i]);
-            System.out.println(ids[i]);
         }
 
         Object[] data = monitorPicService.getRealData(id);
         for (int i = 0; i < data.length; i++) {
             try {
                 result.put(ids[i], (StValue) data[i]);
+                System.out.println(ids[i] + " " + ((StValue)data[i]).getValue());
             } catch (Exception e) {
                 result.put(ids[i], new StValue((byte) 1, (byte) 0));
                 System.out.println(ids[i] + " " + id[i]);
             }
         }
 
-        System.out.println("--------------------------------------");
 
         return result;
     }
@@ -90,17 +90,18 @@ public class MonitorPicController {
     /**
      * 获取电度量
      *
-     * @param ids 遥信量Id
-     * @return Map<String, StValue>为遥信量id，value为遥信值VO
+     * @param ids 电度量Id
+     * @return Map<String, StValue>为电度量id，value为电度值
      */
     @RequestMapping(value = "/getAcData", consumes = "application/json")
     public Map<String, AcValue> getAcData(@RequestBody String[] ids) {
 
+        System.out.println("Ac--------------------------------------");
         Map<String, AcValue> result = new HashMap<>();
 
         Integer[] id = new Integer[ids.length];
         for (int i = 0; i < ids.length; i++) {
-            id[i] = cfgData.getAnID(ids[i]);
+            id[i] = cfgData.getAcID(ids[i]);
         }
 
         Object[] data = monitorPicService.getRealData(id);

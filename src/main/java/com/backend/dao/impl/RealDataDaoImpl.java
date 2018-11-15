@@ -22,10 +22,12 @@ public class RealDataDaoImpl implements RealDataDao {
     static Logger logger = Logger.getLogger("RealDataDaoImpl");
 
     private Utils utils;
+    private CfgData cfgData;
 
     @Autowired
-    public RealDataDaoImpl(Utils utils) {
+    public RealDataDaoImpl(Utils utils,CfgData cfgData) {
         this.utils = utils;
+        this.cfgData = cfgData;
     }
 
     /***
@@ -123,14 +125,13 @@ public class RealDataDaoImpl implements RealDataDao {
             switch (utils.getTypeInId(id)) {
                 case Constants.IDACC:
                     AcValue acV = new AcValue();
-                    if (null != new CfgData().getAcO(id)) {
+                    if (null != cfgData.getAcO(id)) {
                         acV.setValue(bb.getLong()
-                                * new CfgData().getAcO(id).getFi());
-                        acV.sethValue(bb.getInt()
-                                * new CfgData().getAcO(id).getFi());
+                                * cfgData.getAcO(id).getFi());
+                        acV.sethValue(bb.getFloat());
                     } else {
                         acV.setValue(bb.getLong());
-                        acV.sethValue(bb.getInt());
+                        acV.sethValue(bb.getFloat());
                     }
                     acV.setValid(valid);
                     return acV;

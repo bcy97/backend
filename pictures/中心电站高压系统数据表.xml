@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="gbk"?>
-<picture version="7" color="#303030" width="1800" height="900">
+<picture version="7" color="#303030" width="1920" height="1080">
 	<layer name="底图">
 		<image from="243,79" to="1843,179" border="1" borderColor="#000000" borderWidth="1" fill="0" iconType="1" filename="iconlibrary/user/a号站高压系统数据表.png" angle="0.000000"/>
 		<string from="150,592" to="255,618" border="0" fill="0" text="4#出线" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#e0e080"/>

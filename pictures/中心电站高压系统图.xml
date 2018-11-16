@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="gbk"?>
-<picture version="7" color="#303030" width="1800" height="900">
+<picture version="7" color="#303030" width="1920" height="1080">
 	<layer name="底图">
 		<imageStatue from="692,459" to="716,483" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="" iconType="0" size="24" index_close="58" index_open="58" angle="0.000000"/>
 		<imageStatue from="692,489" to="716,513" border="1" borderColor="#c02020" borderWidth="1" fill="0" stname="" iconType="0" size="24" index_close="58" index_open="58" angle="0.000000"/>

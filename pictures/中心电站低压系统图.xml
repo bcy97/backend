@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="gbk"?>
-<picture version="7" color="#303030" width="1800" height="2500">
+<picture version="7" color="#303030" width="1920" height="1080">
 	<layer name="底图">
 		<line from="1570,429" to="1719,429" lineColor="#505050" lineWidth="1"/>
 		<line from="1569,430" to="1720,430" lineColor="#000000" lineWidth="1"/>

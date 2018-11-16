@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="gbk"?>
-<picture version="7" color="#303030" width="1800" height="900">
+<picture version="7" color="#303030" width="1920" height="1080">
 	<layer name="底图">
 		<rect from="1130,880" to="1001,782" border="1" borderColor="#6c6c6c" borderWidth="1" fill="1" fillColor="#4b4b4b"/>
 		<rect from="734,622" to="560,500" border="1" borderColor="#4d4d4d" borderWidth="1" fill="0"/>

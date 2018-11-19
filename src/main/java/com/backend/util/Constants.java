@@ -19,6 +19,8 @@ public class Constants {
 	public final static short CC_REALCALDATA = 110;// 0x6E
 	public final static short CC_CHANNELTYPE = 0;// 0x00
 	public final static short CC_REMOTECONTROL = 60;//0x3C
+	public final static short CC_SELECT_PIPEINFO = 0x62;
+	public final static short CC_SELECT_PIPEMAINTRECORD = 0x68;
 
 	// history data type
 	public final static byte CC_HDT_HOUS_DATA = 0x03;

@@ -7,6 +7,7 @@ import com.backend.vo.UnitInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.io.UnsupportedEncodingException;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.text.SimpleDateFormat;
@@ -204,5 +205,31 @@ public class Utils {
         }
 
         return list;
+    }
+
+    /***
+     * 从ByteBuffer取一个字符串
+     * */
+    public String getString(ByteBuffer bb,byte length) throws UnsupportedEncodingException {
+        byte[] temp = new byte[length];
+        bb.get(temp);
+        return new String(temp,"UTF-8");
+    }
+
+    /***
+     * 字符串转字节数组,当字符串为Null时，数组为{0x00},否则数组索引0位置为字符串转为字节的长度
+     * */
+    public byte[] toByte(String text) throws UnsupportedEncodingException{
+        byte[]  data = null;
+        if(null == text || text.isEmpty()) {
+            data = new byte[1];
+            data[0] = 0x00;
+        }else{
+            byte[] bTemp = text.getBytes("UTF-8");
+            data = new byte[bTemp.length + 1];
+            data[0] = (byte)bTemp.length;
+            System.arraycopy(bTemp,0,data,1,bTemp.length);
+        }
+        return data;
     }
 }

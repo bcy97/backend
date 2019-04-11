@@ -38,7 +38,7 @@ public class EventInfoServiceImpl implements EventInfoService {
      * 根据时间段和点名获取 时间精确到5min
      * */
     @Override
-    public EventInfo[] getEventByTimeAndPointName(Date stime, Date etime, String pointName) {
+    public EventInfo[] getEventByTimeAndPointName(Date stime, Date etime, String pointName, String companyId) {
         int id = -1;
         byte type = -1;
 
@@ -56,11 +56,11 @@ public class EventInfoServiceImpl implements EventInfoService {
         if (-1 == id)
             return null;
 
-        return eventInfoDao.getEventInfoByTimeAndId(new Integer[]{id}, utils._DATE_FORMAT_.format(stime), utils._DATE_FORMAT_.format(etime), type);
+        return eventInfoDao.getEventInfoByTimeAndId(new Integer[]{id}, utils._DATE_FORMAT_.format(stime), utils._DATE_FORMAT_.format(etime), type, companyId);
     }
 
     @Override
-    public EventInfo[] getEventByTimeAndUnitNames(Date stime, Date etime, List<String> unitnames,int type) {
+    public EventInfo[] getEventByTimeAndUnitNames(Date stime, Date etime, List<String> unitnames,int type, String companyId) {
         List<Integer> ids = new ArrayList<Integer>();
 
         byte dataType = Constants.CC_EDT_STEPD;
@@ -75,6 +75,15 @@ public class EventInfoServiceImpl implements EventInfoService {
             }
         }
 
-        return eventInfoDao.getEventInfoByTimeAndId(ids.toArray(new Integer[ids.size()]), utils._DATE_FORMAT_.format(stime), utils._DATE_FORMAT_.format(etime), Constants.CC_EDT_STEPD);
+        return eventInfoDao.getEventInfoByTimeAndId(ids.toArray(new Integer[ids.size()]), utils._DATE_FORMAT_.format(stime), utils._DATE_FORMAT_.format(etime), Constants.CC_EDT_STEPD, companyId);
     }
+
+	@Override
+	public EventInfo[] getStEventByEname(Date begTime, Date endTime, String ename, String companyId) {
+		StO sto = cfgData.getStO(ename);
+		if(sto != null) {
+			return eventInfoDao.getEventInfoByTimeAndId(new Integer[]{sto.getId()}, utils._DATE_FORMAT_.format(begTime), utils._DATE_FORMAT_.format(endTime), Constants.CC_EDT_STEPD, companyId);
+		}
+		return null;
+	}
 }

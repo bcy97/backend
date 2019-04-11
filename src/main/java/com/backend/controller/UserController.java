@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.Map;
+
 @RestController
 @RequestMapping("/user")
 public class UserController {
@@ -19,9 +21,9 @@ public class UserController {
     }
 
     @RequestMapping("/login")
-    public boolean login(@RequestBody String username, @RequestBody String password) {
+    public boolean login(@RequestBody Map<String, String> map) {
 
-        return userService.login(username, password);
+        return userService.login(map.get("username"), map.get("password"), map.get("companyId"));
 
     }
 

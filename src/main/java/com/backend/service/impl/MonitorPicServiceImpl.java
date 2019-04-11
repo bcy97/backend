@@ -35,12 +35,12 @@ public class MonitorPicServiceImpl implements MonitorPicService {
     }
 
     @Override
-    public Object[] getRealData(Integer[] ids) {
-        return realDataDao.getRealData(ids);
+    public Object[] getRealData(Integer[] ids, String companyId) {
+        return realDataDao.getRealData(ids, companyId);
     }
 
     @Override
-    public List<String> getPicList() {
+    public List<String> getPicList(String companyId) {
         return null;
     }
 

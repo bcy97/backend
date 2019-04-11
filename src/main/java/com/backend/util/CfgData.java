@@ -11,12 +11,18 @@ import org.dom4j.io.SAXReader;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Component;
 import org.springframework.util.ResourceUtils;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.regex.Pattern;
 
 @Component
@@ -39,7 +45,52 @@ public class CfgData implements ApplicationRunner {
     private Map<Short, List<StO>> unitStMap = null;
     private Map<Short, List<AcO>> unitAcMap = null;
 
-
+    private Map<String, String> mapper = new ConcurrentHashMap<>();
+    
+    public String getRealName(String name) {
+    	if(Utils.isNull(name) || !mapper.containsKey(name))
+    		return name;
+    	else
+    		return mapper.get(name);
+    }
+    
+    public void setRealName(String name,String realName) {
+    	if(Utils.isNull(name)) return;
+    	mapper.put(name, realName);
+    }
+    
+    private void loadMapperCfg(){
+    	BufferedReader reader = null;
+    	
+    	try {
+    		String path = System.getProperty("user.dir");
+    		reader = new BufferedReader(new FileReader(new File(path + "/static/mapperConfig.txt")));
+    		String temp = null;
+    		String[] arr = null;
+    		while(null != (temp = reader.readLine())) {
+    			if("".equals(temp) || temp.indexOf("//") == 1 || temp.indexOf("[") == 0) continue;
+    			if(temp.indexOf("=") == -1) {
+    				temp = temp.trim();
+    				setRealName(temp, temp);
+    			}else {
+    				arr = temp.split("=");
+    				setRealName(arr[0].trim(), arr[1].trim());
+    			}
+    		}
+		} catch (Exception e) {
+			logger.error(e.getMessage());
+			return;
+		}finally {
+			if(reader != null) {
+				try {
+					reader.close();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+			}
+		}
+    }
+    
     public int getAnID(String sname) {
         AnO ano = getAnO(sname);
         if (null == ano)
@@ -148,6 +199,8 @@ public class CfgData implements ApplicationRunner {
         unitAnMap = new HashMap<>();
         unitAcMap = new HashMap<>();
         unitStMap = new HashMap<>();
+        //加载3d系统字段映射文件
+        loadMapperCfg();
 
 //			File file = new File(Utils._RESOURCES_PATH_ + Constants._DIR_UNITCFG_);
         File file = null;

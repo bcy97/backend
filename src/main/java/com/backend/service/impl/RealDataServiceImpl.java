@@ -3,8 +3,10 @@ package com.backend.service.impl;
 import com.backend.dao.RealDataDao;
 import com.backend.service.RealDataService;
 import com.backend.util.CfgData;
+import com.backend.vo.AcO;
 import com.backend.vo.AnO;
 import com.backend.vo.AnValue;
+import com.backend.vo.StO;
 import com.backend.vo.UnitInfo;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,7 +32,7 @@ public class RealDataServiceImpl implements RealDataService {
     }
 
     @Override
-    public Map<String, AnValue> getRealData(String unitName) {
+    public Map<String, AnValue> getRealData(String unitName, String companyId) {
 
         List<UnitInfo> list = cfgData.getAllUnitInfo();
         Integer[] ids = new Integer[0];
@@ -44,7 +46,7 @@ public class RealDataServiceImpl implements RealDataService {
             }
         }
         System.out.println("查询中...");
-        AnValue[] anValues = realDataDao.getAnRealData(ids);
+        AnValue[] anValues = realDataDao.getAnRealData(ids, companyId);
         System.out.println("获得数据");
         Map<String, AnValue> map = new LinkedHashMap<>();
 
@@ -62,4 +64,37 @@ public class RealDataServiceImpl implements RealDataService {
         return map;
     }
 
+    @Override
+	public Object[] getRealDataByEnames(String[] enames, String companyId) {
+		// TODO Auto-generated method stub
+		AnO ano = null;
+		AcO aco = null;
+		StO sto = null;
+		String ename = null;
+		Integer[] ids = new Integer[enames.length];
+		for (int i = 0; i < enames.length; i++) {
+			ename = enames[i];
+			if("".equals(ename)) {
+				ids[i] = 0xFFFFFF;
+				continue;
+			}
+			
+			if(null == (ano = cfgData.getAnO(ename))) {
+				if(null == (aco = cfgData.getAcO(ename))) {
+					if(null == (sto = cfgData.getStO(ename))) {
+						ids[i] = 0xFFFFFF;
+						continue;
+					}
+					ids[i] = sto.getId();
+					continue;
+				}
+				ids[i] = aco.getId();
+				continue;
+			}
+			ids[i] = ano.getId();
+			
+		}
+		
+		return realDataDao.getRealData(ids, companyId);
+	}
 }

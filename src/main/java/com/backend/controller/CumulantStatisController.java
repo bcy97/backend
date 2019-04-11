@@ -24,14 +24,14 @@ public class CumulantStatisController {
     }
 
     @RequestMapping(value = "/unitlist", consumes = "application/json")
-    public List<String> getUnitList() {
-        return cumulantStatisService.getUnitList();
+    public List<String> getUnitList(@RequestBody Map<String, String> map) {
+        return cumulantStatisService.getUnitList(map.get("companyId"));
     }
 
     @RequestMapping(value = "/getDataByUnitName", consumes = "application/json")
-    public List<Cumulant> getDataByUnitName(@RequestBody String unitName) {
-        System.out.println(unitName);
-        return cumulantStatisService.getDataByUnitName(unitName);
+    public List<Cumulant> getDataByUnitName(@RequestBody Map<String,String> map) {
+        System.out.println(map.get("unitName"));
+        return cumulantStatisService.getDataByUnitName(map.get("unitName"), map.get("companyId"));
     }
 
     @RequestMapping(value = "/getDataByUnitNameAndTime", consumes = "application/json")
@@ -40,7 +40,7 @@ public class CumulantStatisController {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm");
 
         try {
-            return cumulantStatisService.getCumulantDataByUnitNameAndTime(sdf.parse(data.get("stime")), sdf.parse(data.get("etime")), data.get("unitname"));
+            return cumulantStatisService.getCumulantDataByUnitNameAndTime(sdf.parse(data.get("stime")), sdf.parse(data.get("etime")), data.get("unitname"),data.get("companyId"));
         } catch (ParseException e) {
             e.printStackTrace();
         }

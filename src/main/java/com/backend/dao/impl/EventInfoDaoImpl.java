@@ -40,14 +40,14 @@ public class EventInfoDaoImpl implements EventInfoDao {
      * @param endTime 结束时间
      * @param type 事件类别,0x10->EPD(AnEPD And StEPD) 0x11->AnEPD 0x12->StEPD 0x13->ProtectEPD 0x20->SOE
      * */
-    public EventInfo[] getEventInfoByTimeAndId(Integer[] ids, String begTime, String endTime, byte type) {
-        return parseEventInfo(getEventInfo(ids, begTime, endTime, type));
+    public EventInfo[] getEventInfoByTimeAndId(Integer[] ids, String begTime, String endTime, byte type, String companyId) {
+        return parseEventInfo(getEventInfo(ids, begTime, endTime, type, companyId));
     }
 
     /***
      * 最近3个月内最新的20条事件信息
      * */
-    public EventInfo[] getLatestEventInfo() {
+    public EventInfo[] getLatestEventInfo(String companyId) {
         Calendar begTime = Calendar.getInstance();
         begTime.add(Calendar.MONTH, -3);
 
@@ -55,7 +55,9 @@ public class EventInfoDaoImpl implements EventInfoDao {
 
         CfgData cfgData = new CfgData();
 
-        EventInfo[] infos = parseEventInfo(getEventInfo(cfgData.getAllStId(), utils._DATE_FORMAT_.format(begTime.getTime()), utils._DATE_FORMAT_.format(endTime.getTime()), Constants.CC_EDT_EPD));
+
+
+        EventInfo[] infos = parseEventInfo(getEventInfo(cfgData.getAllStId(), utils._DATE_FORMAT_.format(begTime.getTime()), utils._DATE_FORMAT_.format(endTime.getTime()), Constants.CC_EDT_EPD, companyId));
 
         if (infos.length <= 20)
             return infos;
@@ -70,7 +72,7 @@ public class EventInfoDaoImpl implements EventInfoDao {
     /***
      * 从服务器获取事件信息
      * */
-    private ByteBuffer getEventInfo(Integer[] ids, String begTime, String endTime, byte type) {
+    private ByteBuffer getEventInfo(Integer[] ids, String begTime, String endTime, byte type, String companyId) {
         ByteBuffer bb = ByteBuffer.allocate(ids.length * 4 + 25);
         bb.order(ByteOrder.LITTLE_ENDIAN);
 
@@ -104,7 +106,7 @@ public class EventInfoDaoImpl implements EventInfoDao {
         System.arraycopy(bb.array(), 0, datas, 0, datas.length);
         byte cmd = Constants.CC_EVENTDATA;
 
-        return SocketConnect.getData(datas, cmd, logger,true);
+        return SocketConnect.getData(datas, cmd, logger,true, companyId);
     }
 
     /****

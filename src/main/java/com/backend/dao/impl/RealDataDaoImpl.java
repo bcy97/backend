@@ -34,16 +34,16 @@ public class RealDataDaoImpl implements RealDataDao {
      * 同时获取遥测、遥信、电度实时数据，遥信id返回StValue，电度id返回AcValue，遥测id返回AnValue
      * */
     @Override
-    public Object[] getRealData(Integer[] ids) {
-        return parseRealData(SocketConnect.getData(utils.idArrToBytes(ids), Constants.CC_REALDATA, logger,true));
+    public Object[] getRealData(Integer[] ids, String companyId) {
+        return parseRealData(SocketConnect.getData(utils.idArrToBytes(ids), Constants.CC_REALDATA, logger,true, companyId));
     }
 
     /***
      * 获取遥测实时数据
      * */
     @Override
-    public AnValue[] getAnRealData(Integer[] ids) {
-        Object[] datas = getRealData(ids);
+    public AnValue[] getAnRealData(Integer[] ids, String companyId) {
+        Object[] datas = getRealData(ids, companyId);
         AnValue[] rtnData = new AnValue[ids.length];
         for (int i = 0; i < rtnData.length; i++) {
             if (i < datas.length && datas[i] instanceof AnValue)
@@ -59,8 +59,8 @@ public class RealDataDaoImpl implements RealDataDao {
      * 获取遥信实时数据
      * */
     @Override
-    public StValue[] getStRealData(Integer[] ids) {
-        Object[] datas = getRealData(ids);
+    public StValue[] getStRealData(Integer[] ids, String companyId) {
+        Object[] datas = getRealData(ids, companyId);
         StValue[] rtnData = new StValue[ids.length];
         for (int i = 0; i < rtnData.length; i++) {
             if (i < datas.length && datas[i] instanceof StValue)
@@ -76,8 +76,8 @@ public class RealDataDaoImpl implements RealDataDao {
      * 获取电度实时数据
      * */
     @Override
-    public AcValue[] getAcRealData(Integer[] ids) {
-        Object[] datas = getRealData(ids);
+    public AcValue[] getAcRealData(Integer[] ids, String companyId) {
+        Object[] datas = getRealData(ids, companyId);
         AcValue[] rtnData = new AcValue[ids.length];
         for (int i = 0; i < rtnData.length; i++) {
             if (i < datas.length && datas[i] instanceof AcValue)

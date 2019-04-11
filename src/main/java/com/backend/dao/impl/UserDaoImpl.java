@@ -18,8 +18,8 @@ public class UserDaoImpl implements UserDao {
     static Logger logger = Logger.getLogger("UserDaoImpl");
 
     @Override
-    public UserInfo[] getAllUserInfo() {
-        ByteBuffer bb = getUserInfo( new byte[0]);
+    public UserInfo[] getAllUserInfo(String companyId) {
+        ByteBuffer bb = getUserInfo(new byte[0], companyId);
         if (null == bb)
             return null;
         try {
@@ -51,76 +51,93 @@ public class UserDaoImpl implements UserDao {
         bb.flip();
 
         while (size > 0) {
-            strLength = bb.get();
-            size--;
-            datas = new byte[strLength];
-            bb.get(datas);
-            size -= strLength;
-            id = new String(datas, "UTF-8");
+//            strLength = bb.get();
+//            size--;
+//            datas = new byte[strLength];
+//            bb.get(datas);
+//            size -= strLength;
+//            id = new String(datas, "UTF-8"); // id
 
             strLength = bb.get();
             size--;
             datas = new byte[strLength];
             bb.get(datas);
             size -= strLength;
-            name = new String(datas, "UTF-8");
+            name = new String(datas, "UTF-8");// 用户名
 
             strLength = bb.get();
             size--;
             datas = new byte[strLength];
             bb.get(datas);
             size -= strLength;
-            pwd = new String(datas, "UTF-8");
+            pwd = new String(datas, "UTF-8");// 密码
+
+//            strLength = bb.get();
+//            size--;
+//            datas = new byte[strLength];
+//            bb.get(datas);
+//            size -= strLength;
+//            depaType = new String(datas, "UTF-8");// 部门id
+
+//            bb.getInt();// 部门类别
+
+//            strLength = bb.get();
+//            size--;
+//            datas = new byte[strLength];
+//            bb.get(datas);
+//            size -= strLength;
+//            depaName = new String(datas, "UTF-8");// 部门编号
+
 
             strLength = bb.get();
             size--;
             datas = new byte[strLength];
             bb.get(datas);
             size -= strLength;
-            depaType = new String(datas, "UTF-8");
+            depaName = new String(datas, "UTF-8");// 部门名称
 
-            strLength = bb.get();
-            size--;
-            datas = new byte[strLength];
-            bb.get(datas);
-            size -= strLength;
-            depaName = new String(datas, "UTF-8");
-
-            roleCount = bb.get();
-            size--;
-            roleIds = new String[roleCount];
-            for (byte i = 0; i < roleCount; i++) {
-                strLength = bb.get();
-                size--;
-                datas = new byte[strLength];
-                bb.get(datas);
-                size -= strLength;
-                roleIds[i] = new String(datas, "UTF-8");
-            }
-
-            permissionType = bb.get();
+            bb.get();// 权限类别
             size--;
 
-            strLength = bb.get();
-            size--;
-            datas = new byte[strLength];
-            bb.get(datas);
-            size -= strLength;
-            permissionName = new String(datas, "UTF-8");
+            bb.getLong();
+            bb.getLong();// 控制权限
+            size -= 16;
+//
+//            roleCount = bb.get();
+//            size--;
+//            roleIds = new String[roleCount];
+//            for (byte i = 0; i < roleCount; i++) {
+//                strLength = bb.get();
+//                size--;
+//                datas = new byte[strLength];
+//                bb.get(datas);
+//                size -= strLength;
+//                roleIds[i] = new String(datas, "UTF-8");
+//            }
+//
+//            permissionType = bb.get();
+//            size--;
+//
+//            strLength = bb.get();
+//            size--;
+//            datas = new byte[strLength];
+//            bb.get(datas);
+//            size -= strLength;
+//            permissionName = new String(datas, "UTF-8");
+//
+//            controlType = bb.getLong();
 
-            controlType = bb.getLong();
-
-            list.add(new UserInfo(name, pwd, depaName, id, depaType));
+            list.add(new UserInfo(name, pwd, depaName));
 
         }
 
         return list.toArray(new UserInfo[list.size()]);
     }
 
-    private ByteBuffer getUserInfo(byte[] datas) {
+    private ByteBuffer getUserInfo(byte[] datas, String companyId) {
         ByteBuffer bb;
 
-        bb = SocketConnect.getData(datas,Constants.CC_USERINFO,logger,true);
+        bb = SocketConnect.getData(datas,Constants.CC_USERINFO,logger,true, companyId);
 
         return bb;
 

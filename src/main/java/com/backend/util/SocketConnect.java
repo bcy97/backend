@@ -139,7 +139,7 @@ public class SocketConnect {
      * @param cmd
      *      发送请求的命令
      * */
-    public static ByteBuffer getData(byte[] sendDatas, short cmd, Logger logger,boolean bReceiveData) {
+    public static ByteBuffer getData(byte[] sendDatas, short cmd, Logger logger,boolean bReceiveData, String companyId) {
 
         Socket socket = new Socket();
         try {
@@ -150,8 +150,8 @@ public class SocketConnect {
             byte[] bDatas = null;
 
             // 要先发一个包，告诉上位机通道类型
-            bDatas = generateChannelDeclarationPackage().serialize();
-            //os.write(bDatas, 0, bDatas.length);
+            bDatas = generateChannelDeclarationPackage(companyId).serialize();
+            os.write(bDatas, 0, bDatas.length);
 
             List<DataPacket> dps = toDataPackets(sendDatas, cmd);
             for (DataPacket dp : dps) {
@@ -178,13 +178,15 @@ public class SocketConnect {
     /***
      * 生成通道类型声明包
      * */
-    private static DataPacket generateChannelDeclarationPackage(){
-        if(null == userName)
-            userName = "";
+    private static DataPacket generateChannelDeclarationPackage(String companyId){
+//        if(null == userName)
+//            userName = "";
+        if(null == companyId)
+            companyId = "";
 
         byte[] strBytes = null;
         try {
-            strBytes = userName.getBytes("UTF8");
+            strBytes = companyId.getBytes("UTF8");
         }catch (UnsupportedEncodingException ex){
             strBytes = new byte[0];
         }
@@ -210,8 +212,8 @@ public class SocketConnect {
         List<DataPacket> dps = new ArrayList<DataPacket>();
         for (int i = 0; i <= sendDatas.length / MAX_PACKET_SIZE; i++) {
             if ((sendDatas.length / MAX_PACKET_SIZE) == i) {// 最后一个包
-                temp = new byte[sendDatas.length % MAX_PACKET_SIZE];
-                tailFlag = 0;
+                temp = new byte[sendDatas.length % MAX_PACKET_SIZE]; // 数据包小于8192，创建数据包大小的字节数组
+                tailFlag = 0;   // 0表示包尾，1表示非包尾
             } else {
                 temp = new byte[MAX_PACKET_SIZE];
                 tailFlag = 1;

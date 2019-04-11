@@ -25,7 +25,7 @@ public class RemoteServiceImpl implements RemoteService {
     }
 
     @Override
-    public void remoteControl(String[] ptNames,Byte state) {
+    public void remoteControl(String[] ptNames,Byte state, String companyId) {
         // 存放遥控过的点名
         List<String> controlPtNames = new ArrayList<>();
         // 下发遥控
@@ -42,9 +42,9 @@ public class RemoteServiceImpl implements RemoteService {
             if(0 != state && 1 != state)
                 continue;
             if(state == 0)
-                remoteDao.remoteControl(ptName,sto.getSwidef());
+                remoteDao.remoteControl(ptName,sto.getSwidef(), companyId);
             else// 下发分命令
-                remoteDao.remoteControl(ptName,0 == sto.getSwidef() ? (byte)1 :(byte)0);
+                remoteDao.remoteControl(ptName,0 == sto.getSwidef() ? (byte)1 :(byte)0, companyId);
 
         }
     }

@@ -12,5 +12,7 @@ public interface RealDataService {
      * @param unitName 单元名
      * @return Map<String, AnValue> key为点名，value为AnValue
      */
-    Map<String, AnValue> getRealData(String unitName);
+    Map<String, AnValue> getRealData(String unitName, String companyId);
+
+	Object[] getRealDataByEnames(String[] enames, String companyId);
 }

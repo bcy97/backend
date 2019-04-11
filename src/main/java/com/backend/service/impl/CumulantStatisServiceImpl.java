@@ -33,7 +33,7 @@ public class CumulantStatisServiceImpl implements CumulantStatisService {
     }
 
     @Override
-    public List<String> getUnitList() {
+    public List<String> getUnitList(String companyId) {
 
         List<String> unitNameList = new ArrayList<>();
         for (UnitInfo ui : cfgData.getAllUnitInfo())
@@ -43,7 +43,7 @@ public class CumulantStatisServiceImpl implements CumulantStatisService {
     }
 
     @Override
-    public List<Cumulant> getDataByUnitName(String unitName) {
+    public List<Cumulant> getDataByUnitName(String unitName, String companyId) {
         int index = -1;
         Integer[] ids = utils.getAcIdsByUnitName(unitName);
 
@@ -54,24 +54,24 @@ public class CumulantStatisServiceImpl implements CumulantStatisService {
         begTime.set(Calendar.SECOND, 0);
         begTime.set(Calendar.MILLISECOND, 0);
 
-        AcStatisData[] todayStatisDatas = getDataByUnitNameAndTime(begTime.getTime(), currTime.getTime(), unitName);
+        AcStatisData[] todayStatisDatas = getDataByUnitNameAndTime(begTime.getTime(), currTime.getTime(), unitName, companyId);
 
         Calendar endTime = Calendar.getInstance();
         endTime.setTimeInMillis(begTime.getTimeInMillis());
 
         begTime.add(Calendar.DAY_OF_MONTH, -1);
 
-        AcStatisData[] lastdayStatisDatas = getDataByUnitNameAndTime(begTime.getTime(), endTime.getTime(), unitName);
+        AcStatisData[] lastdayStatisDatas = getDataByUnitNameAndTime(begTime.getTime(), endTime.getTime(), unitName, companyId);
 
         begTime.set(Calendar.DAY_OF_MONTH, 0);
 
-        AcStatisData[] thisMonthStatisDatas = getDataByUnitNameAndTime(begTime.getTime(), currTime.getTime(), unitName);
+        AcStatisData[] thisMonthStatisDatas = getDataByUnitNameAndTime(begTime.getTime(), currTime.getTime(), unitName, companyId);
 
         endTime.setTimeInMillis(begTime.getTimeInMillis());
 
         begTime.add(Calendar.MONTH, -1);
 
-        AcStatisData[] lastMonthStatisDatas = getDataByUnitNameAndTime(begTime.getTime(), endTime.getTime(), unitName);
+        AcStatisData[] lastMonthStatisDatas = getDataByUnitNameAndTime(begTime.getTime(), endTime.getTime(), unitName, companyId);
 
         List<Cumulant> list = new ArrayList<>();
         for (int i = 0; i < ids.length; i++) {
@@ -106,10 +106,10 @@ public class CumulantStatisServiceImpl implements CumulantStatisService {
     }
 
     @Override
-    public List<Cumulant> getCumulantDataByUnitNameAndTime(Date stime, Date etime, String unitName){
-        List<Cumulant> list = getDataByUnitName(unitName);
+    public List<Cumulant> getCumulantDataByUnitNameAndTime(Date stime, Date etime, String unitName, String companyId){
+        List<Cumulant> list = getDataByUnitName(unitName, companyId);
 
-        AcStatisData[] queryStatisDatas = getDataByUnitNameAndTime(stime, etime, unitName);
+        AcStatisData[] queryStatisDatas = getDataByUnitNameAndTime(stime, etime, unitName, companyId);
 
         int index = -1;
         for (int i = 0; i < list.size(); i++)
@@ -134,9 +134,9 @@ public class CumulantStatisServiceImpl implements CumulantStatisService {
         return -1;
     }
 
-    private AcStatisData[] getDataByUnitNameAndTime(Date stime, Date etime, String unitName) {
+    private AcStatisData[] getDataByUnitNameAndTime(Date stime, Date etime, String unitName, String companyId) {
         Integer[] ids = utils.getAcIdsByUnitName(unitName);
-        return statisDataDao.getAcStatisData(ids, utils._DATE_FORMAT_.format(stime), utils._DATE_FORMAT_.format(etime));
+        return statisDataDao.getAcStatisData(ids, utils._DATE_FORMAT_.format(stime), utils._DATE_FORMAT_.format(etime), companyId);
     }
 
 }

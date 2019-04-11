@@ -32,13 +32,14 @@ public class AlertServiceImpl implements AlertService {
      * 获取最新报警信息，即最近3个月内的前20条的遥信EPD信息
      * */
     @Override
-    public EventInfo[] getImportantAlert() {
+    public EventInfo[] getImportantAlert(String companyId) {
         Calendar begTime = Calendar.getInstance();
         begTime.add(Calendar.MONTH, -3);
 
         Calendar endTime = Calendar.getInstance();
 
-        EventInfo[] infos = eventInfoDao.getEventInfoByTimeAndId(cfgData.getAllStId(), utils._DATE_FORMAT_.format(begTime.getTime()), utils._DATE_FORMAT_.format(endTime.getTime()), Constants.CC_EDT_STEPD);
+        EventInfo[] infos = eventInfoDao.getEventInfoByTimeAndId(cfgData.getAllStId(), utils._DATE_FORMAT_.format(begTime.getTime()),
+                utils._DATE_FORMAT_.format(endTime.getTime()), Constants.CC_EDT_STEPD, companyId);
 
         if (infos.length <= 20)
             return infos;

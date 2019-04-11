@@ -28,12 +28,12 @@ public class MonitorPicController {
     }
 
     @RequestMapping("/getPicList")
-    public List<String> getPicList() {
-        return monitorPicService.getPicList();
+    public List<String> getPicList(@RequestBody String companyId) {
+        return monitorPicService.getPicList(companyId);
     }
 
     @RequestMapping(value = "/getAnData", consumes = "application/json")
-    public Map<String, AnValue> getAnData(@RequestBody String[] ids) {
+    public Map<String, AnValue> getAnData(@RequestBody String[] ids,@RequestBody String companyId) {
 
         System.out.println("An--------------------------------------");
         Map<String, AnValue> result = new HashMap<>();
@@ -43,7 +43,7 @@ public class MonitorPicController {
             id[i] = cfgData.getAnID(ids[i]);
         }
 
-        Object[] data = monitorPicService.getRealData(id);
+        Object[] data = monitorPicService.getRealData(id, companyId);
         for (int i = 0; i < data.length; i++) {
             try {
                 result.put(ids[i], (AnValue) data[i]);
@@ -62,7 +62,7 @@ public class MonitorPicController {
      * @return Map<String, StValue>为遥信量id，value为遥信值
      */
     @RequestMapping(value = "/getStData", consumes = "application/json")
-    public Map<String, StValue> getStData(@RequestBody String[] ids) {
+    public Map<String, StValue> getStData(@RequestBody String[] ids,@RequestBody String companyId) {
 
         System.out.println("St--------------------------------------");
         Map<String, StValue> result = new HashMap<>();
@@ -72,7 +72,7 @@ public class MonitorPicController {
             id[i] = cfgData.getStID(ids[i]);
         }
 
-        Object[] data = monitorPicService.getRealData(id);
+        Object[] data = monitorPicService.getRealData(id, companyId);
         for (int i = 0; i < data.length; i++) {
             try {
                 result.put(ids[i], (StValue) data[i]);
@@ -94,7 +94,7 @@ public class MonitorPicController {
      * @return Map<String, StValue>为电度量id，value为电度值
      */
     @RequestMapping(value = "/getAcData", consumes = "application/json")
-    public Map<String, AcValue> getAcData(@RequestBody String[] ids) {
+    public Map<String, AcValue> getAcData(@RequestBody String[] ids,@RequestBody String companyId) {
 
         System.out.println("Ac--------------------------------------");
         Map<String, AcValue> result = new HashMap<>();
@@ -104,7 +104,7 @@ public class MonitorPicController {
             id[i] = cfgData.getAcID(ids[i]);
         }
 
-        Object[] data = monitorPicService.getRealData(id);
+        Object[] data = monitorPicService.getRealData(id, companyId);
         for (int i = 0; i < data.length; i++) {
             result.put(ids[i], (AcValue) data[i]);
         }

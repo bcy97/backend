@@ -14,7 +14,7 @@ public interface LineService {
      * @param ptNames
      * @return 点名和数据的Map
      */
-    Map<String, Float> getRealLineData(String[] ptNames);
+    Map<String, Float> getRealLineData(String[] ptNames, String companyId);
 
     /**
      * 新增方法：根据曲线图名和时间获取历史数据
@@ -24,7 +24,7 @@ public interface LineService {
      * @param picName
      * @return 点名和数据的Map,间隔5min
      */
-    Map<String, Float[]> getHistoryLineData(Date stime, Date etime, String[] picName);
+    Map<String, Float[]> getHistoryLineData(Date stime, Date etime, String[] picName, String companyId);
 
 
 }

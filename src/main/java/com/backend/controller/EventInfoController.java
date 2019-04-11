@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -25,7 +27,7 @@ public class EventInfoController {
     }
 
     @RequestMapping(value = "/getInfo", consumes = "application/json")
-    public EventInfo[] getEventByTimeAndUnitNames(@RequestBody Map<String, String> data) {
+    public EventInfo[] getEventByTimeAndUnitNames(@RequestBody Map<String, String> data,@RequestBody String companyId) {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm");
 
         Gson gson = new Gson();
@@ -35,12 +37,30 @@ public class EventInfoController {
 
         try {
             // type 0:遥信    1:遥测
-            return eventInfoService.getEventByTimeAndUnitNames(sdf.parse(data.get("stime")), sdf.parse(data.get("etime")), unitnames, new Integer(data.get("type")));
+            return eventInfoService.getEventByTimeAndUnitNames(sdf.parse(data.get("stime")), sdf.parse(data.get("etime")), unitnames, new Integer(data.get("type")), companyId);
         } catch (ParseException e) {
             e.printStackTrace();
         }
         return null;
     }
 
-
+    @RequestMapping(value="/getStEventInfo",consumes="application/json")
+    public EventInfo[] getStEventInfoByEname(@RequestBody Map<String, Object> map,@RequestBody String companyId){
+    	Calendar calNow = Calendar.getInstance();
+    	Calendar calBef = Calendar.getInstance();
+    	calBef.add(Calendar.MONTH, -3);
+    	Date begTime = calBef.getTime();
+    	Date endTime = calNow.getTime();
+    	
+    	String ename = map.get("ename").toString();
+    	if(map.containsKey("begTime")) {
+    		begTime = (Date)map.get("begTime");
+    	}
+    	if(map.containsKey("endTime")) {
+    		endTime = (Date)map.get("endTime");
+    	}
+    	
+    	System.out.println("ename:" + ename);
+    	return eventInfoService.getStEventByEname(begTime, endTime, ename, companyId);
+    }
 }

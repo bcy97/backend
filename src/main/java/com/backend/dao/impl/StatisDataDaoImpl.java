@@ -34,23 +34,23 @@ public class StatisDataDaoImpl implements StatisDataDao {
      * 获取电度统计数据
      * */
     @Override
-    public AcStatisData[] getAcStatisData(Integer[] ids, String begTime, String endTime) {
+    public AcStatisData[] getAcStatisData(Integer[] ids, String begTime, String endTime, String companyId) {
 
-        return parseAcStatisData(getStatisData(ids, begTime, endTime, Constants.CC_SDT_AC));
+        return parseAcStatisData(getStatisData(ids, begTime, endTime, Constants.CC_SDT_AC, companyId));
     }
 
     /***
      * 获取遥测统计数据
      * */
     @Override
-    public AnStatisData[] getAnStaticData(Integer[] ids, String begTime, String endTime) {
-        return parseAnStatisData(getStatisData(ids, begTime, endTime, Constants.CC_SDT_AN));
+    public AnStatisData[] getAnStaticData(Integer[] ids, String begTime, String endTime, String companyId) {
+        return parseAnStatisData(getStatisData(ids, begTime, endTime, Constants.CC_SDT_AN, companyId));
     }
 
     /***
      * 获取统计数据
      * */
-    private ByteBuffer getStatisData(Integer[] ids, String begTime, String endTime, byte type) {
+    private ByteBuffer getStatisData(Integer[] ids, String begTime, String endTime, byte type, String companyId) {
         ByteBuffer bb = ByteBuffer.allocate(ids.length * 4 + 17);
         bb.order(ByteOrder.LITTLE_ENDIAN);
 
@@ -80,7 +80,7 @@ public class StatisDataDaoImpl implements StatisDataDao {
         byte[] datas = new byte[bb.position()];
         System.arraycopy(bb.array(), 0, datas, 0, datas.length);
 
-        return SocketConnect.getData(datas, Constants.CC_STATISDATA, logger,true);
+        return SocketConnect.getData(datas, Constants.CC_STATISDATA, logger,true, companyId);
     }
 
     /***

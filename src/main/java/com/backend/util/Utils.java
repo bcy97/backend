@@ -232,4 +232,13 @@ public class Utils {
         }
         return data;
     }
+    
+    public static boolean isNull(Object obj) {
+		if (obj != null) {
+			String str = obj.toString().trim();
+			return str.isEmpty() || "null".equals(str.toLowerCase());
+		} else {
+			return true;
+		}
+	}
 }

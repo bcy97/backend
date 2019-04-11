@@ -3,6 +3,7 @@ package com.backend.dao.impl;
 import com.backend.dao.RemoteDao;
 import com.backend.util.Constants;
 import com.backend.util.SocketConnect;
+
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -10,6 +11,7 @@ import org.springframework.stereotype.Repository;
 import java.io.UnsupportedEncodingException;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
+import java.util.List;
 
 @Repository
 public class RemoteDaoImpl implements RemoteDao {
@@ -22,11 +24,11 @@ public class RemoteDaoImpl implements RemoteDao {
     }
 
     @Override
-    public void remoteControl(String ptName,byte state) {
+    public void remoteControl(String ptName,byte state, String companyId) {
         byte[] datas = getRemoteData(ptName,state);
         if(null == datas)
             return;
-        SocketConnect.getData(datas, Constants.CC_REMOTECONTROL, logger,false);
+        SocketConnect.getData(datas, Constants.CC_REMOTECONTROL, logger,false, companyId);
     }
 
     /***
@@ -50,4 +52,17 @@ public class RemoteDaoImpl implements RemoteDao {
             return null;
         }
     }
+    
+	@Override
+	public void remoteControl(List<String> ptNames, byte state, String companyId) {
+		for (String ptName : ptNames) {
+			byte[] datas = getRemoteData(ptName,state);
+	        if(null == datas)
+	        {
+	        	logger.error("遥控请求序列化失败");
+	        	return;
+	        }
+	        SocketConnect.getData(datas, Constants.CC_REMOTECONTROL, logger,false, companyId);
+		}
+	}
 }

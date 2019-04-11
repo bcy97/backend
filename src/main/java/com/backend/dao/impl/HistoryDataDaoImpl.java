@@ -31,32 +31,34 @@ public class HistoryDataDaoImpl implements HistoryDataDao {
     }
 
     @Override
-    public AnValue[] getAnHistoryData(String begTime, String endTime, Integer[] ids, int count) {
-        return parseHistoryAnData(getHistoryData(begTime, endTime, ids, Constants.CC_HDT_HOUS_DATA), count);
+    public AnValue[] getAnHistoryData(String begTime, String endTime, Integer[] ids, int count, String companyId) {
+        return parseHistoryAnData(getHistoryData(begTime, endTime, ids, Constants.CC_HDT_HOUS_DATA, companyId), count);
     }
 
     @Override
-    public AnValue[] getAn5MinHistoryData(String begTime, String endTime, Integer[] ids, int count) {
-        return parseHistoryAnData(getHistoryData(begTime, endTime, ids, Constants.CC_HDT_5MIN_DATA), count);
+    public AnValue[] getAn5MinHistoryData(String begTime, String endTime, Integer[] ids, int count, String companyId) {
+        return parseHistoryAnData(getHistoryData(begTime, endTime, ids, Constants.CC_HDT_5MIN_DATA, companyId), count);
     }
 
     @Override
-    public StValue[] getStHistoryData(String begTime, String endTime, Integer[] ids, int count) {
-        return parseHistoryStData(getHistoryData(begTime, endTime, ids, Constants.CC_HDT_HOUS_DATA), count);
+    public StValue[] getStHistoryData(String begTime, String endTime, Integer[] ids, int count, String companyId) {
+        return parseHistoryStData(getHistoryData(begTime, endTime, ids, Constants.CC_HDT_HOUS_DATA, companyId), count);
     }
 
     @Override
-    public AcValue[] getAcHistoryData(String begTime, String endTime, Integer[] ids, int count) {
-        return parseHistoryAcData(getHistoryData(begTime, endTime, ids, Constants.CC_HDT_HOUS_DATA), count);
+    public AcValue[] getAcHistoryData(String begTime, String endTime, Integer[] ids, int count, String companyId) {
+        return parseHistoryAcData(getHistoryData(begTime, endTime, ids, Constants.CC_HDT_HOUS_DATA, companyId), count);
     }
 
     /***
      * 获取历史数据
      * */
-    private ByteBuffer getHistoryData(String begTime, String endTime, Integer[] ids, byte type) {
+    private ByteBuffer getHistoryData(String begTime, String endTime, Integer[] ids, byte type, String companyId) {
         byte[] datas = new byte[ids.length * 4 + 2 * 8 + 1];
         ByteBuffer bb = ByteBuffer.allocate(datas.length);
         bb.order(ByteOrder.LITTLE_ENDIAN);
+
+
 
         bb.put(type);
 
@@ -82,7 +84,7 @@ public class HistoryDataDaoImpl implements HistoryDataDao {
 
         System.arraycopy(bb.array(), 0, datas, 0, datas.length);
 
-        return SocketConnect.getData(datas, Constants.CC_HISDATA, logger,true);
+        return SocketConnect.getData(datas, Constants.CC_HISDATA, logger,true, companyId);
     }
 
     private AnValue[] parseHistoryAnData(ByteBuffer bb, int count) {

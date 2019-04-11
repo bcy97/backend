@@ -5,11 +5,11 @@ import com.backend.vo.AnValue;
 import com.backend.vo.StValue;
 
 public interface RealDataDao {
-    Object[] getRealData(Integer[] ids);
+    Object[] getRealData(Integer[] ids, String companyId);
 
-    AnValue[] getAnRealData(Integer[] ids);
+    AnValue[] getAnRealData(Integer[] ids, String companyId);
 
-    StValue[] getStRealData(Integer[] ids);
+    StValue[] getStRealData(Integer[] ids, String companyId);
 
-    AcValue[] getAcRealData(Integer[] ids);
+    AcValue[] getAcRealData(Integer[] ids, String companyId);
 }

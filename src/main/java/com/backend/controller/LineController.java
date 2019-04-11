@@ -25,13 +25,13 @@ public class LineController {
     }
 
     @RequestMapping(value = "/getRealLineData", consumes = "application/json")
-    public Map<String, Float> getLineData(@RequestBody String[] pointName) {
-        return lineService.getRealLineData(pointName);
+    public Map<String, Float> getLineData(@RequestBody String[] pointName,@RequestBody String companyId) {
+        return lineService.getRealLineData(pointName, companyId);
     }
 
 
     @RequestMapping(value = "/getHistoryLineData", consumes = "application/json")
-    public Map<String, Float[]> getHistoryData(@RequestBody Map<String, String> data) {
+    public Map<String, Float[]> getHistoryData(@RequestBody Map<String, String> data,@RequestBody String companyId) {
 
         Gson gson = new Gson();
         String[] pointName = gson.fromJson(data.get("pointName"), new TypeToken<String[]>() {
@@ -42,7 +42,7 @@ public class LineController {
         try {
             Date stime = sdf.parse(data.get("time") + " 00:00");
             Date etime = sdf.parse(data.get("time") + " 23:59");
-            return lineService.getHistoryLineData(stime, etime, pointName);
+            return lineService.getHistoryLineData(stime, etime, pointName, companyId);
         } catch (ParseException ex) {
             ex.printStackTrace();
             return null;

@@ -6,7 +6,7 @@ import com.backend.vo.StStatisData;
 
 public interface StatisDataDao {
 
-    AcStatisData[] getAcStatisData(Integer[] ids, String begTime, String endTime);
+    AcStatisData[] getAcStatisData(Integer[] ids, String begTime, String endTime, String companyId);
 
-    AnStatisData[] getAnStaticData(Integer[] ids, String begTime, String endTime);
+    AnStatisData[] getAnStaticData(Integer[] ids, String begTime, String endTime, String companyId);
 }

@@ -7,11 +7,11 @@ import java.util.Date;
 import java.util.List;
 
 public interface CumulantStatisService {
-    List<String> getUnitList();
+    List<String> getUnitList(String companyId);
 
-    List<Cumulant> getDataByUnitName(String unitName);
+    List<Cumulant> getDataByUnitName(String unitName, String companyId);
 
-    List<Cumulant> getCumulantDataByUnitNameAndTime(Date stime, Date etime,String unitName);
+    List<Cumulant> getCumulantDataByUnitNameAndTime(Date stime, Date etime,String unitName, String companyId);
 
  //   AcStatisData[] getDataByUnitNameAndTime(Date stime, Date etime, String unitName);
 }

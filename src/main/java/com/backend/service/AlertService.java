@@ -11,5 +11,5 @@ public interface AlertService {
      *
      * @return 一个事件列表
      */
-    EventInfo[] getImportantAlert();
+    EventInfo[] getImportantAlert(String companyId);
 }

@@ -34,7 +34,7 @@ public class RemoteServiceImpl implements RemoteService {
                 continue;
             else
                 controlPtNames.add(ptName);
-            StO sto = cfgData.getStO(ptName);
+            StO sto = cfgData.getStO(ptName, companyId);
             // 通过点名找不到该点或该点的类型不是灯光，则不对该点进行遥控处理
             if(null == sto || Constants.LIGHT_TYPE != sto.getType())
                 continue;

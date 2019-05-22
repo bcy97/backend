@@ -41,7 +41,7 @@ public class LineServiceImpl implements LineService {
         Integer[] ids = new Integer[ptNames.length];
 
         for (int i = 0; i < ids.length; i++)
-            ids[i] = cfgData.getAnID(ptNames[i]);
+            ids[i] = cfgData.getAnID(ptNames[i], companyId);
 
         AnValue[] anValues = realDataDao.getAnRealData(ids, companyId);
 
@@ -62,7 +62,7 @@ public class LineServiceImpl implements LineService {
      */
     @Override
     public Map<String, Float[]> getHistoryLineData(Date stime, Date etime, String[] ptNames, String companyId) {
-        Integer[] ids = utils.anPtNamesToIds(ptNames);
+        Integer[] ids = utils.anPtNamesToIds(ptNames, companyId);
 
         Calendar begCal = Calendar.getInstance();
         begCal.setTime(stime);

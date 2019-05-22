@@ -28,23 +28,23 @@ public class PipeInfoController {
     }
 
     @RequestMapping(value = "/getPipeInfo", consumes = "application/json")
-    public PipeInfo getPipeInfo(@RequestBody Map<String,Object> map,@RequestBody String companyId) throws Exception{
+    public PipeInfo getPipeInfo(@RequestBody Map<String,Object> map) throws Exception{
     	byte pipeType = Constants.PIPE_STRONGCABLE;
     	String ename = null;
     	if(map.containsKey("pipeType")) {
     		pipeType = Byte.parseByte(map.get("pipeType").toString());
     	}
     	ename = map.get("ename").toString();
-    	ename = cfgData.getRealName(ename);
+    	ename = cfgData.getRealName(ename, map.get("companyId").toString());
     	
     	System.out.println("pipeType:" + pipeType + ",ename:" + ename);
     	
-    	return pipeInfoService.getPipeInfo(pipeType, ename, companyId);
+    	return pipeInfoService.getPipeInfo(pipeType, ename, map.get("companyId").toString());
     }
     
     @SuppressWarnings("unchecked")
     @RequestMapping(value = "/getPipeInfos", consumes = "application/json")
-	public List<PipeInfo> getPipeInfos(@RequestBody Map<String, Object> map,@RequestBody String companyId) throws Exception{
+	public List<PipeInfo> getPipeInfos(@RequestBody Map<String, Object> map) throws Exception{
     	byte pipeType = Constants.PIPE_STRONGCABLE;
     	List<String> enames = null;
     	
@@ -58,11 +58,11 @@ public class PipeInfoController {
     	
     	System.out.println("pipeType:" + pipeType + ",enames:" + enames);
     	
-    	return pipeInfoService.getPipeInfos(pipeType, enames, companyId);
+    	return pipeInfoService.getPipeInfos(pipeType, enames, map.get("companyId").toString());
     }
     
     @RequestMapping(value="/getPipeMaintRecord",consumes="application/json")
-    public List<PipeMaintRecord> getPipeMaintRecords(@RequestBody Map<String, Object> map,@RequestBody String companyId) throws Exception{
+    public List<PipeMaintRecord> getPipeMaintRecords(@RequestBody Map<String, Object> map) throws Exception{
     	byte pipeType = Constants.PIPE_STRONGCABLE;
     	String pipeId = null;
     	if(map.containsKey("pipeType")) {
@@ -72,6 +72,6 @@ public class PipeInfoController {
     	
     	System.out.println("pipeType:" + pipeType + ",pipeId:" + pipeId);
     	
-    	return pipeInfoService.getPipeMaintRecords(pipeType, pipeId, companyId);
+    	return pipeInfoService.getPipeMaintRecords(pipeType, pipeId, map.get("companyId").toString());
     }
 }

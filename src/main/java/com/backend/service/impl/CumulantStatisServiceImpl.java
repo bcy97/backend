@@ -36,7 +36,7 @@ public class CumulantStatisServiceImpl implements CumulantStatisService {
     public List<String> getUnitList(String companyId) {
 
         List<String> unitNameList = new ArrayList<>();
-        for (UnitInfo ui : cfgData.getAllUnitInfo())
+        for (UnitInfo ui : cfgData.getAllUnitInfo(companyId))
             unitNameList.add(ui.getName());
 
         return unitNameList;
@@ -45,7 +45,7 @@ public class CumulantStatisServiceImpl implements CumulantStatisService {
     @Override
     public List<Cumulant> getDataByUnitName(String unitName, String companyId) {
         int index = -1;
-        Integer[] ids = utils.getAcIdsByUnitName(unitName);
+        Integer[] ids = utils.getAcIdsByUnitName(unitName, companyId);
 
         Calendar currTime = Calendar.getInstance();
         Calendar begTime = Calendar.getInstance();
@@ -77,7 +77,7 @@ public class CumulantStatisServiceImpl implements CumulantStatisService {
         for (int i = 0; i < ids.length; i++) {
             Cumulant cumulant = new Cumulant();
             cumulant.setId(ids[i]);
-            cumulant.setName(cfgData.getAcO(ids[i]).getCname());
+            cumulant.setName(cfgData.getAcO(ids[i], companyId).getCname());
 
             if(-1 == (index = findAcStatisDataById(ids[i],todayStatisDatas)))
                 cumulant.setToday(-1);
@@ -135,7 +135,7 @@ public class CumulantStatisServiceImpl implements CumulantStatisService {
     }
 
     private AcStatisData[] getDataByUnitNameAndTime(Date stime, Date etime, String unitName, String companyId) {
-        Integer[] ids = utils.getAcIdsByUnitName(unitName);
+        Integer[] ids = utils.getAcIdsByUnitName(unitName, companyId);
         return statisDataDao.getAcStatisData(ids, utils._DATE_FORMAT_.format(stime), utils._DATE_FORMAT_.format(etime), companyId);
     }
 

@@ -25,7 +25,10 @@ public class RemoteController {
      *
      * */
     @RequestMapping(value = "/remoteControl", consumes = "application/json")
-    public void remoteControl(@RequestBody Map<String, String> data,@RequestBody String companyId){
+    public void remoteControl(@RequestBody Map<String, String> data){
+
+        String companyId = data.get("companyId");
+
         System.out.println("remote");
 
         Gson gson = new Gson();

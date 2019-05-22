@@ -78,38 +78,38 @@ public class Utils {
         return idByteArr;
     }
 
-    public Integer[] anPtNamesToIds(String[] ptNames) {
+    public Integer[] anPtNamesToIds(String[] ptNames, String companyId) {
         Integer[] ids = new Integer[ptNames.length];
         for (int i = 0; i < ptNames.length; i++)
-            ids[i] = cfgData.getAnID(ptNames[i]);
+            ids[i] = cfgData.getAnID(ptNames[i], companyId);
         return ids;
     }
 
-    public Integer[] acPtNamesToIds(String[] ptNames) {
+    public Integer[] acPtNamesToIds(String[] ptNames, String companyId) {
         Integer[] ids = new Integer[ptNames.length];
         for (int i = 0; i < ptNames.length; i++)
-            ids[i] = cfgData.getAcID(ptNames[i]);
+            ids[i] = cfgData.getAcID(ptNames[i], companyId);
         return ids;
     }
 
-    public Integer[] stPtNamesToIds(String[] ptNames) {
+    public Integer[] stPtNamesToIds(String[] ptNames, String companyId) {
         Integer[] ids = new Integer[ptNames.length];
         for (int i = 0; i < ptNames.length; i++)
-            ids[i] = cfgData.getStID(ptNames[i]);
+            ids[i] = cfgData.getStID(ptNames[i], companyId);
         return ids;
     }
 
     /***
      * 通过单元名获取该单元所有的遥测id
      * */
-    public Integer[] getAnIdsByUnitName(String unitName) {
+    public Integer[] getAnIdsByUnitName(String unitName, String companyId) {
         Integer[] ids = new Integer[0];
 
 
-        List<UnitInfo> unitList = cfgData.getAllUnitInfo();
+        List<UnitInfo> unitList = cfgData.getAllUnitInfo(companyId);
         for (UnitInfo ui : unitList) {
             if (ui.getName().equals(unitName)) {
-                List<AnO> anoList = cfgData.getAnOByUnitNo(ui.getUnitNo());
+                List<AnO> anoList = cfgData.getAnOByUnitNo(ui.getUnitNo(), companyId);
                 ids = new Integer[anoList.size()];
                 for (int i = 0; i < ids.length; i++)
                     ids[i] = anoList.get(i).getId();
@@ -122,14 +122,14 @@ public class Utils {
     /***
      * 通过单元名获取该单元所有的遥信id
      * */
-    public Integer[] getStIdsByUnitName(String unitName) {
+    public Integer[] getStIdsByUnitName(String unitName, String companyId) {
         Integer[] ids = new Integer[0];
 
 
-        List<UnitInfo> unitList = cfgData.getAllUnitInfo();
+        List<UnitInfo> unitList = cfgData.getAllUnitInfo(companyId);
         for (UnitInfo ui : unitList) {
             if (ui.getName().equals(unitName)) {
-                List<StO> stoList = cfgData.getStOByUnitNo(ui.getUnitNo());
+                List<StO> stoList = cfgData.getStOByUnitNo(ui.getUnitNo(), companyId);
                 ids = new Integer[stoList.size()];
                 for (int i = 0; i < ids.length; i++)
                     ids[i] = stoList.get(i).getId();
@@ -142,14 +142,14 @@ public class Utils {
     /***
      * 通过单元名获取该单元所有的电度id
      * */
-    public Integer[] getAcIdsByUnitName(String unitName) {
+    public Integer[] getAcIdsByUnitName(String unitName, String companyId) {
         Integer[] ids = new Integer[0];
 
 
-        List<UnitInfo> unitList = cfgData.getAllUnitInfo();
+        List<UnitInfo> unitList = cfgData.getAllUnitInfo(companyId);
         for (UnitInfo ui : unitList) {
             if (ui.getName().equals(unitName)) {
-                List<AcO> acoList = cfgData.getAcOByUnitNo(ui.getUnitNo());
+                List<AcO> acoList = cfgData.getAcOByUnitNo(ui.getUnitNo(), companyId);
                 ids = new Integer[acoList.size()];
                 for (int i = 0; i < ids.length; i++)
                     ids[i] = acoList.get(i).getId();

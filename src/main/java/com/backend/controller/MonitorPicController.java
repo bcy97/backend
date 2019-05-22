@@ -33,14 +33,17 @@ public class MonitorPicController {
     }
 
     @RequestMapping(value = "/getAnData", consumes = "application/json")
-    public Map<String, AnValue> getAnData(@RequestBody String[] ids,@RequestBody String companyId) {
+    public Map<String, AnValue> getAnData(@RequestBody Map<String, Object> map) {
+
+        String[] ids = (String[]) map.get("ids");
+        String companyId = map.get("companyId").toString();
 
         System.out.println("An--------------------------------------");
         Map<String, AnValue> result = new HashMap<>();
 
         Integer[] id = new Integer[ids.length];
         for (int i = 0; i < ids.length; i++) {
-            id[i] = cfgData.getAnID(ids[i]);
+            id[i] = cfgData.getAnID(ids[i], companyId);
         }
 
         Object[] data = monitorPicService.getRealData(id, companyId);
@@ -62,14 +65,17 @@ public class MonitorPicController {
      * @return Map<String, StValue>为遥信量id，value为遥信值
      */
     @RequestMapping(value = "/getStData", consumes = "application/json")
-    public Map<String, StValue> getStData(@RequestBody String[] ids,@RequestBody String companyId) {
+    public Map<String, StValue> getStData(@RequestBody Map<String, Object> map) {
+
+        String[] ids = (String[]) map.get("ids");
+        String companyId = map.get("companyId").toString();
 
         System.out.println("St--------------------------------------");
         Map<String, StValue> result = new HashMap<>();
 
         Integer[] id = new Integer[ids.length];
         for (int i = 0; i < ids.length; i++) {
-            id[i] = cfgData.getStID(ids[i]);
+            id[i] = cfgData.getStID(ids[i], companyId);
         }
 
         Object[] data = monitorPicService.getRealData(id, companyId);
@@ -94,14 +100,17 @@ public class MonitorPicController {
      * @return Map<String, StValue>为电度量id，value为电度值
      */
     @RequestMapping(value = "/getAcData", consumes = "application/json")
-    public Map<String, AcValue> getAcData(@RequestBody String[] ids,@RequestBody String companyId) {
+    public Map<String, AcValue> getAcData(@RequestBody Map<String, Object> map) {
+
+        String[] ids = (String[]) map.get("ids");
+        String companyId = map.get("companyId").toString();
 
         System.out.println("Ac--------------------------------------");
         Map<String, AcValue> result = new HashMap<>();
 
         Integer[] id = new Integer[ids.length];
         for (int i = 0; i < ids.length; i++) {
-            id[i] = cfgData.getAcID(ids[i]);
+            id[i] = cfgData.getAcID(ids[i], companyId);
         }
 
         Object[] data = monitorPicService.getRealData(id, companyId);

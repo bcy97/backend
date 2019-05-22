@@ -15,8 +15,8 @@ public class CfgDataTest {
 
     @Test
     public void testGetId() {
-        int id = cfgData.getAnID("NPTUa1");
-        System.out.println(id);
+    //    int id = cfgData.getAnID("NPTUa1");
+     //   System.out.println(id);
     }
 
     @Test

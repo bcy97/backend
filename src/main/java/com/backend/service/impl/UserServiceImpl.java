@@ -28,7 +28,7 @@ public class UserServiceImpl implements UserService {
         String temp = "count:";
         temp = null == userInfos ? "null" : Integer.toString(userInfos.length);
         System.out.println(temp);
-        
+
         for (int i = 0; i < userInfos.length; i++) {
             if (userInfos[i].getName().equals(username) && userInfos[i].getPwd().equals(password)) {
                 return true;

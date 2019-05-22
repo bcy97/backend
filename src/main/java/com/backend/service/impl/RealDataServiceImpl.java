@@ -34,11 +34,11 @@ public class RealDataServiceImpl implements RealDataService {
     @Override
     public Map<String, AnValue> getRealData(String unitName, String companyId) {
 
-        List<UnitInfo> list = cfgData.getAllUnitInfo();
+        List<UnitInfo> list = cfgData.getAllUnitInfo(companyId);
         Integer[] ids = new Integer[0];
         for (UnitInfo ui : list) {
             if (unitName.equals(ui.getName())) {
-                List<AnO> anoList = cfgData.getAnOByUnitNo(ui.getUnitNo());
+                List<AnO> anoList = cfgData.getAnOByUnitNo(ui.getUnitNo(), companyId);
                 ids = new Integer[anoList.size()];
                 for (int i = 0; i < ids.length; i++)
                     ids[i] = anoList.get(i).getId();
@@ -53,12 +53,12 @@ public class RealDataServiceImpl implements RealDataService {
         for (int i = 0; i < ids.length; i++) {
             //valid 不为0，要对该值进行上下限判断,为越上限设valid为2,越下限设valid为3
             if(0 != anValues[i].getValid()){
-                if(anValues[i].getValue() > cfgData.getAnO(ids[i]).getUpV())
+                if(anValues[i].getValue() > cfgData.getAnO(ids[i], companyId).getUpV())
                     anValues[i].setValid((byte)2);
-                else if(anValues[i].getValue() < cfgData.getAnO(ids[i]).getDwV())
+                else if(anValues[i].getValue() < cfgData.getAnO(ids[i], companyId).getDwV())
                     anValues[i].setValid((byte)3);
             }
-            map.put(cfgData.getAnO(ids[i]).getSname(), anValues[i]);
+            map.put(cfgData.getAnO(ids[i], companyId).getSname(), anValues[i]);
         }
         System.out.println("返回数据");
         return map;
@@ -79,9 +79,9 @@ public class RealDataServiceImpl implements RealDataService {
 				continue;
 			}
 			
-			if(null == (ano = cfgData.getAnO(ename))) {
-				if(null == (aco = cfgData.getAcO(ename))) {
-					if(null == (sto = cfgData.getStO(ename))) {
+			if(null == (ano = cfgData.getAnO(ename, companyId))) {
+				if(null == (aco = cfgData.getAcO(ename, companyId))) {
+					if(null == (sto = cfgData.getStO(ename, companyId))) {
 						ids[i] = 0xFFFFFF;
 						continue;
 					}

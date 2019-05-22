@@ -18,6 +18,7 @@ public class FileController {
     @Autowired
     private MD5 mdUtil;
 
+
     String rootPath = System.getProperty("user.dir");
 
     @RequestMapping("/compare")
@@ -38,7 +39,7 @@ public class FileController {
     }
 
     @RequestMapping("/getIconLibrary")
-    public Map<String, List<String>> getIconLibrary(Map<String,String> data) {
+    public Map<String, List<String>> getIconLibrary(@RequestBody Map<String,String> data) {
         File publicLibrary = new File(rootPath + "/iconlibrary/public");
         File userLibrary = new File(rootPath + "/iconlibrary/" + data.get("companyId"));
 

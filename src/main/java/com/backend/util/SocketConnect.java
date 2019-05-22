@@ -150,8 +150,8 @@ public class SocketConnect {
             byte[] bDatas = null;
 
             // 要先发一个包，告诉上位机通道类型
-            bDatas = generateChannelDeclarationPackage(companyId).serialize();
-            os.write(bDatas, 0, bDatas.length);
+//            bDatas = generateChannelDeclarationPackage(companyId).serialize();
+//            os.write(bDatas, 0, bDatas.length);
 
             List<DataPacket> dps = toDataPackets(sendDatas, cmd);
             for (DataPacket dp : dps) {
@@ -164,6 +164,7 @@ public class SocketConnect {
                 bb = receiveData(is, logger);
             is.close();
             os.close();
+            socket.close();
 
             return bb;
         } catch (Exception e) {

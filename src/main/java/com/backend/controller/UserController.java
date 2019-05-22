@@ -23,8 +23,18 @@ public class UserController {
     @RequestMapping("/login")
     public boolean login(@RequestBody Map<String, String> map) {
 
-        return userService.login(map.get("username"), map.get("password"), map.get("companyId"));
+//        while(true) {
+//            if (!userService.login(map.get("username"), map.get("password"), map.get("companyId")))
+//                break;
+//            try {
+//                Thread.sleep(1500);
+//            } catch (Exception ex) {
+//            }
+//        }
+//
+//        return false;
 
+        return userService.login(map.get("username"), map.get("password"), map.get("companyId"));
     }
 
 

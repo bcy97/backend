@@ -35,7 +35,7 @@ public class RealDataDaoImpl implements RealDataDao {
      * */
     @Override
     public Object[] getRealData(Integer[] ids, String companyId) {
-        return parseRealData(SocketConnect.getData(utils.idArrToBytes(ids), Constants.CC_REALDATA, logger,true, companyId));
+        return parseRealData(SocketConnect.getData(utils.idArrToBytes(ids), Constants.CC_REALDATA, logger,true, companyId), companyId);
     }
 
     /***
@@ -92,7 +92,7 @@ public class RealDataDaoImpl implements RealDataDao {
     /***
      * 解析实时数据
      * */
-    private Object[] parseRealData(ByteBuffer bb) {
+    private Object[] parseRealData(ByteBuffer bb, String companyId) {
         List<Object> list = new ArrayList<Object>();
         int size = bb.position();
         bb.flip();
@@ -112,7 +112,7 @@ public class RealDataDaoImpl implements RealDataDao {
                 list.add(getNullData(id));
                 continue;
             }
-            list.add(parseValue(bb, id, valid));
+            list.add(parseValue(bb, id, valid, companyId));
         }
         return list.toArray();
     }
@@ -120,14 +120,14 @@ public class RealDataDaoImpl implements RealDataDao {
     /***
      * 解析某个id的值
      * */
-    private Object parseValue(ByteBuffer bb, int id, byte valid) {
+    private Object parseValue(ByteBuffer bb, int id, byte valid, String companyId) {
         try {
             switch (utils.getTypeInId(id)) {
                 case Constants.IDACC:
                     AcValue acV = new AcValue();
-                    if (null != cfgData.getAcO(id)) {
+                    if (null != cfgData.getAcO(id, companyId)) {
                         acV.setValue(bb.getLong()
-                                * cfgData.getAcO(id).getFi());
+                                * cfgData.getAcO(id, companyId).getFi());
                         acV.sethValue(bb.getFloat());
                     } else {
                         acV.setValue(bb.getLong());

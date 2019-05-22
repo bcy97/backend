@@ -50,6 +50,9 @@ public class UserDaoImpl implements UserDao {
         List<UserInfo> list = new ArrayList<>();
         bb.flip();
 
+        if(0 == size)
+            System.out.println("size is zero!");
+
         while (size > 0) {
 //            strLength = bb.get();
 //            size--;

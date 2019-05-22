@@ -10,6 +10,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Map;
 
+
+/**
+ * 应该是废弃了
+ * */
 @RestController
 @RequestMapping("/pipeMaintRecord")
 public class PipeMaintRecordController {
@@ -22,13 +26,13 @@ public class PipeMaintRecordController {
     }
 
     @RequestMapping(value = "/getPipeMaintRecord", consumes = "application/json")
-    public PipeMaintRecord[] getPipeMaintRecord(@RequestBody Map<String,String> data,@RequestBody String companyId){
+    public PipeMaintRecord[] getPipeMaintRecord(@RequestBody Map<String,String> data){
         if(null != data && data.containsKey("id"))
-            return pipeMaintRecordService.getPipeMaintRecordsById(data.get("id"), companyId);
+            return pipeMaintRecordService.getPipeMaintRecordsById(data.get("id"), data.get("companyId"));
         else if(null != data && data.containsKey("pipeId"))
-            return pipeMaintRecordService.getPipeMaintRecordsByPipeId(data.get("pipeId"), companyId);
+            return pipeMaintRecordService.getPipeMaintRecordsByPipeId(data.get("pipeId"), data.get("companyId"));
         else
-            return pipeMaintRecordService.getAllPipeMaintRecord(companyId);
+            return pipeMaintRecordService.getAllPipeMaintRecord(data.get("companyId"));
     }
 
 }

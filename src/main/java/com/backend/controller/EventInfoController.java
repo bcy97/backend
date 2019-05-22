@@ -27,7 +27,7 @@ public class EventInfoController {
     }
 
     @RequestMapping(value = "/getInfo", consumes = "application/json")
-    public EventInfo[] getEventByTimeAndUnitNames(@RequestBody Map<String, String> data,@RequestBody String companyId) {
+    public EventInfo[] getEventByTimeAndUnitNames(@RequestBody Map<String, String> data) {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm");
 
         Gson gson = new Gson();
@@ -37,7 +37,7 @@ public class EventInfoController {
 
         try {
             // type 0:遥信    1:遥测
-            return eventInfoService.getEventByTimeAndUnitNames(sdf.parse(data.get("stime")), sdf.parse(data.get("etime")), unitnames, new Integer(data.get("type")), companyId);
+            return eventInfoService.getEventByTimeAndUnitNames(sdf.parse(data.get("stime")), sdf.parse(data.get("etime")), unitnames, new Integer(data.get("type")), data.get("companyId"));
         } catch (ParseException e) {
             e.printStackTrace();
         }
@@ -45,7 +45,10 @@ public class EventInfoController {
     }
 
     @RequestMapping(value="/getStEventInfo",consumes="application/json")
-    public EventInfo[] getStEventInfoByEname(@RequestBody Map<String, Object> map,@RequestBody String companyId){
+    public EventInfo[] getStEventInfoByEname(@RequestBody Map<String, Object> map){
+
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+
     	Calendar calNow = Calendar.getInstance();
     	Calendar calBef = Calendar.getInstance();
     	calBef.add(Calendar.MONTH, -3);
@@ -53,14 +56,21 @@ public class EventInfoController {
     	Date endTime = calNow.getTime();
     	
     	String ename = map.get("ename").toString();
-    	if(map.containsKey("begTime")) {
-    		begTime = (Date)map.get("begTime");
-    	}
-    	if(map.containsKey("endTime")) {
-    		endTime = (Date)map.get("endTime");
-    	}
+
+    	try {
+            if(map.containsKey("begTime")) {
+                //begTime = (Date)map.get("begTime");
+                begTime = format.parse(map.get("begTime").toString());
+            }
+            if(map.containsKey("endTime")) {
+                //endTime = (Date)map.get("endTime");
+                endTime = format.parse(map.get("endTime").toString());
+            }
+        } catch (ParseException e) {
+    	    e.printStackTrace();
+        }
     	
     	System.out.println("ename:" + ename);
-    	return eventInfoService.getStEventByEname(begTime, endTime, ename, companyId);
+    	return eventInfoService.getStEventByEname(begTime, endTime, ename, map.get("companyId").toString());
     }
 }

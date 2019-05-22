@@ -41,7 +41,7 @@ public class EventInfoDaoImpl implements EventInfoDao {
      * @param type 事件类别,0x10->EPD(AnEPD And StEPD) 0x11->AnEPD 0x12->StEPD 0x13->ProtectEPD 0x20->SOE
      * */
     public EventInfo[] getEventInfoByTimeAndId(Integer[] ids, String begTime, String endTime, byte type, String companyId) {
-        return parseEventInfo(getEventInfo(ids, begTime, endTime, type, companyId));
+        return parseEventInfo(getEventInfo(ids, begTime, endTime, type, companyId), companyId);
     }
 
     /***
@@ -57,7 +57,7 @@ public class EventInfoDaoImpl implements EventInfoDao {
 
 
 
-        EventInfo[] infos = parseEventInfo(getEventInfo(cfgData.getAllStId(), utils._DATE_FORMAT_.format(begTime.getTime()), utils._DATE_FORMAT_.format(endTime.getTime()), Constants.CC_EDT_EPD, companyId));
+        EventInfo[] infos = parseEventInfo(getEventInfo(cfgData.getAllStId(), utils._DATE_FORMAT_.format(begTime.getTime()), utils._DATE_FORMAT_.format(endTime.getTime()), Constants.CC_EDT_EPD, companyId), companyId);
 
         if (infos.length <= 20)
             return infos;
@@ -112,7 +112,7 @@ public class EventInfoDaoImpl implements EventInfoDao {
     /****
      * 解析事件信息
      * */
-    private EventInfo[] parseEventInfo(ByteBuffer bb) {
+    private EventInfo[] parseEventInfo(ByteBuffer bb, String companyId) {
         if(null == bb || 0 == bb.position() )
             return new EventInfo[0];
         SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
@@ -166,7 +166,7 @@ public class EventInfoDaoImpl implements EventInfoDao {
                 EventInfo ei = new EventInfo(id, format.format(cal.getTime()), info);
 
                 if (length > 0)
-                    ei.setEventLogs(toEventLogList(length,bData,id));
+                    ei.setEventLogs(toEventLogList(length,bData,id, companyId));
                 list.add(ei);
             }
         }catch(Exception e){
@@ -181,7 +181,7 @@ public class EventInfoDaoImpl implements EventInfoDao {
     /***
      * 把事件报文转为事件信息
      * */
-    public List<EventLog> toEventLogList(int eventLogLength,byte[] eventLog,int id) {
+    public List<EventLog> toEventLogList(int eventLogLength,byte[] eventLog,int id, String companyId) {
         List<EventLog> elList = new ArrayList<EventLog>();
         try {
             int position = 8;
@@ -215,7 +215,7 @@ public class EventInfoDaoImpl implements EventInfoDao {
             bb.order(ByteOrder.LITTLE_ENDIAN);
             stData = bb.getInt();
 
-            StO sto = cfgData.getStO(id);
+            StO sto = cfgData.getStO(id, companyId);
 
             List<AnO> anList = null;
             if (null != sto)

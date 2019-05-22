@@ -26,7 +26,10 @@ public class RealDataController {
     }
 
     @RequestMapping(value = "/getRealData", consumes = "application/json")
-    public Map<String, AnValue> getRealData(@RequestBody String unitName,@RequestBody String companyId) {
+    public Map<String, AnValue> getRealData(@RequestBody Map<String, String> map) {
+
+    	String unitName = map.get("unitName");
+    	String companyId = map.get("companyId");
 
         System.out.println(unitName);
 
@@ -36,8 +39,11 @@ public class RealDataController {
     
     SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss sss");
     @RequestMapping(value="/getRealDataByEnameList",method=RequestMethod.POST,consumes = "application/json")
-    public Map<String,Object[]> getRealDataByEnameList(@RequestBody Map<String, String[]> map,@RequestBody String companyId){
-    	String[] enames = map.get("ename[]");
+    public Map<String,Object[]> getRealDataByEnameList(@RequestBody Map<String, Object> map){
+
+    	String companyId = map.get("companyId").toString();
+
+    	String[] enames = (String[]) map.get("ename[]");
     	if(enames == null) {
     		System.out.println("enames is null");
     	}else {

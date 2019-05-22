@@ -42,12 +42,12 @@ public class EventInfoServiceImpl implements EventInfoService {
         int id = -1;
         byte type = -1;
 
-        AnO ano = cfgData.getAnO(pointName);
+        AnO ano = cfgData.getAnO(pointName, companyId);
         if (null != ano) {
             id = ano.getId();
             type = Constants.CC_EDT_ANEPD;
         } else {
-            StO sto = cfgData.getStO(pointName);
+            StO sto = cfgData.getStO(pointName, companyId);
             if (null != sto) {
                 id = sto.getId();
                 type = Constants.CC_EDT_STEPD;
@@ -67,10 +67,10 @@ public class EventInfoServiceImpl implements EventInfoService {
 
         for (String unitName : unitnames) {
             if (1 == type) {
-                ids.addAll(Arrays.asList(utils.getAnIdsByUnitName(unitName)));
+                ids.addAll(Arrays.asList(utils.getAnIdsByUnitName(unitName, companyId)));
                 dataType = Constants.CC_EDT_ANEPD;
             } else {
-                ids.addAll(Arrays.asList(utils.getStIdsByUnitName(unitName)));
+                ids.addAll(Arrays.asList(utils.getStIdsByUnitName(unitName, companyId)));
                 dataType = Constants.CC_EDT_STEPD;
             }
         }
@@ -80,7 +80,7 @@ public class EventInfoServiceImpl implements EventInfoService {
 
 	@Override
 	public EventInfo[] getStEventByEname(Date begTime, Date endTime, String ename, String companyId) {
-		StO sto = cfgData.getStO(ename);
+		StO sto = cfgData.getStO(ename, companyId);
 		if(sto != null) {
 			return eventInfoDao.getEventInfoByTimeAndId(new Integer[]{sto.getId()}, utils._DATE_FORMAT_.format(begTime), utils._DATE_FORMAT_.format(endTime), Constants.CC_EDT_STEPD, companyId);
 		}

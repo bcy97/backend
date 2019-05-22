@@ -47,7 +47,7 @@ public class HistoryDataDaoImpl implements HistoryDataDao {
 
     @Override
     public AcValue[] getAcHistoryData(String begTime, String endTime, Integer[] ids, int count, String companyId) {
-        return parseHistoryAcData(getHistoryData(begTime, endTime, ids, Constants.CC_HDT_HOUS_DATA, companyId), count);
+        return parseHistoryAcData(getHistoryData(begTime, endTime, ids, Constants.CC_HDT_HOUS_DATA, companyId), count, companyId);
     }
 
     /***
@@ -150,7 +150,7 @@ public class HistoryDataDaoImpl implements HistoryDataDao {
         return list.toArray(new StValue[list.size()]);
     }
 
-    private AcValue[] parseHistoryAcData(ByteBuffer bb, int count) {
+    private AcValue[] parseHistoryAcData(ByteBuffer bb, int count, String companyId) {
         List<AcValue> list = new ArrayList<AcValue>();
         int id = Constants.CC_NOTHINGNESS;
         byte valid = Constants.CC_IS_NULL;
@@ -173,8 +173,8 @@ public class HistoryDataDaoImpl implements HistoryDataDao {
                     continue;
                 }
                 double data = 0;
-                if (null != new CfgData().getAcO(id))
-                    data = bb.getLong() * new CfgData().getAcO(id).getFi();
+                if (null != new CfgData().getAcO(id, companyId))
+                    data = bb.getLong() * new CfgData().getAcO(id, companyId).getFi();
                 else
                     data = bb.getLong();
 

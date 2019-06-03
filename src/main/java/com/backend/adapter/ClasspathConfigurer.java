@@ -12,7 +12,7 @@ public class ClasspathConfigurer implements WebMvcConfigurer {
         registry.addResourceHandler("/baseConfigs/**").addResourceLocations("file:" + rootPath + "/baseConfigs/");
         registry.addResourceHandler("/pictures/**").addResourceLocations("file:" + rootPath + "/pictures/");
         registry.addResourceHandler("/unitConfigs/**").addResourceLocations("file:" + rootPath + "/unitConfigs/");
-        registry.addResourceHandler("/iconlibrary/public/**").addResourceLocations("file:" + rootPath + "/iconlibrary/public/");
-        registry.addResourceHandler("/iconlibrary/user/**").addResourceLocations("file:" + rootPath + "/iconlibrary/user/");
+//        registry.addResourceHandler("/iconlibrary/public/**").addResourceLocations("file:" + rootPath + "/iconlibrary/public/");
+        registry.addResourceHandler("/iconlibrary/**").addResourceLocations("file:" + rootPath + "/iconlibrary/");
     }
 }

@@ -12,16 +12,10 @@ import org.dom4j.io.SAXReader;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
-import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Component;
 import org.springframework.util.ResourceUtils;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.regex.Pattern;
@@ -248,7 +242,7 @@ public class CfgData implements ApplicationRunner {
 
         //取得文件的根目录
         String rootPath = System.getProperty("user.dir");
-        file = new File(rootPath + "\\local.xml");
+        file = new File(rootPath + "/local.xml");
         if (file != null && !file.exists()) {
             System.out.println(file + " file not found!");
         }

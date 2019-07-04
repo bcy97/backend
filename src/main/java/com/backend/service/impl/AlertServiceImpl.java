@@ -38,7 +38,7 @@ public class AlertServiceImpl implements AlertService {
 
         Calendar endTime = Calendar.getInstance();
 
-        EventInfo[] infos = eventInfoDao.getEventInfoByTimeAndId(cfgData.getAllStId(), utils._DATE_FORMAT_.format(begTime.getTime()),
+        EventInfo[] infos = eventInfoDao.getEventInfoByTimeAndId(cfgData.getAllStId(companyId), utils._DATE_FORMAT_.format(begTime.getTime()),
                 utils._DATE_FORMAT_.format(endTime.getTime()), Constants.CC_EDT_STEPD, companyId);
 
         if (infos.length <= 20)

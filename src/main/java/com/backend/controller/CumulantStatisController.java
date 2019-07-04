@@ -30,6 +30,13 @@ public class CumulantStatisController {
 
     @RequestMapping(value = "/getDataByUnitName", consumes = "application/json")
     public List<Cumulant> getDataByUnitName(@RequestBody Map<String,String> map) {
+
+        /**
+         * 请求参数类型
+         * unitName : 中心电站
+         * companyId : demo
+         * */
+
         System.out.println(map.get("unitName"));
         return cumulantStatisService.getDataByUnitName(map.get("unitName"), map.get("companyId"));
     }
@@ -37,10 +44,18 @@ public class CumulantStatisController {
     @RequestMapping(value = "/getDataByUnitNameAndTime", consumes = "application/json")
     public List<Cumulant> getDataByUnitNameAndTime(@RequestBody Map<String, String> data) {
 
+        /**
+         * 请求参数类型
+         * companyId : demo
+         * unitname : 中心电站
+         * stime : 2017-7-2 00:01
+         * etime : 2017-7-2 23:59
+         * */
+
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm");
 
         try {
-            return cumulantStatisService.getCumulantDataByUnitNameAndTime(sdf.parse(data.get("stime")), sdf.parse(data.get("etime")), data.get("unitname"),data.get("companyId"));
+            return cumulantStatisService.getCumulantDataByUnitNameAndTime(sdf.parse(data.get("sTime")), sdf.parse(data.get("eTime")), data.get("unitName"),data.get("companyId"));
         } catch (ParseException e) {
             e.printStackTrace();
         }

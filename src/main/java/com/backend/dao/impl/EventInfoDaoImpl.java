@@ -10,6 +10,7 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import javax.annotation.PostConstruct;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.text.SimpleDateFormat;
@@ -26,12 +27,16 @@ public class EventInfoDaoImpl implements EventInfoDao {
     private CfgData cfgData;
     private Evfault evfault;
 
+
     @Autowired
     public EventInfoDaoImpl(Utils utils,CfgData cfgData,Evfault evfault) {
         this.utils = utils;
         this.cfgData = cfgData;
         this.evfault = evfault;
     }
+
+
+
 
     /***
      * 获取事件信息
@@ -57,7 +62,8 @@ public class EventInfoDaoImpl implements EventInfoDao {
 
 
 
-        EventInfo[] infos = parseEventInfo(getEventInfo(cfgData.getAllStId(), utils._DATE_FORMAT_.format(begTime.getTime()), utils._DATE_FORMAT_.format(endTime.getTime()), Constants.CC_EDT_EPD, companyId), companyId);
+        EventInfo[] infos = parseEventInfo(getEventInfo(cfgData.getAllStId(companyId), utils._DATE_FORMAT_.format(begTime.getTime()),
+                utils._DATE_FORMAT_.format(endTime.getTime()), Constants.CC_EDT_EPD, companyId), companyId);
 
         if (infos.length <= 20)
             return infos;
@@ -184,7 +190,7 @@ public class EventInfoDaoImpl implements EventInfoDao {
     public List<EventLog> toEventLogList(int eventLogLength,byte[] eventLog,int id, String companyId) {
         List<EventLog> elList = new ArrayList<EventLog>();
         try {
-            int position = 8;
+            int position = 13;
             if (eventLogLength < position + 1)
                 return null;
             byte anNum = eventLog[position];
@@ -219,7 +225,7 @@ public class EventInfoDaoImpl implements EventInfoDao {
 
             List<AnO> anList = null;
             if (null != sto)
-                anList = evfault.getAnTemp(sto.getSname());
+                anList = evfault.getAnTemp(sto.getSname(), companyId);
             for (int i = 0; i < anNum; i++) {
                 int point = -1;
                 String name = "an" + i;
@@ -242,7 +248,7 @@ public class EventInfoDaoImpl implements EventInfoDao {
 
             List<StO> stList = null;
             if (null != sto)
-                stList = evfault.getStTemp(sto.getSname());
+                stList = evfault.getStTemp(sto.getSname(), companyId);
             for (int i = 0; i < stNum; i++) {
                 String name = "st" + i;
                 if (null != stList && stList.size() > i) {

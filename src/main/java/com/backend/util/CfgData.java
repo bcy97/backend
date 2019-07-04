@@ -85,7 +85,7 @@ public class CfgData implements ApplicationRunner {
     	
     	try {
     		String path = System.getProperty("user.dir");
-    		reader = new BufferedReader(new FileReader(new File(path + "\\"+ companyId +"\\static\\mapperConfig.txt")));
+    		reader = new BufferedReader(new FileReader(new File(path + "\\static" + "\\" + companyId  + "\\mapperConfig.txt")));
     		String temp = null;
     		String[] arr = null;
     		while(null != (temp = reader.readLine())) {
@@ -202,8 +202,9 @@ public class CfgData implements ApplicationRunner {
         return acIdNameMap.keySet().toArray(new Integer[acIdNameMap.size()]);
     }
 
-    public Integer[] getAllStId() {
-        return stIdNameMap.keySet().toArray(new Integer[stIdNameMap.size()]);
+    public Integer[] getAllStId(String companyId) {
+//        return stIdNameMap.keySet().toArray(new Integer[stIdNameMap.size()]);
+        return stIdNameMap.get(companyId).keySet().toArray(new Integer[stIdNameMap.size()]);
     }
 
 
@@ -231,21 +232,22 @@ public class CfgData implements ApplicationRunner {
 //        }
 //
 //        return filePath;
-        return System.getProperty("user.dir") + "\\" + username + "\\unitConfigs";
+        return System.getProperty("user.dir") + "\\unitConfigs" + "\\" + username;
     }
 
 
     //获取local.xml中所有的userName
-    private static String[] usernameArray() {
+    public static String[] usernameArray() {
         File file = null;
         List<String> list = new ArrayList<String>();
 
         //取得文件的根目录
         String rootPath = System.getProperty("user.dir");
-        file = new File(rootPath + "/local.xml");
+        file = new File(rootPath + "\\local.xml");
         if (file != null && !file.exists()) {
             System.out.println(file + " file not found!");
         }
+
 
         SAXReader reader = new SAXReader();
         Document doc = null;

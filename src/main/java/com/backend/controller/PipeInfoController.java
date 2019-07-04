@@ -6,6 +6,8 @@ import com.backend.util.Constants;
 import com.backend.vo.PipeInfo;
 import com.backend.vo.PipeMaintRecord;
 
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -37,23 +39,35 @@ public class PipeInfoController {
     	ename = map.get("ename").toString();
     	ename = cfgData.getRealName(ename, map.get("companyId").toString());
     	
-    	System.out.println("pipeType:" + pipeType + ",ename:" + ename);
+    	System.out.println("pipeType : " + pipeType + ", ename : " + ename);
     	
     	return pipeInfoService.getPipeInfo(pipeType, ename, map.get("companyId").toString());
     }
     
     @SuppressWarnings("unchecked")
     @RequestMapping(value = "/getPipeInfos", consumes = "application/json")
-	public List<PipeInfo> getPipeInfos(@RequestBody Map<String, Object> map) throws Exception{
+	public List<PipeInfo> getPipeInfos(@RequestBody Map<String, String> map) throws Exception{
+
+    	/**
+		 * {
+		 *     "enames" :"[\"pipe01\",\"pipe02\"]",
+		 *     "companyId" : "demo"
+		 * }
+		 * */
+
     	byte pipeType = Constants.PIPE_STRONGCABLE;
     	List<String> enames = null;
-    	
+
+    	Gson gson = new Gson();
+
     	if(map.containsKey("pipeType")) {
     		pipeType = Byte.parseByte(map.get("pipeType").toString());
     	}
     	
     	if(map.get("enames") != null) {
-    		enames = (List<String>)map.get("enames");
+    		enames = gson.fromJson(map.get("enames"), new TypeToken<List<String>>() {
+			}.getType());
+    		//enames = (List<String>)map.get("enames");
     	}
     	
     	System.out.println("pipeType:" + pipeType + ",enames:" + enames);
@@ -63,6 +77,14 @@ public class PipeInfoController {
     
     @RequestMapping(value="/getPipeMaintRecord",consumes="application/json")
     public List<PipeMaintRecord> getPipeMaintRecords(@RequestBody Map<String, Object> map) throws Exception{
+
+    	/**
+		 * {
+		 *     "pipeId" : "7",
+		 *     "companyId" : "demo"
+		 * }
+		 * */
+
     	byte pipeType = Constants.PIPE_STRONGCABLE;
     	String pipeId = null;
     	if(map.containsKey("pipeType")) {

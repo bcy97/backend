@@ -3,6 +3,8 @@ package com.backend.controller;
 import com.backend.service.RealDataService;
 import com.backend.util.Utils;
 import com.backend.vo.AnValue;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -39,11 +41,13 @@ public class RealDataController {
     
     SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss sss");
     @RequestMapping(value="/getRealDataByEnameList",method=RequestMethod.POST,consumes = "application/json")
-    public Map<String,Object[]> getRealDataByEnameList(@RequestBody Map<String, Object> map){
+    public Map<String,Object[]> getRealDataByEnameList(@RequestBody Map<String, String> map){
+		Gson gson = new Gson();
 
     	String companyId = map.get("companyId").toString();
 
-    	String[] enames = (String[]) map.get("ename[]");
+    	//String[] enames = (String[]) map.get("ename[]");
+		String[] enames = gson.fromJson(map.get("ename"),new TypeToken<String[]>() {}.getType());
     	if(enames == null) {
     		System.out.println("enames is null");
     	}else {

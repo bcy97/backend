@@ -34,7 +34,7 @@ public class UserController {
 //
 //        return false;
 
-        return userService.login(map.get("username"), map.get("password"), map.get("companyId"));
+        return userService.login(map.get("userName"), map.get("password"), map.get("companyId"));
     }
 
 

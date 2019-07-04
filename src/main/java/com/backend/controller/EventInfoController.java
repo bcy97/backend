@@ -28,16 +28,30 @@ public class EventInfoController {
 
     @RequestMapping(value = "/getInfo", consumes = "application/json")
     public EventInfo[] getEventByTimeAndUnitNames(@RequestBody Map<String, String> data) {
+
+        /**
+         * {
+         *     "unitName" :  "[\"中心电站10KV\"]",
+         *     "companyId" : "demo",
+         *     "sTime" : "2019-06-20 00:01",
+         *     "eTime" : "2019-06-21 23:59",
+         *     "type" : "0"
+         * }
+         * */
+
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm");
 
         Gson gson = new Gson();
-        List<String> unitnames = gson.fromJson(data.get("unitname"), new TypeToken<List<String>>() {
+        List<String> unitnames = gson.fromJson(data.get("unitName"), new TypeToken<List<String>>() {
         }.getType());
+
+
+        System.out.println(data.get("companyId"));
 
 
         try {
             // type 0:遥信    1:遥测
-            return eventInfoService.getEventByTimeAndUnitNames(sdf.parse(data.get("stime")), sdf.parse(data.get("etime")), unitnames, new Integer(data.get("type")), data.get("companyId"));
+            return eventInfoService.getEventByTimeAndUnitNames(sdf.parse(data.get("sTime")), sdf.parse(data.get("eTime")), unitnames, new Integer(data.get("type")), data.get("companyId"));
         } catch (ParseException e) {
             e.printStackTrace();
         }

@@ -151,6 +151,7 @@ public class SocketConnect {
 
             // 要先发一个包，告诉上位机通道类型
             bDatas = generateChannelDeclarationPackage(companyId).serialize();
+            System.out.println(companyId);
             os.write(bDatas, 0, bDatas.length);
 
             List<DataPacket> dps = toDataPackets(sendDatas, cmd);

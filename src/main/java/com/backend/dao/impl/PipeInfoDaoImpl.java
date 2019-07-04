@@ -8,6 +8,7 @@ import com.backend.util.Utils;
 import com.backend.vo.PipeInfo;
 import com.backend.vo.PipeMaintRecord;
 
+import com.backend.vo.StrongCableInfo;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 
@@ -15,12 +16,10 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import java.io.UnsupportedEncodingException;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.List;
 
 @Repository
@@ -62,7 +61,8 @@ public class PipeInfoDaoImpl implements PipeInfoDao {
 		List<PipeInfo> pipeInfos = new ArrayList<>();
 		while(responseBuf.readableBytes() > 0) {
 			type = responseBuf.getByte(responseBuf.readerIndex());
-			PipeInfo pipeInfo = PipeInfo.createPipeInfo(type);
+			StrongCableInfo pipeInfo = new StrongCableInfo();
+			pipeInfo.createPipeInfo(type);
 			ret = pipeInfo.unSerialize(responseBuf);
 			if(ret < 0) break;
 			pipeInfos.add(pipeInfo);
@@ -88,13 +88,13 @@ public class PipeInfoDaoImpl implements PipeInfoDao {
 		ByteBuffer buff = SocketConnect.getData(byteData,Constants.CC_SELECT_PIPEINFO,logger,true, companyId);
 		buff.flip();
 		
-		PipeInfo pipeInfo = null;
+		StrongCableInfo pipeInfo = new StrongCableInfo();
 		if(buff.hasRemaining()) {
 			ByteBuf responseBuf = Unpooled.wrappedBuffer(buff).order(ByteOrder.LITTLE_ENDIAN);
 			
 			byte type;
 			type = responseBuf.getByte(responseBuf.readerIndex());
-			pipeInfo = PipeInfo.createPipeInfo(type);
+			pipeInfo.createPipeInfo(type);
 			if(pipeInfo.unSerialize(responseBuf) < 0) {
 				throw new Exception("数据解析异常");
 			}

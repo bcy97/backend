@@ -1,5 +1,6 @@
 package com.backend.vo;
 
+import com.backend.interfaces.IRecvData;
 import com.backend.util.Constants;
 
 import io.netty.buffer.ByteBuf;

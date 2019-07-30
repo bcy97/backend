@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="gbk"?>
+<picture version="7" color="#303030" width="2500" height="1300">
+	<layer name="底图">
+		<rect from="1409,649" to="1342,635" border="1" borderColor="#808080" borderWidth="1" fill="1" fillColor="#0080c0"/>
+		<lineCurrent from="1404,642" to="1346,642" lineColor="#303030" lineWidth="10" name="M1_01_YXZT"/>
+		<rect from="824,796" to="691,784" border="1" borderColor="#0080c0" borderWidth="1" fill="1" fillColor="#0080c0"/>
+		<lineCurrent from="820,789" to="694,790" lineColor="#303030" lineWidth="10" name="M1_JSFKQ"/>
+		<rect from="1100,857" to="824,721" border="1" borderColor="#000000" borderWidth="1" fill="1" fillColor="#c0c0c0"/>
+		<rect from="859,856" to="825,722" border="1" borderColor="#804040" borderWidth="1" fill="1" fillColor="#804040"/>
+		<rect from="1409,949" to="1340,935" border="1" borderColor="#808080" borderWidth="1" fill="1" fillColor="#0080c0"/>
+		<rect from="1408,874" to="1339,860" border="1" borderColor="#808080" borderWidth="1" fill="1" fillColor="#0080c0"/>
+		<rect from="1409,800" to="1340,786" border="1" borderColor="#808080" borderWidth="1" fill="1" fillColor="#0080c0"/>
+		<rect from="1409,724" to="1340,710" border="1" borderColor="#808080" borderWidth="1" fill="1" fillColor="#0080c0"/>
+		<image from="1266,633" to="1341,691" border="1" borderColor="#303030" borderWidth="1" fill="0" fillColor="#c0c0c0" iconType="1" filename="iconlibrary/public/水泵3.png" angle="0.000000"/>
+		<image from="1266,708" to="1341,766" border="1" borderColor="#303030" borderWidth="1" fill="0" fillColor="#c0c0c0" iconType="1" filename="iconlibrary/public/水泵3.png" angle="0.000000"/>
+		<image from="1266,783" to="1341,841" border="1" borderColor="#303030" borderWidth="1" fill="0" fillColor="#c0c0c0" iconType="1" filename="iconlibrary/public/水泵3.png" angle="0.000000"/>
+		<image from="1266,857" to="1341,915" border="1" borderColor="#303030" borderWidth="1" fill="0" fillColor="#c0c0c0" iconType="1" filename="iconlibrary/public/水泵3.png" angle="0.000000"/>
+		<image from="1266,933" to="1341,991" border="1" borderColor="#303030" borderWidth="1" fill="0" fillColor="#c0c0c0" iconType="1" filename="iconlibrary/public/水泵3.png" angle="0.000000"/>
+		<string from="773,487" to="806,507" border="0" fill="0" fillColor="#a0a0a0" text="Hz" angle="0.000000" align="1" font="Times New Roman" size="16" fontColor="#ffffff"/>
+		<rect from="1183,813" to="1100,799" border="1" borderColor="#808080" borderWidth="1" fill="1" fillColor="#0080c0"/>
+		<string from="1660,396" to="1701,422" border="0" fill="0" fillColor="#e30000" text="Uca" angle="0.000000" align="1" font="华文中宋" size="19" fontColor="#000000"/>
+		<string from="1606,397" to="1647,423" border="0" fill="0" fillColor="#a0a0a0" text="Ubc" angle="0.000000" align="1" font="华文中宋" size="19" fontColor="#000000"/>
+		<string from="1550,396" to="1591,422" border="0" fill="0" fillColor="#a0a0a0" text="Uab" angle="0.000000" align="1" font="华文中宋" size="19" fontColor="#000000"/>
+		<string from="1526,593" to="1567,619" border="0" fill="0" fillColor="#a0a0a0" text="Ia" angle="0.000000" align="1" font="华文中宋" size="19" fontColor="#000000"/>
+		<string from="1568,593" to="1609,619" border="0" fill="0" fillColor="#a0a0a0" text="Ib" angle="0.000000" align="1" font="华文中宋" size="19" fontColor="#000000"/>
+		<string from="1613,593" to="1654,619" border="0" fill="0" fillColor="#e30000" text="Ic" angle="0.000000" align="1" font="华文中宋" size="19" fontColor="#000000"/>
+		<string from="959,664" to="1091,690" border="0" fill="0" fillColor="#a0a0a0" text="2#水池液位" angle="0.000000" align="1" font="宋体" size="16" fontColor="#ffffff"/>
+		<rect from="979,823" to="945,722" border="1" borderColor="#804040" borderWidth="1" fill="1" fillColor="#804040"/>
+		<rect from="1089,856" to="838,833" border="1" borderColor="#804040" borderWidth="1" fill="1" fillColor="#804040"/>
+		<string from="837,664" to="964,690" border="0" fill="0" fillColor="#a0a0a0" text="1#水池液位" angle="0.000000" align="1" font="宋体" size="16" fontColor="#ffffff"/>
+		<string from="1427,1022" to="1507,1046" border="0" fill="0" fillColor="#a0a0a0" text="管道流量" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffffff"/>
+		<line from="1500,1071" to="1500,1048" lineColor="#000000" lineWidth="1"/>
+		<line from="1499,1049" to="1434,1049" lineColor="#404040" lineWidth="1"/>
+		<line from="1499,1071" to="1435,1071" lineColor="#000000" lineWidth="1"/>
+		<string from="1498,1052" to="1545,1072" border="0" fill="0" fillColor="#a0a0a0" text="M1 /H" angle="0.000000" align="1" font="Times New Roman" size="16" fontColor="#ffffff"/>
+		<string from="1566,593" to="1607,619" border="0" fill="0" fillColor="#a0a0a0" text="Ib" angle="0.000000" align="1" font="华文中宋" size="19" fontColor="#00c600"/>
+		<string from="1611,593" to="1652,619" border="0" fill="0" fillColor="#e30000" text="Ic" angle="0.000000" align="1" font="华文中宋" size="19" fontColor="#c50b01"/>
+		<string from="1604,397" to="1645,423" border="0" fill="0" fillColor="#a0a0a0" text="Ubc" angle="0.000000" align="1" font="华文中宋" size="19" fontColor="#ffffff"/>
+		<string from="1658,396" to="1699,422" border="0" fill="0" fillColor="#e30000" text="Uca" angle="0.000000" align="1" font="华文中宋" size="19" fontColor="#ffffff"/>
+		<string from="1524,593" to="1565,619" border="0" fill="0" fillColor="#a0a0a0" text="Ia" angle="0.000000" align="1" font="华文中宋" size="19" fontColor="#ffff37"/>
+		<string from="1548,396" to="1589,422" border="0" fill="0" fillColor="#a0a0a0" text="Uab" angle="0.000000" align="1" font="华文中宋" size="19" fontColor="#ffffff"/>
+		<line from="1511,661" to="1511,633" lineColor="#000000" lineWidth="1"/>
+		<line from="1455,660" to="1455,633" lineColor="#404040" lineWidth="1"/>
+		<line from="1509,634" to="1455,634" lineColor="#404040" lineWidth="1"/>
+		<line from="1511,661" to="1455,661" lineColor="#000000" lineWidth="1"/>
+		<string from="1460,635" to="1507,661" border="0" fill="0" fillColor="#a0a0a0" text="1#泵" angle="0.000000" align="1" font="华文中宋" size="19" fontColor="#ffffff"/>
+		<line from="1652,634" to="1527,634" lineColor="#404040" lineWidth="1"/>
+		<line from="1527,660" to="1527,633" lineColor="#404040" lineWidth="1"/>
+		<line from="1652,661" to="1652,633" lineColor="#000000" lineWidth="1"/>
+		<line from="1651,661" to="1527,661" lineColor="#000000" lineWidth="1"/>
+		<line from="1747,661" to="1747,633" lineColor="#000000" lineWidth="1"/>
+		<line from="1659,660" to="1659,633" lineColor="#404040" lineWidth="1"/>
+		<line from="1747,634" to="1659,634" lineColor="#404040" lineWidth="1"/>
+		<line from="1747,661" to="1659,661" lineColor="#000000" lineWidth="1"/>
+		<line from="1437,670" to="1437,623" lineColor="#000000" lineWidth="1"/>
+		<imageStatue from="906,411" to="930,435" border="1" borderColor="#ffffff" borderWidth="1" fill="0" fillColor="#ff8040" stname="M1_BPQGZ" iconType="1" filename_close="iconlibrary/public/透明绿球24.png" filename_open="iconlibrary/public/透明红球24.png" angle="0.000000"/>
+		<string from="1670,596" to="1695,618" border="0" fill="0" fillColor="#a0a0a0" text="P" angle="0.000000" align="1" font="华文中宋" size="19" fontColor="#000000"/>
+		<string from="1702,593" to="1744,619" border="0" fill="0" fillColor="#a0a0a0" text="Q" angle="0.000000" align="1" font="华文中宋" size="16" fontColor="#000000"/>
+		<string from="1669,597" to="1695,618" border="0" fill="0" fillColor="#a0a0a0" text="P" angle="0.000000" align="1" font="华文中宋" size="19" fontColor="#ffffff"/>
+		<string from="1701,593" to="1741,619" border="0" fill="0" fillColor="#a0a0a0" text="Q" angle="0.000000" align="1" font="华文中宋" size="16" fontColor="#ffffff"/>
+		<dyanData from="1526,639" to="1565,656" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="14" name="M1_01_Ia" type="0"/>
+		<dyanData from="1562,639" to="1608,656" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="14" name="M1_01_Ib" type="0"/>
+		<dyanData from="1605,639" to="1649,656" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="14" name="M1_01_Ic" type="0"/>
+		<dyanData from="1659,637" to="1700,654" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="14" name="M1_01_P" type="0"/>
+		<dyanData from="1706,637" to="1744,654" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="14" name="M1_01_Q" type="0"/>
+		<string from="1265,393" to="1306,419" border="0" fill="0" fillColor="#a0a0a0" text="Ia" angle="0.000000" align="1" font="华文中宋" size="19" fontColor="#000000"/>
+		<string from="1307,393" to="1348,419" border="0" fill="0" fillColor="#a0a0a0" text="Ib" angle="0.000000" align="1" font="华文中宋" size="19" fontColor="#000000"/>
+		<string from="1352,393" to="1393,419" border="0" fill="0" fillColor="#e30000" text="Ic" angle="0.000000" align="1" font="华文中宋" size="19" fontColor="#000000"/>
+		<string from="1305,393" to="1346,419" border="0" fill="0" fillColor="#a0a0a0" text="Ib" angle="0.000000" align="1" font="华文中宋" size="19" fontColor="#00c600"/>
+		<string from="1350,393" to="1391,419" border="0" fill="0" fillColor="#e30000" text="Ic" angle="0.000000" align="1" font="华文中宋" size="19" fontColor="#c50b01"/>
+		<string from="1263,393" to="1304,419" border="0" fill="0" fillColor="#a0a0a0" text="Ia" angle="0.000000" align="1" font="华文中宋" size="19" fontColor="#ffff37"/>
+		<line from="1239,461" to="1239,433" lineColor="#000000" lineWidth="1"/>
+		<line from="1136,460" to="1136,433" lineColor="#404040" lineWidth="1"/>
+		<line from="1238,433" to="1136,433" lineColor="#404040" lineWidth="1"/>
+		<line from="1238,461" to="1136,461" lineColor="#000000" lineWidth="1"/>
+		<line from="1392,433" to="1267,433" lineColor="#404040" lineWidth="1"/>
+		<line from="1268,460" to="1268,433" lineColor="#404040" lineWidth="1"/>
+		<line from="1393,461" to="1393,433" lineColor="#000000" lineWidth="1"/>
+		<line from="1392,461" to="1268,461" lineColor="#000000" lineWidth="1"/>
+		<line from="1515,461" to="1515,433" lineColor="#000000" lineWidth="1"/>
+		<line from="1416,460" to="1416,433" lineColor="#404040" lineWidth="1"/>
+		<line from="1513,433" to="1415,433" lineColor="#404040" lineWidth="1"/>
+		<line from="1515,461" to="1416,461" lineColor="#000000" lineWidth="1"/>
+		<line from="1239,503" to="1239,475" lineColor="#000000" lineWidth="1"/>
+		<line from="1136,502" to="1136,475" lineColor="#404040" lineWidth="1"/>
+		<line from="1238,476" to="1136,476" lineColor="#404040" lineWidth="1"/>
+		<line from="1238,503" to="1136,503" lineColor="#000000" lineWidth="1"/>
+		<line from="1393,476" to="1268,476" lineColor="#404040" lineWidth="1"/>
+		<line from="1268,502" to="1268,475" lineColor="#404040" lineWidth="1"/>
+		<line from="1393,503" to="1393,475" lineColor="#000000" lineWidth="1"/>
+		<line from="1392,503" to="1268,503" lineColor="#000000" lineWidth="1"/>
+		<line from="1515,503" to="1515,475" lineColor="#000000" lineWidth="1"/>
+		<line from="1416,502" to="1416,475" lineColor="#404040" lineWidth="1"/>
+		<line from="1514,476" to="1416,476" lineColor="#404040" lineWidth="1"/>
+		<line from="1515,503" to="1416,503" lineColor="#000000" lineWidth="1"/>
+		<string from="1415,390" to="1456,422" border="0" fill="0" fillColor="#a0a0a0" text="P" angle="0.000000" align="1" font="华文中宋" size="19" fontColor="#000000"/>
+		<string from="1456,393" to="1522,419" border="0" fill="0" fillColor="#a0a0a0" text="Q" angle="0.000000" align="1" font="华文中宋" size="19" fontColor="#000000"/>
+		<string from="1416,390" to="1454,422" border="0" fill="0" fillColor="#a0a0a0" text="P" angle="0.000000" align="1" font="华文中宋" size="19" fontColor="#ffffff"/>
+		<string from="1454,393" to="1520,419" border="0" fill="0" fillColor="#a0a0a0" text="Q" angle="0.000000" align="1" font="华文中宋" size="19" fontColor="#ffffff"/>
+		<dyanData from="1254,439" to="1307,456" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="14" name="M1_08_Ia" type="0"/>
+		<dyanData from="1253,481" to="1306,498" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="14" name="M1_06_Ia" type="0"/>
+		<dyanData from="1296,481" to="1349,498" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="14" name="M1_06_Ib" type="0"/>
+		<dyanData from="1337,481" to="1390,498" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="14" name="M1_06_Ic" type="0"/>
+		<dyanData from="1297,439" to="1350,456" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="14" name="M1_08_Ib" type="0"/>
+		<dyanData from="1338,439" to="1391,456" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="14" name="M1_08_Ic" type="0"/>
+		<dyanData from="1416,439" to="1469,456" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="1" font="Times New Roman" size="14" name="M1_08_P" type="0"/>
+		<dyanData from="1463,439" to="1516,456" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="1" font="Times New Roman" size="14" name="M1_08_Q" type="0"/>
+		<dyanData from="1416,478" to="1469,495" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="1" font="Times New Roman" size="14" name="M1_06_P" type="0"/>
+		<dyanData from="1463,478" to="1516,495" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="1" font="Times New Roman" size="14" name="M1_06_Q" type="0"/>
+		<string from="1142,435" to="1233,461" border="0" fill="0" fillColor="#a0a0a0" text="电源柜" angle="0.000000" align="1" font="华文中宋" size="16" fontColor="#ffffff"/>
+		<string from="1140,477" to="1234,503" border="0" fill="0" fillColor="#a0a0a0" text="消防电源" angle="0.000000" align="1" font="华文中宋" size="16" fontColor="#ffffff"/>
+		<dyanData from="1442,1052" to="1495,1069" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="16" name="M1_LL" type="0"/>
+		<line from="1435,1070" to="1435,1048" lineColor="#404040" lineWidth="1"/>
+		<string from="1510,1045" to="1535,1065" border="0" fill="0" fillColor="#a0a0a0" text="3" angle="0.000000" align="1" font="Times New Roman" size="12" fontColor="#ffffff"/>
+		<string from="1610,1022" to="1684,1046" border="0" fill="0" fillColor="#a0a0a0" text="管道压力" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffffff"/>
+		<line from="1679,1071" to="1679,1048" lineColor="#000000" lineWidth="1"/>
+		<line from="1678,1049" to="1613,1049" lineColor="#404040" lineWidth="1"/>
+		<line from="1678,1071" to="1614,1071" lineColor="#000000" lineWidth="1"/>
+		<string from="1682,1052" to="1715,1072" border="0" fill="0" fillColor="#a0a0a0" text="M1P" angle="0.000000" align="1" font="Times New Roman" size="16" fontColor="#ffffff"/>
+		<dyanData from="1621,1052" to="1674,1069" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="16" name="M1_CSYL" type="0"/>
+		<line from="1614,1070" to="1614,1048" lineColor="#404040" lineWidth="1"/>
+		<rect from="1423,1022" to="1409,635" border="1" borderColor="#808080" borderWidth="1" fill="1" fillColor="#0080c0"/>
+		<rect from="1197,964" to="1183,650" border="1" borderColor="#808080" borderWidth="1" fill="1" fillColor="#0080c0"/>
+		<line from="930,711" to="930,688" lineColor="#000000" lineWidth="1"/>
+		<line from="929,689" to="864,689" lineColor="#404040" lineWidth="1"/>
+		<line from="929,711" to="865,711" lineColor="#000000" lineWidth="1"/>
+		<string from="931,692" to="958,712" border="0" fill="0" fillColor="#a0a0a0" text="M1" angle="0.000000" align="1" font="Times New Roman" size="16" fontColor="#ffffff"/>
+		<line from="865,710" to="865,688" lineColor="#404040" lineWidth="1"/>
+		<dyanData from="871,691" to="923,710" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="16" name="M1_01SXYW" type="0"/>
+		<line from="1058,711" to="1058,688" lineColor="#000000" lineWidth="1"/>
+		<line from="1057,689" to="992,689" lineColor="#404040" lineWidth="1"/>
+		<line from="1057,711" to="993,711" lineColor="#000000" lineWidth="1"/>
+		<string from="1059,692" to="1086,712" border="0" fill="0" fillColor="#a0a0a0" text="M1" angle="0.000000" align="1" font="Times New Roman" size="16" fontColor="#ffffff"/>
+		<line from="993,710" to="993,688" lineColor="#404040" lineWidth="1"/>
+		<dyanData from="1002,691" to="1051,710" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="16" name="M1_02SXYW" type="0"/>
+		<rect from="1265,664" to="1196,650" border="1" borderColor="#808080" borderWidth="1" fill="1" fillColor="#0080c0"/>
+		<string from="893,456" to="1030,480" border="0" fill="0" fillColor="#a0a0a0" text="距离切换时间" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffffff"/>
+		<line from="1017,505" to="1017,482" lineColor="#000000" lineWidth="1"/>
+		<line from="1015,483" to="904,483" lineColor="#404040" lineWidth="1"/>
+		<line from="1016,505" to="906,505" lineColor="#000000" lineWidth="1"/>
+		<line from="905,504" to="905,482" lineColor="#404040" lineWidth="1"/>
+		<string from="937,484" to="951,504" border="0" fill="0" fillColor="#a0a0a0" text=":" angle="0.000000" align="1" font="Times New Roman" size="19" fontColor="#ffffff"/>
+		<string from="976,484" to="990,504" border="0" fill="0" fillColor="#a0a0a0" text=":" angle="0.000000" align="1" font="Times New Roman" size="19" fontColor="#ffffff"/>
+		<dyanData from="911,486" to="935,503" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="14" name="M1_SYH" type="0"/>
+		<dyanData from="949,486" to="973,503" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="14" name="M1_SYM" type="0"/>
+		<dyanData from="988,486" to="1012,503" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="14" name="M1_SYS" type="0"/>
+		<string from="1753,594" to="1795,620" border="0" fill="0" fillColor="#a0a0a0" text="工频" angle="0.000000" align="1" font="黑体" size="16" fontColor="#4c4c4c"/>
+		<string from="1791,594" to="1833,620" border="0" fill="0" fillColor="#a0a0a0" text="变频" angle="0.000000" align="1" font="黑体" size="16" fontColor="#4c4c4c"/>
+		<imageStatue from="1804,642" to="1822,660" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#000000" stname="M1_01_BPYX" iconType="1" filename_close="iconlibrary/public/透明绿球12.png" filename_open="iconlibrary/public/透明红球12.png" angle="0.000000"/>
+		<imageStatue from="1766,642" to="1784,660" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#000000" stname="M1_01_GPYX" iconType="1" filename_close="iconlibrary/public/透明绿球12.png" filename_open="iconlibrary/public/透明红球12.png" angle="0.000000"/>
+		<string from="1828,594" to="1870,620" border="0" fill="0" fillColor="#a0a0a0" text="故障" angle="0.000000" align="1" font="黑体" size="16" fontColor="#4c4c4c"/>
+		<imageStatue from="1841,642" to="1859,660" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#000000" stname="M1_01_RJGZ" iconType="1" filename_close="iconlibrary/public/透明绿球12.png" filename_open="iconlibrary/public/透明红球12.png" angle="0.000000"/>
+		<string from="1752,595" to="1794,621" border="0" fill="0" fillColor="#a0a0a0" text="工频" angle="0.000000" align="1" font="黑体" size="16" fontColor="#ffffff"/>
+		<string from="1790,595" to="1832,621" border="0" fill="0" fillColor="#a0a0a0" text="变频" angle="0.000000" align="1" font="黑体" size="16" fontColor="#ffffff"/>
+		<string from="1827,595" to="1869,621" border="0" fill="0" fillColor="#a0a0a0" text="故障" angle="0.000000" align="1" font="黑体" size="16" fontColor="#ffffff"/>
+		<line from="1527,735" to="1527,708" lineColor="#404040" lineWidth="1"/>
+		<line from="1652,736" to="1652,708" lineColor="#000000" lineWidth="1"/>
+		<line from="1651,736" to="1527,736" lineColor="#000000" lineWidth="1"/>
+		<line from="1747,736" to="1747,708" lineColor="#000000" lineWidth="1"/>
+		<line from="1659,735" to="1659,708" lineColor="#404040" lineWidth="1"/>
+		<line from="1747,736" to="1659,736" lineColor="#000000" lineWidth="1"/>
+		<dyanData from="1526,714" to="1565,731" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="14" name="M1_02_Ia" type="0"/>
+		<dyanData from="1562,714" to="1608,731" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="14" name="M1_02_Ib" type="0"/>
+		<dyanData from="1605,714" to="1649,731" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="14" name="M1_02_Ic" type="0"/>
+		<dyanData from="1659,713" to="1700,730" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="14" name="M1_02_P" type="0"/>
+		<dyanData from="1706,713" to="1744,730" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="14" name="M1_02_Q" type="0"/>
+		<imageStatue from="1804,717" to="1822,735" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#000000" stname="M1_02_BPYX" iconType="1" filename_close="iconlibrary/public/透明绿球12.png" filename_open="iconlibrary/public/透明红球12.png" angle="0.000000"/>
+		<imageStatue from="1766,717" to="1784,735" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#000000" stname="M1_02_GPYX" iconType="1" filename_close="iconlibrary/public/透明绿球12.png" filename_open="iconlibrary/public/透明红球12.png" angle="0.000000"/>
+		<imageStatue from="1841,717" to="1859,735" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#000000" stname="M1_02_RJGZ" iconType="1" filename_close="iconlibrary/public/透明绿球12.png" filename_open="iconlibrary/public/透明红球12.png" angle="0.000000"/>
+		<line from="1652,709" to="1527,709" lineColor="#404040" lineWidth="1"/>
+		<line from="1747,709" to="1659,709" lineColor="#404040" lineWidth="1"/>
+		<line from="1527,810" to="1527,783" lineColor="#404040" lineWidth="1"/>
+		<line from="1652,811" to="1652,783" lineColor="#000000" lineWidth="1"/>
+		<line from="1651,811" to="1527,811" lineColor="#000000" lineWidth="1"/>
+		<line from="1747,811" to="1747,783" lineColor="#000000" lineWidth="1"/>
+		<line from="1659,810" to="1659,783" lineColor="#404040" lineWidth="1"/>
+		<line from="1747,811" to="1659,811" lineColor="#000000" lineWidth="1"/>
+		<dyanData from="1526,789" to="1565,806" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="14" name="M1_03_Ia" type="0"/>
+		<dyanData from="1562,789" to="1608,806" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="14" name="M1_03_Ib" type="0"/>
+		<dyanData from="1605,789" to="1649,806" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="14" name="M1_03_Ic" type="0"/>
+		<dyanData from="1659,788" to="1700,805" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="14" name="M1_03_P" type="0"/>
+		<dyanData from="1706,788" to="1744,805" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="14" name="M1_03_Q" type="0"/>
+		<imageStatue from="1804,792" to="1822,810" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#000000" stname="M1_03_BPYX" iconType="1" filename_close="iconlibrary/public/透明绿球12.png" filename_open="iconlibrary/public/透明红球12.png" angle="0.000000"/>
+		<imageStatue from="1766,792" to="1784,810" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#000000" stname="M1_03_GPYX" iconType="1" filename_close="iconlibrary/public/透明绿球12.png" filename_open="iconlibrary/public/透明红球12.png" angle="0.000000"/>
+		<imageStatue from="1841,792" to="1859,810" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#000000" stname="M1_03_RJGZ" iconType="1" filename_close="iconlibrary/public/透明绿球12.png" filename_open="iconlibrary/public/透明红球12.png" angle="0.000000"/>
+		<line from="1652,784" to="1527,784" lineColor="#404040" lineWidth="1"/>
+		<line from="1747,784" to="1659,784" lineColor="#404040" lineWidth="1"/>
+		<line from="1527,885" to="1527,858" lineColor="#404040" lineWidth="1"/>
+		<line from="1652,886" to="1652,858" lineColor="#000000" lineWidth="1"/>
+		<line from="1651,886" to="1527,886" lineColor="#000000" lineWidth="1"/>
+		<line from="1747,886" to="1747,858" lineColor="#000000" lineWidth="1"/>
+		<line from="1659,885" to="1659,858" lineColor="#404040" lineWidth="1"/>
+		<line from="1747,886" to="1659,886" lineColor="#000000" lineWidth="1"/>
+		<dyanData from="1526,864" to="1565,881" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="14" name="M1_04_Ia" type="0"/>
+		<dyanData from="1562,864" to="1608,881" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="14" name="M1_04_Ib" type="0"/>
+		<dyanData from="1605,864" to="1649,881" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="14" name="M1_04_Ic" type="0"/>
+		<dyanData from="1659,863" to="1700,880" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="14" name="M1_04_P" type="0"/>
+		<dyanData from="1706,863" to="1744,880" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="14" name="M1_04_Q" type="0"/>
+		<imageStatue from="1804,867" to="1822,885" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#000000" stname="M1_04_BPYX" iconType="1" filename_close="iconlibrary/public/透明绿球12.png" filename_open="iconlibrary/public/透明红球12.png" angle="0.000000"/>
+		<imageStatue from="1766,867" to="1784,885" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#000000" stname="M1_04_GPYX" iconType="1" filename_close="iconlibrary/public/透明绿球12.png" filename_open="iconlibrary/public/透明红球12.png" angle="0.000000"/>
+		<imageStatue from="1841,867" to="1859,885" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#000000" stname="M1_04_RJGZ" iconType="1" filename_close="iconlibrary/public/透明绿球12.png" filename_open="iconlibrary/public/透明红球12.png" angle="0.000000"/>
+		<line from="1652,859" to="1527,859" lineColor="#404040" lineWidth="1"/>
+		<line from="1747,859" to="1659,859" lineColor="#404040" lineWidth="1"/>
+		<line from="1527,960" to="1527,933" lineColor="#404040" lineWidth="1"/>
+		<line from="1652,961" to="1652,933" lineColor="#000000" lineWidth="1"/>
+		<line from="1651,961" to="1527,961" lineColor="#000000" lineWidth="1"/>
+		<line from="1747,961" to="1747,933" lineColor="#000000" lineWidth="1"/>
+		<line from="1659,960" to="1659,933" lineColor="#404040" lineWidth="1"/>
+		<line from="1747,961" to="1659,961" lineColor="#000000" lineWidth="1"/>
+		<dyanData from="1526,939" to="1565,956" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="14" name="M1_05_Ia" type="0"/>
+		<dyanData from="1562,939" to="1608,956" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="14" name="M1_05_Ib" type="0"/>
+		<dyanData from="1605,939" to="1649,956" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="14" name="M1_05_Ic" type="0"/>
+		<dyanData from="1659,938" to="1700,955" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="14" name="M1_05_P" type="0"/>
+		<dyanData from="1706,938" to="1744,955" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="14" name="M1_05_Q" type="0"/>
+		<imageStatue from="1804,942" to="1822,960" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#000000" stname="M1_05_BPYX" iconType="1" filename_close="iconlibrary/public/透明绿球12.png" filename_open="iconlibrary/public/透明红球12.png" angle="0.000000"/>
+		<imageStatue from="1766,942" to="1784,960" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#000000" stname="M1_05_GPYX" iconType="1" filename_close="iconlibrary/public/透明绿球12.png" filename_open="iconlibrary/public/透明红球12.png" angle="0.000000"/>
+		<imageStatue from="1841,942" to="1859,960" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#000000" stname="M1_05_RJGZ" iconType="1" filename_close="iconlibrary/public/透明绿球12.png" filename_open="iconlibrary/public/透明红球12.png" angle="0.000000"/>
+		<line from="1652,934" to="1527,934" lineColor="#404040" lineWidth="1"/>
+		<line from="1747,934" to="1659,934" lineColor="#404040" lineWidth="1"/>
+		<line from="1912,624" to="1437,624" lineColor="#000000" lineWidth="1"/>
+		<line from="1912,671" to="1912,623" lineColor="#808080" lineWidth="1"/>
+		<line from="1911,671" to="1437,671" lineColor="#808080" lineWidth="1"/>
+		<string from="778,412" to="902,438" border="0" fill="0" fillColor="#a0a0a0" text="变频故障指示" angle="0.000000" align="1" font="微软雅黑" size="19" fontColor="#000000"/>
+		<string from="780,410" to="898,436" border="0" fill="0" fillColor="#a0a0a0" text="变频故障指示" angle="0.000000" align="1" font="微软雅黑" size="19" fontColor="#ffffff"/>
+		<imageStatue from="801,719" to="819,737" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#000000" stname="M1_01_SXYS" iconType="1" filename_close="iconlibrary/public/透明绿球12.png" filename_open="iconlibrary/public/透明红球12.png" angle="0.000000"/>
+		<imageStatue from="801,743" to="819,761" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#000000" stname="M1_01_SXGSW" iconType="1" filename_close="iconlibrary/public/透明绿球12.png" filename_open="iconlibrary/public/透明红球12.png" angle="0.000000"/>
+		<imageStatue from="801,822" to="819,840" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#000000" stname="M1_01_SXWS" iconType="1" filename_close="iconlibrary/public/透明绿球12.png" filename_open="iconlibrary/public/透明红球12.png" angle="0.000000"/>
+		<string from="760,713" to="802,739" border="0" fill="0" fillColor="#a0a0a0" text="溢流" angle="0.000000" align="1" font="黑体" size="16" fontColor="#4c4c4c"/>
+		<string from="759,714" to="801,740" border="0" fill="0" fillColor="#a0a0a0" text="溢流" angle="0.000000" align="1" font="黑体" size="16" fontColor="#ffffff"/>
+		<string from="749,736" to="798,762" border="0" fill="0" fillColor="#a0a0a0" text="高水位" angle="0.000000" align="1" font="黑体" size="16" fontColor="#4c4c4c"/>
+		<string from="747,737" to="798,763" border="0" fill="0" fillColor="#a0a0a0" text="高水位" angle="0.000000" align="1" font="黑体" size="16" fontColor="#ffffff"/>
+		<string from="749,816" to="798,842" border="0" fill="0" fillColor="#a0a0a0" text="低水位" angle="0.000000" align="1" font="黑体" size="16" fontColor="#4c4c4c"/>
+		<string from="747,817" to="798,843" border="0" fill="0" fillColor="#a0a0a0" text="低水位" angle="0.000000" align="1" font="黑体" size="16" fontColor="#ffffff"/>
+		<imageStatue from="1108,720" to="1126,738" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#000000" stname="M1_02_SXYS" iconType="1" filename_close="iconlibrary/public/透明绿球12.png" filename_open="iconlibrary/public/透明红球12.png" angle="0.000000"/>
+		<string from="1125,713" to="1167,739" border="0" fill="0" fillColor="#a0a0a0" text="溢流" angle="0.000000" align="1" font="黑体" size="16" fontColor="#4c4c4c"/>
+		<string from="1124,714" to="1166,740" border="0" fill="0" fillColor="#a0a0a0" text="溢流" angle="0.000000" align="1" font="黑体" size="16" fontColor="#ffffff"/>
+		<imageStatue from="1108,822" to="1126,840" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#000000" stname="M1_02_SXWS" iconType="1" filename_close="iconlibrary/public/透明绿球12.png" filename_open="iconlibrary/public/透明红球12.png" angle="0.000000"/>
+		<string from="1131,815" to="1180,841" border="0" fill="0" fillColor="#a0a0a0" text="低水位" angle="0.000000" align="1" font="黑体" size="16" fontColor="#4c4c4c"/>
+		<string from="1129,816" to="1180,842" border="0" fill="0" fillColor="#a0a0a0" text="低水位" angle="0.000000" align="1" font="黑体" size="16" fontColor="#ffffff"/>
+		<string from="1719,1022" to="1793,1046" border="0" fill="0" fillColor="#a0a0a0" text="设定压力" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffffff"/>
+		<line from="1788,1071" to="1788,1048" lineColor="#000000" lineWidth="1"/>
+		<line from="1787,1049" to="1722,1049" lineColor="#404040" lineWidth="1"/>
+		<line from="1787,1071" to="1723,1071" lineColor="#000000" lineWidth="1"/>
+		<string from="1791,1052" to="1824,1072" border="0" fill="0" fillColor="#a0a0a0" text="M1P" angle="0.000000" align="1" font="Times New Roman" size="16" fontColor="#ffffff"/>
+		<dyanData from="1730,1052" to="1783,1069" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="16" name="M1_SDYL" type="0"/>
+		<line from="1723,1070" to="1723,1048" lineColor="#404040" lineWidth="1"/>
+		<string from="709,457" to="800,481" border="0" fill="0" fillColor="#a0a0a0" text="变频器频率" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#ffffff"/>
+		<line from="774,506" to="774,483" lineColor="#000000" lineWidth="1"/>
+		<line from="784,484" to="719,484" lineColor="#404040" lineWidth="1"/>
+		<line from="773,506" to="709,506" lineColor="#000000" lineWidth="1"/>
+		<dyanData from="716,486" to="769,503" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="16" name="M1_PL" type="0"/>
+		<line from="709,505" to="709,483" lineColor="#404040" lineWidth="1"/>
+		<line from="1699,432" to="1548,432" lineColor="#404040" lineWidth="1"/>
+		<line from="1547,458" to="1547,431" lineColor="#404040" lineWidth="1"/>
+		<line from="1700,459" to="1700,431" lineColor="#000000" lineWidth="1"/>
+		<line from="1699,459" to="1547,459" lineColor="#000000" lineWidth="1"/>
+		<dyanData from="1541,436" to="1594,453" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="14" name="M1_08_Uab" type="0"/>
+		<dyanData from="1594,436" to="1647,453" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="14" name="M1_08_Ubc" type="0"/>
+		<dyanData from="1645,437" to="1698,454" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="14" name="M1_08_Uac" type="0"/>
+		<line from="1721,521" to="1112,521" lineColor="#808080" lineWidth="1"/>
+		<line from="1721,390" to="1112,390" lineColor="#000000" lineWidth="1"/>
+		<line from="1722,499" to="1722,389" lineColor="#808080" lineWidth="1"/>
+		<line from="1068,390" to="643,390" lineColor="#000000" lineWidth="1"/>
+		<line from="643,521" to="643,389" lineColor="#000000" lineWidth="1"/>
+		<line from="1067,522" to="643,522" lineColor="#808080" lineWidth="1"/>
+		<line from="1068,522" to="1068,389" lineColor="#808080" lineWidth="1"/>
+		<string from="613,704" to="751,730" border="0" fill="0" fillColor="#a0a0a0" text="进水电磁阀" angle="0.000000" align="1" font="微软雅黑" size="19" fontColor="#000000"/>
+		<string from="609,703" to="750,729" border="0" fill="0" fillColor="#a0a0a0" text="进水电磁阀" angle="0.000000" align="1" font="微软雅黑" size="19" fontColor="#ffffff"/>
+		<imageStatue from="1286,640" to="1316,670" border="1" borderColor="#000000" borderWidth="1" fill="1" fillColor="#ada592" stname="M1_01_YXZT" iconType="1" filename_close="iconlibrary/public/转轮.gif" filename_open="iconlibrary/public/转轮.gif" angle="0.000000"/>
+		<imageStatue from="1286,715" to="1316,745" border="1" borderColor="#000000" borderWidth="1" fill="1" fillColor="#ada592" stname="M1_02_YXZT" iconType="1" filename_close="iconlibrary/public/转轮.gif" filename_open="iconlibrary/public/转轮.gif" angle="0.000000"/>
+		<imageStatue from="1286,790" to="1316,820" border="1" borderColor="#000000" borderWidth="1" fill="1" fillColor="#ada592" stname="M1_03_YXZT" iconType="1" filename_close="iconlibrary/public/转轮.gif" filename_open="iconlibrary/public/转轮.gif" angle="0.000000"/>
+		<imageStatue from="1286,865" to="1316,895" border="1" borderColor="#000000" borderWidth="1" fill="1" fillColor="#ada592" stname="M1_04_YXZT" iconType="1" filename_close="iconlibrary/public/转轮.gif" filename_open="iconlibrary/public/转轮.gif" angle="0.000000"/>
+		<imageStatue from="1285,940" to="1315,970" border="1" borderColor="#000000" borderWidth="1" fill="1" fillColor="#ada592" stname="M1_05_YXZT" iconType="1" filename_close="iconlibrary/public/转轮.gif" filename_open="iconlibrary/public/转轮.gif" angle="0.000000"/>
+		<rect from="1265,739" to="1196,725" border="1" borderColor="#808080" borderWidth="1" fill="1" fillColor="#0080c0"/>
+		<rect from="1265,814" to="1196,800" border="1" borderColor="#808080" borderWidth="1" fill="1" fillColor="#0080c0"/>
+		<rect from="1265,889" to="1196,875" border="1" borderColor="#808080" borderWidth="1" fill="1" fillColor="#0080c0"/>
+		<rect from="1266,964" to="1197,950" border="1" borderColor="#808080" borderWidth="1" fill="1" fillColor="#0080c0"/>
+		<rect from="1099,856" to="1065,722" border="1" borderColor="#804040" borderWidth="1" fill="1" fillColor="#804040"/>
+		<rect from="1065,833" to="859,823" border="1" borderColor="#0080c0" borderWidth="1" fill="1" fillColor="#0080c0"/>
+		<line from="858,743" to="824,743" lineColor="#000000" lineWidth="1"/>
+		<line from="858,764" to="824,764" lineColor="#000000" lineWidth="1"/>
+		<line from="858,787" to="824,787" lineColor="#000000" lineWidth="1"/>
+		<line from="858,832" to="824,832" lineColor="#000000" lineWidth="1"/>
+		<line from="858,809" to="824,809" lineColor="#000000" lineWidth="1"/>
+		<line from="835,742" to="835,721" lineColor="#000000" lineWidth="1"/>
+		<line from="848,763" to="848,743" lineColor="#000000" lineWidth="1"/>
+		<line from="848,808" to="848,786" lineColor="#000000" lineWidth="1"/>
+		<line from="835,786" to="835,764" lineColor="#000000" lineWidth="1"/>
+		<line from="835,831" to="835,809" lineColor="#000000" lineWidth="1"/>
+		<line from="848,855" to="848,831" lineColor="#000000" lineWidth="1"/>
+		<line from="1075,742" to="1075,721" lineColor="#000000" lineWidth="1"/>
+		<line from="1098,743" to="1064,743" lineColor="#000000" lineWidth="1"/>
+		<line from="1088,763" to="1088,743" lineColor="#000000" lineWidth="1"/>
+		<line from="1075,786" to="1075,764" lineColor="#000000" lineWidth="1"/>
+		<line from="1098,764" to="1064,764" lineColor="#000000" lineWidth="1"/>
+		<line from="1088,808" to="1088,786" lineColor="#000000" lineWidth="1"/>
+		<line from="1098,787" to="1064,787" lineColor="#000000" lineWidth="1"/>
+		<line from="1098,809" to="1064,809" lineColor="#000000" lineWidth="1"/>
+		<line from="1075,831" to="1075,809" lineColor="#000000" lineWidth="1"/>
+		<line from="955,742" to="955,721" lineColor="#000000" lineWidth="1"/>
+		<line from="978,743" to="944,743" lineColor="#000000" lineWidth="1"/>
+		<line from="968,763" to="968,743" lineColor="#000000" lineWidth="1"/>
+		<line from="955,786" to="955,764" lineColor="#000000" lineWidth="1"/>
+		<line from="978,764" to="944,764" lineColor="#000000" lineWidth="1"/>
+		<line from="968,808" to="968,786" lineColor="#000000" lineWidth="1"/>
+		<line from="978,787" to="944,787" lineColor="#000000" lineWidth="1"/>
+		<line from="978,809" to="944,809" lineColor="#000000" lineWidth="1"/>
+		<line from="955,822" to="955,809" lineColor="#000000" lineWidth="1"/>
+		<line from="878,855" to="878,832" lineColor="#000000" lineWidth="1"/>
+		<line from="908,855" to="908,832" lineColor="#000000" lineWidth="1"/>
+		<line from="938,855" to="938,832" lineColor="#000000" lineWidth="1"/>
+		<line from="968,855" to="968,832" lineColor="#000000" lineWidth="1"/>
+		<line from="998,855" to="998,832" lineColor="#000000" lineWidth="1"/>
+		<line from="1028,855" to="1028,832" lineColor="#000000" lineWidth="1"/>
+		<line from="1058,855" to="1058,832" lineColor="#000000" lineWidth="1"/>
+		<line from="1088,855" to="1088,832" lineColor="#000000" lineWidth="1"/>
+		<line from="1098,832" to="1064,832" lineColor="#000000" lineWidth="1"/>
+		<rect from="1843,1022" to="1423,1008" border="1" borderColor="#808080" borderWidth="1" fill="1" fillColor="#0080c0"/>
+		<line from="1511,736" to="1511,708" lineColor="#000000" lineWidth="1"/>
+		<line from="1455,735" to="1455,708" lineColor="#404040" lineWidth="1"/>
+		<line from="1509,709" to="1455,709" lineColor="#404040" lineWidth="1"/>
+		<line from="1511,736" to="1455,736" lineColor="#000000" lineWidth="1"/>
+		<string from="1460,710" to="1507,736" border="0" fill="0" fillColor="#a0a0a0" text="2#泵" angle="0.000000" align="1" font="华文中宋" size="19" fontColor="#ffffff"/>
+		<line from="1437,745" to="1437,698" lineColor="#000000" lineWidth="1"/>
+		<line from="1511,810" to="1511,782" lineColor="#000000" lineWidth="1"/>
+		<line from="1455,809" to="1455,782" lineColor="#404040" lineWidth="1"/>
+		<line from="1509,783" to="1455,783" lineColor="#404040" lineWidth="1"/>
+		<line from="1511,810" to="1455,810" lineColor="#000000" lineWidth="1"/>
+		<string from="1460,784" to="1507,810" border="0" fill="0" fillColor="#a0a0a0" text="3#泵" angle="0.000000" align="1" font="华文中宋" size="19" fontColor="#ffffff"/>
+		<line from="1437,820" to="1437,773" lineColor="#000000" lineWidth="1"/>
+		<line from="1511,885" to="1511,857" lineColor="#000000" lineWidth="1"/>
+		<line from="1455,884" to="1455,857" lineColor="#404040" lineWidth="1"/>
+		<line from="1509,858" to="1455,858" lineColor="#404040" lineWidth="1"/>
+		<line from="1511,885" to="1455,885" lineColor="#000000" lineWidth="1"/>
+		<string from="1460,859" to="1507,885" border="0" fill="0" fillColor="#a0a0a0" text="4#泵" angle="0.000000" align="1" font="华文中宋" size="19" fontColor="#ffffff"/>
+		<line from="1437,895" to="1437,848" lineColor="#000000" lineWidth="1"/>
+		<line from="1511,960" to="1511,932" lineColor="#000000" lineWidth="1"/>
+		<line from="1455,959" to="1455,932" lineColor="#404040" lineWidth="1"/>
+		<line from="1509,933" to="1455,933" lineColor="#404040" lineWidth="1"/>
+		<line from="1511,960" to="1455,960" lineColor="#000000" lineWidth="1"/>
+		<string from="1460,934" to="1507,960" border="0" fill="0" fillColor="#a0a0a0" text="5#泵" angle="0.000000" align="1" font="华文中宋" size="19" fontColor="#ffffff"/>
+		<line from="1437,970" to="1437,923" lineColor="#000000" lineWidth="1"/>
+		<string from="429,776" to="514,802" border="0" fill="0" fillColor="#a0a0a0" text="市政管道" angle="0.000000" align="1" font="黑体" size="19" fontColor="#ffffff"/>
+		<string from="1866,594" to="1908,620" border="0" fill="0" fillColor="#a0a0a0" text="供电" angle="0.000000" align="1" font="黑体" size="16" fontColor="#4c4c4c"/>
+		<string from="1865,595" to="1907,621" border="0" fill="0" fillColor="#a0a0a0" text="供电" angle="0.000000" align="1" font="黑体" size="16" fontColor="#ffffff"/>
+		<imageStatue from="1877,642" to="1895,660" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#000000" stname="M1_01_DJSD" iconType="1" filename_close="iconlibrary/public/透明绿球12.png" filename_open="iconlibrary/public/透明红球12.png" angle="0.000000"/>
+		<line from="1912,699" to="1437,699" lineColor="#000000" lineWidth="1"/>
+		<line from="1912,746" to="1912,698" lineColor="#808080" lineWidth="1"/>
+		<line from="1911,746" to="1437,746" lineColor="#808080" lineWidth="1"/>
+		<line from="1912,774" to="1437,774" lineColor="#000000" lineWidth="1"/>
+		<line from="1912,821" to="1912,773" lineColor="#808080" lineWidth="1"/>
+		<line from="1911,821" to="1437,821" lineColor="#808080" lineWidth="1"/>
+		<imageStatue from="1877,792" to="1895,810" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#000000" stname="M1_03_DJSD" iconType="1" filename_close="iconlibrary/public/透明绿球12.png" filename_open="iconlibrary/public/透明红球12.png" angle="0.000000"/>
+		<line from="1912,849" to="1437,849" lineColor="#000000" lineWidth="1"/>
+		<line from="1912,896" to="1912,848" lineColor="#808080" lineWidth="1"/>
+		<line from="1911,896" to="1437,896" lineColor="#808080" lineWidth="1"/>
+		<line from="1912,924" to="1437,924" lineColor="#000000" lineWidth="1"/>
+		<line from="1912,971" to="1912,923" lineColor="#808080" lineWidth="1"/>
+		<line from="1911,971" to="1437,971" lineColor="#808080" lineWidth="1"/>
+		<imageStatue from="1877,942" to="1895,960" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#000000" stname="M1_05_DJSD" iconType="1" filename_close="iconlibrary/public/透明绿球12.png" filename_open="iconlibrary/public/透明红球12.png" angle="0.000000"/>
+		<imageStatue from="1877,717" to="1895,735" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#000000" stname="M1_02_DJSD" iconType="1" filename_close="iconlibrary/public/透明绿球12.png" filename_open="iconlibrary/public/透明红球12.png" angle="0.000000"/>
+		<imageStatue from="1877,867" to="1895,885" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#000000" stname="M1_04_DJSD" iconType="1" filename_close="iconlibrary/public/透明绿球12.png" filename_open="iconlibrary/public/透明红球12.png" angle="0.000000"/>
+		<string from="1856,1002" to="1941,1028" border="0" fill="0" fillColor="#a0a0a0" text="校园管网" angle="0.000000" align="1" font="黑体" size="19" fontColor="#ffffff"/>
+		<imageStatue from="1108,743" to="1126,761" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#000000" stname="M1_02_SXGSW" iconType="1" filename_close="iconlibrary/public/透明绿球12.png" filename_open="iconlibrary/public/透明红球12.png" angle="0.000000"/>
+		<string from="1129,737" to="1180,763" border="0" fill="0" fillColor="#a0a0a0" text="高水位" angle="0.000000" align="1" font="黑体" size="16" fontColor="#ffffff"/>
+		<image from="451,121" to="2051,221" border="1" borderColor="#e1e101" borderWidth="1" fill="0" fillColor="#c0c0c0" iconType="1" filename="iconlibrary/user/1号水泵房生活供水系统图标题.png" angle="0.000000"/>
+		<dyanData from="648,174" to="793,198" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="LcdD" size="24" name="DATE" type="0"/>
+		<dyanData from="1758,174" to="1903,198" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="LcdD" size="24" name="TIME" type="0"/>
+		<imageStatue from="488,155" to="608,198" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#000000" stname="N_Light" iconType="1" filename_close="iconlibrary/public/开灯.png" filename_open="iconlibrary/public/关灯.png" angle="0.000000"/>
+		<image from="620,744" to="690,825" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" iconType="1" filename="iconlibrary/public/阀门开.png" angle="0.000000"/>
+		<rect from="620,796" to="539,784" border="1" borderColor="#0080c0" borderWidth="1" fill="1" fillColor="#0080c0"/>
+		<lineCurrent from="1405,867" to="1345,867" lineColor="#303030" lineWidth="10" name="M1_04_YXZT"/>
+		<lineCurrent from="1406,942" to="1346,942" lineColor="#303030" lineWidth="10" name="M1_05_YXZT"/>
+		<lineCurrent from="1407,793" to="1344,793" lineColor="#303030" lineWidth="10" name="M1_03_YXZT"/>
+		<lineCurrent from="1407,717" to="1346,717" lineColor="#303030" lineWidth="10" name="M1_02_YXZT"/>
+		<imageNavi from="1,4" to="223,90" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" iconType="1" filename="iconlibrary/public/主画面小小按钮.png" angle="0.000000" naviTo="0"/>
+		<imageNavi from="428,4" to="650,90" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" iconType="1" filename="iconlibrary/public/数据浏览小小按钮.png" angle="0.000000" naviTo="4"/>
+		<commandButton from="662,4" to="884,90" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" font="宋体" size="16" filename_down="iconlibrary/public/报警查询小小按钮.png" filename_up="" text="" btnType="231" cmdType="11" cmdParam="0"/>
+		<commandButton from="1130,4" to="1352,90" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" font="宋体" size="16" filename_down="iconlibrary/public/退出遥控小小按钮.png" filename_up="" text="" btnType="0" cmdType="11" cmdParam="5"/>
+		<commandButton from="896,4" to="1118,90" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" font="宋体" size="16" filename_down="iconlibrary/public/进入遥控小小按钮.png" filename_up="" text="" btnType="0" cmdType="11" cmdParam="4"/>
+		<imageNavi from="218,4" to="440,90" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" iconType="1" filename="iconlibrary/user/2号水泵房小小按钮.png" angle="0.000000" naviTo="2"/>
+		<rect from="1080,1127" to="828,941" border="1" borderColor="#808080" borderWidth="3" fill="1" fillColor="#c0c0c0"/>
+		<string from="926,906" to="978,932" border="0" fill="0" fillColor="#a0a0a0" text="视频1" angle="0.000000" align="1" font="黑体" size="19" fontColor="#4c4c4c"/>
+		<string from="924,907" to="977,933" border="0" fill="0" fillColor="#a0a0a0" text="视频1" angle="0.000000" align="1" font="黑体" size="19" fontColor="#ffffff"/>
+		<lineCurrent from="1416,1015" to="1416,640" lineColor="#303030" lineWidth="10" name="M1_JSFKQ"/>
+		<lineCurrent from="1838,1015" to="1419,1015" lineColor="#303030" lineWidth="10" name="M1_JSFKQ"/>
+		<rectAn from="946,823" to="858,722" border="0" fill="0" fillColor="#c0c0c0" max="2.500000" min="0.000000" angle0="100" angle1="1" type="0" valueColor="#0080c0" name="M1_01SXYW"/>
+		<rectAn from="1066,823" to="978,722" border="0" fill="0" fillColor="#c0c0c0" max="2.500000" min="0.000000" angle0="0" angle1="1" type="0" valueColor="#0080c0" name="M1_02SXYW"/>
+		<commandButton from="1079,265" to="1232,327" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" font="宋体" size="16" filename_down="iconlibrary/public/对讲按钮.png" filename_up="iconlibrary/public/对讲按钮.png" text="" btnType="0" cmdType="9" cmdParam=""/>
+		<commandButton from="1269,265" to="1422,327" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" font="宋体" size="16" filename_down="iconlibrary/public/广播按钮.png" filename_up="iconlibrary/public/广播按钮.png" text="" btnType="0" cmdType="8" cmdParam=""/>
+		<line from="1882,390" to="1760,390" lineColor="#000000" lineWidth="1"/>
+		<line from="1760,461" to="1760,389" lineColor="#000000" lineWidth="1"/>
+		<line from="1882,521" to="1760,521" lineColor="#808080" lineWidth="1"/>
+		<line from="1883,461" to="1883,391" lineColor="#808080" lineWidth="1"/>
+		<string from="1753,454" to="1832,501" border="0" fill="0" fillColor="#a0a0a0" text="湿度:" angle="0.000000" align="1" font="Times New Roman" size="14" fontColor="#ffffff"/>
+		<string from="1768,419" to="1817,445" border="0" fill="0" fillColor="#a0a0a0" text="温度:" angle="0.000000" align="1" font="Times New Roman" size="14" fontColor="#ffffff"/>
+		<string from="1831,408" to="1874,455" border="0" fill="0" fillColor="#a0a0a0" text="℃" angle="0.000000" align="1" font="Times New Roman" size="14" fontColor="#ffffff"/>
+		<string from="1833,454" to="1876,501" border="0" fill="0" fillColor="#a0a0a0" text="%" angle="0.000000" align="1" font="Times New Roman" size="14" fontColor="#ffffff"/>
+		<line from="1113,521" to="1113,389" lineColor="#000000" lineWidth="1"/>
+		<line from="1722,522" to="1722,389" lineColor="#808080" lineWidth="1"/>
+		<line from="1883,522" to="1883,389" lineColor="#808080" lineWidth="1"/>
+		<line from="1760,521" to="1760,389" lineColor="#000000" lineWidth="1"/>
+		<string from="1807,419" to="1846,445" border="0" fill="0" fillColor="#a0a0a0" text="28.2" angle="0.000000" align="1" font="Times New Roman" size="14" fontColor="#ffffff"/>
+		<string from="1807,466" to="1846,492" border="0" fill="0" fillColor="#a0a0a0" text="80.9" angle="0.000000" align="1" font="Times New Roman" size="14" fontColor="#ffffff"/>
+	</layer>
+</picture>

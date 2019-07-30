@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="gbk"?>
+<picture version="7" color="#c0c0c0" width="2500" height="1300">
+	<layer name="底图">
+		<image from="1,1" to="2561,1579" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" iconType="1" filename="iconlibrary/user/底图.jpg" angle="0.000000"/>
+		<image from="458,118" to="2058,218" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" iconType="1" filename="iconlibrary/public/供水自动化系统.png" angle="0.000000"/>
+		<imageNavi from="868,434" to="1248,634" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" iconType="1" filename="iconlibrary/user/2号水泵房大按钮.png" angle="0.000000" naviTo="2"/>
+		<rect from="2311,65" to="2416,34" border="1" borderColor="#0080ff" borderWidth="1" fill="1" fillColor="#008000"/>
+		<dyanData from="2311,35" to="2416,61" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="1" font="宋体" size="16" name="user0" type="0"/>
+		<commandButton from="2533,66" to="2438,33" border="1" borderColor="#0000ff" borderWidth="1" fill="1" fillColor="#c0c0c0" font="宋体" size="16" filename_down="" filename_up="" text="登录" btnType="255" cmdType="12" cmdParam="2"/>
+		<imageNavi from="1306,435" to="1686,635" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" iconType="1" filename="iconlibrary/public/数据浏览大按钮.png" angle="0.000000" naviTo="4"/>
+		<commandButton from="1766,436" to="2146,636" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" font="宋体" size="16" filename_down="iconlibrary/public/报警查询大按钮.png" filename_up="" text="" btnType="0" cmdType="11" cmdParam="0"/>
+		<commandButton from="411,799" to="791,999" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" font="宋体" size="16" filename_down="iconlibrary/public/报表大按钮.png" filename_up="" text="" btnType="0" cmdType="11" cmdParam="1"/>
+		<commandButton from="871,799" to="1251,999" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" font="宋体" size="16" filename_down="iconlibrary/public/操作票大按钮.png" filename_up="" text="" btnType="0" cmdType="10" cmdParam=".\NEMS_OOS.exe"/>
+		<commandButton from="1326,799" to="1706,999" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" font="宋体" size="16" filename_down="iconlibrary/public/进入群控大按钮.png" filename_up="" text="" btnType="0" cmdType="11" cmdParam="4"/>
+		<commandButton from="1766,799" to="2146,999" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" font="宋体" size="16" filename_down="iconlibrary/public/退出群控大按钮.png" filename_up="" text="" btnType="0" cmdType="11" cmdParam="5"/>
+		<imageNavi from="412,435" to="792,635" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" iconType="1" filename="iconlibrary/user/1号水泵房大按钮.png" angle="0.000000" naviTo="3"/>
+	</layer>
+</picture>

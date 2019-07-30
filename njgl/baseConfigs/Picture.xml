@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Picture>
+  <pic No="0" display="1" name="主画面.xml" />
+  <pic No="2" display="1" name="1号开闭所系统图.xml" />
+  <pic No="3" display="1" name="1号水泵房生活供水系统图.xml" />
+  <pic No="4" display="1" name="1号开闭所高压数据一览表.xml" />
+</Picture>

@@ -47,9 +47,9 @@ public class CumulantStatisController {
         /**
          * 请求参数类型
          * companyId : demo
-         * unitname : 中心电站
-         * stime : 2017-7-2 00:01
-         * etime : 2017-7-2 23:59
+         * unitName : 中心电站
+         * sTime : 2017-7-2 00:01
+         * eTime : 2017-7-2 23:59
          * */
 
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm");

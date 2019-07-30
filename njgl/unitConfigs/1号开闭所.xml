@@ -1,0 +1,488 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dynamic name="1号开闭所" unitNo="25" type="0">
+  <configs name="遥测" />
+  <configs name="遥信">
+    <config ptNo="0">
+      <ename>N_Light</ename>
+      <cname>1号开闭所自动化柜灯控照明控制</cname>
+      <mask>1</mask>
+      <swidef>1</swidef>
+      <type>70</type>
+      <pcepd>0</pcepd>
+      <SOE>0</SOE>
+      <alarm>3</alarm>
+      <remark>0</remark>
+    </config>
+  </configs>
+  <configs name="电度">
+    <config ptNo="0">
+      <ename>N_H05_PD</ename>
+      <cname>1号开闭所1#进线有功电度</cname>
+      <mask>1</mask>
+      <poinum>2</poinum>
+      <fi>0.001</fi>
+      <inlib>1</inlib>
+      <full>99999</full>
+      <lgname>KWH</lgname>
+    </config>
+    <config ptNo="1">
+      <ename>N_H05_QD</ename>
+      <cname>1号开闭所1#进线无功电度</cname>
+      <mask>1</mask>
+      <poinum>2</poinum>
+      <fi>0.001</fi>
+      <inlib>1</inlib>
+      <full>99999</full>
+      <lgname>KVarH</lgname>
+    </config>
+    <config ptNo="2">
+      <ename>N_H09_PD</ename>
+      <cname>1号开闭所公共教学楼1#出线有功电度</cname>
+      <mask>1</mask>
+      <poinum>2</poinum>
+      <fi>0.001</fi>
+      <inlib>1</inlib>
+      <full>99999</full>
+      <lgname>KWH</lgname>
+    </config>
+    <config ptNo="3">
+      <ename>N_H09_QD</ename>
+      <cname>1号开闭所公共教学楼1#出线无功电度</cname>
+      <mask>1</mask>
+      <poinum>2</poinum>
+      <fi>0.001</fi>
+      <inlib>1</inlib>
+      <full>99999</full>
+      <lgname>KVarH</lgname>
+    </config>
+    <config ptNo="4">
+      <ename>N_H11_PD</ename>
+      <cname>1号开闭所实验楼东1#出线有功电度</cname>
+      <mask>1</mask>
+      <poinum>2</poinum>
+      <fi>0.001</fi>
+      <inlib>1</inlib>
+      <full>99999</full>
+      <lgname>KWH</lgname>
+    </config>
+    <config ptNo="5">
+      <ename>N_H11_QD</ename>
+      <cname>1号开闭所实验楼东1#出线无功电度</cname>
+      <mask>1</mask>
+      <poinum>2</poinum>
+      <fi>0.001</fi>
+      <inlib>1</inlib>
+      <full>99999</full>
+      <lgname>KVarH</lgname>
+    </config>
+    <config ptNo="6">
+      <ename>N_H13_PD</ename>
+      <cname>1号开闭所实验楼西1#出线有功电度</cname>
+      <mask>1</mask>
+      <poinum>2</poinum>
+      <fi>0.001</fi>
+      <inlib>1</inlib>
+      <full>99999</full>
+      <lgname>KWH</lgname>
+    </config>
+    <config ptNo="7">
+      <ename>N_H13_QD</ename>
+      <cname>1号开闭所实验楼西1#出线无功电度</cname>
+      <mask>1</mask>
+      <poinum>2</poinum>
+      <fi>0.001</fi>
+      <inlib>1</inlib>
+      <full>99999</full>
+      <lgname>KVarH</lgname>
+    </config>
+    <config ptNo="8">
+      <ename>N_H15_PD</ename>
+      <cname>1号开闭所国际学院1#出线有功电度</cname>
+      <mask>1</mask>
+      <poinum>2</poinum>
+      <fi>0.001</fi>
+      <inlib>1</inlib>
+      <full>99999</full>
+      <lgname>KWH</lgname>
+    </config>
+    <config ptNo="9">
+      <ename>N_H15_QD</ename>
+      <cname>1号开闭所国际学院1#出线无功电度</cname>
+      <mask>1</mask>
+      <poinum>2</poinum>
+      <fi>0.001</fi>
+      <inlib>1</inlib>
+      <full>99999</full>
+      <lgname>KVarH</lgname>
+    </config>
+    <config ptNo="10">
+      <ename>N_H17_PD</ename>
+      <cname>1号开闭所体育馆1#出线有功电度</cname>
+      <mask>1</mask>
+      <poinum>2</poinum>
+      <fi>0.001</fi>
+      <inlib>1</inlib>
+      <full>99999</full>
+      <lgname>KWH</lgname>
+    </config>
+    <config ptNo="11">
+      <ename>N_H17_QD</ename>
+      <cname>1号开闭所体育馆1#出线无功电度</cname>
+      <mask>1</mask>
+      <poinum>2</poinum>
+      <fi>0.001</fi>
+      <inlib>1</inlib>
+      <full>99999</full>
+      <lgname>KVarH</lgname>
+    </config>
+    <config ptNo="12">
+      <ename>N_H19_PD</ename>
+      <cname>1号开闭所1#学生公寓有功电度</cname>
+      <mask>1</mask>
+      <poinum>2</poinum>
+      <fi>0.001</fi>
+      <inlib>1</inlib>
+      <full>99999</full>
+      <lgname>KWH</lgname>
+    </config>
+    <config ptNo="13">
+      <ename>N_H19_QD</ename>
+      <cname>1号开闭所1#学生公寓无功电度</cname>
+      <mask>1</mask>
+      <poinum>2</poinum>
+      <fi>0.001</fi>
+      <inlib>1</inlib>
+      <full>99999</full>
+      <lgname>KVarH</lgname>
+    </config>
+    <config ptNo="14">
+      <ename>N_H21_PD</ename>
+      <cname>1号开闭所3#学生公寓有功电度</cname>
+      <mask>1</mask>
+      <poinum>2</poinum>
+      <fi>0.001</fi>
+      <inlib>1</inlib>
+      <full>99999</full>
+      <lgname>KWH</lgname>
+    </config>
+    <config ptNo="15">
+      <ename>N_H21_QD</ename>
+      <cname>1号开闭所3#学生公寓无功电度</cname>
+      <mask>1</mask>
+      <poinum>2</poinum>
+      <fi>0.001</fi>
+      <inlib>1</inlib>
+      <full>99999</full>
+      <lgname>KVarH</lgname>
+    </config>
+    <config ptNo="16">
+      <ename>N_H23_PD</ename>
+      <cname>1号开闭所5#学生公寓有功电度</cname>
+      <mask>1</mask>
+      <poinum>2</poinum>
+      <fi>0.001</fi>
+      <inlib>1</inlib>
+      <full>99999</full>
+      <lgname>KWH</lgname>
+    </config>
+    <config ptNo="17">
+      <ename>N_H23_QD</ename>
+      <cname>1号开闭所5#学生公寓无功电度</cname>
+      <mask>1</mask>
+      <poinum>2</poinum>
+      <fi>0.001</fi>
+      <inlib>1</inlib>
+      <full>99999</full>
+      <lgname>KVarH</lgname>
+    </config>
+    <config ptNo="18">
+      <ename>N_H25_PD</ename>
+      <cname>1号开闭所环科楼大气楼1#出线有功电度</cname>
+      <mask>1</mask>
+      <poinum>2</poinum>
+      <fi>0.001</fi>
+      <inlib>1</inlib>
+      <full>99999</full>
+      <lgname>KWH</lgname>
+    </config>
+    <config ptNo="19">
+      <ename>N_H25_QD</ename>
+      <cname>1号开闭所环科楼大气楼1#出线无功电度</cname>
+      <mask>1</mask>
+      <poinum>2</poinum>
+      <fi>0.001</fi>
+      <inlib>1</inlib>
+      <full>99999</full>
+      <lgname>KVarH</lgname>
+    </config>
+    <config ptNo="20">
+      <ename>N_H27_PD</ename>
+      <cname>1号开闭所221备用有功电度</cname>
+      <mask>1</mask>
+      <poinum>2</poinum>
+      <fi>0.001</fi>
+      <inlib>1</inlib>
+      <full>99999</full>
+      <lgname>KWH</lgname>
+    </config>
+    <config ptNo="21">
+      <ename>N_H27_QD</ename>
+      <cname>1号开闭所221备用无功电度</cname>
+      <mask>1</mask>
+      <poinum>2</poinum>
+      <fi>0.001</fi>
+      <inlib>1</inlib>
+      <full>99999</full>
+      <lgname>KVarH</lgname>
+    </config>
+    <config ptNo="22">
+      <ename>N_H29_PD</ename>
+      <cname>1号开闭所母联柜有功电度</cname>
+      <mask>1</mask>
+      <poinum>2</poinum>
+      <fi>0.001</fi>
+      <inlib>1</inlib>
+      <full>99999</full>
+      <lgname>KWH</lgname>
+    </config>
+    <config ptNo="23">
+      <ename>N_H29_QD</ename>
+      <cname>1号开闭所母联柜无功电度</cname>
+      <mask>1</mask>
+      <poinum>2</poinum>
+      <fi>0.001</fi>
+      <inlib>1</inlib>
+      <full>99999</full>
+      <lgname>KVarH</lgname>
+    </config>
+    <config ptNo="24">
+      <ename>N_H06_PD</ename>
+      <cname>1号开闭所2#进线有功电度</cname>
+      <mask>1</mask>
+      <poinum>2</poinum>
+      <fi>0.001</fi>
+      <inlib>1</inlib>
+      <full>99999</full>
+      <lgname>KWH</lgname>
+    </config>
+    <config ptNo="25">
+      <ename>N_H06_QD</ename>
+      <cname>1号开闭所2#进线无功电度</cname>
+      <mask>1</mask>
+      <poinum>2</poinum>
+      <fi>0.001</fi>
+      <inlib>1</inlib>
+      <full>99999</full>
+      <lgname>KVarH</lgname>
+    </config>
+    <config ptNo="26">
+      <ename>N_H10_PD</ename>
+      <cname>1号开闭所公共教学楼2#出线有功电度</cname>
+      <mask>1</mask>
+      <poinum>2</poinum>
+      <fi>0.001</fi>
+      <inlib>1</inlib>
+      <full>99999</full>
+      <lgname>KWH</lgname>
+    </config>
+    <config ptNo="27">
+      <ename>N_H10_QD</ename>
+      <cname>1号开闭所公共教学楼2#出线无功电度</cname>
+      <mask>1</mask>
+      <poinum>2</poinum>
+      <fi>0.001</fi>
+      <inlib>1</inlib>
+      <full>99999</full>
+      <lgname>KVarH</lgname>
+    </config>
+    <config ptNo="28">
+      <ename>N_H12_PD</ename>
+      <cname>1号开闭所实验楼东2#出线有功电度</cname>
+      <mask>1</mask>
+      <poinum>2</poinum>
+      <fi>0.001</fi>
+      <inlib>1</inlib>
+      <full>99999</full>
+      <lgname>KWH</lgname>
+    </config>
+    <config ptNo="29">
+      <ename>N_H12_QD</ename>
+      <cname>1号开闭所实验楼东2#出线无功电度</cname>
+      <mask>1</mask>
+      <poinum>2</poinum>
+      <fi>0.001</fi>
+      <inlib>1</inlib>
+      <full>99999</full>
+      <lgname>KVarH</lgname>
+    </config>
+    <config ptNo="30">
+      <ename>N_H14_PD</ename>
+      <cname>1号开闭所实验楼西2#出线有功电度</cname>
+      <mask>1</mask>
+      <poinum>2</poinum>
+      <fi>0.001</fi>
+      <inlib>1</inlib>
+      <full>99999</full>
+      <lgname>KWH</lgname>
+    </config>
+    <config ptNo="31">
+      <ename>N_H14_QD</ename>
+      <cname>1号开闭所实验楼西2#出线无功电度</cname>
+      <mask>1</mask>
+      <poinum>2</poinum>
+      <fi>0.001</fi>
+      <inlib>1</inlib>
+      <full>99999</full>
+      <lgname>KVarH</lgname>
+    </config>
+    <config ptNo="32">
+      <ename>N_H16_PD</ename>
+      <cname>1号开闭所国际学院2#出线有功电度</cname>
+      <mask>1</mask>
+      <poinum>2</poinum>
+      <fi>0.001</fi>
+      <inlib>1</inlib>
+      <full>99999</full>
+      <lgname>KWH</lgname>
+    </config>
+    <config ptNo="33">
+      <ename>N_H16_QD</ename>
+      <cname>1号开闭所国际学院2#出线无功电度</cname>
+      <mask>1</mask>
+      <poinum>2</poinum>
+      <fi>0.001</fi>
+      <inlib>1</inlib>
+      <full>99999</full>
+      <lgname>KVarH</lgname>
+    </config>
+    <config ptNo="34">
+      <ename>N_H18_PD</ename>
+      <cname>1号开闭所体育馆2#出线有功电度</cname>
+      <mask>1</mask>
+      <poinum>2</poinum>
+      <fi>0.001</fi>
+      <inlib>1</inlib>
+      <full>99999</full>
+      <lgname>KWH</lgname>
+    </config>
+    <config ptNo="35">
+      <ename>N_H18_QD</ename>
+      <cname>1号开闭所体育馆2#出线无功电度</cname>
+      <mask>1</mask>
+      <poinum>2</poinum>
+      <fi>0.001</fi>
+      <inlib>1</inlib>
+      <full>99999</full>
+      <lgname>KVarH</lgname>
+    </config>
+    <config ptNo="36">
+      <ename>N_H20_PD</ename>
+      <cname>1号开闭所第一食堂有功电度</cname>
+      <mask>1</mask>
+      <poinum>2</poinum>
+      <fi>0.001</fi>
+      <inlib>1</inlib>
+      <full>99999</full>
+      <lgname>KWH</lgname>
+    </config>
+    <config ptNo="37">
+      <ename>N_H20_QD</ename>
+      <cname>1号开闭所第一食堂无功电度</cname>
+      <mask>1</mask>
+      <poinum>2</poinum>
+      <fi>0.001</fi>
+      <inlib>1</inlib>
+      <full>99999</full>
+      <lgname>KVarH</lgname>
+    </config>
+    <config ptNo="38">
+      <ename>N_H22_PD</ename>
+      <cname>1号开闭所2#学生公寓有功电度</cname>
+      <mask>1</mask>
+      <poinum>2</poinum>
+      <fi>0.001</fi>
+      <inlib>1</inlib>
+      <full>99999</full>
+      <lgname>KWH</lgname>
+    </config>
+    <config ptNo="39">
+      <ename>N_H22_QD</ename>
+      <cname>1号开闭所2#学生公寓无功电度</cname>
+      <mask>1</mask>
+      <poinum>2</poinum>
+      <fi>0.001</fi>
+      <inlib>1</inlib>
+      <full>99999</full>
+      <lgname>KVarH</lgname>
+    </config>
+    <config ptNo="40">
+      <ename>N_H24_PD</ename>
+      <cname>1号开闭所4#学生公寓有功电度</cname>
+      <mask>1</mask>
+      <poinum>2</poinum>
+      <fi>0.001</fi>
+      <inlib>1</inlib>
+      <full>99999</full>
+      <lgname>KWH</lgname>
+    </config>
+    <config ptNo="41">
+      <ename>N_H24_QD</ename>
+      <cname>1号开闭所4#学生公寓无功电度</cname>
+      <mask>1</mask>
+      <poinum>2</poinum>
+      <fi>0.001</fi>
+      <inlib>1</inlib>
+      <full>99999</full>
+      <lgname>KVarH</lgname>
+    </config>
+    <config ptNo="42">
+      <ename>N_H26_PD</ename>
+      <cname>1号开闭所环科楼大气楼2#出线有功电度</cname>
+      <mask>1</mask>
+      <poinum>2</poinum>
+      <fi>0.001</fi>
+      <inlib>1</inlib>
+      <full>99999</full>
+      <lgname>KWH</lgname>
+    </config>
+    <config ptNo="43">
+      <ename>N_H26_QD</ename>
+      <cname>1号开闭所环科楼大气楼2#出线无功电度</cname>
+      <mask>1</mask>
+      <poinum>2</poinum>
+      <fi>0.001</fi>
+      <inlib>1</inlib>
+      <full>99999</full>
+      <lgname>KVarH</lgname>
+    </config>
+    <config ptNo="44">
+      <ename>N_H28_PD</ename>
+      <cname>1号开闭所222备用有功电度</cname>
+      <mask>1</mask>
+      <poinum>2</poinum>
+      <fi>0.001</fi>
+      <inlib>1</inlib>
+      <full>99999</full>
+      <lgname>KWH</lgname>
+    </config>
+    <config ptNo="45">
+      <ename>N_H28_QD</ename>
+      <cname>1号开闭所222备用无功电度</cname>
+      <mask>1</mask>
+      <poinum>2</poinum>
+      <fi>0.001</fi>
+      <inlib>1</inlib>
+      <full>99999</full>
+      <lgname>KVarH</lgname>
+    </config>
+  </configs>
+  <configs name="视频">
+    <config ptNo="0">
+      <ename>N_H_GVideo</ename>
+      <cname>1号开闭所高压室枪机</cname>
+      <Id>0</Id>
+      <ip>192.168.1.127</ip>
+      <npotr>8000</npotr>
+    </config>
+  </configs>
+</dynamic>

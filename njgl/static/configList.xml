@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="GBK" ?>
+<config>
+    <dynamic name="配置文件列表">
+        <configType type="1" name="站点配置文件" path="unitConfigs">
+            <configFile name="1号开闭所.xml" md5="5ad5385a8bb64016b30712408e9ef71e" />
+            <configFile name="1号开闭所200柜母联.xml" md5="fc673844fa16393e10eb935acc0d6f71" />
+            <configFile name="1号开闭所201柜1号进线.xml" md5="9c0b10e419e79e5e08029b0dad9e064f" />
+            <configFile name="1号开闭所202柜2号进线.xml" md5="7860c1ffab16e5c14b1710cae1fd5582" />
+            <configFile name="1号开闭所203柜公共教学楼1号出线.xml" md5="f6862eba4773225feef4a919e602521b" />
+            <configFile name="1号开闭所204柜公共教学楼2号出线.xml" md5="06e96a5ffc53a17c1e46a3be3f24b0b2" />
+            <configFile name="1号开闭所205柜实验楼东1号出线.xml" md5="376c95791816d4e3244332a06aaed7ee" />
+            <configFile name="1号开闭所206柜实验楼东2号出线.xml" md5="c97b9a148f1f6c78ecdefbc1e490519c" />
+            <configFile name="1号开闭所207柜实验楼西1号出线.xml" md5="36215241825bcbdaea705fcd031fe747" />
+            <configFile name="1号开闭所208柜实验楼西2号出线.xml" md5="cef323a7dadc3166869767f535bee950" />
+            <configFile name="1号开闭所209柜国际学院1号出线.xml" md5="a0f2de45ec09ff774bc347443dae5c29" />
+            <configFile name="1号开闭所210柜国际学院2号出线.xml" md5="0615dc3d3020a762dc6e71dc2919728d" />
+            <configFile name="1号开闭所211柜体育馆1号出线.xml" md5="2fad51cf9e1414491469df539f2334f1" />
+            <configFile name="1号开闭所212柜体育馆2号出线.xml" md5="bbf6856b4b19ba0fcaecf184b45c17da" />
+            <configFile name="1号开闭所213柜1号学生公寓出线.xml" md5="dfb7fd3b3a2e1e1a3dbd3c2c4d03bce5" />
+            <configFile name="1号开闭所214柜第一食堂出线.xml" md5="5da2c3534dd0ed9d69ab8810fcf2e1ce" />
+            <configFile name="1号开闭所215柜3号学生公寓出线.xml" md5="468687c92b1efa516437408925ffadfa" />
+            <configFile name="1号开闭所216柜2号学生公寓出线.xml" md5="cbc84149bf20d58cf18199682f486e2f" />
+            <configFile name="1号开闭所217柜5号学生公寓出线.xml" md5="721cb1d829ea1c614eebac8567d30f67" />
+            <configFile name="1号开闭所218柜4号学生公寓出线.xml" md5="bdc9e648b743eb8702f1b4c7f8baf2ec" />
+            <configFile name="1号开闭所219柜环科楼大气楼1号出线.xml" md5="c95355ef2e18f37e337423f7b82be84b" />
+            <configFile name="1号开闭所220柜环科楼大气楼2号出线.xml" md5="c781caa2479a65fab32916d14f248cf0" />
+            <configFile name="1号开闭所221柜备用.xml" md5="1aca98e6d059d21716b82a28489ad24c" />
+            <configFile name="1号开闭所222柜备用.xml" md5="865bceaaaf31b8fa5d8cdc279678dfe2" />
+            <configFile name="1号水泵房.xml" md5="9ffef4fd5a69df99467922202b2fa418" />
+            <configFile name="通讯状态单元.xml" md5="760a60f39385a4a0fb2e3c11d226bdba" />
+        </configType>
+        <configType type="4" name="NEMS基本配置文件" path="baseConfigs">
+            <configFile name="CurveCfg.xml" md5="d04c478326158229cb7bae58b82fc080" />
+            <configFile name="Picture.xml" md5="c61fd485e0a89c6673c25bd8b6c0ffc9" />
+        </configType>
+        <configType type="2" name="PIC配置文件" path="pictures">
+            <configFile name="1号开闭所高压数据一览表.xml" md5="c22b027ad95d77d60326f43be22ee6a4" />
+            <configFile name="1号开闭所系统图.xml" md5="8dc446877ac63d0869db24b8bb93e654" />
+            <configFile name="1号水泵房生活供水系统图.xml" md5="3d6aea3931d8e5032e2201b0dd621212" />
+            <configFile name="主画面.xml" md5="1257dd9889cd9523a5744774bd2cb85d" />
+        </configType>
+    </dynamic>
+</config>

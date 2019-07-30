@@ -1,0 +1,992 @@
+<?xml version="1.0" encoding="gbk"?>
+<picture version="7" color="#303030" width="2500" height="1300">
+	<layer name="底图">
+		<image from="468,151" to="2068,251" border="1" borderColor="#e1e101" borderWidth="1" fill="0" fillColor="#c0c0c0" iconType="1" filename="iconlibrary/user/1号开闭所高压数据一览表.png" angle="0.000000"/>
+		<dyanData from="648,204" to="793,228" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="LcdD" size="24" name="DATE" type="0"/>
+		<dyanData from="1758,204" to="1903,228" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="LcdD" size="24" name="TIM1E" type="0"/>
+		<imageNavi from="1,4" to="223,90" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" iconType="1" filename="iconlibrary/public/主画面小小按钮.png" angle="0.000000" naviTo="0"/>
+		<imageNavi from="428,4" to="650,90" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" iconType="1" filename="iconlibrary/user/1号水泵房小小按钮.png" angle="0.000000" naviTo="3"/>
+		<commandButton from="662,4" to="884,90" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" font="宋体" size="16" filename_down="iconlibrary/public/报警查询小小按钮.png" filename_up="" text="" btnType="231" cmdType="11" cmdParam="0"/>
+		<commandButton from="1130,4" to="1352,90" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" font="宋体" size="16" filename_down="iconlibrary/public/退出遥控小小按钮.png" filename_up="" text="" btnType="0" cmdType="11" cmdParam="5"/>
+		<commandButton from="896,4" to="1118,90" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" font="宋体" size="16" filename_down="iconlibrary/public/进入遥控小小按钮.png" filename_up="" text="" btnType="0" cmdType="11" cmdParam="4"/>
+		<imageNavi from="218,4" to="440,90" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" iconType="1" filename="iconlibrary/user/1#开闭所小小按钮.png" angle="0.000000" naviTo="2"/>
+		<line from="1265,1115" to="1265,335" lineColor="#505050" lineWidth="1"/>
+		<line from="1265,1116" to="39,1116" lineColor="#505050" lineWidth="1"/>
+		<string from="560,355" to="601,381" border="0" fill="0" fillColor="#a0a0a0" text="Kv" angle="0.000000" align="1" font="微软雅黑" size="21" fontColor="#000000"/>
+		<string from="627,355" to="668,381" border="0" fill="0" fillColor="#a0a0a0" text="Kv" angle="0.000000" align="1" font="微软雅黑" size="21" fontColor="#000000"/>
+		<string from="327,357" to="368,383" border="0" fill="0" fillColor="#a0a0a0" text="A" angle="0.000000" align="1" font="微软雅黑" size="21" fontColor="#000000"/>
+		<string from="402,357" to="443,383" border="0" fill="0" fillColor="#a0a0a0" text="A" angle="0.000000" align="1" font="微软雅黑" size="21" fontColor="#000000"/>
+		<string from="1203,354" to="1247,380" border="0" fill="0" fillColor="#a0a0a0" text="开关" angle="0.000000" align="1" font="微软雅黑" size="21" fontColor="#000000"/>
+		<string from="724,354" to="765,380" border="0" fill="0" fillColor="#a0a0a0" text="KW" angle="0.000000" align="1" font="微软雅黑" size="21" fontColor="#000000"/>
+		<string from="794,354" to="860,380" border="0" fill="0" fillColor="#a0a0a0" text="KVar" angle="0.000000" align="1" font="微软雅黑" size="21" fontColor="#000000"/>
+		<string from="92,413" to="197,439" border="0" fill="0" fillColor="#a0a0a0" text="1#进线" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#000000"/>
+		<string from="251,357" to="292,383" border="0" fill="0" fillColor="#a0a0a0" text="A" angle="0.000000" align="1" font="微软雅黑" size="21" fontColor="#000000"/>
+		<string from="325,356" to="366,382" border="0" fill="0" fillColor="#a0a0a0" text="A" angle="0.000000" align="1" font="微软雅黑" size="21" fontColor="#00c600"/>
+		<string from="400,356" to="441,382" border="0" fill="0" fillColor="#e30000" text="A" angle="0.000000" align="1" font="微软雅黑" size="21" fontColor="#c50b01"/>
+		<string from="1056,355" to="1109,381" border="0" fill="0" fillColor="#a0a0a0" text="KWH" angle="0.000000" align="1" font="微软雅黑" size="21" fontColor="#000000"/>
+		<string from="487,355" to="528,381" border="0" fill="0" fillColor="#a0a0a0" text="Kv" angle="0.000000" align="1" font="微软雅黑" size="21" fontColor="#000000"/>
+		<string from="558,353" to="599,379" border="0" fill="0" fillColor="#a0a0a0" text="Kv" angle="0.000000" align="1" font="微软雅黑" size="21" fontColor="#00c600"/>
+		<string from="626,353" to="667,379" border="0" fill="0" fillColor="#e30000" text="Kv" angle="0.000000" align="1" font="微软雅黑" size="21" fontColor="#c50b01"/>
+		<string from="248,356" to="289,382" border="0" fill="0" fillColor="#a0a0a0" text="A" angle="0.000000" align="1" font="微软雅黑" size="21" fontColor="#ffff37"/>
+		<string from="485,353" to="526,379" border="0" fill="0" fillColor="#a0a0a0" text="Kv" angle="0.000000" align="1" font="微软雅黑" size="21" fontColor="#ffff37"/>
+		<string from="723,352" to="764,378" border="0" fill="0" fillColor="#a0a0a0" text="KW" angle="0.000000" align="1" font="微软雅黑" size="21" fontColor="#e0e080"/>
+		<string from="793,352" to="859,378" border="0" fill="0" fillColor="#a0a0a0" text="KVar" angle="0.000000" align="1" font="微软雅黑" size="21" fontColor="#e0e080"/>
+		<string from="1055,353" to="1108,379" border="0" fill="0" fillColor="#a0a0a0" text="KWH" angle="0.000000" align="1" font="微软雅黑" size="21" fontColor="#e0e080"/>
+		<string from="1202,352" to="1246,378" border="0" fill="0" fillColor="#a0a0a0" text="开关" angle="0.000000" align="1" font="微软雅黑" size="21" fontColor="#e0e080"/>
+		<string from="113,357" to="177,383" border="0" fill="0" fillColor="#a0a0a0" text="线路名" angle="0.000000" align="1" font="微软雅黑" size="21" fontColor="#000000"/>
+		<string from="109,356" to="175,382" border="0" fill="0" fillColor="#a0a0a0" text="线路名" angle="0.000000" align="1" font="微软雅黑" size="21" fontColor="#e0e080"/>
+		<string from="877,354" to="943,380" border="0" fill="0" fillColor="#a0a0a0" text="Cosφ" angle="0.000000" align="1" font="微软雅黑" size="21" fontColor="#000000"/>
+		<string from="876,352" to="942,378" border="0" fill="0" fillColor="#a0a0a0" text="Cosφ" angle="0.000000" align="1" font="微软雅黑" size="21" fontColor="#e0e080"/>
+		<dyanData from="247,412" to="302,440" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N05_IaC" type="0"/>
+		<dyanData from="312,412" to="367,440" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N05_IbC" type="0"/>
+		<dyanData from="381,412" to="436,440" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N05_IcC" type="0"/>
+		<dyanData from="613,413" to="671,439" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N05_Uca" type="0"/>
+		<dyanData from="546,413" to="602,439" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N05_Ubc" type="0"/>
+		<dyanData from="480,413" to="534,439" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N05_Uab" type="0"/>
+		<dyanData from="719,413" to="769,439" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N05_P" type="0"/>
+		<dyanData from="799,413" to="849,439" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N05_Q" type="0"/>
+		<dyanData from="879,413" to="929,439" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N05_F" type="0"/>
+		<dyanData from="1054,413" to="1160,440" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N_H05_PD" type="1"/>
+		<string from="50,474" to="221,500" border="0" fill="0" fillColor="#a0a0a0" text="公共教学楼1#出线" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#000000"/>
+		<imageStatue from="1211,411" to="1241,441" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#000000" stname="N05_ST" iconType="1" filename_close="iconlibrary/public/合24.png" filename_open="iconlibrary/public/分24.png" angle="0.000000"/>
+		<line from="443,445" to="239,445" lineColor="#202020" lineWidth="1"/>
+		<line from="443,405" to="239,405" lineColor="#808080" lineWidth="1"/>
+		<line from="239,444" to="239,405" lineColor="#808080" lineWidth="1"/>
+		<line from="444,445" to="444,405" lineColor="#202020" lineWidth="1"/>
+		<line from="677,445" to="473,445" lineColor="#202020" lineWidth="1"/>
+		<line from="677,405" to="473,405" lineColor="#808080" lineWidth="1"/>
+		<line from="473,444" to="473,405" lineColor="#808080" lineWidth="1"/>
+		<line from="678,445" to="678,405" lineColor="#202020" lineWidth="1"/>
+		<line from="944,445" to="710,445" lineColor="#202020" lineWidth="1"/>
+		<line from="945,405" to="710,405" lineColor="#808080" lineWidth="1"/>
+		<line from="710,444" to="710,405" lineColor="#808080" lineWidth="1"/>
+		<line from="945,445" to="945,405" lineColor="#202020" lineWidth="1"/>
+		<line from="1176,445" to="972,445" lineColor="#202020" lineWidth="1"/>
+		<line from="1176,405" to="972,405" lineColor="#808080" lineWidth="1"/>
+		<line from="972,444" to="972,405" lineColor="#808080" lineWidth="1"/>
+		<line from="1177,445" to="1177,405" lineColor="#202020" lineWidth="1"/>
+		<line from="1252,445" to="1198,445" lineColor="#202020" lineWidth="1"/>
+		<line from="1252,405" to="1198,405" lineColor="#808080" lineWidth="1"/>
+		<line from="1198,444" to="1198,405" lineColor="#808080" lineWidth="1"/>
+		<line from="1253,444" to="1253,404" lineColor="#202020" lineWidth="1"/>
+		<line from="217,445" to="50,445" lineColor="#202020" lineWidth="1"/>
+		<line from="216,405" to="49,405" lineColor="#808080" lineWidth="1"/>
+		<line from="49,444" to="49,405" lineColor="#808080" lineWidth="1"/>
+		<line from="218,445" to="218,405" lineColor="#202020" lineWidth="1"/>
+		<string from="90,411" to="195,437" border="0" fill="0" fillColor="#a0a0a0" text="1#进线" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#e0e080"/>
+		<line from="443,505" to="239,505" lineColor="#202020" lineWidth="1"/>
+		<line from="443,465" to="239,465" lineColor="#808080" lineWidth="1"/>
+		<line from="239,504" to="239,465" lineColor="#808080" lineWidth="1"/>
+		<line from="444,505" to="444,465" lineColor="#202020" lineWidth="1"/>
+		<line from="677,505" to="473,505" lineColor="#202020" lineWidth="1"/>
+		<line from="677,465" to="473,465" lineColor="#808080" lineWidth="1"/>
+		<line from="473,504" to="473,465" lineColor="#808080" lineWidth="1"/>
+		<line from="678,505" to="678,465" lineColor="#202020" lineWidth="1"/>
+		<line from="1176,505" to="972,505" lineColor="#202020" lineWidth="1"/>
+		<line from="1176,465" to="972,465" lineColor="#808080" lineWidth="1"/>
+		<line from="972,504" to="972,465" lineColor="#808080" lineWidth="1"/>
+		<line from="1177,505" to="1177,465" lineColor="#202020" lineWidth="1"/>
+		<line from="1252,505" to="1198,505" lineColor="#202020" lineWidth="1"/>
+		<line from="1252,465" to="1198,465" lineColor="#808080" lineWidth="1"/>
+		<line from="1198,504" to="1198,465" lineColor="#808080" lineWidth="1"/>
+		<line from="1253,504" to="1253,464" lineColor="#202020" lineWidth="1"/>
+		<line from="944,505" to="710,505" lineColor="#202020" lineWidth="1"/>
+		<line from="945,465" to="710,465" lineColor="#808080" lineWidth="1"/>
+		<line from="710,504" to="710,465" lineColor="#808080" lineWidth="1"/>
+		<line from="945,505" to="945,465" lineColor="#202020" lineWidth="1"/>
+		<line from="443,565" to="239,565" lineColor="#202020" lineWidth="1"/>
+		<line from="443,525" to="239,525" lineColor="#808080" lineWidth="1"/>
+		<line from="239,564" to="239,525" lineColor="#808080" lineWidth="1"/>
+		<line from="444,565" to="444,525" lineColor="#202020" lineWidth="1"/>
+		<line from="677,565" to="473,565" lineColor="#202020" lineWidth="1"/>
+		<line from="677,525" to="473,525" lineColor="#808080" lineWidth="1"/>
+		<line from="473,564" to="473,525" lineColor="#808080" lineWidth="1"/>
+		<line from="678,565" to="678,525" lineColor="#202020" lineWidth="1"/>
+		<line from="1176,565" to="972,565" lineColor="#202020" lineWidth="1"/>
+		<line from="1176,525" to="972,525" lineColor="#808080" lineWidth="1"/>
+		<line from="972,564" to="972,525" lineColor="#808080" lineWidth="1"/>
+		<line from="1177,565" to="1177,525" lineColor="#202020" lineWidth="1"/>
+		<line from="1252,565" to="1198,565" lineColor="#202020" lineWidth="1"/>
+		<line from="1252,525" to="1198,525" lineColor="#808080" lineWidth="1"/>
+		<line from="1198,564" to="1198,525" lineColor="#808080" lineWidth="1"/>
+		<line from="1253,564" to="1253,524" lineColor="#202020" lineWidth="1"/>
+		<line from="944,565" to="710,565" lineColor="#202020" lineWidth="1"/>
+		<line from="945,525" to="710,525" lineColor="#808080" lineWidth="1"/>
+		<line from="710,564" to="710,525" lineColor="#808080" lineWidth="1"/>
+		<line from="945,565" to="945,525" lineColor="#202020" lineWidth="1"/>
+		<line from="443,625" to="239,625" lineColor="#202020" lineWidth="1"/>
+		<line from="443,585" to="239,585" lineColor="#808080" lineWidth="1"/>
+		<line from="239,624" to="239,585" lineColor="#808080" lineWidth="1"/>
+		<line from="444,625" to="444,585" lineColor="#202020" lineWidth="1"/>
+		<line from="677,625" to="473,625" lineColor="#202020" lineWidth="1"/>
+		<line from="677,585" to="473,585" lineColor="#808080" lineWidth="1"/>
+		<line from="473,624" to="473,585" lineColor="#808080" lineWidth="1"/>
+		<line from="678,625" to="678,585" lineColor="#202020" lineWidth="1"/>
+		<line from="1176,625" to="972,625" lineColor="#202020" lineWidth="1"/>
+		<line from="1176,585" to="972,585" lineColor="#808080" lineWidth="1"/>
+		<line from="972,624" to="972,585" lineColor="#808080" lineWidth="1"/>
+		<line from="1177,625" to="1177,585" lineColor="#202020" lineWidth="1"/>
+		<line from="1252,625" to="1198,625" lineColor="#202020" lineWidth="1"/>
+		<line from="1252,585" to="1198,585" lineColor="#808080" lineWidth="1"/>
+		<line from="1198,624" to="1198,585" lineColor="#808080" lineWidth="1"/>
+		<line from="1253,624" to="1253,584" lineColor="#202020" lineWidth="1"/>
+		<line from="944,625" to="710,625" lineColor="#202020" lineWidth="1"/>
+		<line from="945,585" to="710,585" lineColor="#808080" lineWidth="1"/>
+		<line from="710,624" to="710,585" lineColor="#808080" lineWidth="1"/>
+		<line from="945,625" to="945,585" lineColor="#202020" lineWidth="1"/>
+		<line from="443,685" to="239,685" lineColor="#202020" lineWidth="1"/>
+		<line from="443,645" to="239,645" lineColor="#808080" lineWidth="1"/>
+		<line from="239,684" to="239,645" lineColor="#808080" lineWidth="1"/>
+		<line from="444,685" to="444,645" lineColor="#202020" lineWidth="1"/>
+		<line from="677,685" to="473,685" lineColor="#202020" lineWidth="1"/>
+		<line from="677,645" to="473,645" lineColor="#808080" lineWidth="1"/>
+		<line from="473,684" to="473,645" lineColor="#808080" lineWidth="1"/>
+		<line from="678,685" to="678,645" lineColor="#202020" lineWidth="1"/>
+		<line from="1176,685" to="972,685" lineColor="#202020" lineWidth="1"/>
+		<line from="1176,645" to="972,645" lineColor="#808080" lineWidth="1"/>
+		<line from="972,684" to="972,645" lineColor="#808080" lineWidth="1"/>
+		<line from="1177,685" to="1177,645" lineColor="#202020" lineWidth="1"/>
+		<line from="1252,685" to="1198,685" lineColor="#202020" lineWidth="1"/>
+		<line from="1252,645" to="1198,645" lineColor="#808080" lineWidth="1"/>
+		<line from="1198,684" to="1198,645" lineColor="#808080" lineWidth="1"/>
+		<line from="1253,684" to="1253,644" lineColor="#202020" lineWidth="1"/>
+		<line from="944,685" to="710,685" lineColor="#202020" lineWidth="1"/>
+		<line from="945,645" to="710,645" lineColor="#808080" lineWidth="1"/>
+		<line from="710,684" to="710,645" lineColor="#808080" lineWidth="1"/>
+		<line from="945,685" to="945,645" lineColor="#202020" lineWidth="1"/>
+		<line from="443,745" to="239,745" lineColor="#202020" lineWidth="1"/>
+		<line from="443,705" to="239,705" lineColor="#808080" lineWidth="1"/>
+		<line from="239,744" to="239,705" lineColor="#808080" lineWidth="1"/>
+		<line from="444,745" to="444,705" lineColor="#202020" lineWidth="1"/>
+		<line from="677,745" to="473,745" lineColor="#202020" lineWidth="1"/>
+		<line from="677,705" to="473,705" lineColor="#808080" lineWidth="1"/>
+		<line from="473,744" to="473,705" lineColor="#808080" lineWidth="1"/>
+		<line from="678,745" to="678,705" lineColor="#202020" lineWidth="1"/>
+		<line from="1176,745" to="972,745" lineColor="#202020" lineWidth="1"/>
+		<line from="1176,705" to="972,705" lineColor="#808080" lineWidth="1"/>
+		<line from="972,744" to="972,705" lineColor="#808080" lineWidth="1"/>
+		<line from="1177,745" to="1177,705" lineColor="#202020" lineWidth="1"/>
+		<line from="1252,745" to="1198,745" lineColor="#202020" lineWidth="1"/>
+		<line from="1252,705" to="1198,705" lineColor="#808080" lineWidth="1"/>
+		<line from="1198,744" to="1198,705" lineColor="#808080" lineWidth="1"/>
+		<line from="1253,744" to="1253,704" lineColor="#202020" lineWidth="1"/>
+		<line from="944,745" to="710,745" lineColor="#202020" lineWidth="1"/>
+		<line from="945,705" to="710,705" lineColor="#808080" lineWidth="1"/>
+		<line from="710,744" to="710,705" lineColor="#808080" lineWidth="1"/>
+		<line from="945,745" to="945,705" lineColor="#202020" lineWidth="1"/>
+		<line from="443,805" to="239,805" lineColor="#202020" lineWidth="1"/>
+		<line from="443,765" to="239,765" lineColor="#808080" lineWidth="1"/>
+		<line from="239,804" to="239,765" lineColor="#808080" lineWidth="1"/>
+		<line from="444,805" to="444,765" lineColor="#202020" lineWidth="1"/>
+		<line from="677,805" to="473,805" lineColor="#202020" lineWidth="1"/>
+		<line from="677,765" to="473,765" lineColor="#808080" lineWidth="1"/>
+		<line from="473,804" to="473,765" lineColor="#808080" lineWidth="1"/>
+		<line from="678,805" to="678,765" lineColor="#202020" lineWidth="1"/>
+		<line from="1176,805" to="972,805" lineColor="#202020" lineWidth="1"/>
+		<line from="1176,765" to="972,765" lineColor="#808080" lineWidth="1"/>
+		<line from="972,804" to="972,765" lineColor="#808080" lineWidth="1"/>
+		<line from="1177,805" to="1177,765" lineColor="#202020" lineWidth="1"/>
+		<line from="1252,805" to="1198,805" lineColor="#202020" lineWidth="1"/>
+		<line from="1252,765" to="1198,765" lineColor="#808080" lineWidth="1"/>
+		<line from="1198,804" to="1198,765" lineColor="#808080" lineWidth="1"/>
+		<line from="1253,804" to="1253,764" lineColor="#202020" lineWidth="1"/>
+		<line from="944,805" to="710,805" lineColor="#202020" lineWidth="1"/>
+		<line from="945,765" to="710,765" lineColor="#808080" lineWidth="1"/>
+		<line from="710,804" to="710,765" lineColor="#808080" lineWidth="1"/>
+		<line from="945,805" to="945,765" lineColor="#202020" lineWidth="1"/>
+		<line from="443,865" to="239,865" lineColor="#202020" lineWidth="1"/>
+		<line from="443,825" to="239,825" lineColor="#808080" lineWidth="1"/>
+		<line from="239,864" to="239,825" lineColor="#808080" lineWidth="1"/>
+		<line from="444,865" to="444,825" lineColor="#202020" lineWidth="1"/>
+		<line from="677,865" to="473,865" lineColor="#202020" lineWidth="1"/>
+		<line from="677,825" to="473,825" lineColor="#808080" lineWidth="1"/>
+		<line from="473,864" to="473,825" lineColor="#808080" lineWidth="1"/>
+		<line from="678,865" to="678,825" lineColor="#202020" lineWidth="1"/>
+		<line from="1176,865" to="972,865" lineColor="#202020" lineWidth="1"/>
+		<line from="1176,825" to="972,825" lineColor="#808080" lineWidth="1"/>
+		<line from="972,864" to="972,825" lineColor="#808080" lineWidth="1"/>
+		<line from="1177,865" to="1177,825" lineColor="#202020" lineWidth="1"/>
+		<line from="1252,865" to="1198,865" lineColor="#202020" lineWidth="1"/>
+		<line from="1252,825" to="1198,825" lineColor="#808080" lineWidth="1"/>
+		<line from="1198,864" to="1198,825" lineColor="#808080" lineWidth="1"/>
+		<line from="1253,864" to="1253,824" lineColor="#202020" lineWidth="1"/>
+		<line from="944,865" to="710,865" lineColor="#202020" lineWidth="1"/>
+		<line from="945,825" to="710,825" lineColor="#808080" lineWidth="1"/>
+		<line from="710,864" to="710,825" lineColor="#808080" lineWidth="1"/>
+		<line from="945,865" to="945,825" lineColor="#202020" lineWidth="1"/>
+		<line from="443,925" to="239,925" lineColor="#202020" lineWidth="1"/>
+		<line from="443,885" to="239,885" lineColor="#808080" lineWidth="1"/>
+		<line from="239,924" to="239,885" lineColor="#808080" lineWidth="1"/>
+		<line from="444,925" to="444,885" lineColor="#202020" lineWidth="1"/>
+		<line from="677,925" to="473,925" lineColor="#202020" lineWidth="1"/>
+		<line from="677,885" to="473,885" lineColor="#808080" lineWidth="1"/>
+		<line from="473,924" to="473,885" lineColor="#808080" lineWidth="1"/>
+		<line from="678,925" to="678,885" lineColor="#202020" lineWidth="1"/>
+		<line from="1176,925" to="972,925" lineColor="#202020" lineWidth="1"/>
+		<line from="1176,885" to="972,885" lineColor="#808080" lineWidth="1"/>
+		<line from="972,924" to="972,885" lineColor="#808080" lineWidth="1"/>
+		<line from="1177,925" to="1177,885" lineColor="#202020" lineWidth="1"/>
+		<line from="1252,925" to="1198,925" lineColor="#202020" lineWidth="1"/>
+		<line from="1252,885" to="1198,885" lineColor="#808080" lineWidth="1"/>
+		<line from="1198,924" to="1198,885" lineColor="#808080" lineWidth="1"/>
+		<line from="1253,924" to="1253,884" lineColor="#202020" lineWidth="1"/>
+		<line from="944,925" to="710,925" lineColor="#202020" lineWidth="1"/>
+		<line from="945,885" to="710,885" lineColor="#808080" lineWidth="1"/>
+		<line from="710,924" to="710,885" lineColor="#808080" lineWidth="1"/>
+		<line from="945,925" to="945,885" lineColor="#202020" lineWidth="1"/>
+		<line from="443,985" to="239,985" lineColor="#202020" lineWidth="1"/>
+		<line from="443,945" to="239,945" lineColor="#808080" lineWidth="1"/>
+		<line from="239,984" to="239,945" lineColor="#808080" lineWidth="1"/>
+		<line from="444,985" to="444,945" lineColor="#202020" lineWidth="1"/>
+		<line from="677,985" to="473,985" lineColor="#202020" lineWidth="1"/>
+		<line from="677,945" to="473,945" lineColor="#808080" lineWidth="1"/>
+		<line from="473,984" to="473,945" lineColor="#808080" lineWidth="1"/>
+		<line from="678,985" to="678,945" lineColor="#202020" lineWidth="1"/>
+		<line from="1176,985" to="972,985" lineColor="#202020" lineWidth="1"/>
+		<line from="1176,945" to="972,945" lineColor="#808080" lineWidth="1"/>
+		<line from="972,984" to="972,945" lineColor="#808080" lineWidth="1"/>
+		<line from="1177,985" to="1177,945" lineColor="#202020" lineWidth="1"/>
+		<line from="1252,985" to="1198,985" lineColor="#202020" lineWidth="1"/>
+		<line from="1252,945" to="1198,945" lineColor="#808080" lineWidth="1"/>
+		<line from="1198,984" to="1198,945" lineColor="#808080" lineWidth="1"/>
+		<line from="1253,984" to="1253,944" lineColor="#202020" lineWidth="1"/>
+		<line from="944,985" to="710,985" lineColor="#202020" lineWidth="1"/>
+		<line from="945,945" to="710,945" lineColor="#808080" lineWidth="1"/>
+		<line from="710,984" to="710,945" lineColor="#808080" lineWidth="1"/>
+		<line from="945,985" to="945,945" lineColor="#202020" lineWidth="1"/>
+		<line from="443,1045" to="239,1045" lineColor="#202020" lineWidth="1"/>
+		<line from="443,1005" to="239,1005" lineColor="#808080" lineWidth="1"/>
+		<line from="239,1044" to="239,1005" lineColor="#808080" lineWidth="1"/>
+		<line from="444,1045" to="444,1005" lineColor="#202020" lineWidth="1"/>
+		<line from="677,1045" to="473,1045" lineColor="#202020" lineWidth="1"/>
+		<line from="677,1005" to="473,1005" lineColor="#808080" lineWidth="1"/>
+		<line from="473,1044" to="473,1005" lineColor="#808080" lineWidth="1"/>
+		<line from="678,1045" to="678,1005" lineColor="#202020" lineWidth="1"/>
+		<line from="1176,1045" to="972,1045" lineColor="#202020" lineWidth="1"/>
+		<line from="1176,1005" to="972,1005" lineColor="#808080" lineWidth="1"/>
+		<line from="972,1044" to="972,1005" lineColor="#808080" lineWidth="1"/>
+		<line from="1177,1045" to="1177,1005" lineColor="#202020" lineWidth="1"/>
+		<line from="1252,1045" to="1198,1045" lineColor="#202020" lineWidth="1"/>
+		<line from="1252,1005" to="1198,1005" lineColor="#808080" lineWidth="1"/>
+		<line from="1198,1044" to="1198,1005" lineColor="#808080" lineWidth="1"/>
+		<line from="1253,1044" to="1253,1004" lineColor="#202020" lineWidth="1"/>
+		<line from="944,1045" to="710,1045" lineColor="#202020" lineWidth="1"/>
+		<line from="945,1005" to="710,1005" lineColor="#808080" lineWidth="1"/>
+		<line from="710,1044" to="710,1005" lineColor="#808080" lineWidth="1"/>
+		<line from="945,1045" to="945,1005" lineColor="#202020" lineWidth="1"/>
+		<string from="49,473" to="220,499" border="0" fill="0" fillColor="#a0a0a0" text="公共教学楼1#出线" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#e0e080"/>
+		<line from="230,1114" to="230,336" lineColor="#404040" lineWidth="1"/>
+		<line from="229,1115" to="229,336" lineColor="#202020" lineWidth="1"/>
+		<line from="1264,394" to="39,394" lineColor="#404040" lineWidth="1"/>
+		<line from="1264,393" to="40,393" lineColor="#202020" lineWidth="1"/>
+		<line from="460,1114" to="460,336" lineColor="#404040" lineWidth="1"/>
+		<line from="459,1115" to="459,336" lineColor="#202020" lineWidth="1"/>
+		<line from="695,1114" to="695,336" lineColor="#404040" lineWidth="1"/>
+		<line from="694,1115" to="694,336" lineColor="#202020" lineWidth="1"/>
+		<line from="966,1114" to="966,336" lineColor="#404040" lineWidth="1"/>
+		<line from="965,1115" to="965,336" lineColor="#202020" lineWidth="1"/>
+		<line from="1186,1114" to="1186,336" lineColor="#404040" lineWidth="1"/>
+		<line from="1185,1115" to="1185,336" lineColor="#202020" lineWidth="1"/>
+		<dyanData from="247,472" to="302,500" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N09_IaC" type="0"/>
+		<dyanData from="312,472" to="367,500" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N09_IbC" type="0"/>
+		<dyanData from="381,472" to="436,500" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N09_IcC" type="0"/>
+		<dyanData from="480,473" to="540,499" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N09_Uab" type="0"/>
+		<dyanData from="546,473" to="605,499" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N09_Ubc" type="0"/>
+		<dyanData from="613,473" to="672,499" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N09_Uca" type="0"/>
+		<dyanData from="719,473" to="769,499" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N09_P" type="0"/>
+		<dyanData from="799,473" to="849,499" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N09_Q" type="0"/>
+		<dyanData from="879,473" to="929,499" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N09_F" type="0"/>
+		<dyanData from="1054,473" to="1160,500" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N_H09_PD" type="1"/>
+		<imageStatue from="1211,471" to="1241,501" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#000000" stname="N09_ST" iconType="1" filename_close="iconlibrary/public/合24.png" filename_open="iconlibrary/public/分24.png" angle="0.000000"/>
+		<dyanData from="247,532" to="302,560" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N11_IaC" type="0"/>
+		<dyanData from="312,532" to="367,560" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N11_IbC" type="0"/>
+		<dyanData from="381,532" to="436,560" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N11_IcC" type="0"/>
+		<dyanData from="480,533" to="536,559" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N11_Uab" type="0"/>
+		<dyanData from="546,533" to="603,559" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N11_Ubc" type="0"/>
+		<dyanData from="613,533" to="672,559" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N11_Uca" type="0"/>
+		<dyanData from="719,533" to="769,559" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N11_P" type="0"/>
+		<dyanData from="799,533" to="849,559" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N11_Q" type="0"/>
+		<dyanData from="879,533" to="929,559" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N11_F" type="0"/>
+		<dyanData from="1054,533" to="1160,560" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N_H11_PD" type="1"/>
+		<imageStatue from="1211,531" to="1241,561" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#000000" stname="N11_ST" iconType="1" filename_close="iconlibrary/public/合24.png" filename_open="iconlibrary/public/分24.png" angle="0.000000"/>
+		<dyanData from="247,592" to="302,620" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N13_IaC" type="0"/>
+		<dyanData from="312,592" to="367,620" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N13_IbC" type="0"/>
+		<dyanData from="381,592" to="436,620" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N13_IcC" type="0"/>
+		<dyanData from="480,593" to="538,619" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N13_Uab" type="0"/>
+		<dyanData from="546,593" to="603,619" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N13_Ubc" type="0"/>
+		<dyanData from="613,593" to="671,619" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N13_Uca" type="0"/>
+		<dyanData from="719,593" to="769,619" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N13_P" type="0"/>
+		<dyanData from="799,593" to="849,619" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N13_Q" type="0"/>
+		<dyanData from="879,593" to="929,619" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N13_F" type="0"/>
+		<dyanData from="1054,593" to="1160,620" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N_H13_PD" type="1"/>
+		<imageStatue from="1211,591" to="1241,621" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#000000" stname="N13_ST" iconType="1" filename_close="iconlibrary/public/合24.png" filename_open="iconlibrary/public/分24.png" angle="0.000000"/>
+		<dyanData from="247,652" to="302,680" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N15_IaC" type="0"/>
+		<dyanData from="312,652" to="367,680" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N15_IbC" type="0"/>
+		<dyanData from="381,652" to="436,680" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N15_IcC" type="0"/>
+		<dyanData from="480,653" to="539,679" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N15_Uab" type="0"/>
+		<dyanData from="546,653" to="606,679" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N15_Ubc" type="0"/>
+		<dyanData from="613,653" to="672,679" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N15_Uca" type="0"/>
+		<dyanData from="719,653" to="769,679" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N15_P" type="0"/>
+		<dyanData from="799,653" to="849,679" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N15_Q" type="0"/>
+		<dyanData from="879,653" to="929,679" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N15_F" type="0"/>
+		<dyanData from="1054,653" to="1160,680" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N_H15_PD" type="1"/>
+		<imageStatue from="1211,651" to="1241,681" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#000000" stname="N15_ST" iconType="1" filename_close="iconlibrary/public/合24.png" filename_open="iconlibrary/public/分24.png" angle="0.000000"/>
+		<dyanData from="247,712" to="302,740" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N17_IaC" type="0"/>
+		<dyanData from="312,712" to="367,740" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N17_IbC" type="0"/>
+		<dyanData from="381,712" to="436,740" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N17_IcC" type="0"/>
+		<dyanData from="480,713" to="539,739" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N17_Uab" type="0"/>
+		<dyanData from="546,713" to="606,739" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N17_Ubc" type="0"/>
+		<dyanData from="613,713" to="672,739" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N17_Uca" type="0"/>
+		<dyanData from="719,713" to="769,739" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N17_P" type="0"/>
+		<dyanData from="799,713" to="849,739" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N17_Q" type="0"/>
+		<dyanData from="879,713" to="929,739" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N17_F" type="0"/>
+		<dyanData from="1055,713" to="1161,740" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N_H17_PD" type="1"/>
+		<imageStatue from="1211,711" to="1241,741" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#000000" stname="N17_ST" iconType="1" filename_close="iconlibrary/public/合24.png" filename_open="iconlibrary/public/分24.png" angle="0.000000"/>
+		<dyanData from="247,772" to="302,800" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N19_IaC" type="0"/>
+		<dyanData from="312,772" to="367,800" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N19_IbC" type="0"/>
+		<dyanData from="381,772" to="436,800" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N19_IcC" type="0"/>
+		<dyanData from="480,773" to="542,799" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N19_Uab" type="0"/>
+		<dyanData from="546,773" to="607,799" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N19_Ubc" type="0"/>
+		<dyanData from="613,773" to="672,799" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N19_Uca" type="0"/>
+		<dyanData from="719,773" to="769,799" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N19_P" type="0"/>
+		<dyanData from="799,773" to="849,799" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N19_Q" type="0"/>
+		<dyanData from="879,773" to="929,799" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N19_F" type="0"/>
+		<dyanData from="1054,773" to="1160,800" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N_H19_PD" type="1"/>
+		<imageStatue from="1211,771" to="1241,801" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#000000" stname="N19_ST" iconType="1" filename_close="iconlibrary/public/合24.png" filename_open="iconlibrary/public/分24.png" angle="0.000000"/>
+		<dyanData from="247,832" to="302,860" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N21_IaC" type="0"/>
+		<dyanData from="312,832" to="367,860" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N21_IbC" type="0"/>
+		<dyanData from="381,832" to="436,860" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N21_IcC" type="0"/>
+		<dyanData from="480,833" to="538,859" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N21_Uab" type="0"/>
+		<dyanData from="546,833" to="606,859" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N21_Ubc" type="0"/>
+		<dyanData from="613,833" to="670,859" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N21_Uca" type="0"/>
+		<dyanData from="719,833" to="769,859" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N21_P" type="0"/>
+		<dyanData from="799,833" to="849,859" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N21_Q" type="0"/>
+		<dyanData from="879,833" to="929,859" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N21_F" type="0"/>
+		<dyanData from="1054,833" to="1160,860" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N_H21_PD" type="1"/>
+		<imageStatue from="1211,831" to="1241,861" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#000000" stname="N21_ST" iconType="1" filename_close="iconlibrary/public/合24.png" filename_open="iconlibrary/public/分24.png" angle="0.000000"/>
+		<dyanData from="247,892" to="302,920" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N23_IaC" type="0"/>
+		<dyanData from="312,892" to="367,920" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N23_IbC" type="0"/>
+		<dyanData from="381,892" to="436,920" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N23_IcC" type="0"/>
+		<dyanData from="480,893" to="540,919" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N23_Uab" type="0"/>
+		<dyanData from="546,893" to="605,919" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N23_Ubc" type="0"/>
+		<dyanData from="613,893" to="671,919" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N23_Uca" type="0"/>
+		<dyanData from="719,893" to="769,919" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N23_P" type="0"/>
+		<dyanData from="799,893" to="849,919" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N23_Q" type="0"/>
+		<dyanData from="879,893" to="929,919" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N23_F" type="0"/>
+		<dyanData from="1054,893" to="1160,920" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N_H23_PD" type="1"/>
+		<imageStatue from="1211,891" to="1241,921" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#000000" stname="N23_ST" iconType="1" filename_close="iconlibrary/public/合24.png" filename_open="iconlibrary/public/分24.png" angle="0.000000"/>
+		<dyanData from="247,952" to="302,980" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N25_IaC" type="0"/>
+		<dyanData from="312,952" to="367,980" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N25_IbC" type="0"/>
+		<dyanData from="381,952" to="436,980" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N25_IcC" type="0"/>
+		<dyanData from="480,953" to="538,979" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N25_Uab" type="0"/>
+		<dyanData from="546,953" to="606,979" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N25_Ubc" type="0"/>
+		<dyanData from="613,953" to="671,979" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N25_Uca" type="0"/>
+		<dyanData from="719,953" to="769,979" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N25_P" type="0"/>
+		<dyanData from="799,953" to="849,979" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N25_Q" type="0"/>
+		<dyanData from="879,953" to="929,979" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N25_F" type="0"/>
+		<dyanData from="1054,953" to="1160,980" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N_H25_PD" type="1"/>
+		<imageStatue from="1211,951" to="1241,981" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#000000" stname="N25_ST" iconType="1" filename_close="iconlibrary/public/合24.png" filename_open="iconlibrary/public/分24.png" angle="0.000000"/>
+		<dyanData from="247,1012" to="302,1040" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N27_IaC" type="0"/>
+		<dyanData from="312,1012" to="367,1040" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N27_IbC" type="0"/>
+		<dyanData from="381,1012" to="436,1040" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N27_IcC" type="0"/>
+		<dyanData from="480,1013" to="540,1039" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N27_Uab" type="0"/>
+		<dyanData from="546,1013" to="606,1039" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N27_Ubc" type="0"/>
+		<dyanData from="613,1013" to="673,1039" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N27_Uca" type="0"/>
+		<dyanData from="719,1013" to="769,1039" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N27_P" type="0"/>
+		<dyanData from="799,1013" to="849,1039" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N27_Q" type="0"/>
+		<dyanData from="879,1013" to="929,1039" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N27_F" type="0"/>
+		<dyanData from="1054,1013" to="1160,1040" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N_H27_PD" type="1"/>
+		<imageStatue from="1211,1011" to="1241,1041" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#000000" stname="N27_ST" iconType="1" filename_close="iconlibrary/public/合24.png" filename_open="iconlibrary/public/分24.png" angle="0.000000"/>
+		<line from="1265,336" to="40,336" lineColor="#202020" lineWidth="1"/>
+		<line from="40,1116" to="40,335" lineColor="#202020" lineWidth="1"/>
+		<line from="217,465" to="49,465" lineColor="#808080" lineWidth="1"/>
+		<line from="49,504" to="49,465" lineColor="#808080" lineWidth="1"/>
+		<line from="217,505" to="50,505" lineColor="#202020" lineWidth="1"/>
+		<line from="218,505" to="218,465" lineColor="#202020" lineWidth="1"/>
+		<string from="50,534" to="221,560" border="0" fill="0" fillColor="#a0a0a0" text="实验楼东1#出线" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#000000"/>
+		<string from="49,533" to="220,559" border="0" fill="0" fillColor="#a0a0a0" text="实验楼东1#出线" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#e0e080"/>
+		<line from="217,525" to="49,525" lineColor="#808080" lineWidth="1"/>
+		<line from="49,564" to="49,525" lineColor="#808080" lineWidth="1"/>
+		<line from="217,565" to="50,565" lineColor="#202020" lineWidth="1"/>
+		<line from="218,565" to="218,525" lineColor="#202020" lineWidth="1"/>
+		<string from="50,594" to="221,620" border="0" fill="0" fillColor="#a0a0a0" text="实验楼西1#出线" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#000000"/>
+		<string from="49,593" to="220,619" border="0" fill="0" fillColor="#a0a0a0" text="实验楼西1#出线" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#e0e080"/>
+		<line from="217,585" to="49,585" lineColor="#808080" lineWidth="1"/>
+		<line from="49,624" to="49,585" lineColor="#808080" lineWidth="1"/>
+		<line from="217,625" to="50,625" lineColor="#202020" lineWidth="1"/>
+		<line from="218,625" to="218,585" lineColor="#202020" lineWidth="1"/>
+		<string from="50,654" to="221,680" border="0" fill="0" fillColor="#a0a0a0" text="国际学院1#出线" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#000000"/>
+		<string from="49,653" to="220,679" border="0" fill="0" fillColor="#a0a0a0" text="国际学院1#出线" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#e0e080"/>
+		<line from="217,645" to="49,645" lineColor="#808080" lineWidth="1"/>
+		<line from="49,684" to="49,645" lineColor="#808080" lineWidth="1"/>
+		<line from="217,685" to="50,685" lineColor="#202020" lineWidth="1"/>
+		<line from="218,685" to="218,645" lineColor="#202020" lineWidth="1"/>
+		<string from="50,714" to="221,740" border="0" fill="0" fillColor="#a0a0a0" text="体育馆1#出线" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#000000"/>
+		<string from="49,713" to="220,739" border="0" fill="0" fillColor="#a0a0a0" text="体育馆1#出线" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#e0e080"/>
+		<line from="217,705" to="49,705" lineColor="#808080" lineWidth="1"/>
+		<line from="49,744" to="49,705" lineColor="#808080" lineWidth="1"/>
+		<line from="217,745" to="50,745" lineColor="#202020" lineWidth="1"/>
+		<line from="218,745" to="218,705" lineColor="#202020" lineWidth="1"/>
+		<string from="50,774" to="221,800" border="0" fill="0" fillColor="#a0a0a0" text="1#公寓" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#000000"/>
+		<string from="49,773" to="220,799" border="0" fill="0" fillColor="#a0a0a0" text="1#公寓" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#e0e080"/>
+		<line from="217,765" to="49,765" lineColor="#808080" lineWidth="1"/>
+		<line from="49,804" to="49,765" lineColor="#808080" lineWidth="1"/>
+		<line from="217,805" to="50,805" lineColor="#202020" lineWidth="1"/>
+		<line from="218,805" to="218,765" lineColor="#202020" lineWidth="1"/>
+		<string from="50,834" to="221,860" border="0" fill="0" fillColor="#a0a0a0" text="3#公寓" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#000000"/>
+		<string from="49,833" to="220,859" border="0" fill="0" fillColor="#a0a0a0" text="3#公寓" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#e0e080"/>
+		<line from="217,825" to="49,825" lineColor="#808080" lineWidth="1"/>
+		<line from="49,864" to="49,825" lineColor="#808080" lineWidth="1"/>
+		<line from="217,865" to="50,865" lineColor="#202020" lineWidth="1"/>
+		<line from="218,865" to="218,825" lineColor="#202020" lineWidth="1"/>
+		<string from="50,894" to="221,920" border="0" fill="0" fillColor="#a0a0a0" text="5#公寓" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#000000"/>
+		<string from="49,893" to="220,919" border="0" fill="0" fillColor="#a0a0a0" text="5#公寓" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#e0e080"/>
+		<line from="217,885" to="49,885" lineColor="#808080" lineWidth="1"/>
+		<line from="49,924" to="49,885" lineColor="#808080" lineWidth="1"/>
+		<line from="217,925" to="50,925" lineColor="#202020" lineWidth="1"/>
+		<line from="218,925" to="218,885" lineColor="#202020" lineWidth="1"/>
+		<line from="217,945" to="49,945" lineColor="#808080" lineWidth="1"/>
+		<line from="49,984" to="49,945" lineColor="#808080" lineWidth="1"/>
+		<line from="217,985" to="50,985" lineColor="#202020" lineWidth="1"/>
+		<line from="218,985" to="218,945" lineColor="#202020" lineWidth="1"/>
+		<string from="50,1014" to="221,1040" border="0" fill="0" fillColor="#a0a0a0" text="221备用" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#000000"/>
+		<string from="49,1013" to="220,1039" border="0" fill="0" fillColor="#a0a0a0" text="221备用" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#e0e080"/>
+		<line from="217,1005" to="49,1005" lineColor="#808080" lineWidth="1"/>
+		<line from="49,1044" to="49,1005" lineColor="#808080" lineWidth="1"/>
+		<line from="217,1045" to="50,1045" lineColor="#202020" lineWidth="1"/>
+		<line from="218,1045" to="218,1005" lineColor="#202020" lineWidth="1"/>
+		<string from="49,945" to="220,971" border="0" fill="0" fillColor="#a0a0a0" text="环科楼/" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#000000"/>
+		<string from="49,943" to="220,969" border="0" fill="0" fillColor="#a0a0a0" text="环科楼/" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#e0e080"/>
+		<string from="49,964" to="220,990" border="0" fill="0" fillColor="#a0a0a0" text="大气楼1#出线" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#000000"/>
+		<string from="49,962" to="220,988" border="0" fill="0" fillColor="#a0a0a0" text="大气楼1#出线" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#e0e080"/>
+		<string from="50,1074" to="221,1100" border="0" fill="0" fillColor="#a0a0a0" text="母联柜" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#000000"/>
+		<string from="49,1073" to="220,1099" border="0" fill="0" fillColor="#a0a0a0" text="母联柜" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#e0e080"/>
+		<line from="217,1065" to="49,1065" lineColor="#808080" lineWidth="1"/>
+		<line from="49,1104" to="49,1065" lineColor="#808080" lineWidth="1"/>
+		<line from="217,1105" to="50,1105" lineColor="#202020" lineWidth="1"/>
+		<line from="218,1105" to="218,1065" lineColor="#202020" lineWidth="1"/>
+		<line from="443,1105" to="239,1105" lineColor="#202020" lineWidth="1"/>
+		<line from="443,1065" to="239,1065" lineColor="#808080" lineWidth="1"/>
+		<line from="239,1104" to="239,1065" lineColor="#808080" lineWidth="1"/>
+		<line from="444,1105" to="444,1065" lineColor="#202020" lineWidth="1"/>
+		<dyanData from="247,1072" to="302,1100" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N29_IaC" type="0"/>
+		<dyanData from="312,1072" to="367,1100" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N29_IbC" type="0"/>
+		<dyanData from="381,1072" to="436,1100" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N29_IcC" type="0"/>
+		<line from="677,1105" to="473,1105" lineColor="#202020" lineWidth="1"/>
+		<line from="677,1065" to="473,1065" lineColor="#808080" lineWidth="1"/>
+		<line from="473,1104" to="473,1065" lineColor="#808080" lineWidth="1"/>
+		<line from="678,1105" to="678,1065" lineColor="#202020" lineWidth="1"/>
+		<dyanData from="480,1073" to="540,1099" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N29_Uab" type="0"/>
+		<dyanData from="546,1073" to="606,1099" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N29_Ubc" type="0"/>
+		<dyanData from="613,1073" to="673,1099" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N29_Uca" type="0"/>
+		<line from="945,1065" to="710,1065" lineColor="#808080" lineWidth="1"/>
+		<line from="710,1104" to="710,1065" lineColor="#808080" lineWidth="1"/>
+		<line from="945,1105" to="945,1065" lineColor="#202020" lineWidth="1"/>
+		<dyanData from="719,1073" to="769,1099" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N29_P" type="0"/>
+		<dyanData from="799,1073" to="849,1099" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N29_Q" type="0"/>
+		<dyanData from="879,1073" to="929,1099" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N29_F" type="0"/>
+		<line from="1176,1105" to="972,1105" lineColor="#202020" lineWidth="1"/>
+		<line from="1176,1065" to="972,1065" lineColor="#808080" lineWidth="1"/>
+		<line from="1177,1105" to="1177,1065" lineColor="#202020" lineWidth="1"/>
+		<dyanData from="1054,1073" to="1160,1100" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N_H29_PD" type="1"/>
+		<line from="972,1104" to="972,1065" lineColor="#808080" lineWidth="1"/>
+		<line from="1252,1105" to="1198,1105" lineColor="#202020" lineWidth="1"/>
+		<line from="1252,1065" to="1198,1065" lineColor="#808080" lineWidth="1"/>
+		<line from="1198,1104" to="1198,1065" lineColor="#808080" lineWidth="1"/>
+		<line from="1253,1104" to="1253,1064" lineColor="#202020" lineWidth="1"/>
+		<imageStatue from="1211,1071" to="1241,1101" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#000000" stname="N29_ST" iconType="1" filename_close="iconlibrary/public/合24.png" filename_open="iconlibrary/public/分24.png" angle="0.000000"/>
+		<line from="2525,1115" to="2525,335" lineColor="#505050" lineWidth="1"/>
+		<line from="2525,1116" to="1299,1116" lineColor="#505050" lineWidth="1"/>
+		<string from="1820,355" to="1861,381" border="0" fill="0" fillColor="#a0a0a0" text="Kv" angle="0.000000" align="1" font="微软雅黑" size="21" fontColor="#000000"/>
+		<string from="1887,355" to="1928,381" border="0" fill="0" fillColor="#a0a0a0" text="Kv" angle="0.000000" align="1" font="微软雅黑" size="21" fontColor="#000000"/>
+		<string from="1587,357" to="1628,383" border="0" fill="0" fillColor="#a0a0a0" text="A" angle="0.000000" align="1" font="微软雅黑" size="21" fontColor="#000000"/>
+		<string from="1662,357" to="1703,383" border="0" fill="0" fillColor="#a0a0a0" text="A" angle="0.000000" align="1" font="微软雅黑" size="21" fontColor="#000000"/>
+		<string from="2463,354" to="2507,380" border="0" fill="0" fillColor="#a0a0a0" text="开关" angle="0.000000" align="1" font="微软雅黑" size="21" fontColor="#000000"/>
+		<string from="1984,354" to="2025,380" border="0" fill="0" fillColor="#a0a0a0" text="KW" angle="0.000000" align="1" font="微软雅黑" size="21" fontColor="#000000"/>
+		<string from="2054,354" to="2120,380" border="0" fill="0" fillColor="#a0a0a0" text="KVar" angle="0.000000" align="1" font="微软雅黑" size="21" fontColor="#000000"/>
+		<string from="1352,413" to="1457,439" border="0" fill="0" fillColor="#a0a0a0" text="2#进线" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#000000"/>
+		<string from="1511,357" to="1552,383" border="0" fill="0" fillColor="#a0a0a0" text="A" angle="0.000000" align="1" font="微软雅黑" size="21" fontColor="#000000"/>
+		<string from="1585,356" to="1626,382" border="0" fill="0" fillColor="#a0a0a0" text="A" angle="0.000000" align="1" font="微软雅黑" size="21" fontColor="#00c600"/>
+		<string from="1660,356" to="1701,382" border="0" fill="0" fillColor="#e30000" text="A" angle="0.000000" align="1" font="微软雅黑" size="21" fontColor="#c50b01"/>
+		<string from="2316,355" to="2369,381" border="0" fill="0" fillColor="#a0a0a0" text="KWH" angle="0.000000" align="1" font="微软雅黑" size="21" fontColor="#000000"/>
+		<string from="1747,355" to="1788,381" border="0" fill="0" fillColor="#a0a0a0" text="Kv" angle="0.000000" align="1" font="微软雅黑" size="21" fontColor="#000000"/>
+		<string from="1818,353" to="1859,379" border="0" fill="0" fillColor="#a0a0a0" text="Kv" angle="0.000000" align="1" font="微软雅黑" size="21" fontColor="#00c600"/>
+		<string from="1886,353" to="1927,379" border="0" fill="0" fillColor="#e30000" text="Kv" angle="0.000000" align="1" font="微软雅黑" size="21" fontColor="#c50b01"/>
+		<string from="1508,356" to="1549,382" border="0" fill="0" fillColor="#a0a0a0" text="A" angle="0.000000" align="1" font="微软雅黑" size="21" fontColor="#ffff37"/>
+		<string from="1745,353" to="1786,379" border="0" fill="0" fillColor="#a0a0a0" text="Kv" angle="0.000000" align="1" font="微软雅黑" size="21" fontColor="#ffff37"/>
+		<string from="1983,352" to="2024,378" border="0" fill="0" fillColor="#a0a0a0" text="KW" angle="0.000000" align="1" font="微软雅黑" size="21" fontColor="#e0e080"/>
+		<string from="2053,352" to="2119,378" border="0" fill="0" fillColor="#a0a0a0" text="KVar" angle="0.000000" align="1" font="微软雅黑" size="21" fontColor="#e0e080"/>
+		<string from="2315,353" to="2368,379" border="0" fill="0" fillColor="#a0a0a0" text="KWH" angle="0.000000" align="1" font="微软雅黑" size="21" fontColor="#e0e080"/>
+		<string from="2462,352" to="2506,378" border="0" fill="0" fillColor="#a0a0a0" text="开关" angle="0.000000" align="1" font="微软雅黑" size="21" fontColor="#e0e080"/>
+		<string from="1373,357" to="1437,383" border="0" fill="0" fillColor="#a0a0a0" text="线路名" angle="0.000000" align="1" font="微软雅黑" size="21" fontColor="#000000"/>
+		<string from="1369,356" to="1435,382" border="0" fill="0" fillColor="#a0a0a0" text="线路名" angle="0.000000" align="1" font="微软雅黑" size="21" fontColor="#e0e080"/>
+		<string from="2137,354" to="2203,380" border="0" fill="0" fillColor="#a0a0a0" text="Cosφ" angle="0.000000" align="1" font="微软雅黑" size="21" fontColor="#000000"/>
+		<string from="2136,352" to="2202,378" border="0" fill="0" fillColor="#a0a0a0" text="Cosφ" angle="0.000000" align="1" font="微软雅黑" size="21" fontColor="#e0e080"/>
+		<dyanData from="1507,412" to="1562,440" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N06_IaC" type="0"/>
+		<dyanData from="1572,412" to="1627,440" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N06_IbC" type="0"/>
+		<dyanData from="1641,412" to="1696,440" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N06_IcC" type="0"/>
+		<dyanData from="1873,413" to="1931,439" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N06_Uca" type="0"/>
+		<dyanData from="1806,413" to="1862,439" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N06_Ubc" type="0"/>
+		<dyanData from="1740,413" to="1794,439" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N06_Uab" type="0"/>
+		<dyanData from="1979,413" to="2029,439" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N06_P" type="0"/>
+		<dyanData from="2059,413" to="2109,439" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N06_Q" type="0"/>
+		<dyanData from="2139,413" to="2189,439" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N06_F" type="0"/>
+		<dyanData from="2314,413" to="2420,440" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N_H06_PD" type="1"/>
+		<string from="1310,474" to="1481,500" border="0" fill="0" fillColor="#a0a0a0" text="公共教学楼2#出线" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#000000"/>
+		<imageStatue from="2471,411" to="2501,441" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#000000" stname="N06_ST" iconType="1" filename_close="iconlibrary/public/合24.png" filename_open="iconlibrary/public/分24.png" angle="0.000000"/>
+		<line from="1703,445" to="1499,445" lineColor="#202020" lineWidth="1"/>
+		<line from="1703,405" to="1499,405" lineColor="#808080" lineWidth="1"/>
+		<line from="1499,444" to="1499,405" lineColor="#808080" lineWidth="1"/>
+		<line from="1704,445" to="1704,405" lineColor="#202020" lineWidth="1"/>
+		<line from="1937,445" to="1733,445" lineColor="#202020" lineWidth="1"/>
+		<line from="1937,405" to="1733,405" lineColor="#808080" lineWidth="1"/>
+		<line from="1733,444" to="1733,405" lineColor="#808080" lineWidth="1"/>
+		<line from="1938,445" to="1938,405" lineColor="#202020" lineWidth="1"/>
+		<line from="2204,445" to="1970,445" lineColor="#202020" lineWidth="1"/>
+		<line from="2205,405" to="1970,405" lineColor="#808080" lineWidth="1"/>
+		<line from="1970,444" to="1970,405" lineColor="#808080" lineWidth="1"/>
+		<line from="2205,445" to="2205,405" lineColor="#202020" lineWidth="1"/>
+		<line from="2436,445" to="2232,445" lineColor="#202020" lineWidth="1"/>
+		<line from="2436,405" to="2232,405" lineColor="#808080" lineWidth="1"/>
+		<line from="2232,444" to="2232,405" lineColor="#808080" lineWidth="1"/>
+		<line from="2437,445" to="2437,405" lineColor="#202020" lineWidth="1"/>
+		<line from="2512,445" to="2458,445" lineColor="#202020" lineWidth="1"/>
+		<line from="2512,405" to="2458,405" lineColor="#808080" lineWidth="1"/>
+		<line from="2458,444" to="2458,405" lineColor="#808080" lineWidth="1"/>
+		<line from="2513,444" to="2513,404" lineColor="#202020" lineWidth="1"/>
+		<line from="1477,445" to="1310,445" lineColor="#202020" lineWidth="1"/>
+		<line from="1476,405" to="1309,405" lineColor="#808080" lineWidth="1"/>
+		<line from="1309,444" to="1309,405" lineColor="#808080" lineWidth="1"/>
+		<line from="1478,445" to="1478,405" lineColor="#202020" lineWidth="1"/>
+		<string from="1350,411" to="1455,437" border="0" fill="0" fillColor="#a0a0a0" text="2#进线" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#e0e080"/>
+		<line from="1703,505" to="1499,505" lineColor="#202020" lineWidth="1"/>
+		<line from="1703,465" to="1499,465" lineColor="#808080" lineWidth="1"/>
+		<line from="1499,504" to="1499,465" lineColor="#808080" lineWidth="1"/>
+		<line from="1704,505" to="1704,465" lineColor="#202020" lineWidth="1"/>
+		<line from="1937,505" to="1733,505" lineColor="#202020" lineWidth="1"/>
+		<line from="1937,465" to="1733,465" lineColor="#808080" lineWidth="1"/>
+		<line from="1733,504" to="1733,465" lineColor="#808080" lineWidth="1"/>
+		<line from="1938,505" to="1938,465" lineColor="#202020" lineWidth="1"/>
+		<line from="2436,505" to="2232,505" lineColor="#202020" lineWidth="1"/>
+		<line from="2436,465" to="2232,465" lineColor="#808080" lineWidth="1"/>
+		<line from="2232,504" to="2232,465" lineColor="#808080" lineWidth="1"/>
+		<line from="2437,505" to="2437,465" lineColor="#202020" lineWidth="1"/>
+		<line from="2512,505" to="2458,505" lineColor="#202020" lineWidth="1"/>
+		<line from="2512,465" to="2458,465" lineColor="#808080" lineWidth="1"/>
+		<line from="2458,504" to="2458,465" lineColor="#808080" lineWidth="1"/>
+		<line from="2513,504" to="2513,464" lineColor="#202020" lineWidth="1"/>
+		<line from="2204,505" to="1970,505" lineColor="#202020" lineWidth="1"/>
+		<line from="2205,465" to="1970,465" lineColor="#808080" lineWidth="1"/>
+		<line from="1970,504" to="1970,465" lineColor="#808080" lineWidth="1"/>
+		<line from="2205,505" to="2205,465" lineColor="#202020" lineWidth="1"/>
+		<line from="1703,565" to="1499,565" lineColor="#202020" lineWidth="1"/>
+		<line from="1703,525" to="1499,525" lineColor="#808080" lineWidth="1"/>
+		<line from="1499,564" to="1499,525" lineColor="#808080" lineWidth="1"/>
+		<line from="1704,565" to="1704,525" lineColor="#202020" lineWidth="1"/>
+		<line from="1937,565" to="1733,565" lineColor="#202020" lineWidth="1"/>
+		<line from="1937,525" to="1733,525" lineColor="#808080" lineWidth="1"/>
+		<line from="1733,564" to="1733,525" lineColor="#808080" lineWidth="1"/>
+		<line from="1938,565" to="1938,525" lineColor="#202020" lineWidth="1"/>
+		<line from="2436,565" to="2232,565" lineColor="#202020" lineWidth="1"/>
+		<line from="2436,525" to="2232,525" lineColor="#808080" lineWidth="1"/>
+		<line from="2232,564" to="2232,525" lineColor="#808080" lineWidth="1"/>
+		<line from="2437,565" to="2437,525" lineColor="#202020" lineWidth="1"/>
+		<line from="2512,565" to="2458,565" lineColor="#202020" lineWidth="1"/>
+		<line from="2512,525" to="2458,525" lineColor="#808080" lineWidth="1"/>
+		<line from="2458,564" to="2458,525" lineColor="#808080" lineWidth="1"/>
+		<line from="2513,564" to="2513,524" lineColor="#202020" lineWidth="1"/>
+		<line from="2204,565" to="1970,565" lineColor="#202020" lineWidth="1"/>
+		<line from="2205,525" to="1970,525" lineColor="#808080" lineWidth="1"/>
+		<line from="1970,564" to="1970,525" lineColor="#808080" lineWidth="1"/>
+		<line from="2205,565" to="2205,525" lineColor="#202020" lineWidth="1"/>
+		<line from="1703,625" to="1499,625" lineColor="#202020" lineWidth="1"/>
+		<line from="1703,585" to="1499,585" lineColor="#808080" lineWidth="1"/>
+		<line from="1499,624" to="1499,585" lineColor="#808080" lineWidth="1"/>
+		<line from="1704,625" to="1704,585" lineColor="#202020" lineWidth="1"/>
+		<line from="1937,625" to="1733,625" lineColor="#202020" lineWidth="1"/>
+		<line from="1937,585" to="1733,585" lineColor="#808080" lineWidth="1"/>
+		<line from="1733,624" to="1733,585" lineColor="#808080" lineWidth="1"/>
+		<line from="1938,625" to="1938,585" lineColor="#202020" lineWidth="1"/>
+		<line from="2436,625" to="2232,625" lineColor="#202020" lineWidth="1"/>
+		<line from="2436,585" to="2232,585" lineColor="#808080" lineWidth="1"/>
+		<line from="2232,624" to="2232,585" lineColor="#808080" lineWidth="1"/>
+		<line from="2437,625" to="2437,585" lineColor="#202020" lineWidth="1"/>
+		<line from="2512,625" to="2458,625" lineColor="#202020" lineWidth="1"/>
+		<line from="2512,585" to="2458,585" lineColor="#808080" lineWidth="1"/>
+		<line from="2458,624" to="2458,585" lineColor="#808080" lineWidth="1"/>
+		<line from="2513,624" to="2513,584" lineColor="#202020" lineWidth="1"/>
+		<line from="2204,625" to="1970,625" lineColor="#202020" lineWidth="1"/>
+		<line from="2205,585" to="1970,585" lineColor="#808080" lineWidth="1"/>
+		<line from="1970,624" to="1970,585" lineColor="#808080" lineWidth="1"/>
+		<line from="2205,625" to="2205,585" lineColor="#202020" lineWidth="1"/>
+		<line from="1703,685" to="1499,685" lineColor="#202020" lineWidth="1"/>
+		<line from="1703,645" to="1499,645" lineColor="#808080" lineWidth="1"/>
+		<line from="1499,684" to="1499,645" lineColor="#808080" lineWidth="1"/>
+		<line from="1704,685" to="1704,645" lineColor="#202020" lineWidth="1"/>
+		<line from="1937,685" to="1733,685" lineColor="#202020" lineWidth="1"/>
+		<line from="1937,645" to="1733,645" lineColor="#808080" lineWidth="1"/>
+		<line from="1733,684" to="1733,645" lineColor="#808080" lineWidth="1"/>
+		<line from="1938,685" to="1938,645" lineColor="#202020" lineWidth="1"/>
+		<line from="2436,685" to="2232,685" lineColor="#202020" lineWidth="1"/>
+		<line from="2436,645" to="2232,645" lineColor="#808080" lineWidth="1"/>
+		<line from="2232,684" to="2232,645" lineColor="#808080" lineWidth="1"/>
+		<line from="2437,685" to="2437,645" lineColor="#202020" lineWidth="1"/>
+		<line from="2512,685" to="2458,685" lineColor="#202020" lineWidth="1"/>
+		<line from="2512,645" to="2458,645" lineColor="#808080" lineWidth="1"/>
+		<line from="2458,684" to="2458,645" lineColor="#808080" lineWidth="1"/>
+		<line from="2513,684" to="2513,644" lineColor="#202020" lineWidth="1"/>
+		<line from="2204,685" to="1970,685" lineColor="#202020" lineWidth="1"/>
+		<line from="2205,645" to="1970,645" lineColor="#808080" lineWidth="1"/>
+		<line from="1970,684" to="1970,645" lineColor="#808080" lineWidth="1"/>
+		<line from="2205,685" to="2205,645" lineColor="#202020" lineWidth="1"/>
+		<line from="1703,745" to="1499,745" lineColor="#202020" lineWidth="1"/>
+		<line from="1703,705" to="1499,705" lineColor="#808080" lineWidth="1"/>
+		<line from="1499,744" to="1499,705" lineColor="#808080" lineWidth="1"/>
+		<line from="1704,745" to="1704,705" lineColor="#202020" lineWidth="1"/>
+		<line from="1937,745" to="1733,745" lineColor="#202020" lineWidth="1"/>
+		<line from="1937,705" to="1733,705" lineColor="#808080" lineWidth="1"/>
+		<line from="1733,744" to="1733,705" lineColor="#808080" lineWidth="1"/>
+		<line from="1938,745" to="1938,705" lineColor="#202020" lineWidth="1"/>
+		<line from="2436,745" to="2232,745" lineColor="#202020" lineWidth="1"/>
+		<line from="2436,705" to="2232,705" lineColor="#808080" lineWidth="1"/>
+		<line from="2232,744" to="2232,705" lineColor="#808080" lineWidth="1"/>
+		<line from="2437,745" to="2437,705" lineColor="#202020" lineWidth="1"/>
+		<line from="2512,745" to="2458,745" lineColor="#202020" lineWidth="1"/>
+		<line from="2512,705" to="2458,705" lineColor="#808080" lineWidth="1"/>
+		<line from="2458,744" to="2458,705" lineColor="#808080" lineWidth="1"/>
+		<line from="2513,744" to="2513,704" lineColor="#202020" lineWidth="1"/>
+		<line from="2204,745" to="1970,745" lineColor="#202020" lineWidth="1"/>
+		<line from="2205,705" to="1970,705" lineColor="#808080" lineWidth="1"/>
+		<line from="1970,744" to="1970,705" lineColor="#808080" lineWidth="1"/>
+		<line from="2205,745" to="2205,705" lineColor="#202020" lineWidth="1"/>
+		<line from="1703,805" to="1499,805" lineColor="#202020" lineWidth="1"/>
+		<line from="1703,765" to="1499,765" lineColor="#808080" lineWidth="1"/>
+		<line from="1499,804" to="1499,765" lineColor="#808080" lineWidth="1"/>
+		<line from="1704,805" to="1704,765" lineColor="#202020" lineWidth="1"/>
+		<line from="1937,805" to="1733,805" lineColor="#202020" lineWidth="1"/>
+		<line from="1937,765" to="1733,765" lineColor="#808080" lineWidth="1"/>
+		<line from="1733,804" to="1733,765" lineColor="#808080" lineWidth="1"/>
+		<line from="1938,805" to="1938,765" lineColor="#202020" lineWidth="1"/>
+		<line from="2436,805" to="2232,805" lineColor="#202020" lineWidth="1"/>
+		<line from="2436,765" to="2232,765" lineColor="#808080" lineWidth="1"/>
+		<line from="2232,804" to="2232,765" lineColor="#808080" lineWidth="1"/>
+		<line from="2437,805" to="2437,765" lineColor="#202020" lineWidth="1"/>
+		<line from="2512,805" to="2458,805" lineColor="#202020" lineWidth="1"/>
+		<line from="2512,765" to="2458,765" lineColor="#808080" lineWidth="1"/>
+		<line from="2458,804" to="2458,765" lineColor="#808080" lineWidth="1"/>
+		<line from="2513,804" to="2513,764" lineColor="#202020" lineWidth="1"/>
+		<line from="2204,805" to="1970,805" lineColor="#202020" lineWidth="1"/>
+		<line from="2205,765" to="1970,765" lineColor="#808080" lineWidth="1"/>
+		<line from="1970,804" to="1970,765" lineColor="#808080" lineWidth="1"/>
+		<line from="2205,805" to="2205,765" lineColor="#202020" lineWidth="1"/>
+		<line from="1703,865" to="1499,865" lineColor="#202020" lineWidth="1"/>
+		<line from="1703,825" to="1499,825" lineColor="#808080" lineWidth="1"/>
+		<line from="1499,864" to="1499,825" lineColor="#808080" lineWidth="1"/>
+		<line from="1704,865" to="1704,825" lineColor="#202020" lineWidth="1"/>
+		<line from="1937,865" to="1733,865" lineColor="#202020" lineWidth="1"/>
+		<line from="1937,825" to="1733,825" lineColor="#808080" lineWidth="1"/>
+		<line from="1733,864" to="1733,825" lineColor="#808080" lineWidth="1"/>
+		<line from="1938,865" to="1938,825" lineColor="#202020" lineWidth="1"/>
+		<line from="2436,865" to="2232,865" lineColor="#202020" lineWidth="1"/>
+		<line from="2436,825" to="2232,825" lineColor="#808080" lineWidth="1"/>
+		<line from="2232,864" to="2232,825" lineColor="#808080" lineWidth="1"/>
+		<line from="2437,865" to="2437,825" lineColor="#202020" lineWidth="1"/>
+		<line from="2512,865" to="2458,865" lineColor="#202020" lineWidth="1"/>
+		<line from="2512,825" to="2458,825" lineColor="#808080" lineWidth="1"/>
+		<line from="2458,864" to="2458,825" lineColor="#808080" lineWidth="1"/>
+		<line from="2513,864" to="2513,824" lineColor="#202020" lineWidth="1"/>
+		<line from="2204,865" to="1970,865" lineColor="#202020" lineWidth="1"/>
+		<line from="2205,825" to="1970,825" lineColor="#808080" lineWidth="1"/>
+		<line from="1970,864" to="1970,825" lineColor="#808080" lineWidth="1"/>
+		<line from="2205,865" to="2205,825" lineColor="#202020" lineWidth="1"/>
+		<line from="1703,925" to="1499,925" lineColor="#202020" lineWidth="1"/>
+		<line from="1703,885" to="1499,885" lineColor="#808080" lineWidth="1"/>
+		<line from="1499,924" to="1499,885" lineColor="#808080" lineWidth="1"/>
+		<line from="1704,925" to="1704,885" lineColor="#202020" lineWidth="1"/>
+		<line from="1937,925" to="1733,925" lineColor="#202020" lineWidth="1"/>
+		<line from="1937,885" to="1733,885" lineColor="#808080" lineWidth="1"/>
+		<line from="1733,924" to="1733,885" lineColor="#808080" lineWidth="1"/>
+		<line from="1938,925" to="1938,885" lineColor="#202020" lineWidth="1"/>
+		<line from="2436,925" to="2232,925" lineColor="#202020" lineWidth="1"/>
+		<line from="2436,885" to="2232,885" lineColor="#808080" lineWidth="1"/>
+		<line from="2232,924" to="2232,885" lineColor="#808080" lineWidth="1"/>
+		<line from="2437,925" to="2437,885" lineColor="#202020" lineWidth="1"/>
+		<line from="2512,925" to="2458,925" lineColor="#202020" lineWidth="1"/>
+		<line from="2512,885" to="2458,885" lineColor="#808080" lineWidth="1"/>
+		<line from="2458,924" to="2458,885" lineColor="#808080" lineWidth="1"/>
+		<line from="2513,924" to="2513,884" lineColor="#202020" lineWidth="1"/>
+		<line from="2204,925" to="1970,925" lineColor="#202020" lineWidth="1"/>
+		<line from="2205,885" to="1970,885" lineColor="#808080" lineWidth="1"/>
+		<line from="1970,924" to="1970,885" lineColor="#808080" lineWidth="1"/>
+		<line from="2205,925" to="2205,885" lineColor="#202020" lineWidth="1"/>
+		<line from="1703,985" to="1499,985" lineColor="#202020" lineWidth="1"/>
+		<line from="1703,945" to="1499,945" lineColor="#808080" lineWidth="1"/>
+		<line from="1499,984" to="1499,945" lineColor="#808080" lineWidth="1"/>
+		<line from="1704,985" to="1704,945" lineColor="#202020" lineWidth="1"/>
+		<line from="1937,985" to="1733,985" lineColor="#202020" lineWidth="1"/>
+		<line from="1937,945" to="1733,945" lineColor="#808080" lineWidth="1"/>
+		<line from="1733,984" to="1733,945" lineColor="#808080" lineWidth="1"/>
+		<line from="1938,985" to="1938,945" lineColor="#202020" lineWidth="1"/>
+		<line from="2436,985" to="2232,985" lineColor="#202020" lineWidth="1"/>
+		<line from="2436,945" to="2232,945" lineColor="#808080" lineWidth="1"/>
+		<line from="2232,984" to="2232,945" lineColor="#808080" lineWidth="1"/>
+		<line from="2437,985" to="2437,945" lineColor="#202020" lineWidth="1"/>
+		<line from="2512,985" to="2458,985" lineColor="#202020" lineWidth="1"/>
+		<line from="2512,945" to="2458,945" lineColor="#808080" lineWidth="1"/>
+		<line from="2458,984" to="2458,945" lineColor="#808080" lineWidth="1"/>
+		<line from="2513,984" to="2513,944" lineColor="#202020" lineWidth="1"/>
+		<line from="2204,985" to="1970,985" lineColor="#202020" lineWidth="1"/>
+		<line from="2205,945" to="1970,945" lineColor="#808080" lineWidth="1"/>
+		<line from="1970,984" to="1970,945" lineColor="#808080" lineWidth="1"/>
+		<line from="2205,985" to="2205,945" lineColor="#202020" lineWidth="1"/>
+		<line from="1703,1045" to="1499,1045" lineColor="#202020" lineWidth="1"/>
+		<line from="1703,1005" to="1499,1005" lineColor="#808080" lineWidth="1"/>
+		<line from="1499,1044" to="1499,1005" lineColor="#808080" lineWidth="1"/>
+		<line from="1704,1045" to="1704,1005" lineColor="#202020" lineWidth="1"/>
+		<line from="1937,1045" to="1733,1045" lineColor="#202020" lineWidth="1"/>
+		<line from="1937,1005" to="1733,1005" lineColor="#808080" lineWidth="1"/>
+		<line from="1733,1044" to="1733,1005" lineColor="#808080" lineWidth="1"/>
+		<line from="1938,1045" to="1938,1005" lineColor="#202020" lineWidth="1"/>
+		<line from="2436,1045" to="2232,1045" lineColor="#202020" lineWidth="1"/>
+		<line from="2436,1005" to="2232,1005" lineColor="#808080" lineWidth="1"/>
+		<line from="2232,1044" to="2232,1005" lineColor="#808080" lineWidth="1"/>
+		<line from="2437,1045" to="2437,1005" lineColor="#202020" lineWidth="1"/>
+		<line from="2512,1045" to="2458,1045" lineColor="#202020" lineWidth="1"/>
+		<line from="2512,1005" to="2458,1005" lineColor="#808080" lineWidth="1"/>
+		<line from="2458,1044" to="2458,1005" lineColor="#808080" lineWidth="1"/>
+		<line from="2513,1044" to="2513,1004" lineColor="#202020" lineWidth="1"/>
+		<line from="2204,1045" to="1970,1045" lineColor="#202020" lineWidth="1"/>
+		<line from="2205,1005" to="1970,1005" lineColor="#808080" lineWidth="1"/>
+		<line from="1970,1044" to="1970,1005" lineColor="#808080" lineWidth="1"/>
+		<line from="2205,1045" to="2205,1005" lineColor="#202020" lineWidth="1"/>
+		<string from="1309,473" to="1480,499" border="0" fill="0" fillColor="#a0a0a0" text="公共教学楼2#出线" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#e0e080"/>
+		<line from="1490,1114" to="1490,336" lineColor="#404040" lineWidth="1"/>
+		<line from="1489,1115" to="1489,336" lineColor="#202020" lineWidth="1"/>
+		<line from="1720,1114" to="1720,336" lineColor="#404040" lineWidth="1"/>
+		<line from="1719,1115" to="1719,336" lineColor="#202020" lineWidth="1"/>
+		<line from="1955,1114" to="1955,336" lineColor="#404040" lineWidth="1"/>
+		<line from="1954,1115" to="1954,336" lineColor="#202020" lineWidth="1"/>
+		<line from="2226,1114" to="2226,336" lineColor="#404040" lineWidth="1"/>
+		<line from="2225,1115" to="2225,336" lineColor="#202020" lineWidth="1"/>
+		<line from="2446,1114" to="2446,336" lineColor="#404040" lineWidth="1"/>
+		<line from="2445,1115" to="2445,336" lineColor="#202020" lineWidth="1"/>
+		<dyanData from="1507,472" to="1562,500" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N10_IaC" type="0"/>
+		<dyanData from="1572,472" to="1627,500" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N10_IbC" type="0"/>
+		<dyanData from="1641,472" to="1696,500" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N10_IcC" type="0"/>
+		<dyanData from="1740,473" to="1800,499" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N10_Uab" type="0"/>
+		<dyanData from="1806,473" to="1865,499" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N10_Ubc" type="0"/>
+		<dyanData from="1873,473" to="1932,499" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N10_Uca" type="0"/>
+		<dyanData from="1979,473" to="2029,499" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N10_P" type="0"/>
+		<dyanData from="2059,473" to="2109,499" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N10_Q" type="0"/>
+		<dyanData from="2139,473" to="2189,499" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N10_F" type="0"/>
+		<dyanData from="2314,473" to="2420,500" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N_H10_PD" type="1"/>
+		<imageStatue from="2471,471" to="2501,501" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#000000" stname="N10_ST" iconType="1" filename_close="iconlibrary/public/合24.png" filename_open="iconlibrary/public/分24.png" angle="0.000000"/>
+		<dyanData from="1507,532" to="1562,560" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N12_IaC" type="0"/>
+		<dyanData from="1572,532" to="1627,560" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N12_IbC" type="0"/>
+		<dyanData from="1641,532" to="1696,560" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N12_IcC" type="0"/>
+		<dyanData from="1740,533" to="1796,559" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N12_Uab" type="0"/>
+		<dyanData from="1806,533" to="1863,559" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N12_Ubc" type="0"/>
+		<dyanData from="1873,533" to="1932,559" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N12_Uca" type="0"/>
+		<dyanData from="1979,533" to="2029,559" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N12_P" type="0"/>
+		<dyanData from="2059,533" to="2109,559" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N12_Q" type="0"/>
+		<dyanData from="2139,533" to="2189,559" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N12_F" type="0"/>
+		<dyanData from="2314,533" to="2420,560" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N_H12_PD" type="1"/>
+		<imageStatue from="2471,531" to="2501,561" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#000000" stname="N12_ST" iconType="1" filename_close="iconlibrary/public/合24.png" filename_open="iconlibrary/public/分24.png" angle="0.000000"/>
+		<dyanData from="1507,592" to="1562,620" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N14_IaC" type="0"/>
+		<dyanData from="1572,592" to="1627,620" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N14_IbC" type="0"/>
+		<dyanData from="1641,592" to="1696,620" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N14_IcC" type="0"/>
+		<dyanData from="1740,593" to="1798,619" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N14_Uab" type="0"/>
+		<dyanData from="1806,593" to="1863,619" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N14_Ubc" type="0"/>
+		<dyanData from="1873,593" to="1931,619" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N14_Uca" type="0"/>
+		<dyanData from="1979,593" to="2029,619" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N14_P" type="0"/>
+		<dyanData from="2059,593" to="2109,619" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N14_Q" type="0"/>
+		<dyanData from="2139,593" to="2189,619" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N14_F" type="0"/>
+		<dyanData from="2314,593" to="2420,620" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N_H14_PD" type="1"/>
+		<imageStatue from="2471,591" to="2501,621" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#000000" stname="N14_ST" iconType="1" filename_close="iconlibrary/public/合24.png" filename_open="iconlibrary/public/分24.png" angle="0.000000"/>
+		<dyanData from="1507,652" to="1562,680" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N16_IaC" type="0"/>
+		<dyanData from="1572,652" to="1627,680" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N16_IbC" type="0"/>
+		<dyanData from="1641,652" to="1696,680" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N16_IcC" type="0"/>
+		<dyanData from="1740,653" to="1799,679" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N16_Uab" type="0"/>
+		<dyanData from="1806,653" to="1866,679" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N16_Ubc" type="0"/>
+		<dyanData from="1873,653" to="1932,679" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N16_Uca" type="0"/>
+		<dyanData from="1979,653" to="2029,679" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N16_P" type="0"/>
+		<dyanData from="2059,653" to="2109,679" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N16_Q" type="0"/>
+		<dyanData from="2139,653" to="2189,679" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N16_F" type="0"/>
+		<dyanData from="2314,653" to="2420,680" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N_H16_PD" type="1"/>
+		<imageStatue from="2471,651" to="2501,681" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#000000" stname="N16_ST" iconType="1" filename_close="iconlibrary/public/合24.png" filename_open="iconlibrary/public/分24.png" angle="0.000000"/>
+		<dyanData from="1507,712" to="1562,740" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N18_IaC" type="0"/>
+		<dyanData from="1572,712" to="1627,740" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N18_IbC" type="0"/>
+		<dyanData from="1641,712" to="1696,740" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N18_IcC" type="0"/>
+		<dyanData from="1740,713" to="1799,739" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N18_Uab" type="0"/>
+		<dyanData from="1806,713" to="1866,739" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N18_Ubc" type="0"/>
+		<dyanData from="1873,713" to="1932,739" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N18_Uca" type="0"/>
+		<dyanData from="1979,713" to="2029,739" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N18_P" type="0"/>
+		<dyanData from="2059,713" to="2109,739" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N18_Q" type="0"/>
+		<dyanData from="2139,713" to="2189,739" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N18_F" type="0"/>
+		<dyanData from="2315,713" to="2421,740" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N_H18_PD" type="1"/>
+		<imageStatue from="2471,711" to="2501,741" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#000000" stname="N18_ST" iconType="1" filename_close="iconlibrary/public/合24.png" filename_open="iconlibrary/public/分24.png" angle="0.000000"/>
+		<dyanData from="1507,772" to="1562,800" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N20_IaC" type="0"/>
+		<dyanData from="1572,772" to="1627,800" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N20_IbC" type="0"/>
+		<dyanData from="1641,772" to="1696,800" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N20_IcC" type="0"/>
+		<dyanData from="1740,773" to="1802,799" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N20_Uab" type="0"/>
+		<dyanData from="1806,773" to="1867,799" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N20_Ubc" type="0"/>
+		<dyanData from="1873,773" to="1932,799" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N20_Uca" type="0"/>
+		<dyanData from="1979,773" to="2029,799" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N20_P" type="0"/>
+		<dyanData from="2059,773" to="2109,799" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N20_Q" type="0"/>
+		<dyanData from="2139,773" to="2189,799" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N20_F" type="0"/>
+		<dyanData from="2314,773" to="2420,800" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N_H20_PD" type="1"/>
+		<imageStatue from="2471,771" to="2501,801" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#000000" stname="N20_ST" iconType="1" filename_close="iconlibrary/public/合24.png" filename_open="iconlibrary/public/分24.png" angle="0.000000"/>
+		<dyanData from="1507,832" to="1562,860" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N22_IaC" type="0"/>
+		<dyanData from="1572,832" to="1627,860" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N22_IbC" type="0"/>
+		<dyanData from="1641,832" to="1696,860" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N22_IcC" type="0"/>
+		<dyanData from="1740,833" to="1798,859" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N22_Uab" type="0"/>
+		<dyanData from="1806,833" to="1866,859" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N22_Ubc" type="0"/>
+		<dyanData from="1873,833" to="1930,859" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N22_Uca" type="0"/>
+		<dyanData from="1979,833" to="2029,859" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N22_P" type="0"/>
+		<dyanData from="2059,833" to="2109,859" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N22_Q" type="0"/>
+		<dyanData from="2139,833" to="2189,859" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N22_F" type="0"/>
+		<dyanData from="2314,833" to="2420,860" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N_H22_PD" type="1"/>
+		<imageStatue from="2471,831" to="2501,861" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#000000" stname="N22_ST" iconType="1" filename_close="iconlibrary/public/合24.png" filename_open="iconlibrary/public/分24.png" angle="0.000000"/>
+		<dyanData from="1507,892" to="1562,920" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N24_IaC" type="0"/>
+		<dyanData from="1572,892" to="1627,920" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N24_IbC" type="0"/>
+		<dyanData from="1641,892" to="1696,920" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N24_IcC" type="0"/>
+		<dyanData from="1740,893" to="1800,919" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N24_Uab" type="0"/>
+		<dyanData from="1806,893" to="1865,919" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N24_Ubc" type="0"/>
+		<dyanData from="1873,893" to="1931,919" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N24_Uca" type="0"/>
+		<dyanData from="1979,893" to="2029,919" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N24_P" type="0"/>
+		<dyanData from="2059,893" to="2109,919" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N24_Q" type="0"/>
+		<dyanData from="2139,893" to="2189,919" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N24_F" type="0"/>
+		<dyanData from="2314,893" to="2420,920" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N_H24_PD" type="1"/>
+		<imageStatue from="2471,891" to="2501,921" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#000000" stname="N24_ST" iconType="1" filename_close="iconlibrary/public/合24.png" filename_open="iconlibrary/public/分24.png" angle="0.000000"/>
+		<dyanData from="1507,952" to="1562,980" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N26_IaC" type="0"/>
+		<dyanData from="1572,952" to="1627,980" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N26_IbC" type="0"/>
+		<dyanData from="1641,952" to="1696,980" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N26_IcC" type="0"/>
+		<dyanData from="1740,953" to="1798,979" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N26_Uab" type="0"/>
+		<dyanData from="1806,953" to="1866,979" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N26_Ubc" type="0"/>
+		<dyanData from="1873,953" to="1931,979" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N26_Uca" type="0"/>
+		<dyanData from="1979,953" to="2029,979" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N26_P" type="0"/>
+		<dyanData from="2059,953" to="2109,979" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N26_Q" type="0"/>
+		<dyanData from="2139,953" to="2189,979" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N26_F" type="0"/>
+		<dyanData from="2314,953" to="2420,980" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N_H26_PD" type="1"/>
+		<imageStatue from="2471,951" to="2501,981" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#000000" stname="N26_ST" iconType="1" filename_close="iconlibrary/public/合24.png" filename_open="iconlibrary/public/分24.png" angle="0.000000"/>
+		<dyanData from="1507,1012" to="1562,1040" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N28_IaC" type="0"/>
+		<dyanData from="1572,1012" to="1627,1040" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N28_IbC" type="0"/>
+		<dyanData from="1641,1012" to="1696,1040" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N28_IcC" type="0"/>
+		<dyanData from="1740,1013" to="1800,1039" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N28_Uab" type="0"/>
+		<dyanData from="1806,1013" to="1866,1039" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N28_Ubc" type="0"/>
+		<dyanData from="1873,1013" to="1933,1039" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N28_Uca" type="0"/>
+		<dyanData from="1979,1013" to="2029,1039" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N28_P" type="0"/>
+		<dyanData from="2059,1013" to="2109,1039" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N28_Q" type="0"/>
+		<dyanData from="2139,1013" to="2189,1039" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N28_F" type="0"/>
+		<dyanData from="2314,1013" to="2420,1040" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N_H28_PD" type="1"/>
+		<imageStatue from="2471,1011" to="2501,1041" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#000000" stname="N28_ST" iconType="1" filename_close="iconlibrary/public/合24.png" filename_open="iconlibrary/public/分24.png" angle="0.000000"/>
+		<line from="2525,336" to="1300,336" lineColor="#202020" lineWidth="1"/>
+		<line from="1299,1116" to="1299,335" lineColor="#202020" lineWidth="1"/>
+		<line from="1477,465" to="1309,465" lineColor="#808080" lineWidth="1"/>
+		<line from="1309,504" to="1309,465" lineColor="#808080" lineWidth="1"/>
+		<line from="1477,505" to="1310,505" lineColor="#202020" lineWidth="1"/>
+		<line from="1478,505" to="1478,465" lineColor="#202020" lineWidth="1"/>
+		<string from="1310,534" to="1481,560" border="0" fill="0" fillColor="#a0a0a0" text="实验楼东2#出线" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#000000"/>
+		<string from="1309,533" to="1480,559" border="0" fill="0" fillColor="#a0a0a0" text="实验楼东2#出线" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#e0e080"/>
+		<line from="1477,525" to="1309,525" lineColor="#808080" lineWidth="1"/>
+		<line from="1309,564" to="1309,525" lineColor="#808080" lineWidth="1"/>
+		<line from="1477,565" to="1310,565" lineColor="#202020" lineWidth="1"/>
+		<line from="1478,565" to="1478,525" lineColor="#202020" lineWidth="1"/>
+		<string from="1310,594" to="1481,620" border="0" fill="0" fillColor="#a0a0a0" text="实验楼西2#出线" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#000000"/>
+		<string from="1309,593" to="1480,619" border="0" fill="0" fillColor="#a0a0a0" text="实验楼西2#出线" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#e0e080"/>
+		<line from="1477,585" to="1309,585" lineColor="#808080" lineWidth="1"/>
+		<line from="1309,624" to="1309,585" lineColor="#808080" lineWidth="1"/>
+		<line from="1477,625" to="1310,625" lineColor="#202020" lineWidth="1"/>
+		<line from="1478,625" to="1478,585" lineColor="#202020" lineWidth="1"/>
+		<string from="1310,654" to="1481,680" border="0" fill="0" fillColor="#a0a0a0" text="国际学院2#出线" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#000000"/>
+		<string from="1309,653" to="1480,679" border="0" fill="0" fillColor="#a0a0a0" text="国际学院2#出线" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#e0e080"/>
+		<line from="1477,645" to="1309,645" lineColor="#808080" lineWidth="1"/>
+		<line from="1309,684" to="1309,645" lineColor="#808080" lineWidth="1"/>
+		<line from="1477,685" to="1310,685" lineColor="#202020" lineWidth="1"/>
+		<line from="1478,685" to="1478,645" lineColor="#202020" lineWidth="1"/>
+		<string from="1310,714" to="1481,740" border="0" fill="0" fillColor="#a0a0a0" text="体育馆2#出线" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#000000"/>
+		<string from="1309,713" to="1480,739" border="0" fill="0" fillColor="#a0a0a0" text="体育馆2#出线" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#e0e080"/>
+		<line from="1477,705" to="1309,705" lineColor="#808080" lineWidth="1"/>
+		<line from="1309,744" to="1309,705" lineColor="#808080" lineWidth="1"/>
+		<line from="1477,745" to="1310,745" lineColor="#202020" lineWidth="1"/>
+		<line from="1478,745" to="1478,705" lineColor="#202020" lineWidth="1"/>
+		<string from="1310,774" to="1481,800" border="0" fill="0" fillColor="#a0a0a0" text="第一食堂" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#000000"/>
+		<string from="1309,773" to="1480,799" border="0" fill="0" fillColor="#a0a0a0" text="第一食堂" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#e0e080"/>
+		<line from="1477,765" to="1309,765" lineColor="#808080" lineWidth="1"/>
+		<line from="1309,804" to="1309,765" lineColor="#808080" lineWidth="1"/>
+		<line from="1477,805" to="1310,805" lineColor="#202020" lineWidth="1"/>
+		<line from="1478,805" to="1478,765" lineColor="#202020" lineWidth="1"/>
+		<string from="1310,834" to="1481,860" border="0" fill="0" fillColor="#a0a0a0" text="2#公寓" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#000000"/>
+		<string from="1309,833" to="1480,859" border="0" fill="0" fillColor="#a0a0a0" text="2#公寓" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#e0e080"/>
+		<line from="1477,825" to="1309,825" lineColor="#808080" lineWidth="1"/>
+		<line from="1309,864" to="1309,825" lineColor="#808080" lineWidth="1"/>
+		<line from="1477,865" to="1310,865" lineColor="#202020" lineWidth="1"/>
+		<line from="1478,865" to="1478,825" lineColor="#202020" lineWidth="1"/>
+		<string from="1310,894" to="1481,920" border="0" fill="0" fillColor="#a0a0a0" text="4#公寓" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#000000"/>
+		<string from="1309,893" to="1480,919" border="0" fill="0" fillColor="#a0a0a0" text="4#公寓" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#e0e080"/>
+		<line from="1477,885" to="1309,885" lineColor="#808080" lineWidth="1"/>
+		<line from="1309,924" to="1309,885" lineColor="#808080" lineWidth="1"/>
+		<line from="1477,925" to="1310,925" lineColor="#202020" lineWidth="1"/>
+		<line from="1478,925" to="1478,885" lineColor="#202020" lineWidth="1"/>
+		<line from="1477,945" to="1309,945" lineColor="#808080" lineWidth="1"/>
+		<line from="1309,984" to="1309,945" lineColor="#808080" lineWidth="1"/>
+		<line from="1477,985" to="1310,985" lineColor="#202020" lineWidth="1"/>
+		<line from="1478,985" to="1478,945" lineColor="#202020" lineWidth="1"/>
+		<string from="1310,1014" to="1481,1040" border="0" fill="0" fillColor="#a0a0a0" text="222备用" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#000000"/>
+		<string from="1309,1013" to="1480,1039" border="0" fill="0" fillColor="#a0a0a0" text="222备用" angle="0.000000" align="1" font="微软雅黑" size="20" fontColor="#e0e080"/>
+		<line from="1477,1005" to="1309,1005" lineColor="#808080" lineWidth="1"/>
+		<line from="1309,1044" to="1309,1005" lineColor="#808080" lineWidth="1"/>
+		<line from="1477,1045" to="1310,1045" lineColor="#202020" lineWidth="1"/>
+		<line from="1478,1045" to="1478,1005" lineColor="#202020" lineWidth="1"/>
+		<string from="1309,945" to="1480,971" border="0" fill="0" fillColor="#a0a0a0" text="环科楼/" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#000000"/>
+		<string from="1309,943" to="1480,969" border="0" fill="0" fillColor="#a0a0a0" text="环科楼/" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#e0e080"/>
+		<string from="1309,964" to="1480,990" border="0" fill="0" fillColor="#a0a0a0" text="大气楼2#出线" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#000000"/>
+		<string from="1309,962" to="1480,988" border="0" fill="0" fillColor="#a0a0a0" text="大气楼2#出线" angle="0.000000" align="1" font="微软雅黑" size="16" fontColor="#e0e080"/>
+		<line from="1264,454" to="39,454" lineColor="#404040" lineWidth="1"/>
+		<line from="1264,453" to="40,453" lineColor="#202020" lineWidth="1"/>
+		<line from="1264,514" to="39,514" lineColor="#404040" lineWidth="1"/>
+		<line from="1264,513" to="40,513" lineColor="#202020" lineWidth="1"/>
+		<line from="1264,574" to="39,574" lineColor="#404040" lineWidth="1"/>
+		<line from="1264,573" to="40,573" lineColor="#202020" lineWidth="1"/>
+		<line from="1264,634" to="39,634" lineColor="#404040" lineWidth="1"/>
+		<line from="1264,633" to="40,633" lineColor="#202020" lineWidth="1"/>
+		<line from="1264,694" to="39,694" lineColor="#404040" lineWidth="1"/>
+		<line from="1264,693" to="40,693" lineColor="#202020" lineWidth="1"/>
+		<line from="1264,754" to="39,754" lineColor="#404040" lineWidth="1"/>
+		<line from="1264,753" to="40,753" lineColor="#202020" lineWidth="1"/>
+		<line from="1264,814" to="39,814" lineColor="#404040" lineWidth="1"/>
+		<line from="1264,813" to="40,813" lineColor="#202020" lineWidth="1"/>
+		<line from="1264,874" to="39,874" lineColor="#404040" lineWidth="1"/>
+		<line from="1264,873" to="40,873" lineColor="#202020" lineWidth="1"/>
+		<line from="1264,934" to="39,934" lineColor="#404040" lineWidth="1"/>
+		<line from="1264,933" to="40,933" lineColor="#202020" lineWidth="1"/>
+		<line from="1264,994" to="39,994" lineColor="#404040" lineWidth="1"/>
+		<line from="1264,993" to="40,993" lineColor="#202020" lineWidth="1"/>
+		<line from="1264,1054" to="39,1054" lineColor="#404040" lineWidth="1"/>
+		<line from="1264,1053" to="40,1053" lineColor="#202020" lineWidth="1"/>
+		<line from="2524,394" to="1299,394" lineColor="#404040" lineWidth="1"/>
+		<line from="2524,393" to="1300,393" lineColor="#202020" lineWidth="1"/>
+		<line from="2524,454" to="1299,454" lineColor="#404040" lineWidth="1"/>
+		<line from="2524,453" to="1300,453" lineColor="#202020" lineWidth="1"/>
+		<line from="2524,514" to="1299,514" lineColor="#404040" lineWidth="1"/>
+		<line from="2524,513" to="1300,513" lineColor="#202020" lineWidth="1"/>
+		<line from="2524,574" to="1299,574" lineColor="#404040" lineWidth="1"/>
+		<line from="2524,573" to="1300,573" lineColor="#202020" lineWidth="1"/>
+		<line from="2524,634" to="1299,634" lineColor="#404040" lineWidth="1"/>
+		<line from="2524,633" to="1300,633" lineColor="#202020" lineWidth="1"/>
+		<line from="2524,694" to="1299,694" lineColor="#404040" lineWidth="1"/>
+		<line from="2524,693" to="1300,693" lineColor="#202020" lineWidth="1"/>
+		<line from="2524,754" to="1299,754" lineColor="#404040" lineWidth="1"/>
+		<line from="2524,753" to="1300,753" lineColor="#202020" lineWidth="1"/>
+		<line from="2524,814" to="1299,814" lineColor="#404040" lineWidth="1"/>
+		<line from="2524,813" to="1300,813" lineColor="#202020" lineWidth="1"/>
+		<line from="2524,874" to="1299,874" lineColor="#404040" lineWidth="1"/>
+		<line from="2524,873" to="1300,873" lineColor="#202020" lineWidth="1"/>
+		<line from="2524,934" to="1299,934" lineColor="#404040" lineWidth="1"/>
+		<line from="2524,933" to="1300,933" lineColor="#202020" lineWidth="1"/>
+		<line from="2524,994" to="1299,994" lineColor="#404040" lineWidth="1"/>
+		<line from="2524,993" to="1300,993" lineColor="#202020" lineWidth="1"/>
+		<line from="2524,1054" to="1299,1054" lineColor="#404040" lineWidth="1"/>
+		<line from="2524,1053" to="1300,1053" lineColor="#202020" lineWidth="1"/>
+	</layer>
+</picture>

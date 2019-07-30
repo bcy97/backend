@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<curveCfg>
+	<unit name="1号开闭所">
+		<group name="201柜1号进线">
+			<line name="N05_IaC" color="008000" unit="A" />
+			<line name="N05_IbC" unit="A" />
+			<line name="N05_IcC" color="FF0000" unit="A" />
+		</group>
+		<group name="202柜2号进线">
+			<line name="N05_IaC" color="008000" unit="A" />
+			<line name="N05_IbC" unit="A" />
+			<line name="N05_IcC" color="FF0000" unit="A" />
+		</group>
+	</unit>
+</curveCfg>

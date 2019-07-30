@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="gbk"?>
+<picture version="7" color="#3c3c3c" width="2500" height="1300">
+	<layer name="底图">
+		<imageStatue from="263,933" to="295,965" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N09_SY" iconType="0" size="32" index_close="60" index_open="59" angle="0.000000"/>
+		<imageStatue from="358,933" to="390,965" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N11_SY" iconType="0" size="32" index_close="60" index_open="59" angle="0.000000"/>
+		<imageStatue from="359,859" to="391,891" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N11_SY" iconType="0" size="32" index_close="62" index_open="61" angle="0.000000"/>
+		<imageStatue from="264,859" to="296,891" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N09_SY" iconType="0" size="32" index_close="62" index_open="61" angle="0.000000"/>
+		<imageStatue from="453,933" to="485,965" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N13_SY" iconType="0" size="32" index_close="60" index_open="59" angle="0.000000"/>
+		<imageStatue from="548,933" to="580,965" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N15_SY" iconType="0" size="32" index_close="60" index_open="59" angle="0.000000"/>
+		<imageStatue from="643,934" to="675,966" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N17_SY" iconType="0" size="32" index_close="60" index_open="59" angle="0.000000"/>
+		<imageStatue from="644,861" to="676,893" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N17_SY" iconType="0" size="32" index_close="62" index_open="61" angle="0.000000"/>
+		<imageStatue from="549,859" to="581,891" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N15_SY" iconType="0" size="32" index_close="62" index_open="61" angle="0.000000"/>
+		<imageStatue from="454,859" to="486,891" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N13_SY" iconType="0" size="32" index_close="62" index_open="61" angle="0.000000"/>
+		<imageStatue from="738,933" to="770,965" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N19_SY" iconType="0" size="32" index_close="60" index_open="59" angle="0.000000"/>
+		<imageStatue from="833,933" to="865,965" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N21_SY" iconType="0" size="32" index_close="60" index_open="59" angle="0.000000"/>
+		<imageStatue from="928,934" to="960,966" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N23_SY" iconType="0" size="32" index_close="60" index_open="59" angle="0.000000"/>
+		<imageStatue from="929,861" to="961,893" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N23_SY" iconType="0" size="32" index_close="62" index_open="61" angle="0.000000"/>
+		<imageStatue from="834,859" to="866,891" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N21_SY" iconType="0" size="32" index_close="62" index_open="61" angle="0.000000"/>
+		<imageStatue from="739,859" to="771,891" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N19_SY" iconType="0" size="32" index_close="62" index_open="61" angle="0.000000"/>
+		<imageStatue from="1023,933" to="1055,965" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N25_SY" iconType="0" size="32" index_close="60" index_open="59" angle="0.000000"/>
+		<imageStatue from="1118,933" to="1150,965" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N27_SY" iconType="0" size="32" index_close="60" index_open="59" angle="0.000000"/>
+		<imageStatue from="1213,934" to="1245,966" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N29_SY" iconType="0" size="32" index_close="60" index_open="59" angle="0.000000"/>
+		<imageStatue from="1213,861" to="1245,893" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N29_SY" iconType="0" size="32" index_close="62" index_open="61" angle="0.000000"/>
+		<imageStatue from="1119,859" to="1151,891" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N27_SY" iconType="0" size="32" index_close="62" index_open="61" angle="0.000000"/>
+		<imageStatue from="1024,859" to="1056,891" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N25_SY" iconType="0" size="32" index_close="62" index_open="61" angle="0.000000"/>
+		<imageStatue from="1462,933" to="1494,965" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N28_SY" iconType="0" size="32" index_close="60" index_open="59" angle="0.000000"/>
+		<imageStatue from="1463,858" to="1495,890" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N28_SY" iconType="0" size="32" index_close="62" index_open="61" angle="0.000000"/>
+		<imageStatue from="2128,859" to="2160,891" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N14_SY" iconType="0" size="32" index_close="62" index_open="61" angle="0.000000"/>
+		<imageStatue from="2127,933" to="2159,965" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N14_SY" iconType="0" size="32" index_close="60" index_open="59" angle="0.000000"/>
+		<imageStatue from="2222,934" to="2254,966" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N12_SY" iconType="0" size="32" index_close="60" index_open="59" angle="0.000000"/>
+		<imageStatue from="2223,860" to="2255,892" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N12_SY" iconType="0" size="32" index_close="62" index_open="61" angle="0.000000"/>
+		<imageStatue from="2317,934" to="2349,966" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N10_SY" iconType="0" size="32" index_close="60" index_open="59" angle="0.000000"/>
+		<imageStatue from="2318,860" to="2350,892" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N10_SY" iconType="0" size="32" index_close="62" index_open="61" angle="0.000000"/>
+		<imageStatue from="1843,859" to="1875,891" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N20_SY" iconType="0" size="32" index_close="62" index_open="61" angle="0.000000"/>
+		<imageStatue from="1842,933" to="1874,965" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N20_SY" iconType="0" size="32" index_close="60" index_open="59" angle="0.000000"/>
+		<imageStatue from="1937,934" to="1969,966" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N18_SY" iconType="0" size="32" index_close="60" index_open="59" angle="0.000000"/>
+		<imageStatue from="1938,860" to="1970,892" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N18_SY" iconType="0" size="32" index_close="62" index_open="61" angle="0.000000"/>
+		<imageStatue from="2032,934" to="2064,966" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N16_SY" iconType="0" size="32" index_close="60" index_open="59" angle="0.000000"/>
+		<imageStatue from="2033,860" to="2065,892" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N16_SY" iconType="0" size="32" index_close="62" index_open="61" angle="0.000000"/>
+		<imageStatue from="1747,934" to="1779,966" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N22_SY" iconType="0" size="32" index_close="60" index_open="59" angle="0.000000"/>
+		<imageStatue from="1748,860" to="1780,892" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N22_SY" iconType="0" size="32" index_close="62" index_open="61" angle="0.000000"/>
+		<imageStatue from="1652,934" to="1684,966" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N24_SY" iconType="0" size="32" index_close="60" index_open="59" angle="0.000000"/>
+		<imageStatue from="1653,860" to="1685,892" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N24_SY" iconType="0" size="32" index_close="62" index_open="61" angle="0.000000"/>
+		<imageStatue from="1557,933" to="1589,965" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N26_SY" iconType="0" size="32" index_close="60" index_open="59" angle="0.000000"/>
+		<imageStatue from="1558,858" to="1590,890" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N26_SY" iconType="0" size="32" index_close="62" index_open="61" angle="0.000000"/>
+		<imageStatue from="1557,691" to="1589,723" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N06_SY" iconType="0" size="32" index_close="60" index_open="59" angle="0.000000"/>
+		<imageStatue from="1557,615" to="1589,647" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N06_SY" iconType="0" size="32" index_close="62" index_open="61" angle="0.000000"/>
+		<imageStatue from="2310,887" to="2358,935" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N10_ST" iconType="0" size="48" index_close="1" index_open="0" angle="0.000000"/>
+		<imageStatue from="2215,887" to="2263,935" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N12_ST" iconType="0" size="48" index_close="1" index_open="0" angle="0.000000"/>
+		<imageStatue from="2120,887" to="2168,935" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N14_ST" iconType="0" size="48" index_close="1" index_open="0" angle="0.000000"/>
+		<imageStatue from="2025,887" to="2073,935" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N16_ST" iconType="0" size="48" index_close="1" index_open="0" angle="0.000000"/>
+		<imageStatue from="1930,887" to="1978,935" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N18_ST" iconType="0" size="48" index_close="1" index_open="0" angle="0.000000"/>
+		<imageStatue from="1835,887" to="1883,935" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N20_ST" iconType="0" size="48" index_close="1" index_open="0" angle="0.000000"/>
+		<imageStatue from="1740,887" to="1788,935" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N22_ST" iconType="0" size="48" index_close="1" index_open="0" angle="0.000000"/>
+		<imageStatue from="1549,645" to="1597,693" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N06_ST" iconType="0" size="48" index_close="1" index_open="0" angle="0.000000"/>
+		<imageStatue from="1645,887" to="1693,935" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N24_ST" iconType="0" size="48" index_close="1" index_open="0" angle="0.000000"/>
+		<imageStatue from="1550,887" to="1598,935" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N26_ST" iconType="0" size="48" index_close="1" index_open="0" angle="0.000000"/>
+		<imageStatue from="1455,887" to="1503,935" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N28_ST" iconType="0" size="48" index_close="1" index_open="0" angle="0.000000"/>
+		<imageStatue from="1205,889" to="1253,937" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N29_ST" iconType="0" size="48" index_close="1" index_open="0" angle="0.000000"/>
+		<imageStatue from="1111,888" to="1159,936" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N27_ST" iconType="0" size="48" index_close="1" index_open="0" angle="0.000000"/>
+		<imageStatue from="1016,888" to="1064,936" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N25_ST" iconType="0" size="48" index_close="1" index_open="0" angle="0.000000"/>
+		<imageStatue from="921,888" to="969,936" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N23_ST" iconType="0" size="48" index_close="1" index_open="0" angle="0.000000"/>
+		<imageStatue from="826,888" to="874,936" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N21_ST" iconType="0" size="48" index_close="1" index_open="0" angle="0.000000"/>
+		<imageStatue from="731,888" to="779,936" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N19_ST" iconType="0" size="48" index_close="1" index_open="0" angle="0.000000"/>
+		<imageStatue from="636,888" to="684,936" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N17_ST" iconType="0" size="48" index_close="1" index_open="0" angle="0.000000"/>
+		<imageStatue from="541,888" to="589,936" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N15_ST" iconType="0" size="48" index_close="1" index_open="0" angle="0.000000"/>
+		<imageStatue from="446,888" to="494,936" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N13_ST" iconType="0" size="48" index_close="1" index_open="0" angle="0.000000"/>
+		<imageStatue from="351,888" to="399,936" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N11_ST" iconType="0" size="48" index_close="1" index_open="0" angle="0.000000"/>
+		<imageStatue from="256,887" to="304,935" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N09_ST" iconType="0" size="48" index_close="1" index_open="0" angle="0.000000"/>
+		<line from="218,356" to="248,356" lineColor="#ff0000" lineWidth="1"/>
+		<line from="1396,824" to="1396,853" lineColor="#c02020" lineWidth="2"/>
+		<line from="212,825" to="212,859" lineColor="#cf1a05" lineWidth="2"/>
+		<image from="1017,417" to="1033,433" border="1" borderColor="#cf1a05" borderWidth="1" fill="0" fillColor="#008000" iconType="0" size="16" index="58" angle="0.000000"/>
+		<image from="1017,431" to="1033,447" border="1" borderColor="#cf1a05" borderWidth="1" fill="0" fillColor="#008000" iconType="0" size="16" index="58" angle="0.000000"/>
+		<image from="1046,417" to="1062,433" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" iconType="0" size="16" index="58" angle="0.000000"/>
+		<image from="1046,431" to="1062,447" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" iconType="0" size="16" index="58" angle="0.000000"/>
+		<line from="675,529" to="675,583" lineColor="#c02020" lineWidth="2"/>
+		<image from="667,583" to="683,599" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" iconType="0" size="16" index="44" angle="0.000000"/>
+		<string from="642,609" to="742,634" border="0" fill="0" fillColor="#c0c0c0" text="南大1#线" angle="0.000000" align="0" font="Times New Roman" size="16" fontColor="#ffffff"/>
+		<line from="675,355" to="675,496" lineColor="#c02020" lineWidth="2"/>
+		<line from="647,568" to="647,578" lineColor="#c02020" lineWidth="2"/>
+		<image from="639,552" to="655,568" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" iconType="0" size="16" index="118" angle="0.000000"/>
+		<image from="653,533" to="669,549" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" iconType="0" size="16" index="98" angle="0.000000"/>
+		<line from="647,541" to="647,551" lineColor="#c02020" lineWidth="2"/>
+		<line from="646,541" to="653,540" lineColor="#c02020" lineWidth="2"/>
+		<line from="668,541" to="700,540" lineColor="#c02020" lineWidth="2"/>
+		<line from="700,567" to="700,578" lineColor="#c02020" lineWidth="2"/>
+		<image from="692,552" to="708,568" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" iconType="0" size="16" index="66" angle="0.000000"/>
+		<line from="700,542" to="700,552" lineColor="#c02020" lineWidth="2"/>
+		<line from="675,599" to="675,610" lineColor="#c02020" lineWidth="2"/>
+		<string from="481,957" to="523,983" border="0" fill="0" fillColor="#a0a0a0" text="207" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="74,1128" to="140,1154" border="0" fill="0" fillColor="#a0a0a0" text="线路名" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="85,1187" to="142,1213" border="0" fill="0" fillColor="#a0a0a0" text="电 流" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<dyanData from="247,1188" to="298,1210" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N09_IaC" type="0"/>
+		<dyanData from="346,1188" to="397,1210" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N11_IaC" type="0"/>
+		<dyanData from="443,1188" to="494,1210" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N13_IaC" type="0"/>
+		<dyanData from="541,1188" to="592,1210" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N15_IaC" type="0"/>
+		<dyanData from="635,1188" to="686,1210" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N17_IaC" type="0"/>
+		<dyanData from="734,1188" to="785,1210" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N19_IaC" type="0"/>
+		<dyanData from="830,1188" to="881,1210" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N21_IaC" type="0"/>
+		<dyanData from="925,1188" to="976,1210" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N23_IaC" type="0"/>
+		<dyanData from="1221,1188" to="1272,1210" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N29_IaC" type="0"/>
+		<line from="463,588" to="463,498" lineColor="#404040" lineWidth="1"/>
+		<line from="627,499" to="462,499" lineColor="#404040" lineWidth="1"/>
+		<line from="628,589" to="628,500" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="628,589" to="462,589" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="523,588" to="523,498" lineColor="#404040" lineWidth="1"/>
+		<line from="522,589" to="522,500" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="627,529" to="462,529" lineColor="#404040" lineWidth="1"/>
+		<line from="627,559" to="462,559" lineColor="#404040" lineWidth="1"/>
+		<line from="628,558" to="462,558" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="628,528" to="462,528" lineColor="#e0e0e0" lineWidth="1"/>
+		<string from="471,502" to="516,528" border="0" fill="0" fillColor="#a0a0a0" text="编号" angle="0.000000" align="1" font="华文中宋" size="19" fontColor="#ffffff"/>
+		<string from="475,531" to="538,557" border="0" fill="0" fillColor="#a0a0a0" text="柜名" angle="0.000000" align="0" font="华文中宋" size="19" fontColor="#ffffff"/>
+		<string from="473,561" to="535,587" border="0" fill="0" fillColor="#a0a0a0" text="参数" angle="0.000000" align="0" font="华文中宋" size="19" fontColor="#ffffff"/>
+		<string from="542,561" to="589,587" border="0" fill="0" fillColor="#a0a0a0" text="1250A" angle="0.000000" align="0" font="Times New Roman" size="16" fontColor="#ffffff"/>
+		<string from="523,530" to="628,556" border="0" fill="0" fillColor="#a0a0a0" text="进线隔离柜" angle="0.000000" align="1" font="微软雅黑" size="14" fontColor="#ffffff"/>
+		<string from="545,501" to="587,527" border="0" fill="0" fillColor="#a0a0a0" text="2013" angle="0.000000" align="0" font="Times New Roman" size="16" fontColor="#ffffff"/>
+		<line from="841,506" to="841,416" lineColor="#404040" lineWidth="1"/>
+		<line from="986,417" to="840,417" lineColor="#404040" lineWidth="1"/>
+		<line from="987,507" to="987,418" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="987,507" to="840,507" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="901,506" to="901,416" lineColor="#404040" lineWidth="1"/>
+		<line from="900,507" to="900,418" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="986,447" to="840,447" lineColor="#404040" lineWidth="1"/>
+		<line from="986,477" to="840,477" lineColor="#404040" lineWidth="1"/>
+		<line from="987,476" to="840,476" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="987,446" to="840,446" lineColor="#e0e0e0" lineWidth="1"/>
+		<string from="850,419" to="919,445" border="0" fill="0" fillColor="#a0a0a0" text="编号" angle="0.000000" align="0" font="华文中宋" size="19" fontColor="#ffffff"/>
+		<string from="852,449" to="915,475" border="0" fill="0" fillColor="#a0a0a0" text="柜名" angle="0.000000" align="0" font="华文中宋" size="19" fontColor="#ffffff"/>
+		<string from="851,479" to="913,505" border="0" fill="0" fillColor="#a0a0a0" text="参数" angle="0.000000" align="0" font="华文中宋" size="19" fontColor="#ffffff"/>
+		<line from="841,716" to="841,596" lineColor="#404040" lineWidth="1"/>
+		<line from="986,597" to="840,597" lineColor="#404040" lineWidth="1"/>
+		<line from="987,716" to="987,598" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="987,717" to="810,717" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="901,716" to="901,596" lineColor="#404040" lineWidth="1"/>
+		<line from="900,716" to="900,598" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="986,627" to="840,627" lineColor="#404040" lineWidth="1"/>
+		<line from="986,657" to="840,657" lineColor="#404040" lineWidth="1"/>
+		<line from="987,656" to="840,656" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="987,626" to="840,626" lineColor="#e0e0e0" lineWidth="1"/>
+		<string from="822,599" to="891,625" border="0" fill="0" fillColor="#a0a0a0" text="编号" angle="0.000000" align="1" font="华文中宋" size="19" fontColor="#ffffff"/>
+		<string from="821,629" to="892,655" border="0" fill="0" fillColor="#a0a0a0" text="柜名" angle="0.000000" align="1" font="华文中宋" size="19" fontColor="#ffffff"/>
+		<string from="923,419" to="965,445" border="0" fill="0" fillColor="#a0a0a0" text="2014" angle="0.000000" align="0" font="Times New Roman" size="16" fontColor="#ffffff"/>
+		<string from="908,448" to="982,474" border="0" fill="0" fillColor="#a0a0a0" text="1#计量柜" angle="0.000000" align="0" font="微软雅黑" size="14" fontColor="#ffffff"/>
+		<string from="920,480" to="967,506" border="0" fill="0" fillColor="#a0a0a0" text="500/5" angle="0.000000" align="0" font="Times New Roman" size="16" fontColor="#ffffff"/>
+		<string from="923,600" to="965,626" border="0" fill="0" fillColor="#a0a0a0" text="201" angle="0.000000" align="0" font="Times New Roman" size="16" fontColor="#ffffff"/>
+		<string from="908,628" to="982,654" border="0" fill="0" fillColor="#a0a0a0" text="1#进线总柜" angle="0.000000" align="0" font="微软雅黑" size="14" fontColor="#ffffff"/>
+		<dyanData from="919,661" to="970,683" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="19" name="N05_IaC" type="0"/>
+		<string from="818,660" to="892,686" border="0" fill="0" fillColor="#a0a0a0" text="电流" angle="0.000000" align="1" font="华文中宋" size="19" fontColor="#ffffff"/>
+		<string from="1113,669" to="1160,686" border="0" fill="0" fillColor="#c0c0c0" text="500/5" angle="0.000000" align="0" font="Times New Roman" size="14" fontColor="#ffffff"/>
+		<string from="1069,669" to="1109,686" border="0" fill="0" fillColor="#c0c0c0" text="1250A" angle="0.000000" align="0" font="Times New Roman" size="14" fontColor="#ffffff"/>
+		<image from="1551,422" to="1567,438" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" iconType="0" size="16" index="58" angle="0.000000"/>
+		<image from="1551,436" to="1567,452" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" iconType="0" size="16" index="58" angle="0.000000"/>
+		<image from="1579,423" to="1595,439" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" iconType="0" size="16" index="58" angle="0.000000"/>
+		<image from="1579,437" to="1595,453" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" iconType="0" size="16" index="58" angle="0.000000"/>
+		<line from="1626,507" to="1626,417" lineColor="#404040" lineWidth="1"/>
+		<line from="1771,418" to="1625,418" lineColor="#404040" lineWidth="1"/>
+		<line from="1771,508" to="1771,419" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="1771,508" to="1624,508" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="1685,507" to="1685,417" lineColor="#404040" lineWidth="1"/>
+		<line from="1684,508" to="1684,419" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="1770,448" to="1624,448" lineColor="#404040" lineWidth="1"/>
+		<line from="1770,478" to="1624,478" lineColor="#404040" lineWidth="1"/>
+		<line from="1771,477" to="1624,477" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="1771,447" to="1624,447" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="1656,716" to="1656,596" lineColor="#404040" lineWidth="1"/>
+		<line from="1802,716" to="1802,598" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="1716,716" to="1716,596" lineColor="#404040" lineWidth="1"/>
+		<line from="1715,716" to="1715,598" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="1801,627" to="1655,627" lineColor="#404040" lineWidth="1"/>
+		<line from="1801,657" to="1655,657" lineColor="#404040" lineWidth="1"/>
+		<line from="1802,656" to="1655,656" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="1802,626" to="1655,626" lineColor="#e0e0e0" lineWidth="1"/>
+		<string from="1631,599" to="1711,625" border="0" fill="0" fillColor="#a0a0a0" text="编号" angle="0.000000" align="1" font="华文中宋" size="19" fontColor="#ffffff"/>
+		<string from="1631,629" to="1712,655" border="0" fill="0" fillColor="#a0a0a0" text="柜名" angle="0.000000" align="1" font="华文中宋" size="19" fontColor="#ffffff"/>
+		<string from="1633,659" to="1707,685" border="0" fill="0" fillColor="#a0a0a0" text="电流" angle="0.000000" align="1" font="华文中宋" size="19" fontColor="#ffffff"/>
+		<string from="1737,599" to="1779,625" border="0" fill="0" fillColor="#a0a0a0" text="202" angle="0.000000" align="0" font="Times New Roman" size="16" fontColor="#ffffff"/>
+		<string from="1719,629" to="1797,655" border="0" fill="0" fillColor="#a0a0a0" text="2#进线总柜" angle="0.000000" align="0" font="微软雅黑" size="14" fontColor="#ffffff"/>
+		<dyanData from="1733,660" to="1784,682" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="19" name="N06_IaC" type="0"/>
+		<line from="1982,589" to="1982,499" lineColor="#404040" lineWidth="1"/>
+		<line from="2127,500" to="1981,500" lineColor="#404040" lineWidth="1"/>
+		<line from="2128,590" to="2128,501" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="2128,590" to="1981,590" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="2042,589" to="2042,499" lineColor="#404040" lineWidth="1"/>
+		<line from="2041,590" to="2041,501" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="2127,530" to="1981,530" lineColor="#404040" lineWidth="1"/>
+		<line from="2127,560" to="1981,560" lineColor="#404040" lineWidth="1"/>
+		<line from="2128,559" to="1981,559" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="2128,529" to="1981,529" lineColor="#e0e0e0" lineWidth="1"/>
+		<string from="1990,503" to="2059,529" border="0" fill="0" fillColor="#a0a0a0" text="编号" angle="0.000000" align="0" font="华文中宋" size="19" fontColor="#ffffff"/>
+		<string from="1991,533" to="2054,559" border="0" fill="0" fillColor="#a0a0a0" text="柜名" angle="0.000000" align="0" font="华文中宋" size="19" fontColor="#ffffff"/>
+		<string from="1991,563" to="2053,589" border="0" fill="0" fillColor="#a0a0a0" text="参数" angle="0.000000" align="0" font="华文中宋" size="19" fontColor="#ffffff"/>
+		<string from="2066,503" to="2108,529" border="0" fill="0" fillColor="#a0a0a0" text="2023" angle="0.000000" align="0" font="Times New Roman" size="16" fontColor="#ffffff"/>
+		<string from="2049,531" to="2123,557" border="0" fill="0" fillColor="#a0a0a0" text="进线隔离柜" angle="0.000000" align="0" font="微软雅黑" size="14" fontColor="#ffffff"/>
+		<string from="2063,563" to="2110,589" border="0" fill="0" fillColor="#a0a0a0" text="1250A" angle="0.000000" align="0" font="Times New Roman" size="16" fontColor="#ffffff"/>
+		<string from="1634,421" to="1703,447" border="0" fill="0" fillColor="#a0a0a0" text="编号" angle="0.000000" align="0" font="华文中宋" size="19" fontColor="#ffffff"/>
+		<string from="1635,451" to="1698,477" border="0" fill="0" fillColor="#a0a0a0" text="柜名" angle="0.000000" align="0" font="华文中宋" size="19" fontColor="#ffffff"/>
+		<string from="1633,481" to="1695,507" border="0" fill="0" fillColor="#a0a0a0" text="参数" angle="0.000000" align="0" font="华文中宋" size="19" fontColor="#ffffff"/>
+		<string from="1708,421" to="1750,447" border="0" fill="0" fillColor="#a0a0a0" text="2024" angle="0.000000" align="0" font="Times New Roman" size="16" fontColor="#ffffff"/>
+		<string from="1694,449" to="1770,475" border="0" fill="0" fillColor="#a0a0a0" text="2#计量柜" angle="0.000000" align="0" font="微软雅黑" size="14" fontColor="#ffffff"/>
+		<string from="1705,481" to="1752,507" border="0" fill="0" fillColor="#a0a0a0" text="500/5" angle="0.000000" align="0" font="Times New Roman" size="16" fontColor="#ffffff"/>
+		<dyanData from="1644,1188" to="1695,1210" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N24_IaC" type="0"/>
+		<dyanData from="1740,1188" to="1791,1210" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N22_IaC" type="0"/>
+		<dyanData from="1834,1188" to="1885,1210" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N20_IaC" type="0"/>
+		<dyanData from="1931,1188" to="1982,1210" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N18_IaC" type="0"/>
+		<dyanData from="2021,1188" to="2072,1210" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N16_IaC" type="0"/>
+		<dyanData from="2115,1188" to="2166,1210" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N14_IaC" type="0"/>
+		<dyanData from="2210,1188" to="2261,1210" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N12_IaC" type="0"/>
+		<dyanData from="2305,1187" to="2356,1209" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N10_IaC" type="0"/>
+		<line from="147,1294" to="147,1103" lineColor="#404040" lineWidth="1"/>
+		<line from="146,1295" to="146,1102" lineColor="#e0e0e0" lineWidth="1"/>
+		<dyanData from="1015,1188" to="1074,1210" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="1" font="Times New Roman" size="20" name="N25_IaC" type="0"/>
+		<dyanData from="1113,1188" to="1164,1210" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N27_IaC" type="0"/>
+		<dyanData from="1455,1187" to="1506,1209" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N28_IaC" type="0"/>
+		<dyanData from="1548,1187" to="1599,1209" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N26_IaC" type="0"/>
+		<line from="1938,532" to="1938,586" lineColor="#c02020" lineWidth="2"/>
+		<image from="1930,586" to="1946,602" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" iconType="0" size="16" index="44" angle="0.000000"/>
+		<line from="1910,571" to="1910,581" lineColor="#c02020" lineWidth="2"/>
+		<image from="1902,555" to="1918,571" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" iconType="0" size="16" index="118" angle="0.000000"/>
+		<image from="1916,536" to="1932,552" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" iconType="0" size="16" index="98" angle="0.000000"/>
+		<line from="1910,544" to="1910,554" lineColor="#c02020" lineWidth="2"/>
+		<line from="1909,544" to="1916,543" lineColor="#c02020" lineWidth="2"/>
+		<line from="1931,544" to="1963,543" lineColor="#c02020" lineWidth="2"/>
+		<line from="1963,570" to="1963,581" lineColor="#c02020" lineWidth="2"/>
+		<image from="1955,555" to="1971,571" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" iconType="0" size="16" index="66" angle="0.000000"/>
+		<line from="1963,545" to="1963,555" lineColor="#c02020" lineWidth="2"/>
+		<line from="1938,602" to="1938,613" lineColor="#c02020" lineWidth="2"/>
+		<string from="1904,612" to="2004,637" border="0" fill="0" fillColor="#c0c0c0" text="南大2#线" angle="0.000000" align="0" font="Times New Roman" size="16" fontColor="#ffffff"/>
+		<dyanData from="2405,1187" to="2456,1209" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N32_IaC" type="0"/>
+		<dyanData from="162,1188" to="213,1210" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N31_IaC" type="0"/>
+		<imageStatue from="659,497" to="691,529" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="" iconType="0" size="32" index_close="66" index_open="66" angle="0.000000"/>
+		<line from="1938,359" to="1938,499" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="1922,500" to="1954,532" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="" iconType="0" size="32" index_close="66" index_open="66" angle="0.000000"/>
+		<string from="66,1264" to="164,1289" border="0" fill="0" fillColor="#a0a0a0" text="配变容量" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="231,1264" to="312,1290" border="0" fill="0" fillColor="#a0a0a0" text="1000KVA" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#e0e0e0"/>
+		<string from="329,1264" to="407,1290" border="0" fill="0" fillColor="#a0a0a0" text="1000KVA" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#e0e0e0"/>
+		<string from="427,1264" to="509,1290" border="0" fill="0" fillColor="#a0a0a0" text="1600KVA" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#e0e0e0"/>
+		<string from="537,1264" to="609,1289" border="0" fill="0" fillColor="#a0a0a0" text="800KVA" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#e0e0e0"/>
+		<string from="630,1264" to="713,1290" border="0" fill="0" fillColor="#a0a0a0" text="1000KVA" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#e0e0e0"/>
+		<string from="722,1264" to="799,1290" border="0" fill="0" fillColor="#a0a0a0" text="1250KVA" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#e0e0e0"/>
+		<string from="815,1264" to="893,1290" border="0" fill="0" fillColor="#a0a0a0" text="1250KVA" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#e0e0e0"/>
+		<string from="909,1264" to="991,1290" border="0" fill="0" fillColor="#a0a0a0" text="1250KVA" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#e0e0e0"/>
+		<string from="1629,1264" to="1708,1290" border="0" fill="0" fillColor="#a0a0a0" text="1250KVA" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#e0e0e0"/>
+		<string from="1723,1264" to="1810,1290" border="0" fill="0" fillColor="#a0a0a0" text="1250KVA" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#e0e0e0"/>
+		<string from="1815,1264" to="1897,1290" border="0" fill="0" fillColor="#a0a0a0" text="1600KVA" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#e0e0e0"/>
+		<string from="1912,1264" to="1998,1290" border="0" fill="0" fillColor="#a0a0a0" text="1000KVA" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#e0e0e0"/>
+		<string from="2009,1264" to="2086,1290" border="0" fill="0" fillColor="#a0a0a0" text="800KVA" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#e0e0e0"/>
+		<string from="2101,1264" to="2185,1290" border="0" fill="0" fillColor="#a0a0a0" text="1600KVA" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#e0e0e0"/>
+		<string from="2194,1264" to="2279,1290" border="0" fill="0" fillColor="#a0a0a0" text="1000KVA" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#e0e0e0"/>
+		<string from="2295,1265" to="2377,1291" border="0" fill="0" fillColor="#a0a0a0" text="1000KVA" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#e0e0e0"/>
+		<string from="159,1264" to="223,1290" border="0" fill="0" fillColor="#a0a0a0" text="50KVA" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#e0e0e0"/>
+		<string from="2399,1265" to="2458,1291" border="0" fill="0" fillColor="#a0a0a0" text="50KVA" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#e0e0e0"/>
+		<string from="63,1223" to="146,1249" border="0" fill="0" fillColor="#a0a0a0" text="功率因数" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<dyanData from="160,1225" to="211,1247" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N31_COS" type="0"/>
+		<dyanData from="247,1225" to="298,1247" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N09_COS" type="0"/>
+		<dyanData from="345,1225" to="396,1247" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N11_COS" type="0"/>
+		<dyanData from="442,1225" to="493,1247" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N13_COS" type="0"/>
+		<dyanData from="540,1225" to="591,1247" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N15_COS" type="0"/>
+		<dyanData from="634,1225" to="685,1247" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N17_COS" type="0"/>
+		<dyanData from="734,1225" to="785,1247" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N19_COS" type="0"/>
+		<dyanData from="827,1225" to="878,1247" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N21_COS" type="0"/>
+		<dyanData from="923,1225" to="974,1247" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N23_COS" type="0"/>
+		<dyanData from="1014,1224" to="1073,1246" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="1" font="Times New Roman" size="20" name="N25_COS" type="0"/>
+		<dyanData from="1112,1223" to="1163,1245" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N27_COS" type="0"/>
+		<dyanData from="1220,1222" to="1271,1244" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N29_COS" type="0"/>
+		<dyanData from="1454,1224" to="1505,1246" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N28_COS" type="0"/>
+		<dyanData from="1547,1223" to="1598,1245" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N26_COS" type="0"/>
+		<dyanData from="1643,1225" to="1694,1247" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N24_COS" type="0"/>
+		<dyanData from="1739,1225" to="1790,1247" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N22_COS" type="0"/>
+		<dyanData from="1833,1225" to="1884,1247" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N20_COS" type="0"/>
+		<dyanData from="1930,1225" to="1981,1247" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N18_COS" type="0"/>
+		<dyanData from="2021,1225" to="2072,1247" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N16_COS" type="0"/>
+		<dyanData from="2114,1225" to="2165,1247" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N14_COS" type="0"/>
+		<dyanData from="2209,1225" to="2260,1247" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N12_COS" type="0"/>
+		<dyanData from="2305,1225" to="2356,1247" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N10_COS" type="0"/>
+		<dyanData from="2405,1225" to="2456,1247" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="20" name="N32_COS" type="0"/>
+		<string from="154,1127" to="216,1153" border="0" fill="0" fillColor="#a0a0a0" text="1#所变" angle="0.000000" align="1" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="231,1112" to="315,1138" border="0" fill="0" fillColor="#a0a0a0" text="公共教学" angle="0.000000" align="1" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="324,1111" to="411,1137" border="0" fill="0" fillColor="#a0a0a0" text="实验楼东" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="422,1112" to="510,1138" border="0" fill="0" fillColor="#a0a0a0" text="实验楼西" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="525,1111" to="614,1137" border="0" fill="0" fillColor="#a0a0a0" text="国际学院" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="629,1111" to="702,1137" border="0" fill="0" fillColor="#a0a0a0" text="体育馆" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="727,1125" to="800,1151" border="0" fill="0" fillColor="#a0a0a0" text="1#公寓" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="825,1125" to="900,1151" border="0" fill="0" fillColor="#a0a0a0" text="3#公寓" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="919,1125" to="993,1151" border="0" fill="0" fillColor="#a0a0a0" text="5#公寓" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="1009,1102" to="1071,1128" border="0" fill="0" fillColor="#a0a0a0" text="环科楼" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="1115,1125" to="1176,1151" border="0" fill="0" fillColor="#a0a0a0" text="备用" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="1213,1126" to="1277,1152" border="0" fill="0" fillColor="#a0a0a0" text="母联柜" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="1339,1126" to="1404,1152" border="0" fill="0" fillColor="#a0a0a0" text="隔离柜" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="1460,1126" to="1525,1152" border="0" fill="0" fillColor="#a0a0a0" text="备用" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="1538,1103" to="1601,1129" border="0" fill="0" fillColor="#a0a0a0" text="环科楼" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="1642,1125" to="1712,1151" border="0" fill="0" fillColor="#a0a0a0" text="4#公寓" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="1736,1125" to="1809,1151" border="0" fill="0" fillColor="#a0a0a0" text="2#公寓" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="1813,1126" to="1900,1152" border="0" fill="0" fillColor="#a0a0a0" text="第一食堂" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="1918,1111" to="1997,1137" border="0" fill="0" fillColor="#a0a0a0" text="体育馆" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="2391,1125" to="2466,1151" border="0" fill="0" fillColor="#a0a0a0" text="2#所变" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="2288,1109" to="2376,1135" border="0" fill="0" fillColor="#a0a0a0" text="公共教学" angle="0.000000" align="1" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="2192,1109" to="2276,1135" border="0" fill="0" fillColor="#a0a0a0" text="实验楼东" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="2096,1110" to="2182,1136" border="0" fill="0" fillColor="#a0a0a0" text="实验楼西" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="2001,1110" to="2090,1136" border="0" fill="0" fillColor="#a0a0a0" text="国际学院" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="229,1143" to="315,1169" border="0" fill="0" fillColor="#a0a0a0" text="楼1#出线" angle="0.000000" align="1" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="337,1143" to="414,1169" border="0" fill="0" fillColor="#a0a0a0" text="1#出线" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="433,1144" to="509,1170" border="0" fill="0" fillColor="#a0a0a0" text="1#出线" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="536,1142" to="614,1168" border="0" fill="0" fillColor="#a0a0a0" text="1#出线" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="629,1142" to="699,1168" border="0" fill="0" fillColor="#a0a0a0" text="1#出线" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="1920,1143" to="1983,1169" border="0" fill="0" fillColor="#a0a0a0" text="2#出线" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="2007,1144" to="2080,1170" border="0" fill="0" fillColor="#a0a0a0" text="2#出线" angle="0.000000" align="1" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="2110,1143" to="2182,1169" border="0" fill="0" fillColor="#a0a0a0" text="2#出线" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="2204,1143" to="2279,1169" border="0" fill="0" fillColor="#a0a0a0" text="2#出线" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="2292,1143" to="2376,1169" border="0" fill="0" fillColor="#a0a0a0" text="楼2#出线" angle="0.000000" align="1" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<dyanData from="919,691" to="970,713" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="19" name="N05_COS" type="0"/>
+		<string from="813,690" to="897,716" border="0" fill="0" fillColor="#a0a0a0" text="功率因素" angle="0.000000" align="0" font="华文中宋" size="19" fontColor="#ffffff"/>
+		<line from="986,687" to="840,687" lineColor="#404040" lineWidth="1"/>
+		<line from="989,686" to="842,686" lineColor="#e0e0e0" lineWidth="1"/>
+		<string from="1628,689" to="1710,715" border="0" fill="0" fillColor="#a0a0a0" text="功率因素" angle="0.000000" align="0" font="华文中宋" size="19" fontColor="#ffffff"/>
+		<dyanData from="1733,690" to="1784,712" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="19" name="N06_COS" type="0"/>
+		<line from="1802,686" to="1655,686" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="1801,687" to="1655,687" lineColor="#404040" lineWidth="1"/>
+		<string from="321,315" to="380,351" border="0" fill="0" fillColor="#c0c0c0" text="Ua" angle="0.000000" align="1" font="Times New Roman" size="32" fontColor="#ffffff"/>
+		<imageStatue from="692,577" to="708,593" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="A4-89D" iconType="0" size="16" index_close="1" index_open="127" angle="0.000000"/>
+		<imageStatue from="639,577" to="655,593" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="A4-89D" iconType="0" size="16" index_close="1" index_open="127" angle="0.000000"/>
+		<imageStatue from="1903,580" to="1919,596" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="A4-89D" iconType="0" size="16" index_close="1" index_open="127" angle="0.000000"/>
+		<imageStatue from="1955,580" to="1971,596" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="A4-89D" iconType="0" size="16" index_close="1" index_open="127" angle="0.000000"/>
+		<string from="1012,1151" to="1074,1177" border="0" fill="0" fillColor="#a0a0a0" text="1#出线" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="1540,1152" to="1603,1178" border="0" fill="0" fillColor="#a0a0a0" text="2#出线" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="1005,1256" to="1086,1282" border="0" fill="0" fillColor="#a0a0a0" text="1600KVA" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#e0e0e0"/>
+		<string from="1010,1128" to="1096,1154" border="0" fill="0" fillColor="#a0a0a0" text="大气楼" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="1539,1126" to="1601,1152" border="0" fill="0" fillColor="#a0a0a0" text="大气楼" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="1006,1271" to="1085,1297" border="0" fill="0" fillColor="#a0a0a0" text="2000KVA" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#e0e0e0"/>
+		<string from="1532,1256" to="1613,1282" border="0" fill="0" fillColor="#a0a0a0" text="1600KVA" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#e0e0e0"/>
+		<string from="1534,1271" to="1612,1297" border="0" fill="0" fillColor="#a0a0a0" text="2000KVA" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#e0e0e0"/>
+		<line from="462,589" to="462,500" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="628,500" to="462,500" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="1982,590" to="1982,501" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="2128,501" to="1981,501" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="840,507" to="840,418" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="987,418" to="840,418" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="1772,419" to="1625,419" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="1625,508" to="1625,419" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="1625,716" to="1625,598" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="1801,598" to="1654,598" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="987,598" to="840,598" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="810,716" to="810,598" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="2460,1102" to="72,1102" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="2477,1297" to="62,1297" lineColor="#e0e0e0" lineWidth="1"/>
+		<string from="1095,643" to="1137,669" border="0" fill="0" fillColor="#a0a0a0" text="201" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<line from="1229,1022" to="1396,1021" lineColor="#c02020" lineWidth="2"/>
+		<line from="1396,893" to="1396,1020" lineColor="#c02020" lineWidth="2"/>
+		<image from="1398,901" to="1414,917" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" iconType="0" size="16" index="58" angle="0.000000"/>
+		<image from="1398,915" to="1414,931" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" iconType="0" size="16" index="58" angle="0.000000"/>
+		<image from="1377,901" to="1393,917" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" iconType="0" size="16" index="58" angle="0.000000"/>
+		<image from="1377,915" to="1393,931" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" iconType="0" size="16" index="58" angle="0.000000"/>
+		<imageStatue from="1368,980" to="1384,996" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="" iconType="0" size="16" index_close="118" index_open="118" angle="0.000000"/>
+		<imageStatue from="1379,961" to="1395,977" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="" iconType="0" size="16" index_close="98" index_open="98" angle="0.000000"/>
+		<line from="1375,969" to="1378,968" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="1368,1006" to="1384,1022" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="" iconType="0" size="16" index_close="1" index_open="1" angle="0.000000"/>
+		<imageStatue from="1208,992" to="1224,1008" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="" iconType="0" size="16" index_close="118" index_open="118" angle="0.000000"/>
+		<imageStatue from="1214,973" to="1230,989" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="" iconType="0" size="16" index_close="98" index_open="98" angle="0.000000"/>
+		<imageStatue from="1208,1018" to="1224,1034" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="" iconType="0" size="16" index_close="1" index_open="1" angle="0.000000"/>
+		<imageStatue from="1388,849" to="1404,865" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="" iconType="0" size="16" index_close="80" index_open="80" angle="0.000000"/>
+		<imageStatue from="1388,880" to="1404,896" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="" iconType="0" size="16" index_close="81" index_open="81" angle="0.000000"/>
+		<line from="1396,865" to="1396,879" lineColor="#c02020" lineWidth="2"/>
+		<line from="212,757" to="212,779" lineColor="#c02020" lineWidth="2"/>
+		<ellipse from="221,741" to="201,720" border="1" borderColor="#c02020" borderWidth="2" fill="0" fillColor="#20a040"/>
+		<imageStatue from="204,741" to="220,757" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="" iconType="0" size="16" index_close="40" index_open="40" angle="0.000000"/>
+		<line from="196,780" to="226,779" lineColor="#c02020" lineWidth="2"/>
+		<line from="155,689" to="155,1013" lineColor="#c02020" lineWidth="2"/>
+		<line from="154,690" to="212,689" lineColor="#c02020" lineWidth="2"/>
+		<line from="212,690" to="212,711" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="184,694" to="200,710" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="" iconType="0" size="16" index_close="98" index_open="98" angle="0.000000"/>
+		<line from="177,702" to="184,701" lineColor="#c02020" lineWidth="2"/>
+		<line from="200,702" to="211,701" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="217,759" to="233,775" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="" iconType="0" size="16" index_close="58" index_open="58" angle="0.000000"/>
+		<imageStatue from="204,759" to="220,775" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="" iconType="0" size="16" index_close="58" index_open="58" angle="0.000000"/>
+		<imageStatue from="191,759" to="207,775" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="" iconType="0" size="16" index_close="58" index_open="58" angle="0.000000"/>
+		<imageStatue from="218,796" to="234,812" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="" iconType="0" size="16" index_close="5" index_open="5" angle="0.000000"/>
+		<imageStatue from="204,796" to="220,812" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="" iconType="0" size="16" index_close="5" index_open="5" angle="0.000000"/>
+		<imageStatue from="189,796" to="205,812" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="" iconType="0" size="16" index_close="5" index_open="5" angle="0.000000"/>
+		<imageStatue from="169,712" to="185,728" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="" iconType="0" size="16" index_close="118" index_open="118" angle="0.000000"/>
+		<imageStatue from="169,738" to="185,754" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="" iconType="0" size="16" index_close="1" index_open="1" angle="0.000000"/>
+		<line from="177,701" to="177,711" lineColor="#c02020" lineWidth="2"/>
+		<line from="177,728" to="177,738" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="204,781" to="220,797" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="" iconType="0" size="16" index_close="40" index_open="40" angle="0.000000"/>
+		<imageStatue from="218,781" to="234,797" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="" iconType="0" size="16" index_close="40" index_open="40" angle="0.000000"/>
+		<imageStatue from="189,781" to="205,797" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="" iconType="0" size="16" index_close="40" index_open="40" angle="0.000000"/>
+		<ellipse from="221,731" to="201,710" border="1" borderColor="#c02020" borderWidth="2" fill="0" fillColor="#20a040"/>
+		<line from="212,906" to="212,1014" lineColor="#c02020" lineWidth="2"/>
+		<line from="213,940" to="237,939" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="204,894" to="220,910" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="" iconType="0" size="16" index_close="62" index_open="62" angle="0.000000"/>
+		<line from="212,854" to="212,893" lineColor="#c02020" lineWidth="2"/>
+		<line from="155,1014" to="213,1013" lineColor="#c02020" lineWidth="2"/>
+		<line from="237,941" to="237,950" lineColor="#c02020" lineWidth="2"/>
+		<line from="237,967" to="237,977" lineColor="#c02020" lineWidth="2"/>
+		<line from="192,967" to="192,977" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="184,951" to="200,967" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="" iconType="0" size="16" index_close="118" index_open="118" angle="0.000000"/>
+		<imageStatue from="195,932" to="211,948" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="" iconType="0" size="16" index_close="98" index_open="98" angle="0.000000"/>
+		<line from="192,940" to="192,950" lineColor="#c02020" lineWidth="2"/>
+		<line from="191,940" to="194,939" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="184,977" to="200,993" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="" iconType="0" size="16" index_close="1" index_open="1" angle="0.000000"/>
+		<imageStatue from="229,951" to="245,967" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N07_DD" iconType="0" size="16" index_close="60" index_open="40" angle="0.000000"/>
+		<imageStatue from="229,977" to="245,993" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="" iconType="0" size="16" index_close="1" index_open="1" angle="0.000000"/>
+		<line from="2413,920" to="2413,1027" lineColor="#c02020" lineWidth="2"/>
+		<line from="2438,980" to="2438,992" lineColor="#c02020" lineWidth="2"/>
+		<line from="2414,955" to="2438,954" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="2405,908" to="2421,924" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="" iconType="0" size="16" index_close="62" index_open="62" angle="0.000000"/>
+		<line from="2413,863" to="2413,907" lineColor="#c02020" lineWidth="2"/>
+		<line from="2412,1027" to="2467,1026" lineColor="#c02020" lineWidth="2"/>
+		<line from="2467,687" to="2467,1025" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="2430,964" to="2446,980" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N08_DD" iconType="0" size="16" index_close="60" index_open="40" angle="0.000000"/>
+		<line from="2438,954" to="2438,963" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="2430,992" to="2446,1008" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="" iconType="0" size="16" index_close="1" index_open="1" angle="0.000000"/>
+		<imageStatue from="2391,966" to="2407,982" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="" iconType="0" size="16" index_close="118" index_open="118" angle="0.000000"/>
+		<imageStatue from="2397,947" to="2413,963" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="" iconType="0" size="16" index_close="98" index_open="98" angle="0.000000"/>
+		<line from="2396,955" to="2396,965" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="2391,992" to="2407,1008" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="" iconType="0" size="16" index_close="1" index_open="1" angle="0.000000"/>
+		<line from="2413,823" to="2413,872" lineColor="#c02020" lineWidth="2"/>
+		<line from="2412,688" to="2467,687" lineColor="#c02020" lineWidth="2"/>
+		<line from="2413,688" to="2413,710" lineColor="#c02020" lineWidth="2"/>
+		<line from="2448,727" to="2448,737" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="2440,711" to="2456,727" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="" iconType="0" size="16" index_close="118" index_open="118" angle="0.000000"/>
+		<imageStatue from="2424,692" to="2440,708" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="" iconType="0" size="16" index_close="98" index_open="98" angle="0.000000"/>
+		<line from="2448,700" to="2448,710" lineColor="#c02020" lineWidth="2"/>
+		<line from="2440,700" to="2448,699" lineColor="#c02020" lineWidth="2"/>
+		<line from="2414,700" to="2423,699" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="2440,737" to="2456,753" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="" iconType="0" size="16" index_close="1" index_open="1" angle="0.000000"/>
+		<line from="2414,755" to="2414,777" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="2406,739" to="2422,755" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="" iconType="0" size="16" index_close="40" index_open="40" angle="0.000000"/>
+		<line from="2398,778" to="2428,777" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="2419,757" to="2435,773" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="" iconType="0" size="16" index_close="58" index_open="58" angle="0.000000"/>
+		<imageStatue from="2406,757" to="2422,773" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="" iconType="0" size="16" index_close="58" index_open="58" angle="0.000000"/>
+		<imageStatue from="2393,757" to="2409,773" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="" iconType="0" size="16" index_close="58" index_open="58" angle="0.000000"/>
+		<imageStatue from="2420,794" to="2436,810" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="" iconType="0" size="16" index_close="5" index_open="5" angle="0.000000"/>
+		<imageStatue from="2406,794" to="2422,810" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="" iconType="0" size="16" index_close="5" index_open="5" angle="0.000000"/>
+		<imageStatue from="2391,794" to="2407,810" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="" iconType="0" size="16" index_close="5" index_open="5" angle="0.000000"/>
+		<imageStatue from="2406,779" to="2422,795" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="" iconType="0" size="16" index_close="40" index_open="40" angle="0.000000"/>
+		<imageStatue from="2420,779" to="2436,795" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="" iconType="0" size="16" index_close="40" index_open="40" angle="0.000000"/>
+		<imageStatue from="2391,779" to="2407,795" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="" iconType="0" size="16" index_close="40" index_open="40" angle="0.000000"/>
+		<ellipse from="2423,729" to="2403,708" border="1" borderColor="#c02020" borderWidth="2" fill="0" fillColor="#20a040"/>
+		<ellipse from="2423,739" to="2403,718" border="1" borderColor="#c02020" borderWidth="2" fill="0" fillColor="#20a040"/>
+		<image from="1096,606" to="1128,638" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" iconType="0" size="32" index="44" angle="0.000000"/>
+		<image from="1082,580" to="1098,596" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" iconType="0" size="16" index="63" angle="0.000000"/>
+		<image from="1054,581" to="1070,597" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" iconType="0" size="16" index="108" angle="0.000000"/>
+		<line from="1098,588" to="1112,587" lineColor="#c02020" lineWidth="2"/>
+		<line from="1112,589" to="1112,605" lineColor="#c02020" lineWidth="2"/>
+		<line from="1039,588" to="1053,587" lineColor="#c02020" lineWidth="2"/>
+		<line from="1070,588" to="1082,587" lineColor="#c02020" lineWidth="2"/>
+		<image from="1096,486" to="1128,518" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" iconType="0" size="32" index="44" angle="0.000000"/>
+		<image from="1082,460" to="1098,476" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" iconType="0" size="16" index="63" angle="0.000000"/>
+		<image from="1054,461" to="1070,477" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" iconType="0" size="16" index="108" angle="0.000000"/>
+		<line from="1098,468" to="1112,467" lineColor="#c02020" lineWidth="2"/>
+		<line from="1112,469" to="1112,485" lineColor="#c02020" lineWidth="2"/>
+		<line from="1039,468" to="1053,467" lineColor="#c02020" lineWidth="2"/>
+		<line from="1070,468" to="1082,467" lineColor="#c02020" lineWidth="2"/>
+		<image from="1032,417" to="1048,433" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" iconType="0" size="16" index="58" angle="0.000000"/>
+		<image from="1032,431" to="1048,447" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" iconType="0" size="16" index="58" angle="0.000000"/>
+		<image from="1565,422" to="1581,438" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" iconType="0" size="16" index="58" angle="0.000000"/>
+		<image from="1565,436" to="1581,452" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" iconType="0" size="16" index="58" angle="0.000000"/>
+		<line from="2398,982" to="2398,992" lineColor="#c02020" lineWidth="2"/>
+		<line from="1214,981" to="1214,991" lineColor="#c02020" lineWidth="2"/>
+		<line from="1376,969" to="1376,979" lineColor="#c02020" lineWidth="2"/>
+		<line from="1216,1008" to="1216,1018" lineColor="#c02020" lineWidth="2"/>
+		<line from="1376,996" to="1376,1006" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="651,1058" to="667,1074" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="NST11" iconType="0" size="16" index_close="45" index_open="45" angle="0.000000"/>
+		<line from="659,965" to="659,1058" lineColor="#c02020" lineWidth="2"/>
+		<line from="660,988" to="690,987" lineColor="#c02020" lineWidth="2"/>
+		<line from="690,988" to="690,1002" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="674,1003" to="706,1035" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N17_DD" iconType="0" size="32" index_close="18" index_open="19" angle="0.000000"/>
+		<imageStatue from="556,1058" to="572,1074" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="NST09" iconType="0" size="16" index_close="45" index_open="45" angle="0.000000"/>
+		<line from="564,965" to="564,1058" lineColor="#c02020" lineWidth="2"/>
+		<line from="565,988" to="595,987" lineColor="#c02020" lineWidth="2"/>
+		<line from="595,988" to="595,1002" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="579,1003" to="611,1035" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N15_DD" iconType="0" size="32" index_close="18" index_open="19" angle="0.000000"/>
+		<imageStatue from="580,1034" to="612,1066" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N15_DD" iconType="0" size="32" index_close="75" index_open="75" angle="0.000000"/>
+		<imageStatue from="461,1058" to="477,1074" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="NST07" iconType="0" size="16" index_close="45" index_open="45" angle="0.000000"/>
+		<line from="469,965" to="469,1058" lineColor="#c02020" lineWidth="2"/>
+		<line from="470,988" to="500,987" lineColor="#c02020" lineWidth="2"/>
+		<line from="500,988" to="500,1002" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="484,1003" to="516,1035" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N13_DD" iconType="0" size="32" index_close="18" index_open="19" angle="0.000000"/>
+		<imageStatue from="366,1058" to="382,1074" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="NST05" iconType="0" size="16" index_close="45" index_open="45" angle="0.000000"/>
+		<line from="375,827" to="375,861" lineColor="#c02020" lineWidth="2"/>
+		<line from="374,965" to="374,1058" lineColor="#c02020" lineWidth="2"/>
+		<line from="375,988" to="405,987" lineColor="#c02020" lineWidth="2"/>
+		<line from="405,988" to="405,1002" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="389,1003" to="421,1035" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N11_DD" iconType="0" size="32" index_close="18" index_open="19" angle="0.000000"/>
+		<imageStatue from="271,1058" to="287,1074" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="NST03" iconType="0" size="16" index_close="45" index_open="45" angle="0.000000"/>
+		<line from="280,827" to="280,861" lineColor="#c02020" lineWidth="2"/>
+		<line from="279,965" to="279,1058" lineColor="#c02020" lineWidth="2"/>
+		<line from="280,988" to="310,987" lineColor="#c02020" lineWidth="2"/>
+		<line from="310,988" to="310,1002" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="294,1003" to="326,1035" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N09_DD" iconType="0" size="32" index_close="18" index_open="19" angle="0.000000"/>
+		<imageStatue from="1126,1058" to="1142,1074" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="NST21" iconType="0" size="16" index_close="45" index_open="45" angle="0.000000"/>
+		<line from="1134,965" to="1134,1058" lineColor="#c02020" lineWidth="2"/>
+		<line from="1135,988" to="1165,987" lineColor="#c02020" lineWidth="2"/>
+		<line from="1165,988" to="1165,1002" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="1149,1003" to="1181,1035" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N27_DD" iconType="0" size="32" index_close="18" index_open="19" angle="0.000000"/>
+		<imageStatue from="1031,1058" to="1047,1074" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="NST19" iconType="0" size="16" index_close="45" index_open="45" angle="0.000000"/>
+		<line from="1039,965" to="1039,1058" lineColor="#c02020" lineWidth="2"/>
+		<line from="1040,988" to="1070,987" lineColor="#c02020" lineWidth="2"/>
+		<line from="1070,988" to="1070,1002" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="1054,1003" to="1086,1035" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N25_DD" iconType="0" size="32" index_close="18" index_open="19" angle="0.000000"/>
+		<imageStatue from="936,1058" to="952,1074" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="NST17" iconType="0" size="16" index_close="45" index_open="45" angle="0.000000"/>
+		<line from="944,965" to="944,1058" lineColor="#c02020" lineWidth="2"/>
+		<line from="945,988" to="975,987" lineColor="#c02020" lineWidth="2"/>
+		<line from="975,988" to="975,1002" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="959,1003" to="991,1035" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N23_DD" iconType="0" size="32" index_close="18" index_open="19" angle="0.000000"/>
+		<imageStatue from="841,1058" to="857,1074" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="NST15" iconType="0" size="16" index_close="45" index_open="45" angle="0.000000"/>
+		<line from="849,965" to="849,1058" lineColor="#c02020" lineWidth="2"/>
+		<line from="850,988" to="880,987" lineColor="#c02020" lineWidth="2"/>
+		<line from="880,988" to="880,1002" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="864,1003" to="896,1035" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N21_DD" iconType="0" size="32" index_close="18" index_open="19" angle="0.000000"/>
+		<imageStatue from="746,1058" to="762,1074" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="NST13" iconType="0" size="16" index_close="45" index_open="45" angle="0.000000"/>
+		<line from="754,965" to="754,1058" lineColor="#c02020" lineWidth="2"/>
+		<line from="755,988" to="785,987" lineColor="#c02020" lineWidth="2"/>
+		<line from="785,988" to="785,1002" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="769,1003" to="801,1035" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N19_DD" iconType="0" size="32" index_close="18" index_open="19" angle="0.000000"/>
+		<imageStatue from="1850,1057" to="1866,1073" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="NST14" iconType="0" size="16" index_close="45" index_open="45" angle="0.000000"/>
+		<line from="1858,964" to="1858,1057" lineColor="#c02020" lineWidth="2"/>
+		<line from="1859,987" to="1889,986" lineColor="#c02020" lineWidth="2"/>
+		<line from="1889,987" to="1889,1001" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="1873,1002" to="1905,1034" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N20_DD" iconType="0" size="32" index_close="18" index_open="19" angle="0.000000"/>
+		<imageStatue from="1755,1057" to="1771,1073" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="NST16" iconType="0" size="16" index_close="45" index_open="45" angle="0.000000"/>
+		<line from="1763,964" to="1763,1057" lineColor="#c02020" lineWidth="2"/>
+		<line from="1764,987" to="1794,986" lineColor="#c02020" lineWidth="2"/>
+		<line from="1794,987" to="1794,1001" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="1778,1002" to="1810,1034" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N22_DD" iconType="0" size="32" index_close="18" index_open="19" angle="0.000000"/>
+		<imageStatue from="1660,1057" to="1676,1073" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="NST18" iconType="0" size="16" index_close="45" index_open="45" angle="0.000000"/>
+		<line from="1668,964" to="1668,1057" lineColor="#c02020" lineWidth="2"/>
+		<line from="1669,987" to="1699,986" lineColor="#c02020" lineWidth="2"/>
+		<line from="1699,987" to="1699,1001" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="1683,1002" to="1715,1034" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N24_DD" iconType="0" size="32" index_close="18" index_open="19" angle="0.000000"/>
+		<imageStatue from="1565,1057" to="1581,1073" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="NST20" iconType="0" size="16" index_close="45" index_open="45" angle="0.000000"/>
+		<line from="1573,964" to="1573,1057" lineColor="#c02020" lineWidth="2"/>
+		<line from="1574,987" to="1604,986" lineColor="#c02020" lineWidth="2"/>
+		<line from="1604,987" to="1604,1001" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="1588,1002" to="1620,1034" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N26_DD" iconType="0" size="32" index_close="18" index_open="19" angle="0.000000"/>
+		<imageStatue from="1470,1057" to="1486,1073" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="NST22" iconType="0" size="16" index_close="45" index_open="45" angle="0.000000"/>
+		<line from="1478,964" to="1478,1057" lineColor="#c02020" lineWidth="2"/>
+		<line from="1479,987" to="1509,986" lineColor="#c02020" lineWidth="2"/>
+		<line from="1509,987" to="1509,1001" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="1493,1002" to="1525,1034" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N28_DD" iconType="0" size="32" index_close="18" index_open="19" angle="0.000000"/>
+		<imageStatue from="2325,1057" to="2341,1073" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="NST04" iconType="0" size="16" index_close="45" index_open="45" angle="0.000000"/>
+		<line from="2333,964" to="2333,1057" lineColor="#c02020" lineWidth="2"/>
+		<line from="2334,987" to="2364,986" lineColor="#c02020" lineWidth="2"/>
+		<line from="2364,987" to="2364,1001" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="2348,1002" to="2380,1034" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N10_DD" iconType="0" size="32" index_close="18" index_open="19" angle="0.000000"/>
+		<imageStatue from="2230,1057" to="2246,1073" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="NST06" iconType="0" size="16" index_close="45" index_open="45" angle="0.000000"/>
+		<line from="2238,964" to="2238,1057" lineColor="#c02020" lineWidth="2"/>
+		<line from="2239,987" to="2269,986" lineColor="#c02020" lineWidth="2"/>
+		<line from="2269,987" to="2269,1001" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="2253,1002" to="2285,1034" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N12_DD" iconType="0" size="32" index_close="18" index_open="19" angle="0.000000"/>
+		<imageStatue from="2135,1057" to="2151,1073" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="NST08" iconType="0" size="16" index_close="45" index_open="45" angle="0.000000"/>
+		<line from="2143,964" to="2143,1057" lineColor="#c02020" lineWidth="2"/>
+		<line from="2144,987" to="2174,986" lineColor="#c02020" lineWidth="2"/>
+		<line from="2174,987" to="2174,1001" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="2158,1002" to="2190,1034" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N14_DD" iconType="0" size="32" index_close="18" index_open="19" angle="0.000000"/>
+		<imageStatue from="2040,1057" to="2056,1073" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="NST10" iconType="0" size="16" index_close="45" index_open="45" angle="0.000000"/>
+		<line from="2048,964" to="2048,1057" lineColor="#c02020" lineWidth="2"/>
+		<line from="2049,987" to="2079,986" lineColor="#c02020" lineWidth="2"/>
+		<line from="2079,987" to="2079,1001" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="2063,1002" to="2095,1034" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N16_DD" iconType="0" size="32" index_close="18" index_open="19" angle="0.000000"/>
+		<imageStatue from="1945,1057" to="1961,1073" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="NST12" iconType="0" size="16" index_close="45" index_open="45" angle="0.000000"/>
+		<line from="1953,964" to="1953,1057" lineColor="#c02020" lineWidth="2"/>
+		<line from="1954,987" to="1984,986" lineColor="#c02020" lineWidth="2"/>
+		<line from="1984,987" to="1984,1001" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="1968,1002" to="2000,1034" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N18_DD" iconType="0" size="32" index_close="18" index_open="19" angle="0.000000"/>
+		<imageStatue from="1024,615" to="1056,647" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N05_SY" iconType="0" size="32" index_close="62" index_open="61" angle="0.000000"/>
+		<imageStatue from="1024,691" to="1056,723" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N05_SY" iconType="0" size="32" index_close="60" index_open="59" angle="0.000000"/>
+		<line from="1040,718" to="1040,824" lineColor="#c02020" lineWidth="2"/>
+		<line from="1573,719" to="1573,823" lineColor="#c02020" lineWidth="2"/>
+		<line from="1040,355" to="1040,619" lineColor="#c02020" lineWidth="2"/>
+		<line from="1573,358" to="1573,618" lineColor="#c02020" lineWidth="2"/>
+		<line from="1229,963" to="1229,1022" lineColor="#c02020" lineWidth="2"/>
+		<string from="561,315" to="620,351" border="0" fill="0" fillColor="#c0c0c0" text="Ub" angle="0.000000" align="1" font="Times New Roman" size="32" fontColor="#ffffff"/>
+		<string from="801,315" to="860,351" border="0" fill="0" fillColor="#c0c0c0" text="Uc" angle="0.000000" align="1" font="Times New Roman" size="32" fontColor="#ffffff"/>
+		<dyanData from="354,322" to="456,344" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="32" name="N05_Ua" type="0"/>
+		<dyanData from="595,323" to="697,345" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="32" name="N05_Ub" type="0"/>
+		<dyanData from="830,322" to="932,344" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="32" name="N05_Uc" type="0"/>
+		<string from="471,315" to="530,351" border="0" fill="0" fillColor="#c0c0c0" text="KV" angle="0.000000" align="1" font="Times New Roman" size="32" fontColor="#ffffff"/>
+		<string from="711,315" to="770,351" border="0" fill="0" fillColor="#c0c0c0" text="KV" angle="0.000000" align="1" font="Times New Roman" size="32" fontColor="#ffffff"/>
+		<string from="951,315" to="1010,351" border="0" fill="0" fillColor="#c0c0c0" text="KV" angle="0.000000" align="1" font="Times New Roman" size="32" fontColor="#ffffff"/>
+		<string from="1610,315" to="1669,351" border="0" fill="0" fillColor="#c0c0c0" text="Ua" angle="0.000000" align="1" font="Times New Roman" size="32" fontColor="#ffffff"/>
+		<string from="1850,315" to="1909,351" border="0" fill="0" fillColor="#c0c0c0" text="Ub" angle="0.000000" align="1" font="Times New Roman" size="32" fontColor="#ffffff"/>
+		<string from="2090,315" to="2149,351" border="0" fill="0" fillColor="#c0c0c0" text="Uc" angle="0.000000" align="1" font="Times New Roman" size="32" fontColor="#ffffff"/>
+		<dyanData from="1643,322" to="1745,344" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="32" name="N06_Ua" type="0"/>
+		<dyanData from="1884,323" to="1986,345" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="32" name="N06_Ub" type="0"/>
+		<dyanData from="2119,322" to="2221,344" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="Times New Roman" size="32" name="N06_Uc" type="0"/>
+		<string from="1760,315" to="1819,351" border="0" fill="0" fillColor="#c0c0c0" text="KV" angle="0.000000" align="1" font="Times New Roman" size="32" fontColor="#ffffff"/>
+		<string from="2000,315" to="2059,351" border="0" fill="0" fillColor="#c0c0c0" text="KV" angle="0.000000" align="1" font="Times New Roman" size="32" fontColor="#ffffff"/>
+		<string from="2240,315" to="2299,351" border="0" fill="0" fillColor="#c0c0c0" text="KV" angle="0.000000" align="1" font="Times New Roman" size="32" fontColor="#ffffff"/>
+		<line from="1345,357" to="1375,357" lineColor="#ff0000" lineWidth="1"/>
+		<string from="291,957" to="333,983" border="0" fill="0" fillColor="#a0a0a0" text="203" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="385,957" to="427,983" border="0" fill="0" fillColor="#a0a0a0" text="205" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="577,957" to="619,983" border="0" fill="0" fillColor="#a0a0a0" text="209" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="670,957" to="712,983" border="0" fill="0" fillColor="#a0a0a0" text="211" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="764,957" to="806,983" border="0" fill="0" fillColor="#a0a0a0" text="213" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="863,957" to="905,983" border="0" fill="0" fillColor="#a0a0a0" text="215" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="960,957" to="1002,983" border="0" fill="0" fillColor="#a0a0a0" text="217" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="1053,957" to="1095,983" border="0" fill="0" fillColor="#a0a0a0" text="219" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="1148,957" to="1190,983" border="0" fill="0" fillColor="#a0a0a0" text="221" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="1240,957" to="1282,983" border="0" fill="0" fillColor="#a0a0a0" text="200" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="1488,957" to="1530,983" border="0" fill="0" fillColor="#a0a0a0" text="222" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="1584,957" to="1626,983" border="0" fill="0" fillColor="#a0a0a0" text="220" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="1678,957" to="1720,983" border="0" fill="0" fillColor="#a0a0a0" text="218" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="1773,957" to="1815,983" border="0" fill="0" fillColor="#a0a0a0" text="216" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="1866,957" to="1908,983" border="0" fill="0" fillColor="#a0a0a0" text="214" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="1963,957" to="2005,983" border="0" fill="0" fillColor="#a0a0a0" text="212" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="2056,957" to="2098,983" border="0" fill="0" fillColor="#a0a0a0" text="210" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="2151,956" to="2193,982" border="0" fill="0" fillColor="#a0a0a0" text="208" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="2247,956" to="2289,982" border="0" fill="0" fillColor="#a0a0a0" text="206" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="2344,957" to="2394,983" border="0" fill="0" fillColor="#a0a0a0" text="204" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="2422,922" to="2464,948" border="0" fill="0" fillColor="#a0a0a0" text="2029" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="1407,958" to="1449,984" border="0" fill="0" fillColor="#a0a0a0" text="2002" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<string from="161,905" to="203,931" border="0" fill="0" fillColor="#a0a0a0" text="2019" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<line from="987,686" to="810,686" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="987,656" to="810,656" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="987,626" to="810,626" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="987,598" to="810,598" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="1802,598" to="1624,598" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="2477,1251" to="62,1251" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="2477,1214" to="62,1214" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="2477,1174" to="62,1174" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="2477,1102" to="62,1102" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="63,1296" to="63,1101" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="223,1295" to="223,1102" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="318,1295" to="318,1102" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="417,1295" to="417,1102" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="417,1295" to="417,1102" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="223,1295" to="223,1102" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="318,1295" to="318,1102" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="417,1295" to="417,1102" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="515,1295" to="515,1102" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="615,1295" to="615,1102" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="706,1295" to="706,1102" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="809,1295" to="809,1102" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="902,1295" to="902,1102" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="992,1295" to="992,1102" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="1093,1295" to="1093,1102" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="1183,1295" to="1183,1102" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="1312,1295" to="1312,1102" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="1432,1295" to="1432,1102" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="1522,1295" to="1522,1102" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="1620,1295" to="1620,1102" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="1716,1295" to="1716,1102" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="1811,1295" to="1811,1102" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="1901,1295" to="1901,1102" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="1998,1295" to="1998,1102" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="2088,1295" to="2088,1102" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="2188,1295" to="2188,1102" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="2282,1295" to="2282,1102" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="2381,1295" to="2381,1102" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="2477,1295" to="2477,1102" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="1557,468" to="1571,467" lineColor="#c02020" lineWidth="2"/>
+		<image from="1541,460" to="1557,476" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" iconType="0" size="16" index="109" angle="0.000000"/>
+		<image from="1513,460" to="1529,476" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" iconType="0" size="16" index="63" angle="0.000000"/>
+		<line from="1528,468" to="1540,467" lineColor="#c02020" lineWidth="2"/>
+		<line from="1498,468" to="1512,467" lineColor="#c02020" lineWidth="2"/>
+		<image from="1483,486" to="1515,518" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" iconType="0" size="32" index="44" angle="0.000000"/>
+		<line from="1499,469" to="1499,485" lineColor="#c02020" lineWidth="2"/>
+		<line from="1557,588" to="1571,587" lineColor="#c02020" lineWidth="2"/>
+		<image from="1541,580" to="1557,596" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" iconType="0" size="16" index="109" angle="0.000000"/>
+		<image from="1513,580" to="1529,596" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" iconType="0" size="16" index="63" angle="0.000000"/>
+		<line from="1528,588" to="1540,587" lineColor="#c02020" lineWidth="2"/>
+		<line from="1498,588" to="1512,587" lineColor="#c02020" lineWidth="2"/>
+		<image from="1483,606" to="1515,638" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" iconType="0" size="32" index="44" angle="0.000000"/>
+		<line from="1499,589" to="1499,605" lineColor="#c02020" lineWidth="2"/>
+		<string from="1507,670" to="1554,687" border="0" fill="0" fillColor="#c0c0c0" text="500/5" angle="0.000000" align="0" font="Times New Roman" size="14" fontColor="#ffffff"/>
+		<string from="1462,669" to="1502,686" border="0" fill="0" fillColor="#c0c0c0" text="1250A" angle="0.000000" align="0" font="Times New Roman" size="14" fontColor="#ffffff"/>
+		<string from="1483,643" to="1525,669" border="0" fill="0" fillColor="#a0a0a0" text="202" angle="0.000000" align="0" font="Times New Roman" size="20" fontColor="#ffffff"/>
+		<line from="1802,626" to="1624,626" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="1802,656" to="1624,656" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="1802,686" to="1624,686" lineColor="#e0e0e0" lineWidth="1"/>
+		<line from="1802,716" to="1624,716" lineColor="#e0e0e0" lineWidth="1"/>
+		<imageNavi from="1,4" to="223,90" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" iconType="1" filename="iconlibrary/public/主画面小小按钮.png" angle="0.000000" naviTo="0"/>
+		<imageNavi from="428,4" to="650,90" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" iconType="1" filename="iconlibrary/public/数据浏览小小按钮.png" angle="0.000000" naviTo="4"/>
+		<commandButton from="662,4" to="884,90" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" font="宋体" size="16" filename_down="iconlibrary/public/报警查询小小按钮.png" filename_up="" text="" btnType="231" cmdType="11" cmdParam="0"/>
+		<commandButton from="994,593" to="1034,623" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" font="宋体" size="16" filename_down="bmp/摄像机.png" filename_up="" text="" btnType="0" cmdType="1" cmdParam="0,0,1"/>
+		<commandButton from="283,837" to="323,867" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" font="宋体" size="16" filename_down="bmp/摄像机.png" filename_up="" text="" btnType="0" cmdType="1" cmdParam="25,0,2"/>
+		<commandButton from="376,837" to="416,867" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" font="宋体" size="16" filename_down="bmp/摄像机.png" filename_up="" text="" btnType="0" cmdType="1" cmdParam="1,0,3"/>
+		<commandButton from="472,837" to="512,867" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" font="宋体" size="16" filename_down="bmp/摄像机.png" filename_up="" text="" btnType="0" cmdType="1" cmdParam="1,0,4"/>
+		<commandButton from="567,837" to="607,867" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" font="宋体" size="16" filename_down="bmp/摄像机.png" filename_up="" text="" btnType="0" cmdType="1" cmdParam="1,0,5"/>
+		<commandButton from="662,837" to="702,867" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" font="宋体" size="16" filename_down="bmp/摄像机.png" filename_up="" text="" btnType="0" cmdType="1" cmdParam="1,0,6"/>
+		<commandButton from="757,837" to="797,867" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" font="宋体" size="16" filename_down="bmp/摄像机.png" filename_up="" text="" btnType="0" cmdType="1" cmdParam="1,0,7"/>
+		<commandButton from="852,837" to="892,867" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" font="宋体" size="16" filename_down="bmp/摄像机.png" filename_up="" text="" btnType="0" cmdType="1" cmdParam="1,0,8"/>
+		<commandButton from="947,837" to="987,867" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" font="宋体" size="16" filename_down="bmp/摄像机.png" filename_up="" text="" btnType="0" cmdType="1" cmdParam="1,0,9"/>
+		<commandButton from="1042,837" to="1082,867" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" font="宋体" size="16" filename_down="bmp/摄像机.png" filename_up="" text="" btnType="0" cmdType="1" cmdParam="1,0,10"/>
+		<commandButton from="1137,837" to="1177,867" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" font="宋体" size="16" filename_down="bmp/摄像机.png" filename_up="" text="" btnType="0" cmdType="1" cmdParam="1,0,11"/>
+		<commandButton from="1231,837" to="1271,867" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" font="宋体" size="16" filename_down="bmp/摄像机.png" filename_up="" text="" btnType="0" cmdType="1" cmdParam="1,0,12"/>
+		<commandButton from="1481,837" to="1521,867" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" font="宋体" size="16" filename_down="bmp/摄像机.png" filename_up="" text="" btnType="0" cmdType="1" cmdParam="1,0,23"/>
+		<commandButton from="1576,837" to="1616,867" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" font="宋体" size="16" filename_down="bmp/摄像机.png" filename_up="" text="" btnType="0" cmdType="1" cmdParam="1,0,22"/>
+		<commandButton from="1672,837" to="1712,867" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" font="宋体" size="16" filename_down="bmp/摄像机.png" filename_up="" text="" btnType="0" cmdType="1" cmdParam="1,0,21"/>
+		<commandButton from="1766,837" to="1806,867" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" font="宋体" size="16" filename_down="bmp/摄像机.png" filename_up="" text="" btnType="0" cmdType="1" cmdParam="1,0,20"/>
+		<commandButton from="1861,837" to="1901,867" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" font="宋体" size="16" filename_down="bmp/摄像机.png" filename_up="" text="" btnType="0" cmdType="1" cmdParam="1,0,19"/>
+		<commandButton from="1956,837" to="1996,867" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" font="宋体" size="16" filename_down="bmp/摄像机.png" filename_up="" text="" btnType="0" cmdType="1" cmdParam="1,0,18"/>
+		<commandButton from="2051,837" to="2091,867" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" font="宋体" size="16" filename_down="bmp/摄像机.png" filename_up="" text="" btnType="0" cmdType="1" cmdParam="1,0,17"/>
+		<commandButton from="2146,837" to="2186,867" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" font="宋体" size="16" filename_down="bmp/摄像机.png" filename_up="" text="" btnType="0" cmdType="1" cmdParam="1,0,16"/>
+		<commandButton from="2241,837" to="2281,867" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" font="宋体" size="16" filename_down="bmp/摄像机.png" filename_up="" text="" btnType="0" cmdType="1" cmdParam="1,0,15"/>
+		<commandButton from="2336,837" to="2376,867" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" font="宋体" size="16" filename_down="bmp/摄像机.png" filename_up="" text="" btnType="0" cmdType="1" cmdParam="25,0,14"/>
+		<commandButton from="1576,593" to="1616,623" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" font="宋体" size="16" filename_down="bmp/摄像机.png" filename_up="" text="" btnType="0" cmdType="1" cmdParam="0,0,13"/>
+		<commandButton from="1130,4" to="1352,90" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" font="宋体" size="16" filename_down="iconlibrary/public/退出遥控小小按钮.png" filename_up="" text="" btnType="0" cmdType="11" cmdParam="5"/>
+		<commandButton from="896,4" to="1118,90" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" font="宋体" size="16" filename_down="iconlibrary/public/进入遥控小小按钮.png" filename_up="" text="" btnType="0" cmdType="11" cmdParam="4"/>
+		<line from="565,827" to="565,861" lineColor="#c02020" lineWidth="2"/>
+		<line from="470,827" to="470,861" lineColor="#c02020" lineWidth="2"/>
+		<line from="755,827" to="755,861" lineColor="#c02020" lineWidth="2"/>
+		<line from="660,827" to="660,861" lineColor="#c02020" lineWidth="2"/>
+		<line from="945,827" to="945,861" lineColor="#c02020" lineWidth="2"/>
+		<line from="850,827" to="850,861" lineColor="#c02020" lineWidth="2"/>
+		<line from="1135,827" to="1135,861" lineColor="#c02020" lineWidth="2"/>
+		<line from="1040,827" to="1040,861" lineColor="#c02020" lineWidth="2"/>
+		<line from="1229,827" to="1229,861" lineColor="#c02020" lineWidth="2"/>
+		<line from="1574,826" to="1574,860" lineColor="#c02020" lineWidth="2"/>
+		<line from="1479,826" to="1479,860" lineColor="#c02020" lineWidth="2"/>
+		<line from="1764,826" to="1764,860" lineColor="#c02020" lineWidth="2"/>
+		<line from="1669,826" to="1669,860" lineColor="#c02020" lineWidth="2"/>
+		<line from="1954,826" to="1954,860" lineColor="#c02020" lineWidth="2"/>
+		<line from="1859,826" to="1859,860" lineColor="#c02020" lineWidth="2"/>
+		<line from="2144,826" to="2144,860" lineColor="#c02020" lineWidth="2"/>
+		<line from="2049,826" to="2049,860" lineColor="#c02020" lineWidth="2"/>
+		<line from="2334,826" to="2334,860" lineColor="#c02020" lineWidth="2"/>
+		<line from="2239,826" to="2239,860" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="186,821" to="1280,828" border="1" borderColor="#008040" borderWidth="1" fill="1" fillColor="#008040" stname="" iconType="1" filename_close="iconlibrary/public/red.bmp" filename_open="bmp/darkgreen.bmp" angle="0.000000"/>
+		<imageStatue from="186,353" to="1279,360" border="1" borderColor="#000000" borderWidth="1" fill="1" fillColor="#008000" stname="" iconType="1" filename_close="iconlibrary/public/red.bmp" filename_open="bmp/darkgreen.bmp" angle="0.000000"/>
+		<imageStatue from="1345,353" to="2439,360" border="1" borderColor="#000000" borderWidth="1" fill="1" fillColor="#008000" stname="" iconType="1" filename_close="iconlibrary/public/red.bmp" filename_open="bmp/darkgreen.bmp" angle="0.000000"/>
+		<imageStatue from="1344,821" to="2438,828" border="1" borderColor="#000000" borderWidth="1" fill="1" fillColor="#008040" stname="" iconType="1" filename_close="iconlibrary/public/red.bmp" filename_open="bmp/darkgreen.bmp" angle="0.000000"/>
+		<imageNavi from="218,4" to="440,90" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#c0c0c0" iconType="1" filename="iconlibrary/user/1号水泵房小小按钮.png" angle="0.000000" naviTo="3"/>
+		<imageStatue from="298,1050" to="322,1074" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N09_DD" iconType="0" size="24" index_close="1" index_open="1" angle="0.000000"/>
+		<line from="310,1035" to="310,1049" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="393,1050" to="417,1074" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N11_DD" iconType="0" size="24" index_close="1" index_open="1" angle="0.000000"/>
+		<line from="405,1035" to="405,1049" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="488,1050" to="512,1074" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N13_DD" iconType="0" size="24" index_close="1" index_open="1" angle="0.000000"/>
+		<line from="500,1035" to="500,1049" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="580,1034" to="612,1066" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N15_DD" iconType="0" size="32" index_close="75" index_open="75" angle="0.000000"/>
+		<imageStatue from="583,1050" to="607,1074" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N15_DD" iconType="0" size="24" index_close="1" index_open="1" angle="0.000000"/>
+		<line from="595,1035" to="595,1049" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="678,1050" to="702,1074" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N17_DD" iconType="0" size="24" index_close="1" index_open="1" angle="0.000000"/>
+		<line from="690,1035" to="690,1049" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="773,1050" to="797,1074" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N19_DD" iconType="0" size="24" index_close="1" index_open="1" angle="0.000000"/>
+		<line from="785,1035" to="785,1049" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="868,1050" to="892,1074" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N21_DD" iconType="0" size="24" index_close="1" index_open="1" angle="0.000000"/>
+		<line from="880,1035" to="880,1049" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="963,1050" to="987,1074" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N23_DD" iconType="0" size="24" index_close="1" index_open="1" angle="0.000000"/>
+		<line from="975,1035" to="975,1049" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="1058,1050" to="1082,1074" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N25_DD" iconType="0" size="24" index_close="1" index_open="1" angle="0.000000"/>
+		<line from="1070,1035" to="1070,1049" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="1153,1050" to="1177,1074" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N27_DD" iconType="0" size="24" index_close="1" index_open="1" angle="0.000000"/>
+		<line from="1165,1035" to="1165,1049" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="1497,1049" to="1521,1073" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N28_DD" iconType="0" size="24" index_close="1" index_open="1" angle="0.000000"/>
+		<line from="1509,1034" to="1509,1048" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="1592,1049" to="1616,1073" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N26_DD" iconType="0" size="24" index_close="1" index_open="1" angle="0.000000"/>
+		<line from="1604,1034" to="1604,1048" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="1782,1049" to="1806,1073" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N22_DD" iconType="0" size="24" index_close="1" index_open="1" angle="0.000000"/>
+		<line from="1794,1034" to="1794,1048" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="1687,1049" to="1711,1073" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N24_DD" iconType="0" size="24" index_close="1" index_open="1" angle="0.000000"/>
+		<line from="1699,1034" to="1699,1048" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="1972,1049" to="1996,1073" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N18_DD" iconType="0" size="24" index_close="1" index_open="1" angle="0.000000"/>
+		<line from="1984,1034" to="1984,1048" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="1877,1049" to="1901,1073" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N20_DD" iconType="0" size="24" index_close="1" index_open="1" angle="0.000000"/>
+		<line from="1889,1034" to="1889,1048" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="2162,1049" to="2186,1073" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N14_DD" iconType="0" size="24" index_close="1" index_open="1" angle="0.000000"/>
+		<line from="2174,1034" to="2174,1048" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="2067,1049" to="2091,1073" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N16_DD" iconType="0" size="24" index_close="1" index_open="1" angle="0.000000"/>
+		<line from="2079,1034" to="2079,1048" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="2352,1049" to="2376,1073" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N10_DD" iconType="0" size="24" index_close="1" index_open="1" angle="0.000000"/>
+		<line from="2364,1034" to="2364,1048" lineColor="#c02020" lineWidth="2"/>
+		<imageStatue from="2257,1049" to="2281,1073" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N12_DD" iconType="0" size="24" index_close="1" index_open="1" angle="0.000000"/>
+		<line from="2269,1034" to="2269,1048" lineColor="#c02020" lineWidth="2"/>
+		<image from="481,121" to="2081,221" border="1" borderColor="#e1e101" borderWidth="1" fill="0" fillColor="#c0c0c0" iconType="1" filename="iconlibrary/user/1号开闭所系统图标题.png" angle="0.000000"/>
+		<dyanData from="648,174" to="793,198" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="LcdD" size="24" name="DATE" type="0"/>
+		<dyanData from="1668,174" to="1813,198" border="0" fill="0" fillColor="#c0c0c0" angle="0.000000" align="2" font="LcdD" size="24" name="TIME" type="0"/>
+		<imageStatue from="488,155" to="608,198" border="1" borderColor="#000000" borderWidth="1" fill="0" fillColor="#000000" stname="N_Light" iconType="1" filename_close="iconlibrary/public/开灯.png" filename_open="iconlibrary/public/关灯.png" angle="0.000000"/>
+		<imageStatue from="1016,645" to="1064,693" border="1" borderColor="#c02020" borderWidth="1" fill="0" fillColor="#20a040" stname="N05_ST" iconType="0" size="48" index_close="1" index_open="0" angle="0.000000"/>
+	</layer>
+</picture>

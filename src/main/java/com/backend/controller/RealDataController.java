@@ -44,7 +44,7 @@ public class RealDataController {
     public Map<String,Object[]> getRealDataByEnameList(@RequestBody Map<String, String> map){
 		Gson gson = new Gson();
 
-    	String companyId = map.get("companyId").toString();
+    	String companyId = map.get("companyId");
 
     	//String[] enames = (String[]) map.get("ename[]");
 		String[] enames = gson.fromJson(map.get("ename"),new TypeToken<String[]>() {}.getType());
